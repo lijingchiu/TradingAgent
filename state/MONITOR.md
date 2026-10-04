@@ -4,7 +4,7 @@
 
 No candidate passed development and validation requirements；Final holdout has fewer than 30 naturally closed trades
 
-更新時間：2026-10-04T12:41:19.330859+00:00（UTC；台灣時間 +8 小時）。每 5 分鐘排程更新；重新整理本頁可查看最新紀錄。
+更新時間：2026-10-04T13:53:41.291970+00:00（UTC；台灣時間 +8 小時）。每 5 分鐘排程更新；重新整理本頁可查看最新紀錄。
 
 > 本頁只顯示模擬交易。回測獲利不會加入模擬帳戶。
 

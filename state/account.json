@@ -19,6 +19,11 @@
       "timestamp": "2026-10-04T12:41:18.873528+00:00",
       "equity": 100000.0,
       "segment": "paper"
+    },
+    {
+      "timestamp": "2026-10-04T13:53:40.726354+00:00",
+      "equity": 100000.0,
+      "segment": "paper"
     }
   ],
   "created_at": "2026-10-04T12:37:51.441456+00:00",
@@ -27,20 +32,20 @@
     "code": "validation_failed",
     "label": "回測未通過・禁止下單",
     "reason": "No candidate passed development and validation requirements；Final holdout has fewer than 30 naturally closed trades",
-    "last_success_at": "2026-10-04T12:41:18.873528+00:00",
+    "last_success_at": "2026-10-04T13:53:40.726354+00:00",
     "next_session_at": "2026-10-04T21:00:00+00:00"
   },
   "market": {
     "symbol": "EUR/USD",
     "mid": 1.1257,
     "quote_time": "2026-10-02T21:29:47+00:00",
-    "fetched_at": "2026-10-04T12:41:18.873528+00:00",
+    "fetched_at": "2026-10-04T13:53:40.726354+00:00",
     "stale": true,
     "source": "Yahoo Finance 1h indicative spot quotes",
-    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD=X?period1=1775565678&period2=1791117679&interval=1h",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD=X?period1=1775570020&period2=1791122021&interval=1h",
     "excluded_invalid": 0,
     "excluded_null": 33
   },
   "strategy_fingerprint": "74e43c77c00e2c9fc6f16274e2e26491c676811ff614c65e66b64c95d8a9a7fb",
-  "updated_at": "2026-10-04T12:41:18.873528+00:00"
+  "updated_at": "2026-10-04T13:53:40.726354+00:00"
 }
