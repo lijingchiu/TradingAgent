@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/LimiNode/fxcm-historical-data-ask",
+  "pinned_commit": "380be4f422df0681817500d7bc3d288963e0ebee",
+  "source_url": "https://raw.githubusercontent.com/LimiNode/fxcm-historical-data-ask/380be4f422df0681817500d7bc3d288963e0ebee/storage/EURUSD.qhs5",
+  "retrieved_at_utc": "2026-10-04T13:20:24.351168+00:00",
+  "quote_side": "ASK",
+  "git_blob_sha1_expected": "f767445cc4cdb6f020f87dcaf636df2559d8e8dc",
+  "git_blob_sha1_observed": "f767445cc4cdb6f020f87dcaf636df2559d8e8dc",
+  "sha256": "ac39e304fa974e6c39913852a78614c2254e72ed17e1ac1125da70750397fb19",
+  "bytes": 36782049,
+  "provenance_status": "Third-party historical mirror claims FXCM/intrade.bar; not independently authenticated directFXCM export"
+}

@@ -1,0 +1,19 @@
+{
+  "reason": "Engine added explicit signal-age parameter; make existing strict contiguous-M15 entry requirement explicit. Capital argument now accepts optional sensitivity; baseline remains100000.",
+  "candidate": "ny08_unconditional_h6_s40_t40",
+  "baseline_initial_equity": 100000.0,
+  "summary_exactly_equal": true,
+  "bootstrap_exactly_equal": true,
+  "original_inferred_bound": 900,
+  "current_explicit_bound": 900,
+  "original_script_sha256": "11192d69562735da66fa1b786915163c8171e4033821905ed11457999356b733",
+  "current_script_sha256": "d69545466a63ff2ba613b556be79028c8b4ebdb39f12f0508fd90d1f1ec5048c",
+  "family_parameters_changed": false,
+  "original_receipt_preserved": true,
+  "final_data_loaded": false,
+  "synthetic_checks": {
+    "checks": 5,
+    "status": "passed",
+    "synthetic_only": true
+  }
+}

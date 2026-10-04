@@ -1,0 +1,11 @@
+{
+  "source_file": "dukascopy_eurusd_bid_development_2015_2021_m15.csv",
+  "rows": 174523,
+  "sha256": "f84c31a66abc8311626ac000f821d0257e9ebd12000d6bf7a24c651ca3d19341",
+  "duplicate_timestamps": 0,
+  "unsorted_transitions": 0,
+  "invalid_ohlc_rows": 0,
+  "all_positive_vendor_volume": true,
+  "median_body_pips": 2.4000000000001798,
+  "median_range_pips": 5.800000000000249
+}

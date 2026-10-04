@@ -1,0 +1,363 @@
+{
+  "created_at_utc": "2026-10-04T13:45:31.395560+00:00",
+  "written_before_any_nq_momentum_pnl": true,
+  "joint_family_extension": {
+    "path": "artifacts/intraday/futures_momentum_extension.json",
+    "sha256": "7ecedd427caa109213ca3da7b04b3ceac8682cb326d82154336d33048b2155e0"
+  },
+  "calendar_clarification": {
+    "path": "artifacts/intraday/futures_momentum_calendar_clarification.json",
+    "sha256": "4ed4791de908050069d8c9dad53030a24ca8cda58f79bc21e014871e8990d32c"
+  },
+  "hypothesis": "Separate bullish trend continuation/pullback family after preserving failed mean reversion",
+  "source": {
+    "path": "artifacts/intraday/nq/source/NQ_5min_20260120_20260415.csv",
+    "sha256": "053a99028da0675d828141e5082af9bfadc9c2c24cbc2052077fdc3df3525005",
+    "repository": "https://github.com/axb0306/cme-futures-ohlc",
+    "pinned_commit": "60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264",
+    "url": "https://raw.githubusercontent.com/axb0306/cme-futures-ohlc/60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264/NQ/NQ_5min_20260120_20260415.csv",
+    "native_timeframe": "M5",
+    "instrument": "NQ CSV, not MNQ",
+    "timestamp_timezone": "UTC as source declares",
+    "bar_timestamp_convention": "Assumed opening timestamp; label semantics independently unverified",
+    "price_side": "Last-trade OHLC; modeled conservative mid proxy, not observed book",
+    "historical_contract_identity": "Updater requests CON.F.US.ENQ.M26; initial backfill/per-row expiry unverified",
+    "source_quality_receipt": "artifacts/intraday/nq/source_quality_receipt.json",
+    "source_quality_receipt_sha256": "195bae0ed9215ac9942f128cb9488aa77743e9e25ddf9eea6be29590a9f1eade"
+  },
+  "family": [
+    {
+      "name": "nq_m5_momentum_h6_ema48_positive_momentum_s40_t40",
+      "return_horizon": 6,
+      "ema_span": 48,
+      "entry_style": "positive_momentum",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema48_positive_momentum_s40_t60",
+      "return_horizon": 6,
+      "ema_span": 48,
+      "entry_style": "positive_momentum",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema48_positive_momentum_s60_t60",
+      "return_horizon": 6,
+      "ema_span": 48,
+      "entry_style": "positive_momentum",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema48_bullish_trend_pullback_s40_t40",
+      "return_horizon": 6,
+      "ema_span": 48,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema48_bullish_trend_pullback_s40_t60",
+      "return_horizon": 6,
+      "ema_span": 48,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema48_bullish_trend_pullback_s60_t60",
+      "return_horizon": 6,
+      "ema_span": 48,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema192_positive_momentum_s40_t40",
+      "return_horizon": 6,
+      "ema_span": 192,
+      "entry_style": "positive_momentum",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema192_positive_momentum_s40_t60",
+      "return_horizon": 6,
+      "ema_span": 192,
+      "entry_style": "positive_momentum",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema192_positive_momentum_s60_t60",
+      "return_horizon": 6,
+      "ema_span": 192,
+      "entry_style": "positive_momentum",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema192_bullish_trend_pullback_s40_t40",
+      "return_horizon": 6,
+      "ema_span": 192,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema192_bullish_trend_pullback_s40_t60",
+      "return_horizon": 6,
+      "ema_span": 192,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h6_ema192_bullish_trend_pullback_s60_t60",
+      "return_horizon": 6,
+      "ema_span": 192,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema48_positive_momentum_s40_t40",
+      "return_horizon": 24,
+      "ema_span": 48,
+      "entry_style": "positive_momentum",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema48_positive_momentum_s40_t60",
+      "return_horizon": 24,
+      "ema_span": 48,
+      "entry_style": "positive_momentum",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema48_positive_momentum_s60_t60",
+      "return_horizon": 24,
+      "ema_span": 48,
+      "entry_style": "positive_momentum",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema48_bullish_trend_pullback_s40_t40",
+      "return_horizon": 24,
+      "ema_span": 48,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema48_bullish_trend_pullback_s40_t60",
+      "return_horizon": 24,
+      "ema_span": 48,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema48_bullish_trend_pullback_s60_t60",
+      "return_horizon": 24,
+      "ema_span": 48,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema192_positive_momentum_s40_t40",
+      "return_horizon": 24,
+      "ema_span": 192,
+      "entry_style": "positive_momentum",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema192_positive_momentum_s40_t60",
+      "return_horizon": 24,
+      "ema_span": 192,
+      "entry_style": "positive_momentum",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema192_positive_momentum_s60_t60",
+      "return_horizon": 24,
+      "ema_span": 192,
+      "entry_style": "positive_momentum",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema192_bullish_trend_pullback_s40_t40",
+      "return_horizon": 24,
+      "ema_span": 192,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema192_bullish_trend_pullback_s40_t60",
+      "return_horizon": 24,
+      "ema_span": 192,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_momentum_h24_ema192_bullish_trend_pullback_s60_t60",
+      "return_horizon": 24,
+      "ema_span": 192,
+      "entry_style": "bullish_trend_pullback",
+      "stop_points": 60,
+      "target_points": 60
+    }
+  ],
+  "signal_configuration_count": 24,
+  "disclosed_cost_operating_variants": 48,
+  "splits": {
+    "development": {
+      "start_inclusive": "2026-01-21",
+      "end_exclusive": "2026-02-14",
+      "sessions": 18
+    },
+    "validation": {
+      "start_inclusive": "2026-02-16",
+      "end_exclusive": "2026-02-28",
+      "sessions": 9
+    },
+    "final": {
+      "start_inclusive": "2026-04-01",
+      "end_exclusive": "2026-04-16",
+      "sessions": 9
+    }
+  },
+  "calendar": {
+    "timezone": "America/New_York",
+    "session_date": "NY date plus one at/after18:00",
+    "allowed_session_weekdays": "Monday through Friday",
+    "excluded_entire_UTC_and_session_month": "2026-03",
+    "no_March_rows_in_strategy_features": true,
+    "excluded_short_sessions": [
+      "2026-02-16",
+      "2026-04-03"
+    ],
+    "excluded_final_incomplete_session_after_March_removal": "2026-04-01",
+    "complete_session_policy": "Only sessions with every expected276 native M5 opening timestamp from18:00 through16:55 NY, after exclusions; determined from source QA, not price outcomes",
+    "entry_clock": "18:30 through 16:15 inclusive",
+    "mandatory_flat": "Completed16:40 bar signals sale at16:45 open",
+    "absent_mandatory_signal_or_exit_quote": "Block evaluation before P&L"
+  },
+  "signal": {
+    "common_completed_signal_bar_i": "close[i] > EMAspan[i] AND EMAspan[i] > EMAspan[i-horizon]",
+    "positive_momentum": "Additionally close[i] > close[i-horizon]",
+    "bullish_trend_pullback": "Additionally close[i-1] < close[i-2] AND close[i] > close[i-1]",
+    "pullback_return_definition": "Previous ONE-bar close return is negative; horizon parameter measures EMA slope in both styles",
+    "EMA": "adjust=False, min_periods=span; all inputs are completed closes through signal bar i",
+    "warmup": "At least span+horizon consecutive observations after every gap; maximum216 observations",
+    "feature_reset": "Every timestamp interval different from300seconds; no cross-maintenance/weekend/contract-gap indicators",
+    "next_open_entry": true,
+    "max_signal_age_seconds": 300,
+    "one_position": true,
+    "same_bar_reentry": false,
+    "stop_target_anchor": "Actual input entry last-trade open",
+    "ambiguous_intrabar_priority": "Stop first",
+    "opening_gap_fills": "Actual next observed open, losses unclipped",
+    "max_holding_bars": 12,
+    "hard_max_holding_days": 1,
+    "sample_end": "Account includes exit costs/P&L; natural-close statistics exclude artificial exits",
+    "selection_warmup": "Up to two calendar days before first split session; execution masks exclude those days"
+  },
+  "costs": {
+    "profiles": {
+      "conservative_bps_proxy": {
+        "spread_pips": 2,
+        "slippage_pips": 1,
+        "commission_bps": 0.35,
+        "minimum_commission": 0.1,
+        "carry_per_1000_per_day": 0.0,
+        "pip_size": 0.25
+      },
+      "operating_fixed_5_per_side": {
+        "spread_pips": 2,
+        "slippage_pips": 1,
+        "commission_bps": 0,
+        "minimum_commission": 5,
+        "carry_per_1000_per_day": 0.0,
+        "pip_size": 0.25
+      }
+    },
+    "operating_profile": "operating_fixed_5_per_side",
+    "conservative_sensitivity": "conservative_bps_proxy",
+    "fixed_price_friction": "Full spread0.50points; each-side slippage0.25points; entry+0.50,exit-0.50points",
+    "tick_size_points": 0.25,
+    "flat_fee_guard": "Exactly one NQ contract on every trade, otherwise fail; USD5 minimum is then USD5 per contract per side",
+    "verified_broker_fee_schedule": false,
+    "final_stress_if_later_authorized": [
+      1.5,
+      2.0
+    ],
+    "stress_rounding": "Round each-side price friction up to0.25tick; scale flat fee/commission"
+  },
+  "risk": {
+    "initial_virtual_equity_usd": 80000000.0,
+    "unit_step": 20,
+    "exact_trading_lots": 1,
+    "principal_cap_fraction": 0.008,
+    "full_principal_loss_budget_fraction": 0.01,
+    "numeric_model": "Fully paid nonnegative-price arithmetic",
+    "observed_check": "Both adverse excursion and peak-to-trough per-trade drawdown versus entry equity<=1percent",
+    "derivative_variation_margin_bound_established": false,
+    "paper_activation": false
+  },
+  "selection": {
+    "financial_eligibility_each_split": "Natural count>0,net win rate>=50%,positive natural and all-exit net,zero observed1percent breaches",
+    "rank_cost_profile": "operating_fixed_5_per_side",
+    "rank": "Maximum minimum development/validation MEAN NATURAL net P&L divided by initial equity",
+    "tie_breakers": [
+      "Maximum validation net return",
+      "Candidate name ascending"
+    ],
+    "frequency_projection": "27 observed development/validation sessions to36 including9 reserved complete final sessions",
+    "projection_formula": "selection_natural_count*36/27",
+    "selection_projection_count_threshold": 375,
+    "projection_is_not_observed_final_count": true,
+    "literal_user_requirement": "500 total natural closes from this same strategy across declared splits",
+    "preferred_independent_final_count": 500,
+    "no_adaptive_parameters_after_results": true,
+    "final_requires_frozen_selection_and_root_authorization": true
+  },
+  "statistics": {
+    "wilson_95": "Descriptive; ignores serial dependence",
+    "final_bootstrap_if_later_authorized": {
+      "unit": "UTC calendar realized daily returns using previous realized equity; inactive days retained",
+      "block_calendar_days": 7,
+      "replications": 10000,
+      "seed": 20261004,
+      "sensitivity_blocks": [
+        14,
+        28
+      ]
+    }
+  },
+  "software": {
+    "momentum_sha256": "02db9a2cb4849380592e4c88f25db9aaa96c1bddc470731bcf2e8c0bfe6de2cd",
+    "shared_nq_study_sha256": "884ebb7ea8fdbf1a9b75734d07fccb15d6525ad5c3b4319997b1a50e06937809",
+    "engine_sha256": "4d39faa9ad51be2b166e9485786aad72c4e174a53973cfc1cc64cb3a2944b8de",
+    "statistics_sha256": "be7955a5a052134c69f2b6aa9a16d286ab335cd6fa7cdc23640238946b5f3590"
+  },
+  "limitations": [
+    "Third-party mirror; original historical API responses not authenticated.",
+    "Root CSV does not verify each historical native expiry or roll/back-adjustment.",
+    "Last-trade OHLC lacks actual spread and execution path; bar-opening timestamp convention is assumed.",
+    "Both fee profiles are explicit simulations; broker schedules remain unverified.",
+    "USD80million virtual equity enables whole-contract numeric arithmetic, not a derivatives risk guarantee.",
+    "Preserve the previous24 mean-reversion signals/48 cost variants plus these24 signals/48 variants as disclosed selection trials."
+  ]
+}

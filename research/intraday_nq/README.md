@@ -1,0 +1,21 @@
+# Native NQ M5 research
+
+This isolated research family preserves 24 preregistered long mean-reversion signals and two explicit cost profiles, for 48 disclosed cost-operating variants. It uses the NQ CSV, not MNQ prices. It does not activate futures trading or modify the production/paper account.
+
+The source-only audit permits April quality checks but constructs no strategy signals. The selection runner removes March and April before constructing features and has no final-evaluation command. Development uses January 21–February 13, validation uses February 16–27 with February 16 excluded, and April 1–15 remains reserved with April 3 excluded. Bounds use the Globex session date in America/New_York. Every March UTC row is also excluded from strategy features and entries.
+
+The strategy requires a dip in the previous completed close against an earlier 6/12-bar mean and population standard deviation, followed by a completed bullish rebound. Its optional regime compares the dip close against the previous EMA96. All features restart after every gap and require 98 consecutive observations. Entry executes at the next M5 open, one whole NQ contract, with equal 20/30/40-point stops and targets, a 12-bar holding limit, and a mandatory 16:45 New York exit. Opening gaps fill at the observed open and ambiguous intrabar ordering uses the stop first.
+
+From `/workspace/TradingAgent`, the prepared environment uses:
+
+```bash
+PYTHONPATH=/workspace/analysis-deps:/workspace/TradingAgent NUMBA_NUM_THREADS=4 python3 -m unittest research.intraday_nq.test_nq research.intraday_nq.test_momentum -v
+```
+
+The completed source audit can be reproduced with `python3 research/intraday_nq/source_audit.py`; it checks exact pinned bytes and inspects downloaded repository text without executing it. The saved preregistration is immutable. `python3 -m research.intraday_nq.study preregister` is only for a new empty artifact directory; `evaluate-selection` checks hashes and refuses to overwrite the existing 48-variant report. Use the same PYTHONPATH/NUMBA_NUM_THREADS settings for either study command.
+
+Evidence is in `artifacts/intraday/nq/`: the exact source, source receipt, preregistration, all candidate trade ledgers in `development_report.json`, execution output in `selection_console.jsonl`, and `summary.md`. Nine mean-reversion tests and eleven momentum tests pass. Actual runs verify whole contracts, tick-valid fills, flat sessions, fee/cash reconciliation, and both per-trade risk measurements.
+
+The separate `momentum.py` hypothesis and `artifacts/intraday/nq_momentum/` preserve a further 24 fixed trend/momentum signals and 48 cost-operating variants after the first family failed. Both styles require the completed close above an increasing EMA48/192; momentum additionally requires a positive 6/24-bar close change, while pullback requires the previous one-bar decline followed by a completed rebound. Features reset at every non-300-second interval. Exact 276-opening-timestamp coverage is required for an eligible session; removing all UTC-March rows makes April 1 incomplete, so momentum's reserved coverage is nine sessions and its projection is count ×36/27. The exact ranking uses minimum split mean natural net P&L divided by initial equity. No family produced a financially eligible candidate, and no April strategy outputs were evaluated.
+
+Both fee profiles are configured simulations, not authenticated broker schedules. Flat USD5 per side is valid in this scenario only because every fill is asserted to contain exactly one contract. The original 0.35-basis-point profile remains a conservative sensitivity. The CSV lacks per-row expiry identifiers, the initial backfill contract is unverified, and bar-start timestamp labeling is an explicit assumption. Virtual USD80 million permits the engine's fully paid whole-contract arithmetic; this numeric price-floor model does not establish a futures variation-margin loss guarantee.

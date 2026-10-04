@@ -1,0 +1,17 @@
+{
+  "configurations": 24,
+  "cost_operating_variants": 48,
+  "positive_both_splits": 0,
+  "eligible_count": 0,
+  "max_actual_development_validation_natural_trades": 466,
+  "max_predeclared_projected_total_natural_trades": 621.3333333333334,
+  "all_cost_ledgers_reconciled": true,
+  "single_contract_assertions_passed": true,
+  "flat_fee_assertions_passed": true,
+  "april_strategy_outcomes": "UNTOUCHED",
+  "study_sha256": "c4771fcdfa2d561e10ca49635ed19b070b713b5953f9cfcdc4d2ee62050a3a2e",
+  "engine_sha256": "4d39faa9ad51be2b166e9485786aad72c4e174a53973cfc1cc64cb3a2944b8de",
+  "report_sha256": "2e6aa69402ae58743cd8519947905785be60167e38ccef09016c43b984d638ca",
+  "final_strategy_not_selected": true,
+  "paper_approved": false
+}

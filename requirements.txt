@@ -1,1 +1,2 @@
-# Runtime, research and tests use the Python 3.12 standard library only.
+# Runtime and production tests use the Python 3.12 standard library only.
+# Intraday research uses optional requirements-research.txt.

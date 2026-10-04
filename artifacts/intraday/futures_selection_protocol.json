@@ -1,0 +1,18 @@
+{
+  "registered_before_futures_candidate_outcomes": true,
+  "scope": "Two independent native M5 vendor-claimed index-futures research families, MES and NQ; no paper authorization",
+  "candidate_families": ["MES 24 preregistered configurations", "NQ 24 preregistered configurations"],
+  "development": "Globex sessions 2026-01-21 through 2026-02-13",
+  "selection_validation": "Globex sessions 2026-02-16 through 2026-02-27",
+  "reserved_final": "Globex sessions 2026-04-01 through 2026-04-15",
+  "excluded": "All March, known shortened holiday sessions, missing or incomplete native observations, and late-session new entries",
+  "eligibility": "Require positive total and natural net profit, net wins >=50%, no measured per-trade entry-loss/peak-drawdown above1% in BOTH development and validation. Use development/validation natural count per included session to estimate whether one frozen candidate can achieve >=500 pooled natural closes. Do not inspect final signal counts to qualify it.",
+  "ranking": "Maximize minimum development/validation mean natural net PnL divided by each run's initial equity; tie-break validation net return, then stable asset/config name",
+  "final_rule": "Freeze one winner across both families before any final strategy PnL; final eval and predeclared cost stress use exactly that winner. If no eligible winner, leave final untested; do not use a failed fallback just to force500trades.",
+  "trade_count": "User requires >=500 total backtested trades in the SAME strategy; report development/validation/final natural counts separately. >=500 final closes is preferred evidence, not an additional user instruction. Do not pool different strategies or count artificial sample-end liquidation as natural.",
+  "costs": "Two ticks assumed full spread, one tick slippage per side, conservative .35bps commission per side plus .10USD minimum; source last-trade OHLC modeled as midpoint, not observed BBO. Actual broker fee schedule remains unverified and must not be called measured.",
+  "statistics": "Net expectancy and payoff decomposition, full cash reconciliation, daily realized returns including inactive calendar days; seven-calendar-day moving-block bootstrap10000replications seed20261004 if >=14calendarobservations. Report short-sample and source limitations without claiming certainty. Higher block diagnostics only when data permit.",
+  "source_limit": "Public TopstepX/ProjectX-derived root-symbol CSV with quarter-tick prices and valid OHLC; updater requests M26, but initial backfill native-contract identity/raw responses absent. March exclusion and daily flat reduce seam risk without supplying missing provenance.",
+  "risk_limit": "Whole contract step, fully reserved numeric nonnegative-price notional model; observed1%rulechecked. This is not proof of actual futures variation-margin liabilities or all-path1%drawdown. Production paper gate stays closed regardless of research sample result until compatible execution/risk/source are verified.",
+  "forex_reserved_final": "EURUSD2022-04-01 through2024-09-30 remains separate and untouched"
+}

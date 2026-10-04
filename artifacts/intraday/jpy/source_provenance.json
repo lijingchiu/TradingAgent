@@ -1,0 +1,22 @@
+{
+  "source_url": "https://raw.githubusercontent.com/ejtraderLabs/historical-data/fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd/USDJPY/USDJPYm15.csv",
+  "pinned_commit": "fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd",
+  "raw_sha256": "9ef8b25861892eff84c3c1e90dd646fafc7cdd7d2dcf94d60b7089ac876a4690",
+  "normalized_sha256": "a43fece66616d2ff9aa5d63a71a4f113f3a003a247a329d3ff556ead17ec145c",
+  "raw_rows": 230400,
+  "research_rows": 180041,
+  "invalid_rows_excluded": 0,
+  "duplicates_excluded": 0,
+  "unsorted_transitions": 0,
+  "price_divisor": 1000,
+  "price_unit": "JPY per USD",
+  "first_research_timestamp": "2014-10-01 00:00:00",
+  "last_research_timestamp": "2021-12-31 23:00:00",
+  "price_min": 99.586,
+  "price_max": 125.767,
+  "price_median": 110.318,
+  "timezone": "UNKNOWN; naive source calendar, no clock/session features",
+  "quote_side": "UNKNOWN; assumed indicative-mid scenario",
+  "currency_metadata": "Account, principal, costs and PnL are JPY; integer holding units are USD",
+  "conversion_assumption": "Publisher integerlike quote points divided by1000, consistent with3decimal JPY FX quote precision and plausible source-period USDJPY prices. Original broker scaling metadata is unavailable."
+}

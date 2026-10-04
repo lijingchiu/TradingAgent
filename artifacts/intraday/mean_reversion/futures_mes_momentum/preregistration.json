@@ -1,0 +1,284 @@
+{
+  "registered_before_new_family_strategy_pnl": true,
+  "joint_extension_sha256": "7ecedd427caa109213ca3da7b04b3ceac8682cb326d82154336d33048b2155e0",
+  "original_joint_protocol_sha256": "76d8f6467e5d76fcc4a096170d3a782c71ae63ad31ad0054e2f2e7c45ea130b2",
+  "family": [
+    {
+      "name": "mes_momentum_h6_ema48_momentum_stop8_target8",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_momentum_h6_ema48_momentum_stop8_target12",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h6_ema48_momentum_stop12_target12",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h6_ema48_pullback_stop8_target8",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_momentum_h6_ema48_pullback_stop8_target12",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h6_ema48_pullback_stop12_target12",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h6_ema192_momentum_stop8_target8",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_momentum_h6_ema192_momentum_stop8_target12",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h6_ema192_momentum_stop12_target12",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h6_ema192_pullback_stop8_target8",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_momentum_h6_ema192_pullback_stop8_target12",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h6_ema192_pullback_stop12_target12",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h24_ema48_momentum_stop8_target8",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_momentum_h24_ema48_momentum_stop8_target12",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h24_ema48_momentum_stop12_target12",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h24_ema48_pullback_stop8_target8",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_momentum_h24_ema48_pullback_stop8_target12",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h24_ema48_pullback_stop12_target12",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h24_ema192_momentum_stop8_target8",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_momentum_h24_ema192_momentum_stop8_target12",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h24_ema192_momentum_stop12_target12",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h24_ema192_pullback_stop8_target8",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_momentum_h24_ema192_pullback_stop8_target12",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_momentum_h24_ema192_pullback_stop12_target12",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 12,
+      "target_points": 12
+    }
+  ],
+  "unique_strategy_configurations": 24,
+  "cost_profiles": {
+    "proportional_conservative": {
+      "commission_bps": 0.35,
+      "minimum_commission": 0.1,
+      "spread_pips": 2.0,
+      "slippage_pips": 1.0,
+      "pip_size": 0.25,
+      "carry_per_1000_per_day": 0.0
+    },
+    "flat2_operating_assumption": {
+      "commission_bps": 0.0,
+      "minimum_commission": 2.0,
+      "spread_pips": 2.0,
+      "slippage_pips": 1.0,
+      "pip_size": 0.25,
+      "carry_per_1000_per_day": 0.0
+    }
+  },
+  "cost_operating_variants": 48,
+  "source_file": "artifacts/intraday/mean_reversion/futures_mes/source/MES_5min_20260120_20260415.csv",
+  "source_sha256": "7f051702bc80ea670b58645f12b6ce6cc89ff50cd982aec766cb4630937e283e",
+  "source_commit": "60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264",
+  "source_claim": "TopstepX/ProjectX MES root-symbol LAST_TRADE OHLCV, UTC declared; historical native-contract identity unverified; not observed BBO",
+  "initial_virtual_equity_usd": 5000000.0,
+  "unit_step": 5,
+  "required_exact_units": 5,
+  "required_exact_contracts": 1,
+  "point_multiplier": 5,
+  "tick_size": 0.25,
+  "entry_price_model": "Source last trade treated as assumed midpoint for execution; two ticks fullspread plus one tick slippage per side =>buyreference+.50/sellreference-.50 point",
+  "signal_definition": {
+    "common": "Completed close above EMAperiod; EMA[i] > EMA[i-horizon]. EMA48 or192, horizon6 or24. Features reset within each split and on every observed non300second gap.",
+    "momentum": "Additional close[i] > close[i-horizon]",
+    "pullback": "Instead prior onebar closechange<0 and current close>previous close",
+    "native_bar_clock": "Timestamp labels start of M5; completed availability =start+300secs, previous completed signal executes only at actual next300sec quote",
+    "signal_completed_availability_window": "NewYork18:30through16:15, Globex weekday/session eligible",
+    "forced_daily_flat": "Completed native16:40bar signal exits at actual16:45quote; bothadjacent300sec quotes required before PnL",
+    "max_holding_bars": 12
+  },
+  "development_session_dates": [
+    "2026-01-21",
+    "2026-02-14"
+  ],
+  "validation_session_dates": [
+    "2026-02-16",
+    "2026-02-28"
+  ],
+  "reserved_final_session_dates": [
+    "2026-04-01",
+    "2026-04-16"
+  ],
+  "date_bounds": "Globex session-date inclusive/exclusive; NY>=18:00 maps nextcalendar date. FullfirstJan21session includes previousJan20 evening.",
+  "exclusions": {
+    "utc_months": [
+      3
+    ],
+    "globex_session_months": [
+      3
+    ],
+    "known_shortened_session_dates": [
+      "2026-02-16",
+      "2026-04-03"
+    ],
+    "incomplete_native_sessions": "Require exactly all276expected300sec Globex slots18:00previousdaythrough16:55sessionday, after literalUTC-March/session exclusions. April1missing24March31UTCslots thereforeexcluded ENTIRELY; noApril1features/warmup. Missingnative sessionsexcluded beforePnL, countsreported.",
+    "known_policy_incomplete_session_dates": [
+      "2026-04-01"
+    ]
+  },
+  "expected_predeclared_session_counts": {
+    "development": 18,
+    "validation": 9,
+    "final_calendar_projection": 9
+  },
+  "selection": "Both development/validation positiveTOTALandNATURALnet,netwins>=50%,zeroobserved1%MAE/peakDDbreaches; projectedtotalnaturalcount>=500 from27prior and9projectedfinalsessions, no April strategycounts. Rankminimum split meanNATURALnetPnL/initialequity, thenvalidationtotalreturn andstableconfig/profile name. Jointselectionbelongsroot, noApril evaluation inthisscript.",
+  "cost_status": "Bothprofiles simulationassumptions, actual brokerexchangeallinfee docs unverified. Flatprofileis2USDperCONTRACTeachSIDE onlyvalid with exactlyonecontract; assertbothfees exactly2.",
+  "statistics": "SevenCALENDARday movingblock bootstrap10000seed20261004 includinginactivecalendar days, onlyif>=14observations; explicitinsufficiency otherwise. Fullgross-LAST_TRADE\u2192spread/slip\u2192commission\u2192net ledger.",
+  "risk": "Fullyreserved numeric nonnegative-price model, not verifiedfuturesvariationmargin liability proof; historicalMAE/peakDDmeasurement only, no paperactivation evenif samples pass",
+  "final_status": "UNTOUCHED",
+  "old_z_family_receipts": "Preserved immutable; failed families not retuned",
+  "calendar_clarification_sha256": "4ed4791de908050069d8c9dad53030a24ca8cda58f79bc21e014871e8990d32c",
+  "calendar_projection_total_sessions": 36,
+  "calendar_projection_prior_sessions": 27,
+  "study_code_sha256_before_new_family_pnl": "c4771fcdfa2d561e10ca49635ed19b070b713b5953f9cfcdc4d2ee62050a3a2e",
+  "engine_sha256_before_new_family_pnl": "4d39faa9ad51be2b166e9485786aad72c4e174a53973cfc1cc64cb3a2944b8de"
+}

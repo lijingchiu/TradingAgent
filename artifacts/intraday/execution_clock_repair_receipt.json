@@ -1,0 +1,673 @@
+{
+  "registered_at_utc": "2026-10-04T13:48:37.716490+00:00",
+  "defect": "Clock deadline signal used preceding-bar completion; a missing quote spanning deadline into the next day could keep the position beyond its declared hours. Eight trading bars is not two wall-clock hours.",
+  "repair": "Timed exits evaluate the current actual opening timestamp using fixed event-local deadline and date/gap; no future OHLC, changed parameters, retuned candidates, or final data. Preserve original reports; rerun only existing77session+16fixing source/config/cost/split evaluations.",
+  "original_reports": [
+    {
+      "path": "artifacts/intraday/mean_reversion/session_study/development_report.json",
+      "backup": "artifacts/intraday/mean_reversion/session_study/development_report_before_execution_clock_guard.json",
+      "sha256": "b8b34a937e2f935f22e0f6cee75e8d0d7d27216ad9c344bcd1c6e51e4a2a09ea",
+      "repaired_sha256": "b3ec1c02795b6a081c6778ed90ab034cd99d4c303c777242a651f47f339568f5"
+    },
+    {
+      "path": "artifacts/intraday/mean_reversion/session_study/capital_500000_development_report.json",
+      "backup": "artifacts/intraday/mean_reversion/session_study/capital_500000_development_report_before_execution_clock_guard.json",
+      "sha256": "a4c5fa2774dbc87d6cb85d35ffa066154d3c2dc09e80f535402f4587dc25d2ad",
+      "repaired_sha256": "b6caa50033858ab17b258b9c4c832022989344b0c1f0516c9bdcaad1a189cb86"
+    },
+    {
+      "path": "artifacts/intraday/mean_reversion/session_study/measured_book_2015_diagnostic_report.json",
+      "backup": "artifacts/intraday/mean_reversion/session_study/measured_book_2015_diagnostic_report_before_execution_clock_guard.json",
+      "sha256": "a1507d3d4a42f5999d99fda6ff3f1daca1038daf61c8ac02d2ca421bdd9c750f",
+      "repaired_sha256": "731173259dc5788737cd683ae107e9d117b74405f0fcbc55e1ee6f4e57d49a56"
+    },
+    {
+      "path": "artifacts/intraday/mean_reversion/session_study/conservative_validation_probe_report.json",
+      "backup": "artifacts/intraday/mean_reversion/session_study/conservative_validation_probe_report_before_execution_clock_guard.json",
+      "sha256": "b8b59b0209a5dce41432895e21c4dcb3f1096ae112fdca05d8fc34d61f411a24",
+      "repaired_sha256": "ee91f3943cb59575c6272cab05019937fe0cb64fca72f3c5c643b4adc76e0ec3"
+    },
+    {
+      "path": "artifacts/intraday/sweep/fixing/development_validation.json",
+      "backup": "artifacts/intraday/sweep/fixing/development_validation_before_execution_clock_guard.json",
+      "sha256": "0dd44fce88fdfa6f02f97149c2b06fe9102024153694cd955efb257259bf58f8",
+      "repaired_sha256": "16a13e51ffe2ca821bc3b72c727cf9b14c8a5ee8446b953d99b6105235094cde"
+    }
+  ],
+  "candidate_membership_frozen": true,
+  "final_evaluated": false,
+  "new_parameter_trials": 0,
+  "completed": true,
+  "session_comparisons": [
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_unconditional_h2_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -199.93236999988494,
+      "new_net": -199.93236999988494
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_unconditional_h2_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -164.4888099998842,
+      "new_net": -164.4888099998842
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_unconditional_h4_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -173.36232999988601,
+      "new_net": -173.36232999988601
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_unconditional_h4_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -141.56393999988688,
+      "new_net": -141.56393999988688
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_unconditional_h6_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -156.48756999988606,
+      "new_net": -156.48756999988606
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_unconditional_h6_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -121.95231999988589,
+      "new_net": -121.95231999988589
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_prior6h_down_h2_s40_t20",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -115.95135999993857,
+      "new_net": -115.95135999993857
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_prior6h_down_h2_s40_t40",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -107.58053999993781,
+      "new_net": -107.58053999993781
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_prior6h_down_h4_s40_t20",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -102.2570399999383,
+      "new_net": -102.2570399999383
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_prior6h_down_h4_s40_t40",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -83.19727999993822,
+      "new_net": -83.19727999993822
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_prior6h_down_h6_s40_t20",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -100.84909999993866,
+      "new_net": -100.84909999993866
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "ny08_prior6h_down_h6_s40_t40",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -82.46756999993887,
+      "new_net": -82.46756999993887
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_unconditional_h2_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -325.75491999988554,
+      "new_net": -325.75491999988554
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_unconditional_h2_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -326.3841999998864,
+      "new_net": -326.3841999998864
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_unconditional_h4_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -329.75045999988663,
+      "new_net": -329.75045999988663
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_unconditional_h4_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -373.5510699998875,
+      "new_net": -373.5510699998875
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_unconditional_h6_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -332.44632999988625,
+      "new_net": -332.44632999988625
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_unconditional_h6_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -387.9250199998873,
+      "new_net": -387.9250199998873
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_prior6h_down_h2_s40_t20",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -154.8644799999468,
+      "new_net": -154.8644799999468
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_prior6h_down_h2_s40_t40",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -145.29837999994731,
+      "new_net": -145.29837999994731
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_prior6h_down_h4_s40_t20",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -162.5082399999469,
+      "new_net": -162.5082399999469
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_prior6h_down_h4_s40_t40",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -166.61892999994745,
+      "new_net": -166.61892999994745
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_prior6h_down_h6_s40_t20",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -171.63209999994683,
+      "new_net": -171.63209999994683
+    },
+    {
+      "report": "development_report.json",
+      "candidate": "london08_prior6h_down_h6_s40_t40",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -173.56603999994724,
+      "new_net": -173.56603999994724
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_unconditional_h2_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -439.42832209972346,
+      "new_net": -439.42832209972346
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_unconditional_h2_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -262.37827139307,
+      "new_net": -262.37827139307
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_unconditional_h4_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -306.4474360839788,
+      "new_net": -306.4474360839788
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_unconditional_h4_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -147.23660177433334,
+      "new_net": -147.23660177433334
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_unconditional_h6_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -222.00303590457904,
+      "new_net": -222.00303590457904
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_unconditional_h6_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -49.339322806428314,
+      "new_net": -49.339322806428314
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_prior6h_down_h2_s40_t20",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -278.94416000374247,
+      "new_net": -278.94416000374247
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_prior6h_down_h2_s40_t40",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -237.09357102998865,
+      "new_net": -237.09357102998865
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_prior6h_down_h4_s40_t20",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -210.42526777939096,
+      "new_net": -210.42526777939096
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_prior6h_down_h4_s40_t40",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -114.9862738191405,
+      "new_net": -114.9862738191405
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_prior6h_down_h6_s40_t20",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -203.30210115424265,
+      "new_net": -203.30210115424265
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "ny08_prior6h_down_h6_s40_t40",
+      "original_count": 418,
+      "new_count": 418,
+      "original_net": -111.35260966144375,
+      "new_net": -111.35260966144375
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_unconditional_h2_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -1069.1855895841768,
+      "new_net": -1069.1855895841768
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_unconditional_h2_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -1072.3874381546311,
+      "new_net": -1072.3874381546311
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_unconditional_h4_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -1089.1535958715317,
+      "new_net": -1089.1535958715317
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_unconditional_h4_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -1308.2623177971864,
+      "new_net": -1308.2623177971864
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_unconditional_h6_s40_t20",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -1102.6082422598301,
+      "new_net": -1102.6082422598301
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_unconditional_h6_s40_t40",
+      "original_count": 778,
+      "new_count": 778,
+      "original_net": -1380.075934364635,
+      "new_net": -1380.075934364635
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_prior6h_down_h2_s40_t20",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -512.4287387013337,
+      "new_net": -512.4287387013337
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_prior6h_down_h2_s40_t40",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -464.6005115548362,
+      "new_net": -464.6005115548362
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_prior6h_down_h4_s40_t20",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -550.706827275784,
+      "new_net": -550.706827275784
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_prior6h_down_h4_s40_t40",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -571.2395425421869,
+      "new_net": -571.2395425421869
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_prior6h_down_h6_s40_t20",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -596.2880402646837,
+      "new_net": -596.2880402646837
+    },
+    {
+      "report": "capital_500000_development_report.json",
+      "candidate": "london08_prior6h_down_h6_s40_t40",
+      "original_count": 364,
+      "new_count": 364,
+      "original_net": -606.0190493396856,
+      "new_net": -606.0190493396856
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_unconditional_h2_s40_t20",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -96.81488058387531,
+      "new_net": -96.81488058387531
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_unconditional_h2_s40_t40",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": 62.09088147897276,
+      "new_net": 62.09088147897276
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_unconditional_h4_s40_t20",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -144.62041263162968,
+      "new_net": -144.62041263162968
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_unconditional_h4_s40_t40",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": 85.31570524502048,
+      "new_net": 85.31570524502048
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_unconditional_h6_s40_t20",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -119.99113226162875,
+      "new_net": -119.99113226162875
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_unconditional_h6_s40_t40",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": 155.84834289817223,
+      "new_net": 155.84834289817223
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_prior6h_down_h2_s40_t20",
+      "original_count": 139,
+      "new_count": 139,
+      "original_net": -38.75071615975756,
+      "new_net": -38.75071615975756
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_prior6h_down_h2_s40_t40",
+      "original_count": 139,
+      "new_count": 139,
+      "original_net": -3.2104592823072764,
+      "new_net": -3.2104592823072764
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_prior6h_down_h4_s40_t20",
+      "original_count": 139,
+      "new_count": 139,
+      "original_net": -80.85080835655693,
+      "new_net": -80.85080835655693
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_prior6h_down_h4_s40_t40",
+      "original_count": 139,
+      "new_count": 139,
+      "original_net": 35.20378360179332,
+      "new_net": 35.20378360179332
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_prior6h_down_h6_s40_t20",
+      "original_count": 139,
+      "new_count": 139,
+      "original_net": -63.83297142370686,
+      "new_net": -63.83297142370686
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "ny08_prior6h_down_h6_s40_t40",
+      "original_count": 139,
+      "new_count": 139,
+      "original_net": 102.28590242849336,
+      "new_net": 102.28590242849336
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_unconditional_h2_s40_t20",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -395.44639925097516,
+      "new_net": -395.44639925097516
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_unconditional_h2_s40_t40",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -381.35581527652676,
+      "new_net": -381.35581527652676
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_unconditional_h4_s40_t20",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -413.2909676009241,
+      "new_net": -413.2909676009241
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_unconditional_h4_s40_t40",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -504.9324219578291,
+      "new_net": -504.9324219578291
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_unconditional_h6_s40_t20",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -421.53740637102544,
+      "new_net": -421.53740637102544
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_unconditional_h6_s40_t40",
+      "original_count": 259,
+      "new_count": 259,
+      "original_net": -500.4508534520786,
+      "new_net": -500.4508534520786
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_prior6h_down_h2_s40_t20",
+      "original_count": 115,
+      "new_count": 115,
+      "original_net": -207.71967119832286,
+      "new_net": -207.71967119832286
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_prior6h_down_h2_s40_t40",
+      "original_count": 115,
+      "new_count": 115,
+      "original_net": -211.92658335712383,
+      "new_net": -211.92658335712383
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_prior6h_down_h4_s40_t20",
+      "original_count": 115,
+      "new_count": 115,
+      "original_net": -186.77346560087375,
+      "new_net": -186.77346560087375
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_prior6h_down_h4_s40_t40",
+      "original_count": 115,
+      "new_count": 115,
+      "original_net": -159.95233124407667,
+      "new_net": -159.95233124407667
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_prior6h_down_h6_s40_t20",
+      "original_count": 115,
+      "new_count": 115,
+      "original_net": -200.57332852647576,
+      "new_net": -200.57332852647576
+    },
+    {
+      "report": "measured_book_2015_diagnostic_report.json",
+      "candidate": "london08_prior6h_down_h6_s40_t40",
+      "original_count": 115,
+      "new_count": 115,
+      "original_net": -147.8033479718253,
+      "new_net": -147.8033479718253
+    },
+    {
+      "report": "conservative_validation_probe_report.json",
+      "candidate": "ny08_prior6h_down_h4_s40_t40",
+      "original_count": 552,
+      "new_count": 552,
+      "original_net": -458.6896275631025,
+      "new_net": -458.6896275631025
+    },
+    {
+      "report": "conservative_validation_probe_report.json",
+      "candidate": "ny08_prior6h_down_h6_s40_t40",
+      "original_count": 552,
+      "new_count": 552,
+      "original_net": -431.1447300202019,
+      "new_net": -431.1447300202019
+    },
+    {
+      "report": "conservative_validation_probe_report.json",
+      "candidate": "ny08_unconditional_h2_s40_t40",
+      "original_count": 1038,
+      "new_count": 1038,
+      "original_net": -934.5617853125112,
+      "new_net": -934.5617853125112
+    },
+    {
+      "report": "conservative_validation_probe_report.json",
+      "candidate": "ny08_unconditional_h4_s40_t40",
+      "original_count": 1038,
+      "new_count": 1038,
+      "original_net": -1171.082455374321,
+      "new_net": -1171.082455374321
+    },
+    {
+      "report": "conservative_validation_probe_report.json",
+      "candidate": "ny08_unconditional_h6_s40_t40",
+      "original_count": 1038,
+      "new_count": 1038,
+      "original_net": -1093.7871053305057,
+      "new_net": -1093.7871053305057
+    }
+  ],
+  "session_changed_outcomes": 0,
+  "pre_clock_repair_source_versions": [
+    {
+      "path": "artifacts/intraday/repair_history/session_study_before_execution_clock_guard.py.txt",
+      "sha256": "b9962a3056e99d54d6a8b6f42fd587bb303a105b6dec21844762f1b6a3540d71",
+      "scope": "Latest source immediately before this clock-only repair, reconstructed by reversing just the recorded clock patch. Earlier trial script hashes may predate added commands; these are not claimed as their exact historical source."
+    },
+    {
+      "path": "artifacts/intraday/repair_history/fixing_before_execution_clock_guard.py.txt",
+      "sha256": "d20f8f7cabb1aca01e5dedd9c3f18be987d1d7025d370afcc5c27fecce26023b",
+      "scope": "Latest source immediately before this clock-only repair, reconstructed by reversing just the recorded clock patch. Earlier trial script hashes may predate added commands; these are not claimed as their exact historical source."
+    }
+  ],
+  "fixing_changed_outcomes": 0
+}

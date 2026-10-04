@@ -79,6 +79,10 @@ def build_snapshot(root: Path, state_dir: Path, web_dir: Path) -> dict:
             "公開儲存庫每 5 分鐘監控；GitHub 排程可能延遲。超出入場時窗就略過交易。",
             "回測 OHLC 的盤中停損假設與模擬盤定時觀察有差異；模擬盤按實際取得的報價成交，不補造錯過的成交。",
             "1% 是相對入場資金的損失上限；累積帳戶回撤及浮盈高點回撤另外揭露。"]}
+    # Intraday research is a separate reviewed summary, never a paper-entry gate.
+    intraday_research = read_json(root / "artifacts/intraday/research_status.json", {})
+    if isinstance(intraday_research, dict) and intraday_research:
+        snapshot["intraday_research"] = intraday_research
     snapshot["account"]["trade_count"] = len(snapshot["trades"])
     web_dir.mkdir(parents=True, exist_ok=True)
     atomic_json(web_dir / "snapshot.json", snapshot)

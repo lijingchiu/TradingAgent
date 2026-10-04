@@ -1,0 +1,400 @@
+{
+  "source": "Dukascopy verified public BID/ASK UTC minute candle archives",
+  "dates": [
+    "2017-01-03",
+    "2017-07-05",
+    "2020-03-16",
+    "2020-06-02",
+    "2021-06-15",
+    "2021-12-30"
+  ],
+  "rows": 8604,
+  "open_spread_pips": {
+    "samples": 8604,
+    "min": 0.09999999999843467,
+    "p50": 0.2999999999997449,
+    "p95": 0.9999999999998899,
+    "p99": 2.100000000000435,
+    "max": 10.799999999999699,
+    "negative_count": 0
+  },
+  "close_spread_pips": {
+    "samples": 8604,
+    "min": 0.09999999999843467,
+    "p50": 0.2999999999997449,
+    "p95": 0.9999999999998899,
+    "p99": 1.9999999999997797,
+    "max": 10.999999999998789,
+    "negative_count": 0
+  },
+  "per_hour_close_spread_pips": {
+    "0": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.40000000000040004,
+      "p95": 1.2000000000012,
+      "p99": 1.80000000000069,
+      "max": 2.4000000000001798,
+      "negative_count": 0
+    },
+    "1": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.40000000000040004,
+      "p95": 1.0999999999983245,
+      "p99": 1.7000000000000348,
+      "max": 4.899999999998794,
+      "negative_count": 0
+    },
+    "2": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.30000000000196536,
+      "p95": 0.7999999999985796,
+      "p99": 1.1999999999989797,
+      "max": 1.40000000000029,
+      "negative_count": 0
+    },
+    "3": {
+      "samples": 358,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.8999999999992347,
+      "p99": 1.100000000000545,
+      "max": 1.2999999999996348,
+      "negative_count": 0
+    },
+    "4": {
+      "samples": 357,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.8999999999992347,
+      "p99": 0.9999999999998899,
+      "max": 1.2000000000012,
+      "negative_count": 0
+    },
+    "5": {
+      "samples": 355,
+      "min": 0.09999999999843467,
+      "p50": 0.30000000000196536,
+      "p95": 0.8999999999992347,
+      "p99": 1.0999999999983245,
+      "max": 1.7000000000000348,
+      "negative_count": 0
+    },
+    "6": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.8999999999992347,
+      "p99": 1.100000000000545,
+      "max": 1.100000000000545,
+      "negative_count": 0
+    },
+    "7": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.8000000000008001,
+      "p99": 0.9999999999998899,
+      "max": 0.9999999999998899,
+      "negative_count": 0
+    },
+    "8": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.700000000000145,
+      "p99": 0.8999999999992347,
+      "max": 0.8999999999992347,
+      "negative_count": 0
+    },
+    "9": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.4999999999988347,
+      "p99": 0.700000000000145,
+      "max": 0.9000000000014552,
+      "negative_count": 0
+    },
+    "10": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.700000000000145,
+      "p99": 0.8000000000008001,
+      "max": 0.9000000000014552,
+      "negative_count": 0
+    },
+    "11": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.5999999999994898,
+      "p99": 0.700000000000145,
+      "max": 0.8000000000008001,
+      "negative_count": 0
+    },
+    "12": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.5999999999994898,
+      "p99": 0.8000000000008001,
+      "max": 0.8999999999992347,
+      "negative_count": 0
+    },
+    "13": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.6000000000017103,
+      "p99": 0.8999999999992347,
+      "max": 0.9999999999998899,
+      "negative_count": 0
+    },
+    "14": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.5999999999994898,
+      "p99": 0.8000000000008001,
+      "max": 0.8999999999992347,
+      "negative_count": 0
+    },
+    "15": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.5999999999994898,
+      "p99": 0.700000000000145,
+      "max": 0.8000000000008001,
+      "negative_count": 0
+    },
+    "16": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.5000000000010552,
+      "p99": 0.5999999999994898,
+      "max": 0.700000000000145,
+      "negative_count": 0
+    },
+    "17": {
+      "samples": 360,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.5000000000010552,
+      "p99": 0.700000000000145,
+      "max": 0.8000000000008001,
+      "negative_count": 0
+    },
+    "18": {
+      "samples": 359,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.5999999999994898,
+      "p99": 0.6000000000017103,
+      "max": 0.8000000000008001,
+      "negative_count": 0
+    },
+    "19": {
+      "samples": 359,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.5999999999994898,
+      "p99": 0.8000000000008001,
+      "max": 0.8999999999992347,
+      "negative_count": 0
+    },
+    "20": {
+      "samples": 356,
+      "min": 0.09999999999843467,
+      "p50": 0.2999999999997449,
+      "p95": 0.8999999999992347,
+      "p99": 1.2000000000012,
+      "max": 1.80000000000069,
+      "negative_count": 0
+    },
+    "21": {
+      "samples": 352,
+      "min": 0.09999999999843467,
+      "p50": 0.8999999999992347,
+      "p95": 4.199999999998649,
+      "p99": 9.00000000000123,
+      "max": 10.999999999998789,
+      "negative_count": 0
+    },
+    "22": {
+      "samples": 352,
+      "min": 0.09999999999843467,
+      "p50": 0.5999999999994898,
+      "p95": 2.0999999999982144,
+      "p99": 3.4000000000000696,
+      "max": 3.900000000001125,
+      "negative_count": 0
+    },
+    "23": {
+      "samples": 356,
+      "min": 0.09999999999843467,
+      "p50": 0.40000000000040004,
+      "p95": 0.8000000000008001,
+      "p99": 0.9999999999998899,
+      "max": 1.4999999999987246,
+      "negative_count": 0
+    }
+  },
+  "source_archives": [
+    {
+      "date": "2017-01-03",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2017/00/03/BID_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 12106,
+      "sha256": "567ef15801680c476349b94d5ede03cc3b23c6648d245278a34ea643f2d70c59",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 1,
+      "invalid_records": [],
+      "cached": true
+    },
+    {
+      "date": "2017-01-03",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2017/00/03/ASK_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 12139,
+      "sha256": "21c4b3cb0bb82937d9126c915b7ba035ace327a56f810e178b4b40dc0b172d9a",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 1,
+      "invalid_records": [],
+      "cached": false
+    },
+    {
+      "date": "2017-07-05",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2017/06/05/BID_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 11892,
+      "sha256": "e3945399165fc522aa143c1a49360ff25bf7f3b1e6ebc9d8958a57e070bdfefa",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 1,
+      "invalid_records": [],
+      "cached": true
+    },
+    {
+      "date": "2017-07-05",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2017/06/05/ASK_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 11927,
+      "sha256": "b73c3b77731a28e9af9a32958a42902c638f350f592077951ac30fa20c202194",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 1,
+      "invalid_records": [],
+      "cached": false
+    },
+    {
+      "date": "2020-03-16",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2020/02/16/BID_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 12954,
+      "sha256": "a33f23eafb687b3fab6ebfe000c4f83c1910a01e3a3acc16690f1600b8b62fd8",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 0,
+      "invalid_records": [],
+      "cached": true
+    },
+    {
+      "date": "2020-03-16",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2020/02/16/ASK_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 13048,
+      "sha256": "3e0e6a58a4544b104bf069cf37a5f7af4ea4fd17a84f3089295388a87b666723",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 0,
+      "invalid_records": [],
+      "cached": false
+    },
+    {
+      "date": "2020-06-02",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2020/05/02/BID_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 12090,
+      "sha256": "ef987c6056549e347a2d4bbe83a5278bd91ff1b734ab8903837a3f447237814f",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 4,
+      "invalid_records": [],
+      "cached": true
+    },
+    {
+      "date": "2020-06-02",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2020/05/02/ASK_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 12253,
+      "sha256": "deb718fd844228ae97f235407432dcc80da5c0e72fc9d55857400eade9f26438",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 4,
+      "invalid_records": [],
+      "cached": false
+    },
+    {
+      "date": "2021-06-15",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2021/05/15/BID_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 10732,
+      "sha256": "abab2e934f752d22bc1a4f76b955bc3d168c1c4cbde976270e57c5ee2cfd66f2",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 23,
+      "invalid_records": [],
+      "cached": true
+    },
+    {
+      "date": "2021-06-15",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2021/05/15/ASK_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 10803,
+      "sha256": "6a4d726d00fcba180e9731138efdbb990f0211250123dda39bb710cdbf31cf4c",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 23,
+      "invalid_records": [],
+      "cached": false
+    },
+    {
+      "date": "2021-12-30",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2021/11/30/BID_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 11021,
+      "sha256": "479f490ae417349c8180950f55e11f3341718572a1266f16b1cbdbb43ecb6733",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 7,
+      "invalid_records": [],
+      "cached": true
+    },
+    {
+      "date": "2021-12-30",
+      "url": "https://datafeed.dukascopy.com/datafeed/EURUSD/2021/11/30/ASK_candles_min_1.bi5",
+      "status": 200,
+      "raw_bytes": 11388,
+      "sha256": "aaf92302fed76b14cdef1cfac0af67d976e9b855ddeb40a81cc51d36f63ee261",
+      "raw_record_count": 1440,
+      "valid_record_count": 1440,
+      "zero_volume_record_count": 7,
+      "invalid_records": [],
+      "cached": false
+    }
+  ],
+  "limitations": [
+    "Minute BID and ASK opens/closes are separately sampled quote sides, not guaranteed simultaneous tick pairs.",
+    "Only positive-volume paired minutes are included; all sampled dates are development dates through2021.",
+    "Percentiles are spread observations and do not include commissions or slippage.",
+    "This is a small source-quality/cost-calibration sample; do not infer complete-history spread bounds."
+  ]
+}

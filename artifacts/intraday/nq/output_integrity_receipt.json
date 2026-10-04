@@ -1,0 +1,23 @@
+{
+  "scope": "Completed development/validation outputs only; no rerun or final evaluation",
+  "signal_configurations": 24,
+  "disclosed_cost_operating_variants": 48,
+  "causality_calendar_tests_passed": 9,
+  "source_and_software_preregistration_hash_checks_passed": true,
+  "source_quality_receipt_hash_matches_preregistration": true,
+  "every_trade_exactly_one_nq_contract": true,
+  "all_fill_prices_quarter_point_valid": true,
+  "flat_session_and_entry_clock_assertions_passed": true,
+  "cash_ledger_reconciles": true,
+  "source_gross_minus_price_friction_minus_fees_equals_net": true,
+  "operating_fee_profile_charged_5_usd_per_side_each_trade": true,
+  "all_closed_trades_natural_no_sample_end_liquidations": true,
+  "observed_1percent_trade_breaches": 0,
+  "candidate_strategy_outcomes_in_march_or_april": 0,
+  "final": "UNTOUCHED",
+  "selected_before_final_file_exists": false,
+  "paper_activation": false,
+  "derivative_variation_margin_bound_established": false,
+  "preregistration_sha256": "40954158a1d93e03216e02d6c84bd5d9a0b4cc201d15ddd1969a6062f132ce52",
+  "study_sha256": "884ebb7ea8fdbf1a9b75734d07fccb15d6525ad5c3b4319997b1a50e06937809"
+}

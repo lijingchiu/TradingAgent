@@ -1,0 +1,284 @@
+{
+  "registered_at_utc": "2026-10-04T13:00:52.895320+00:00",
+  "family": "local-session flow and optional pre-session reversal",
+  "hypothesis": "Domestic currency demand may vary with local working hours. Test long EUR/USD at fixed 08:00 New York local time as a USD-flow hypothesis; long 08:00 London is an explicit counterhypothesis. A prior-six-hour price decline optionally tests reversal. This is a proposed mechanism, not a claim of established profit.",
+  "literature_access": {
+    "status": "not verified; HTTPS requests blocked by network proxy 403",
+    "attempted_resources": [
+      "https://www.snb.ch/en/publications/research/working-papers/2007/working_paper_2007_03",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=891830"
+    ],
+    "claims_based_on_unread_resources": false
+  },
+  "candidate_count": 24,
+  "candidates": [
+    {
+      "name": "ny08_unconditional_h2_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h2_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h4_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h4_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h6_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h6_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h2_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h2_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h4_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h4_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h6_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h6_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h2_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h2_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h4_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h4_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h6_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h6_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h2_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h2_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h4_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h4_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h6_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h6_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    }
+  ],
+  "data": {
+    "provider": "Dukascopy public historical datafeed",
+    "source_domain": "https://datafeed.dukascopy.com",
+    "price_side": "BID",
+    "timezone": "UTC",
+    "development": [
+      "2015-01-01",
+      "2018-01-01"
+    ],
+    "validation": [
+      "2018-01-01",
+      "2022-01-01"
+    ],
+    "reserved_final": "UNTOUCHED; never loaded by this module"
+  },
+  "clock": {
+    "ny08": "America/New_York 08:00 local Mon-Fri, DST-aware",
+    "london08": "Europe/London 08:00 local Mon-Fri, DST-aware",
+    "no_clock_parameter_optimization": true
+  },
+  "execution": {
+    "signal": "completed previous bar; exact next actual open",
+    "entry_allowed": "actual execution-bar local clock",
+    "one_position": true,
+    "one_daily_session_entry": true,
+    "gap_before_entry": "reject unless preceding M15 bar contiguous",
+    "prior6h_down": "close[t] < open[t-23], with 24 contiguous M15 bars",
+    "holding_bars": "8,16,24 actual M15 intervals; missing bars may extend clock duration",
+    "holding_clock": "explicit local-session time exit after 2/4/6h; gaps execute next actual open",
+    "max_holding_days": 5,
+    "unknown_intrabar_order": "stop first",
+    "sample_end": "liquidate, include net P&L, exclude natural-close count",
+    "funding": "fully owned whole EUR, no leverage, maximum principal .008 equity",
+    "worst_loss": "entire principal + modeled liquidation costs <= .01 entry equity",
+    "initial_equity": 100000.0,
+    "quote_kind": "bid"
+  },
+  "costs": {
+    "spread_pips": 2.0,
+    "slippage_pips": 0.2,
+    "commission_bps": 0.35,
+    "minimum_commission": 0.1,
+    "carry_per_1000_per_day": 0.0,
+    "pip_size": 0.0001
+  },
+  "stress_factors": [
+    1.5,
+    2.0
+  ],
+  "selection": {
+    "development_minimum_natural_closes": 500,
+    "development_minimum_net_win_rate": 0.5,
+    "development_positive_net_profit": true,
+    "development_positive_natural_mean": true,
+    "development_zero_risk_breaches": true,
+    "development_bootstrap_7_day_lower_95_positive": true,
+    "rank": "development net profit descending; stable candidate name ascending tie-break",
+    "validation": "one frozen development-only winner; no alternative on validation failure",
+    "validation_minimum_natural_closes": 800,
+    "validation_acceptance": "net wins >=50%, positive profit after costs, zero risk breaches, positive 7-day lower CI",
+    "stress_use": "diagnostics for the same frozen winner; never reselect on stress outcomes"
+  },
+  "statistics": {
+    "bootstrap_blocks_calendar_days": [
+      7,
+      14,
+      28
+    ],
+    "replications": 10000,
+    "seed": 20261004,
+    "selection_block": 7,
+    "series": "UTC calendar-day realized equity returns, including inactive days",
+    "multiple_selection_adjusted": false
+  },
+  "paper_approved": false,
+  "script_sha256_at_registration": "11192d69562735da66fa1b786915163c8171e4033821905ed11457999356b733"
+}

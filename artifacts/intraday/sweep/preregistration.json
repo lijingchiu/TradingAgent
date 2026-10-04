@@ -1,0 +1,220 @@
+{
+  "family": "price sweep below prior range followed by completed bullish recovery",
+  "created_utc": "2026-10-04T12:59:09.627576+00:00",
+  "timeframes_minutes": [
+    5,
+    15
+  ],
+  "candidates_per_timeframe": [
+    {
+      "name": "sweep24_any_s15_t20",
+      "window": 24,
+      "regime": "any",
+      "stop_pips": 15,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep24_any_s30_t20",
+      "window": 24,
+      "regime": "any",
+      "stop_pips": 30,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep24_any_s40_t30",
+      "window": 24,
+      "regime": "any",
+      "stop_pips": 40,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep24_any_s60_t30",
+      "window": 24,
+      "regime": "any",
+      "stop_pips": 60,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep24_rising_s15_t20",
+      "window": 24,
+      "regime": "rising",
+      "stop_pips": 15,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep24_rising_s30_t20",
+      "window": 24,
+      "regime": "rising",
+      "stop_pips": 30,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep24_rising_s40_t30",
+      "window": 24,
+      "regime": "rising",
+      "stop_pips": 40,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep24_rising_s60_t30",
+      "window": 24,
+      "regime": "rising",
+      "stop_pips": 60,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep96_any_s15_t20",
+      "window": 96,
+      "regime": "any",
+      "stop_pips": 15,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep96_any_s30_t20",
+      "window": 96,
+      "regime": "any",
+      "stop_pips": 30,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep96_any_s40_t30",
+      "window": 96,
+      "regime": "any",
+      "stop_pips": 40,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep96_any_s60_t30",
+      "window": 96,
+      "regime": "any",
+      "stop_pips": 60,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep96_rising_s15_t20",
+      "window": 96,
+      "regime": "rising",
+      "stop_pips": 15,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep96_rising_s30_t20",
+      "window": 96,
+      "regime": "rising",
+      "stop_pips": 30,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep96_rising_s40_t30",
+      "window": 96,
+      "regime": "rising",
+      "stop_pips": 40,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep96_rising_s60_t30",
+      "window": 96,
+      "regime": "rising",
+      "stop_pips": 60,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep288_any_s15_t20",
+      "window": 288,
+      "regime": "any",
+      "stop_pips": 15,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep288_any_s30_t20",
+      "window": 288,
+      "regime": "any",
+      "stop_pips": 30,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep288_any_s40_t30",
+      "window": 288,
+      "regime": "any",
+      "stop_pips": 40,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep288_any_s60_t30",
+      "window": 288,
+      "regime": "any",
+      "stop_pips": 60,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep288_rising_s15_t20",
+      "window": 288,
+      "regime": "rising",
+      "stop_pips": 15,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep288_rising_s30_t20",
+      "window": 288,
+      "regime": "rising",
+      "stop_pips": 30,
+      "target_pips": 20,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep288_rising_s40_t30",
+      "window": 288,
+      "regime": "rising",
+      "stop_pips": 40,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    },
+    {
+      "name": "sweep288_rising_s60_t30",
+      "window": 288,
+      "regime": "rising",
+      "stop_pips": 60,
+      "target_pips": 30,
+      "max_holding_hours": 24
+    }
+  ],
+  "initial_equity": 100000,
+  "quote_kind": "bid",
+  "costs": "unchanged production full spread 2pips, slippage .2pips per side, commission .35bps per side, minimum .10USD per side",
+  "development": [
+    "2015-01-01",
+    "2018-01-01"
+  ],
+  "validation": [
+    "2018-01-01",
+    "2022-01-01"
+  ],
+  "holdout": [
+    "2022-04-01",
+    "2024-10-01"
+  ],
+  "holdout_evaluated": false,
+  "selection": "positive net development and validation, validation net wins >=50%, no risk breaches; rank by validation mean net pips",
+  "mechanism": "Transient sell-side range break and completed rejection may expose reversal demand; unknown-clock source and future swing labels are excluded."
+}

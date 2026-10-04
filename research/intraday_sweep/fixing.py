@@ -1,0 +1,111 @@
+"""Causal benchmark/news-flow rejection hypotheses, native UTC M15 only.
+
+Preregister before evaluating any outcomes. The hypothesis is transient
+sell-side pressure around a scheduled liquidity event, not a claimed edge.
+No final data can be loaded by this runner.
+"""
+from __future__ import annotations
+import argparse
+from dataclasses import asdict
+from datetime import datetime, timezone
+import hashlib
+import itertools
+import json
+from pathlib import Path
+import sys
+import numpy as np
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT))
+from research.intraday_engine import run_intraday_backtest
+from trading_agent.risk import DEFAULT_COSTS
+
+OUT = ROOT/"artifacts/intraday/sweep/fixing"
+
+
+def candidates():
+    return [dict(name=f"{session}_down{window}m_{threshold}pip_s{stop}_t{target}",
+                 session=session, window_minutes=window, threshold_pips=threshold,
+                 stop_pips=stop,target_pips=target, holding_clock_hours=2)
+            for session,window,threshold,(stop,target) in itertools.product(
+                ("london1615","ny1015"),(30,60),(5,10),((30,10),(50,20)))]
+
+
+def register():
+    OUT.mkdir(parents=True,exist_ok=True)
+    p=OUT/"preregistration.json"
+    if p.exists(): raise FileExistsError("Preserve preregistration")
+    plan=dict(created_utc=datetime.now(timezone.utc).isoformat(),
+              hypothesis="Buy EUR only after a completed pre-event downward imbalance, after London benchmark fixing or US morning data flow; expect temporary sell pressure to unwind, subject to actual test.",
+              source="Dukascopy authoritative native UTC BID M15",
+              initial_equity=500000,timeframe_minutes=15,candidates=candidates(),
+              costs=asdict(DEFAULT_COSTS),development=["2015-01-01","2018-01-01"],
+              validation=["2018-01-01","2022-01-01"],
+              final=["2022-04-01","2024-10-01"],final_outcomes_evaluated=False,
+              entry="Actual 16:15 London or 10:15 NY Mon-Fri; DST aware; prior M15 candle completed; exact next open; preceding window must be consecutive",
+              exit="BID-derived bracket or fixed event-clock expiry after2h; gap exits on actual first available open; stop first on ambiguous OHLC",
+              selection="Require positive net and natural net P&L, >=50% net wins and zero measured1% breaches in BOTH development and validation; >=500 pooled natural closes; rank max minimum split net return, then validation net return, then stable name",
+              limits="Fully funded .8% purchase principal, worst purchase+fees <1% equity, no borrowing/shorts; observed peak drawdown independently checked")
+    p.write_text(json.dumps(plan,indent=2)+"\n")
+
+
+def signals(frame,config):
+    ts=pd.to_datetime(frame.timestamp,utc=True)
+    epoch=ts.astype("int64").to_numpy()//10**9
+    n=len(frame); count=config["window_minutes"]//15
+    flow=np.zeros(n,dtype=bool)
+    opening=frame.open.to_numpy(float);close=frame.close.to_numpy(float)
+    flow[count-1:]=((epoch[count-1:]-epoch[:n-count+1]==(count-1)*900)
+                   &(close[count-1:] <= opening[:n-count+1]-config["threshold_pips"]*.0001))
+    zone="Europe/London" if config["session"]=="london1615" else "America/New_York"
+    hour=16 if config["session"]=="london1615" else 10
+    local=ts.dt.tz_convert(zone)
+    allowed=((local.dt.hour==hour)&(local.dt.minute==15)&(local.dt.dayofweek<5)).to_numpy(bool)
+    # Use the actual execution quote's calendar, never its price. This also
+    # closes at the first quote after a gap spanning the fixed deadline.
+    minute_of_day=(local.dt.hour*60+local.dt.minute).to_numpy()
+    expired=(minute_of_day >= (hour+2)*60+15) | (minute_of_day < hour*60+15)
+    exits=np.zeros(n,dtype=bool)
+    exits[:-1]=expired[1:] | (np.diff(epoch) >= 2*3600)
+    return flow,allowed,exits
+
+
+def run(path):
+    plan=json.loads((OUT/"preregistration.json").read_text())
+    if plan["candidates"]!=candidates():raise ValueError("Candidate manifest mismatch")
+    prov_path=path.with_name(path.name.replace("_m15.csv","_provenance.json"))
+    prov=json.loads(prov_path.read_text())
+    checksum=hashlib.sha256(path.read_bytes()).hexdigest()
+    if prov["timezone"]!="UTC" or prov["quote_side"]!="BID" or prov["aggregate_outputs"]["M15"]["sha256"]!=checksum:
+        raise ValueError("Authoritative source/checksum required")
+    frame=pd.read_csv(path)
+    if not frame.timestamp.str.endswith("Z").all():raise ValueError("Explicit UTC required")
+    ts=pd.to_datetime(frame.timestamp,utc=True)
+    if ts.max()>=pd.Timestamp("2022-01-01",tz="UTC"):raise ValueError("No final files allowed")
+    arrays=(ts.astype("int64").to_numpy()//10**9,*(frame[c].to_numpy(float) for c in ("open","high","low","close")))
+    rows=[]
+    for config in plan["candidates"]:
+        entry,allowed,exits=signals(frame,config)
+        row={"config":config}
+        for phase,start,end in (("development","2015-01-01","2018-01-01"),("validation","2018-01-01","2022-01-01")):
+            first,last=np.searchsorted(arrays[0],[int(pd.Timestamp(start,tz="UTC").timestamp()),int(pd.Timestamp(end,tz="UTC").timestamp())])
+            result=run_intraday_backtest(*arrays,entry,config["stop_pips"]*.0001,config["target_pips"]*.0001,
+                     entry_allowed=allowed,exit_signals=exits,quote_kind="bid",initial_equity=500000,
+                     max_signal_age_seconds=900,max_holding_bars=8,start_index=int(first),end_index=int(last),include_trades=False)
+            row[phase]=result["summary"]
+        good=lambda s:s["net_profit"]>0 and s["natural_net_profit"]>0 and s["win_rate"]>=.5 and not s["risk_breaches"] and s["max_trade_peak_drawdown_equity_fraction"]<=.01 and s["max_trade_adverse_equity_fraction"]<=.01
+        row["eligible"]=(all(good(row[p]) for p in ("development","validation")) and sum(row[p]["eligible_trades"] for p in ("development","validation"))>=500)
+        rows.append(row)
+        print(config["name"],[(p,row[p]["eligible_trades"],round(row[p]["win_rate"],3),round(row[p]["net_profit"],2)) for p in ("development","validation")],flush=True)
+    eligible=sorted((r for r in rows if r["eligible"]),key=lambda r:(-min(r[p]["net_return"] for p in ("development","validation")),-r["validation"]["net_return"],r["config"]["name"]))
+    report=dict(source=str(path),source_sha256=checksum,preregistration_sha256=hashlib.sha256((OUT/"preregistration.json").read_bytes()).hexdigest(),
+                candidates=rows,eligible_count=len(eligible),selected=eligible[0]["config"] if eligible else None,final_evaluated=False,paper_approved=False)
+    (OUT/"development_validation.json").write_text(json.dumps(report,indent=2)+"\n")
+
+
+if __name__=="__main__":
+    parser=argparse.ArgumentParser();parser.add_argument("--register",action="store_true");parser.add_argument("--data",type=Path)
+    args=parser.parse_args()
+    if args.register:register()
+    else:run(args.data)

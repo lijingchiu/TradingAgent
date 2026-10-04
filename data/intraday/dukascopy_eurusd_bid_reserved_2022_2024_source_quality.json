@@ -1,0 +1,26 @@
+{
+  "M5": {
+    "file": "dukascopy_eurusd_bid_reserved_2022_2024_m5.csv",
+    "rows": 193887,
+    "warmup_rows_before_2022_04_01": 6636,
+    "reserved_rows_2022_04_01_to_2024_10_01_exclusive": 187251,
+    "duplicate_timestamps": 0,
+    "unsorted_transitions": 0,
+    "invalid_ohlc_rows": 0,
+    "zero_or_negative_vendor_volume_bars": 0,
+    "bar_clock_alignment_errors": 0,
+    "sha256": "6fe408c752b143594b0eca1a8726e89599df4750e8e199ad349970960b0a9aa0"
+  },
+  "M15": {
+    "file": "dukascopy_eurusd_bid_reserved_2022_2024_m15.csv",
+    "rows": 64647,
+    "warmup_rows_before_2022_04_01": 2212,
+    "reserved_rows_2022_04_01_to_2024_10_01_exclusive": 62435,
+    "duplicate_timestamps": 0,
+    "unsorted_transitions": 0,
+    "invalid_ohlc_rows": 0,
+    "zero_or_negative_vendor_volume_bars": 0,
+    "bar_clock_alignment_errors": 0,
+    "sha256": "b8cb2525dbdf83bc359e7ccf909acfdbb00053766d8e43f8f2952d9defc7c123"
+  }
+}

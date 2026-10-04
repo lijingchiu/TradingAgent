@@ -114,6 +114,7 @@
     text('strategy-note', description);
     setStatus(snapshot);
     renderPosition(snapshot);
+    renderIntradayResearch(snapshot);
     renderValidation(snapshot);
     renderTrades(snapshot);
     renderSources(snapshot);
@@ -156,6 +157,91 @@
     const entryDate = timestamp(position.entry_time);
     const expiry = entryDate && maxDays !== null ? new Date(entryDate.getTime() + maxDays * 86400000).toISOString() : null;
     $('position-content').innerHTML = `<dl class="position-grid">${rows.map(([label,value,cls]) => `<div class="position-stat"><dt>${escape(label)}</dt><dd class="${escape(cls)}">${escape(value)}</dd></div>`).join('')}</dl><div class="position-extra"><span>最壞損失額 <strong>${escape(money(worst))}</strong></span><span>占進場淨值 <strong>${escape(entryEquity !== null && entryEquity > 0 && worst !== null ? percent(worst / entryEquity, true) : '—')}</strong></span><span>最晚期限 <strong>${escape(time(position.expires_at || expiry))}</strong></span></div>`;
+  }
+
+  function hasIntradayResearch(snapshot) {
+    const research = snapshot?.intraday_research;
+    return Boolean(research && typeof research === 'object' && !Array.isArray(research) && Object.keys(research).length);
+  }
+
+  function researchStatus(value) {
+    const code = typeof value === 'object' && value ? value.label || value.code || value.status : value;
+    const labels = { rejected:'未通過', failed:'未通過', no_edge:'未找到正期望值',
+      completed_no_edge:'未找到正期望值', unqualified:'未合格', blocked:'受阻',
+      pending:'待完成', pending_ask:'等待 ASK 資料', awaiting_ask:'等待 ASK 資料',
+      pending_quotes:'等待完整報價', running:'研究中', researching:'研究中',
+      completed:'評估完成', provisional:'暫定結果', qualified:'開發／驗證合格',
+      qualified_pre_final:'待最終評估', frozen:'參數已凍結', not_started:'尚未評估' };
+    return labels[String(code)] || display(code);
+  }
+
+  function researchPeriod(value) {
+    if (Array.isArray(value)) return value.map(display).join(' 至 ');
+    if (value && typeof value === 'object') return value.start && value.end ? `${value.start} 至 ${value.end}` : JSON.stringify(value);
+    return display(value);
+  }
+
+  function researchMoney(value, currency) {
+    const amount = number(value);
+    if (amount === null) return '—';
+    const code = typeof currency === 'string' && /^[A-Z]{3}$/.test(currency.toUpperCase()) ? currency.toUpperCase() : null;
+    return `${amount > 0 ? '+' : amount < 0 ? '−' : ''}${code ? code + ' ' : ''}${fmt(Math.abs(amount))}${code ? '' : '（幣別未提供）'}`;
+  }
+
+  function renderIntradayResearch(snapshot) {
+    const available = hasIntradayResearch(snapshot);
+    $('intraday-research').hidden = !available;
+    $('intraday-nav').hidden = !available;
+    const oldTimeframe = String(snapshot.strategy?.timeframe || '');
+    const match = oldTimeframe.match(/^(\d+)h$/i);
+    const oldScope = match ? `${Number(match[1])} 小時` : oldTimeframe;
+    text('validation-title', available ? `既有${oldScope ? ' ' + oldScope : ''}策略・歷史驗證` : '策略驗證');
+    text('validation-subtitle', available ? '先前研究結果 · 與本輪 5／15 分鐘研究分開 · 已扣模型成本' : '歷史回測結果 · 已扣除模型交易成本');
+    text('holdout-card-label', available ? '既有策略留出勝率' : '最終留出勝率');
+    if (!available) return;
+    const research = snapshot.intraday_research;
+    text('intraday-label', research.label || researchStatus(research.status));
+    text('intraday-reason', research.reason || '等待完整研究狀態說明。');
+    const status = String(research.status || '').toLowerCase();
+    $('intraday-state').className = `intraday-state ${/fail|reject|no_edge|unqualified/.test(status) ? 'failed' : /qualified|frozen|passed/.test(status) ? 'qualified' : 'pending'}`;
+    text('intraday-variants', fmt(research.parameter_variant_count,0));
+    text('intraday-evaluations', fmt(research.source_evaluation_count,0));
+    text('intraday-final-state', research.final_untouched === true ? '尚未評估' : research.final_untouched === false ? '已進行評估' : '待確認');
+    text('intraday-selected', research.selected === null ? '未選定' : research.selected?.name || '尚未提供');
+    const stages = [['開發','development'],['選擇驗證','validation'],['最終保留','final']];
+    $('intraday-periods').innerHTML = stages.map(([label,key]) => `<span><strong>${escape(label)}</strong>${escape(researchPeriod(research.periods?.[key]))}</span>`).join('');
+    const supplementCounts = [number(research.diagnostic_evaluation_count) === null ? null : `${fmt(research.diagnostic_evaluation_count,0)} 次額外診斷`,number(research.untuned_control_count) === null ? null : `${fmt(research.untuned_control_count,0)} 組固定基準`].filter(Boolean);
+    const countNote = [research.count_note || null,supplementCounts.length ? supplementCounts.join('；') + '另列，不當作已合格策略。' : null].filter(Boolean).join(' ');
+    $('intraday-count-note').hidden = !countNote;
+    text('intraday-count-note',countNote);
+    const families = list(research.families).filter(value => value && typeof value === 'object');
+    $('intraday-family-rows').innerHTML = families.length ? families.map(family => {
+      const diagnostic = family.diagnostic || {};
+      const count = number(diagnostic.trade_count);
+      const split = ({development:'開發',validation:'選擇驗證',final:'最終評估',train:'訓練'})[diagnostic.split] || display(diagnostic.split);
+      const interval = Array.isArray(family.timeframes) ? family.timeframes.join('／') : display(family.timeframes);
+      const familyState = typeof family.status === 'object' ? family.status?.code : String(family.status || '');
+      const stateClass = /fail|reject|no_edge|unqualified|未通過|未合格/.test(familyState) ? 'failed' : /qualified|frozen|passed/.test(familyState) ? 'passed' : 'pending';
+      const sample = count === null ? '尚無區間診斷' : `${split} · ${fmt(count,0)} 筆`;
+      const explanation = diagnostic.explanation ? `<span class="research-cell-note diagnostic-explanation">${escape(diagnostic.explanation)}</span>` : '';
+      return `<tr><td>${escape(family.name || '—')}</td><td>${escape(family.symbol || '—')}<span class="research-cell-note">${escape(interval)}</span></td><td>${escape(fmt(family.trials,0))}</td><td><span class="result-badge ${stateClass}">${escape(researchStatus(family.status))}</span></td><td class="research-diagnostic">${escape(sample)}${explanation}</td><td>${escape(count === 0 ? '—' : percent(diagnostic.win_rate,true,1))}</td><td class="${tone(diagnostic.net_profit)}">${escape(researchMoney(diagnostic.net_profit,diagnostic.currency))}</td></tr>`;
+    }).join('') : '<tr><td colspan="7" class="table-empty">尚未提供策略家族評估。</td></tr>';
+    const sources = research.sources || {};
+    const sourceFacts = [['資料供應者',display(sources.provider)],['M5 BID 根數',fmt(sources.bid_m5_bars,0)],['M15 BID 根數',fmt(sources.bid_m15_bars,0)],['價格側／時區',`${display(sources.quote_side)} ／ ${display(sources.time_zone)}`]];
+    if (sources.futures_status) sourceFacts.push(['期貨來源及限制',display(sources.futures_status)]);
+    $('intraday-source-facts').innerHTML = sourceFacts.map(([label,value]) => `<div><span>${escape(label)}</span><strong>${escape(value)}</strong></div>`).join('');
+    text('intraday-ask-status', `ASK 資料狀態：${sources.ask_status ? typeof sources.ask_status === 'string' ? sources.ask_status : JSON.stringify(sources.ask_status) : '尚未提供完整性資訊'}。BID OHLC 與假設價差不足以證明完整可成交的買賣報價。`);
+    text('intraday-freeze-note', research.final_untouched === true ? '尚未檢視最終區間的策略績效；先凍結策略、成本與資料來源，再進行最終評估。' : research.final_untouched === false ? '最終區間已進行策略評估；此研究面板不改變獨立的模擬入場門檻。' : '最終評估狀態尚未確認；此研究面板不改變獨立的模擬入場門檻。');
+    let reportURL = null;
+    if (typeof research.report_url === 'string') {
+      try {
+        const url = new URL(research.report_url,window.location.href);
+        if (url.protocol === 'https:' || url.origin === window.location.origin && ['http:','https:'].includes(url.protocol)) reportURL = url.href;
+      } catch { /* Invalid links stay hidden. */ }
+    }
+    $('intraday-report-link').hidden = !reportURL;
+    if (reportURL) $('intraday-report-link').href = reportURL;
+    else $('intraday-report-link').removeAttribute('href');
   }
 
   function renderValidation(snapshot) {
@@ -265,8 +351,8 @@
 
   function renderChart(snapshot) {
     const backtest = state.chartMode === 'backtest';
-    text('equity-chart-title', backtest ? '歷史回測淨值走勢' : '帳戶淨值走勢');
-    text('chart-subtitle', backtest ? '歷史策略模擬 · USD · 各區間分開連線' : '前向模擬紀錄 · USD');
+    text('equity-chart-title', backtest ? hasIntradayResearch(snapshot) ? '既有策略歷史回測淨值' : '歷史回測淨值走勢' : '帳戶淨值走勢');
+    text('chart-subtitle', backtest ? `${hasIntradayResearch(snapshot) ? '先前研究策略' : '歷史策略模擬'} · USD · 各區間分開連線` : '前向模擬紀錄 · USD');
     text('chart-series-label', backtest ? '回測模型淨值' : '模擬帳戶淨值');
     const rows = curveRows(snapshot);
     const chart = $('equity-chart');

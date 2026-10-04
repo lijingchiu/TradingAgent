@@ -1,0 +1,10 @@
+{
+  "repaired_at_utc": "2026-10-04T13:20:20.954121+00:00",
+  "failure": "Full BID aggregate provenance omits optional quality field; loader KeyError before any candidate backtest",
+  "correction": "Use optional provider quality field and independently check timestamps/OHLC; original checksum and UTC/BID verification preserved",
+  "strategy_or_cost_changes": false,
+  "strategy_pnl_examined_before_repair": false,
+  "existing_preregistration_preserved": true,
+  "preregistration_sha256": "c96c3803fdd128d647a9847603925836a0947065be2a579559327f292037a7ed",
+  "script_sha256": "12ba1aa393f771e28ca41af0bd0a64b37015ac9092bfaeabfb390b71813a6950"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "data/intraday/dukascopy_eurusd_bid_development_2015_2021_m15.csv",
+  "sha256": "f84c31a66abc8311626ac000f821d0257e9ebd12000d6bf7a24c651ca3d19341",
+  "provenance_file": "data/intraday/dukascopy_eurusd_bid_development_2015_2021_provenance.json",
+  "provenance_sha256": "16321e5e5e48a65202d4f4265dfd4f08e2f5fad2d41bf7b85e7c747992939671",
+  "rows": 174523,
+  "first": "2015-01-01T22:00:00Z",
+  "last": "2021-12-31T21:45:00Z",
+  "source_quality": {
+    "provider_quality_field": "not provided in this aggregate provenance",
+    "locally_verified": {
+      "duplicates": 0,
+      "unsorted_transitions": 0,
+      "invalid_ohlc": 0,
+      "finite_positive_prices": true,
+      "actual_utc_m15_boundaries": true
+    }
+  }
+}

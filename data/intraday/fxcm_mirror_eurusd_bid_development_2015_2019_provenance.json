@@ -1,0 +1,48 @@
+{
+  "provider": "Third-party mirror claims FXCM / intrade.bar",
+  "source_domain": "https://github.com/LimiNode",
+  "symbol": "EURUSD",
+  "timezone": "UTC per storage/exporter documentation; not authenticated by directprovider",
+  "quote_side": "BID",
+  "source_archive": "fxcm_public_mirror/eurusd_bid.qhs5",
+  "source_sha256": "e327cd0706a695647da0cab3281233352d8e9221841639cb5f0a8bac3bd386d6",
+  "decoder_format": "QHS5 Win32 littleendian <I headeroffset; <I count; repeated<HII daykey,size,offset>; ZSTD dictionary102400bytesID574484007;1440<5I open,high,low,close,volume tuples scaled1e5",
+  "decoder_reference_repository": "https://github.com/NewYaroslav/xquotes_history",
+  "decoder_reference_commit": "6a72a3cf88f0d00c42aa735cc84327806257e422",
+  "decoder_dictionary_sha256": "fa6661eb44f43368921257131064bd45747b471895c6bcdc4fc1cda4c5cbbc22",
+  "decoded_days": 1536,
+  "day_counts": {
+    "2015": 309,
+    "2016": 305,
+    "2017": 306,
+    "2018": 311,
+    "2019": 305
+  },
+  "source_minute_records": 2211840,
+  "valid_minute_records": 1704744,
+  "zero_price_missing_minutes": 363553,
+  "inconsistent_OHLC_minutes_excluded": 143543,
+  "aggregate_outputs": {
+    "M15": {
+      "file": "fxcm_mirror_eurusd_bid_development_2015_2019_m15.csv",
+      "rows": 42566,
+      "sha256": "b6036bb97b8512c1188f1a7b0a0fbb84b89513c4b0a2bb4d4191d27d2971aec3",
+      "incomplete_blocks_excluded": 81926,
+      "zero_volume_blocks_excluded": 0
+    },
+    "M5": {
+      "file": "fxcm_mirror_eurusd_bid_development_2015_2019_m5.csv",
+      "rows": 251053,
+      "sha256": "1a624463d8bee2b87c755f1e0d319d9862d842a7c5a850c1d4d9ecb79be15e53",
+      "incomplete_blocks_excluded": 121017,
+      "zero_volume_blocks_excluded": 0
+    }
+  },
+  "limitations": [
+    "Historical data mirror only; originalFXCM provider authentication and licensing not verified.",
+    "Sourceminute closes sometimes exceedminuteextremes; strictlyexcluded, not repaired. CompleteM5/M15windows affected bythose rows areexcluded.",
+    "Sourcegaps and exclusion missingness can bias clock-based research; do notclaim fullycomplete coverage.",
+    "Filehistoryends2020-02-17; selecteddevelopment2015\u20132019 only, noreserved2022+source.",
+    "This dataset is independentFXCMreference, not an ASK complement to Dukascopy BID quotes."
+  ]
+}

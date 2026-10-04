@@ -1,0 +1,25 @@
+{
+  "provider": "ejtraderLabs public broker-history mirror",
+  "repository": "https://github.com/ejtraderLabs/historical-data",
+  "pinned_commit": "fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd",
+  "source_url": "https://raw.githubusercontent.com/ejtraderLabs/historical-data/fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd/GBPUSD/GBPUSDm15.csv",
+  "retrieved_at_utc": "2026-10-04T12:51:50.619053+00:00",
+  "symbol": "GBPUSD",
+  "timeframe": "M15",
+  "quote_side": "UNKNOWN",
+  "timezone": "UNKNOWN; timestamps intentionally naive",
+  "price_divisor": 100000,
+  "rows": 230400,
+  "invalid_row_indices_excluded": [],
+  "duplicate_timestamps": 0,
+  "unsorted_transitions": 0,
+  "first": "2012-11-14T20:15:00",
+  "last": "2022-03-04T23:45:00",
+  "raw_sha256": "da6050723516e16e8ae829628497e07f936f5f19f3a0fe15d61761e13381bdf9",
+  "normalized_sha256": "df26ab9e4adf4a0856d683a73b3151f3ed91b381368c78a17eafc27033c56180",
+  "limitations": [
+    "Original broker and timezone unknown: do not infer UTC session edges.",
+    "Actual M15 bars; not upsampled H1 candles.",
+    "No authenticated bid/ask spread or trade-fill path."
+  ]
+}

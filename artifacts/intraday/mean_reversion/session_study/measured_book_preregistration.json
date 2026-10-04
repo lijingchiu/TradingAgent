@@ -1,0 +1,300 @@
+{
+  "registered_at_utc": "2026-10-04T13:11:52.190515+00:00",
+  "round": "observed original BID/ASK book confirmation",
+  "hypothesis": "Replacing a conservative fixed 2-pip spread assumption with authentic timestamp-paired observed book spreads may change net profitability; validate, never omit actual costs.",
+  "baseline_preregistration_sha256": "eabb3ff6da4ab6663a640a82ef36b32a3ffe60f41d01229a546a0ab51e570a87",
+  "baseline_negative_receipts": {
+    "100000": "b8b34a937e2f935f22e0f6cee75e8d0d7d27216ad9c344bcd1c6e51e4a2a09ea",
+    "500000": "a4c5fa2774dbc87d6cb85d35ffa066154d3c2dc09e80f535402f4587dc25d2ad"
+  },
+  "prior_results_examined": "All 24 fixed-spread development strategies at $100k and $500k; all negative. No observed-book strategy P&L examined.",
+  "candidates": [
+    {
+      "name": "ny08_unconditional_h2_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h2_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h4_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h4_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h6_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h6_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h2_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h2_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h4_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h4_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h6_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h6_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h2_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h2_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h4_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h4_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h6_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h6_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h2_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h2_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h4_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h4_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h6_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h6_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    }
+  ],
+  "candidate_count": 24,
+  "initial_equity": 500000.0,
+  "data": {
+    "provider": "Dukascopy Bank SA original public historical datafeed",
+    "source_domain": "https://datafeed.dukascopy.com",
+    "timezone": "UTC",
+    "symbol": "EURUSD",
+    "price_sides": [
+      "BID",
+      "ASK"
+    ],
+    "source_url_contract": "https://datafeed.dukascopy.com/datafeed/EURUSD/YYYY/MM-zero-index/DD/{BID,ASK}_candles_min_1.bi5",
+    "paired_training_path": "data/intraday/dukascopy_eurusd_bid_ask_early_training_2015_2017_m15.csv",
+    "paired_full_path": "data/intraday/dukascopy_eurusd_bid_ask_development_2015_2021_m15.csv",
+    "schema": "timestamp,open,high,low,close,volume are original BID; ask_open/high/low/close/volume are exact timestamp-matched original ASK",
+    "pairing": "left join on original BID UTC bar timestamp; preserve every BID exit bar",
+    "missing_or_crossed_ask": "block new entries with allowed mask; internal BID placeholder only on forbidden-entry bars to satisfy numeric engine, never an executable invented ASK",
+    "entry_quote_validity": "actual ask_open finite, >= actual bid_open; no spread floor, no guessed spread, no parameter-based spread filtering",
+    "raw_and_paired_sha256": "record source paths/hash receipts before each first dataset evaluation",
+    "development": [
+      "2015-01-01",
+      "2018-01-01"
+    ],
+    "selection_validation": [
+      "2018-01-01",
+      "2022-01-01"
+    ],
+    "reserved_final": "UNTOUCHED, never loaded by this module"
+  },
+  "execution": {
+    "signal": "completed previous bar; exact next actual open",
+    "entry_allowed": "actual execution-bar local clock",
+    "one_position": true,
+    "one_daily_session_entry": true,
+    "gap_before_entry": "reject unless preceding M15 bar contiguous",
+    "prior6h_down": "close[t] < open[t-23], with 24 contiguous M15 bars",
+    "holding_bars": "8,16,24 actual M15 intervals; missing bars may extend clock duration",
+    "holding_clock": "explicit local-session time exit after 2/4/6h; gaps execute next actual open",
+    "max_holding_days": 5,
+    "unknown_intrabar_order": "stop first",
+    "sample_end": "liquidate, include net P&L, exclude natural-close count",
+    "funding": "fully owned whole EUR, no leverage, maximum principal .008 equity",
+    "worst_loss": "entire principal + modeled liquidation costs <= .01 entry equity",
+    "initial_equity": 500000.0,
+    "quote_kind": "bid",
+    "entry": "actual entry ASK open plus 0.2-pip modeled slippage",
+    "exit": "actual BID execution reference less 0.2-pip modeled slippage",
+    "triggers": "original BID OHLC, stop-first; stops/targets anchored to entry BID",
+    "maximum_signal_age_seconds": 900,
+    "price_baseline_reporting": "BID gross reference, not midpoint gross",
+    "same_clock_and_parameters": true
+  },
+  "costs": {
+    "spread_pips": 2.0,
+    "slippage_pips": 0.2,
+    "commission_bps": 0.35,
+    "minimum_commission": 0.1,
+    "carry_per_1000_per_day": 0.0,
+    "pip_size": 0.0001
+  },
+  "fixed_spread_pips_field": "ignored only because actual observed ASK replaces assumed spread; commissions/slippage unchanged",
+  "cost_stress": {
+    "factors": [
+      1.5,
+      2.0
+    ],
+    "rule": "same frozen strategy; multiply actual entry spread, slippage, commission rate and minimum commission; report both splits; no reselection from stress"
+  },
+  "selection": {
+    "evaluate": "the same 24 preregistered configs on both development and selection-validation; this is a new disclosed source-confirmation round",
+    "required_per_split": "net wins >=50%, total and natural profit after all costs positive, zero observed 1% adverse/peak-drawdown breaches",
+    "minimum_total_natural_closes": 500,
+    "no_invented_per_split_count_requirement": true,
+    "rank": "largest minimum development/validation net return; validation net return descending; stable candidate name ascending",
+    "preferred_independent_final_natural_closes": 500,
+    "bootstrap": "confidence diagnostic, not an additional user acceptance rule",
+    "activation": "never enabled by this module; freeze separately before independent final"
+  },
+  "statistics": {
+    "bootstrap_blocks_calendar_days": [
+      7,
+      14,
+      28
+    ],
+    "replications": 10000,
+    "seed": 20261004,
+    "selection_block": 7,
+    "series": "UTC calendar-day realized equity returns, including inactive days",
+    "multiple_selection_adjusted": false
+  },
+  "cumulative_session_runs_before_round": 48,
+  "new_confirmation_strategy_split_runs": 48,
+  "source_selection_limitation": "capital/source sensitivity was motivated by observed earlier development; validation is used for selection and is not an independent final test",
+  "paper_approved": false,
+  "script_sha256_at_registration": "d2c8a7745a7c51d8f6516e9263470ce01736565f0b6009f5fb10d0bc2d782dcf"
+}

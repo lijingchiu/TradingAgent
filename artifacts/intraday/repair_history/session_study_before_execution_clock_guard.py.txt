@@ -1,0 +1,948 @@
+"""Preregistered causal local-session FX study; never open the final interval.
+
+Only authoritative UTC Dukascopy BID M15 data is permitted. The 24-member
+family and development-only selection rule are persisted before performance
+evaluation. A single development winner can subsequently face 2018--2021
+validation. This module cannot enable paper trading or read 2022+ prices.
+"""
+
+from __future__ import annotations
+
+import argparse
+from dataclasses import asdict, dataclass, replace
+from datetime import datetime, timezone
+import hashlib
+import itertools
+import json
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+from research.intraday_engine import run_intraday_backtest
+from research.statistics import (
+    acceptance_assessment, daily_realized_returns,
+    moving_block_bootstrap_mean, summarize_trades,
+)
+from trading_agent.risk import DEFAULT_COSTS
+
+
+OUT = Path("artifacts/intraday/mean_reversion/session_study")
+TRAIN = Path("data/intraday/dukascopy_eurusd_bid_early_training_2015_2017_m15.csv")
+VALIDATE = Path("data/intraday/dukascopy_eurusd_bid_development_2015_2021_m15.csv")
+PAIRED_TRAIN = Path("data/intraday/dukascopy_eurusd_bid_ask_early_training_2015_2017_m15.csv")
+PAIRED_FULL = Path("data/intraday/dukascopy_eurusd_bid_ask_development_2015_2021_m15.csv")
+SEED = 20261004
+
+
+@dataclass(frozen=True)
+class SessionConfig:
+    session: str
+    filter: str
+    hours: int
+    stop_pips: int
+    target_pips: int
+
+    @property
+    def name(self) -> str:
+        return f"{self.session}_{self.filter}_h{self.hours}_s{self.stop_pips}_t{self.target_pips}"
+
+    def to_dict(self) -> dict:
+        return {"name": self.name, **asdict(self)}
+
+
+def candidates() -> list[SessionConfig]:
+    return [SessionConfig(session, filter_name, hours, 40, target)
+            for session, filter_name, hours, target in itertools.product(
+                ("ny08", "london08"), ("unconditional", "prior6h_down"),
+                (2, 4, 6), (20, 40))]
+
+
+def digest(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def save(path: Path, value: dict, *, exclusive: bool = False) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("x" if exclusive else "w") as handle:
+        json.dump(value, handle, indent=2, allow_nan=False)
+        handle.write("\n")
+
+
+def preregister() -> dict:
+    path = OUT / "preregistration.json"
+    configs = [config.to_dict() for config in candidates()]
+    if path.exists():
+        plan = json.loads(path.read_text())
+        if plan["candidates"] != configs:
+            raise RuntimeError("Preregistered family cannot be replaced")
+        return plan
+    plan = {
+        "registered_at_utc": datetime.now(timezone.utc).isoformat(),
+        "family": "local-session flow and optional pre-session reversal",
+        "hypothesis": (
+            "Domestic currency demand may vary with local working hours. "
+            "Test long EUR/USD at fixed 08:00 New York local time as a USD-flow "
+            "hypothesis; long 08:00 London is an explicit counterhypothesis. "
+            "A prior-six-hour price decline optionally tests reversal. "
+            "This is a proposed mechanism, not a claim of established profit."),
+        "literature_access": {
+            "status": "not verified; HTTPS requests blocked by network proxy 403",
+            "attempted_resources": [
+                "https://www.snb.ch/en/publications/research/working-papers/2007/working_paper_2007_03",
+                "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=891830"],
+            "claims_based_on_unread_resources": False},
+        "candidate_count": len(configs), "candidates": configs,
+        "data": {"provider": "Dukascopy public historical datafeed",
+                 "source_domain": "https://datafeed.dukascopy.com",
+                 "price_side": "BID", "timezone": "UTC",
+                 "development": ["2015-01-01", "2018-01-01"],
+                 "validation": ["2018-01-01", "2022-01-01"],
+                 "reserved_final": "UNTOUCHED; never loaded by this module"},
+        "clock": {"ny08": "America/New_York 08:00 local Mon-Fri, DST-aware",
+                  "london08": "Europe/London 08:00 local Mon-Fri, DST-aware",
+                  "no_clock_parameter_optimization": True},
+        "execution": {"signal": "completed previous bar; exact next actual open",
+                      "entry_allowed": "actual execution-bar local clock",
+                      "one_position": True, "one_daily_session_entry": True,
+                      "gap_before_entry": "reject unless preceding M15 bar contiguous",
+                      "prior6h_down": "close[t] < open[t-23], with 24 contiguous M15 bars",
+                      "holding_bars": "8,16,24 actual M15 intervals; missing bars may extend clock duration",
+                      "holding_clock": "explicit local-session time exit after 2/4/6h; gaps execute next actual open",
+                      "max_holding_days": 5,
+                      "unknown_intrabar_order": "stop first",
+                      "sample_end": "liquidate, include net P&L, exclude natural-close count",
+                      "funding": "fully owned whole EUR, no leverage, maximum principal .008 equity",
+                      "worst_loss": "entire principal + modeled liquidation costs <= .01 entry equity",
+                      "initial_equity": 100000.0, "quote_kind": "bid"},
+        "costs": asdict(DEFAULT_COSTS),
+        "stress_factors": [1.5, 2.0],
+        "selection": {
+            "development_minimum_natural_closes": 500,
+            "development_minimum_net_win_rate": .5,
+            "development_positive_net_profit": True,
+            "development_positive_natural_mean": True,
+            "development_zero_risk_breaches": True,
+            "development_bootstrap_7_day_lower_95_positive": True,
+            "rank": "development net profit descending; stable candidate name ascending tie-break",
+            "validation": "one frozen development-only winner; no alternative on validation failure",
+            "validation_minimum_natural_closes": 800,
+            "validation_acceptance": "net wins >=50%, positive profit after costs, zero risk breaches, positive 7-day lower CI",
+            "stress_use": "diagnostics for the same frozen winner; never reselect on stress outcomes"},
+        "statistics": {"bootstrap_blocks_calendar_days": [7, 14, 28],
+                       "replications": 10000, "seed": SEED,
+                       "selection_block": 7,
+                       "series": "UTC calendar-day realized equity returns, including inactive days",
+                       "multiple_selection_adjusted": False},
+        "paper_approved": False,
+        "script_sha256_at_registration": digest(Path(__file__)),
+    }
+    save(path, plan, exclusive=True)
+    return plan
+
+
+def load_verified(path: Path, *, early: bool) -> tuple[pd.DataFrame, dict]:
+    if path != (TRAIN if early else VALIDATE):
+        raise ValueError("Only the named authoritative pre-final datasets may be opened")
+    provenance_path = path.with_name(path.name.replace("_m15.csv", "_provenance.json"))
+    provenance = json.loads(provenance_path.read_text())
+    if (provenance.get("symbol") != "EURUSD" or provenance.get("quote_side") != "BID"
+            or provenance.get("timezone") != "UTC"
+            or provenance.get("source_domain") != "https://datafeed.dukascopy.com"):
+        raise ValueError("Authoritative UTC EUR/USD BID provenance required")
+    source_hash = digest(path)
+    expected_hash = provenance["aggregate_outputs"]["M15"]["sha256"]
+    if source_hash != expected_hash:
+        raise ValueError("Dataset checksum differs from provider aggregation provenance")
+    frame = pd.read_csv(path)
+    # The raw timestamp string itself must be explicitly UTC; naive mirrors
+    # are rejected, rather than silently being assigned a timezone.
+    if not frame["timestamp"].str.endswith("Z").all():
+        raise ValueError("Every timestamp must carry its UTC Z suffix")
+    frame["time"] = pd.to_datetime(frame["timestamp"], utc=True)
+    cutoff = pd.Timestamp("2018-01-01" if early else "2022-01-01", tz="UTC")
+    if (frame["time"] < pd.Timestamp("2015-01-01", tz="UTC")).any() or (frame["time"] >= cutoff).any():
+        raise ValueError("File contains observations outside the declared pre-final bounds")
+    if not frame["time"].is_monotonic_increasing or frame["time"].duplicated().any():
+        raise ValueError("Timestamps must be sorted and unique")
+    prices = frame[["open", "high", "low", "close"]].to_numpy(float)
+    if not np.isfinite(prices).all() or (prices <= 0).any():
+        raise ValueError("Invalid OHLC prices")
+    epoch = (frame["time"].astype("int64") // 1000000000).to_numpy(np.int64)
+    if (epoch % 900).any():
+        raise ValueError("M15 timestamps must be on actual UTC M15 boundaries")
+    invalid_geometry = bool((frame["low"] > frame[["open", "close"]].min(axis=1)).any()
+                            or (frame["high"] < frame[["open", "close"]].max(axis=1)).any()
+                            or (frame["low"] > frame["high"]).any())
+    if invalid_geometry:
+        raise ValueError("Invalid source OHLC geometry")
+    receipt = {"file": str(path), "sha256": source_hash,
+               "provenance_file": str(provenance_path), "provenance_sha256": digest(provenance_path),
+               "rows": len(frame), "first": frame.iloc[0]["timestamp"],
+               "last": frame.iloc[-1]["timestamp"],
+               "source_quality": provenance["aggregate_outputs"]["M15"].get("quality", {
+                   "provider_quality_field": "not provided in this aggregate provenance",
+                   "locally_verified": {"duplicates": 0, "unsorted_transitions": 0,
+                                        "invalid_ohlc": 0, "finite_positive_prices": True,
+                                        "actual_utc_m15_boundaries": True}})}
+    return frame, receipt
+
+
+def signals(frame: pd.DataFrame, config: SessionConfig) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    epoch = (frame["time"].astype("int64") // 1000000000).to_numpy(np.int64)
+    n = len(frame)
+    zone = "America/New_York" if config.session == "ny08" else "Europe/London"
+    local = frame["time"].dt.tz_convert(zone)
+    allowed = ((local.dt.hour == 8) & (local.dt.minute == 0)
+               & (local.dt.dayofweek < 5)).to_numpy(bool)
+    contiguous = np.zeros(n, dtype=bool)
+    contiguous[1:] = np.diff(epoch) == 900
+    allowed &= contiguous
+    entry = np.ones(n, dtype=bool)
+    if config.filter == "prior6h_down":
+        entry[:] = False
+        if n >= 24:
+            entry[23:] = ((epoch[23:] - epoch[:-23] == 23 * 900)
+                          & (frame["close"].to_numpy(float)[23:]
+                             < frame["open"].to_numpy(float)[:-23]))
+    elif config.filter != "unconditional":
+        raise ValueError("Unknown filter")
+    # Completion of a candle starting 11:45 makes a noon timed exit causal;
+    # gaps execute at the first available later open, per the engine policy.
+    completed_local = (frame["time"] + pd.Timedelta(minutes=15)).dt.tz_convert(zone)
+    exit_signal = (completed_local.dt.hour >= 8 + config.hours).to_numpy(bool)
+    return entry, allowed, exit_signal
+
+
+def evaluate(frame: pd.DataFrame, config: SessionConfig, *, start: str,
+             end: str, factor: float = 1.0, blocks: tuple[int, ...] = (7,),
+             initial_equity: float = 100000.0,
+             observed_book: bool = False, book_source: str | None = None,
+             minimum_eligible_trades: int | None = None) -> dict:
+    times = (frame["time"].astype("int64") // 1000000000).to_numpy(np.int64)
+    prices = [frame[column].to_numpy(float) for column in ("open", "high", "low", "close")]
+    entry, allowed, exits = signals(frame, config)
+    book_kwargs = {}
+    quote_quality = None
+    if observed_book:
+        ask = frame["ask_open"].to_numpy(float)
+        valid = np.isfinite(ask) & (ask >= prices[0])
+        quote_quality = {"bid_bars_preserved": len(frame),
+                         "valid_actual_ask_bars": int(valid.sum()),
+                         "invalid_ask_bars_blocked_from_entry": int((~valid).sum()),
+                         "potential_session_entries_blocked": int((allowed & ~valid).sum()),
+                         "no_bid_exit_bars_dropped": True}
+        allowed &= valid
+        # Numerical placeholder only for bars forbidden to open a position.
+        # It cannot cause a zero-spread execution because allowed is false.
+        asks_for_engine = np.where(valid, ask, prices[0])
+        book_kwargs = {"ask_opens": asks_for_engine,
+                       "observed_spread_multiplier": factor,
+                       "book_source": book_source}
+    first = int(frame["time"].searchsorted(pd.Timestamp(start, tz="UTC")))
+    last = int(frame["time"].searchsorted(pd.Timestamp(end, tz="UTC")))
+    costs = replace(DEFAULT_COSTS,
+                    spread_pips=DEFAULT_COSTS.spread_pips * factor,
+                    slippage_pips=DEFAULT_COSTS.slippage_pips * factor,
+                    commission_bps=DEFAULT_COSTS.commission_bps * factor,
+                    minimum_commission=DEFAULT_COSTS.minimum_commission * factor)
+    result = run_intraday_backtest(
+        times, *prices, entry, config.stop_pips * costs.pip_size,
+        config.target_pips * costs.pip_size, entry_allowed=allowed,
+        exit_signals=exits, max_holding_bars=config.hours * 4,
+        max_holding_days=5, max_signal_age_seconds=900,
+        initial_equity=initial_equity, costs=costs,
+        start_index=first, end_index=last, include_trades=True, quote_kind="bid",
+        **book_kwargs)
+    trades = result["trades"]
+    summary = summarize_trades(trades)
+    dated = [{**trade, "exit_time": datetime.fromtimestamp(trade["exit_time"], timezone.utc)}
+             for trade in trades]
+    daily = daily_realized_returns(dated, initial_equity, start, end)
+    bootstrap = {str(block): moving_block_bootstrap_mean(
+        [row["return"] for row in daily], block_size=block,
+        replications=10000, seed=SEED) for block in blocks}
+    return {"config": config.to_dict(), "engine_summary": result["summary"],
+            "summary": summary, "bootstrap": bootstrap,
+            "assessment": acceptance_assessment(summary, bootstrap["7"],
+                minimum_eligible_trades=minimum_eligible_trades or (500 if start == "2015-01-01" else 800)),
+            "stress_factor": factor, "trades": trades, "daily_returns": daily,
+            "observed_book_quote_quality": quote_quality}
+
+
+def train() -> dict:
+    plan = preregister()
+    report_path = OUT / "development_report.json"
+    if report_path.exists():
+        raise RuntimeError("Development receipt exists; do not overwrite research history")
+    frame, source = load_verified(TRAIN, early=True)
+    results = []
+    for config in candidates():
+        result = evaluate(frame, config, start="2015-01-01", end="2018-01-01")
+        result["selection_eligible"] = bool(result["assessment"]["strong_positive_expectancy_evidence"])
+        results.append(result)
+        print(json.dumps({"candidate": config.name, "n": result["summary"]["eligible_trades"],
+                          "win_rate": result["summary"]["win_rate"],
+                          "net": result["summary"]["net_profit"],
+                          "eligible": result["selection_eligible"]}), flush=True)
+    viable = [row for row in results if row["selection_eligible"]]
+    ranked = sorted(viable or results, key=lambda row: (-row["summary"]["net_profit"], row["config"]["name"]))
+    selected = ranked[0] if viable else None
+    report = {"preregistration_sha256": digest(OUT / "preregistration.json"),
+              "script_sha256_at_evaluation": digest(Path(__file__)),
+              "source": source, "candidate_count": len(results),
+              "eligible_count": len(viable),
+              "results": [{key: value for key, value in row.items()
+                           if key not in ("trades", "daily_returns")} for row in results],
+              "selected": selected["config"] if selected else None,
+              "best_diagnostic": {key: value for key, value in ranked[0].items()
+                                  if key not in ("trades", "daily_returns")},
+              "validation": "UNTOUCHED pending single frozen winner" if viable else "NOT OPENED; family rejected on development",
+              "independent_final": "UNTOUCHED", "paper_approved": False}
+    save(report_path, report, exclusive=True)
+    if selected:
+        save(OUT / "selection_record.json", {
+            "selected_at_utc": datetime.now(timezone.utc).isoformat(),
+            "config": selected["config"], "development_summary": selected["summary"],
+            "development_bootstrap": selected["bootstrap"],
+            "selection_rule": plan["selection"], "development_source": source,
+            "preregistration_sha256": digest(OUT / "preregistration.json"),
+            "script_sha256": digest(Path(__file__)),
+            "validation_results_examined": False, "final_results_examined": False,
+            "paper_approved": False}, exclusive=True)
+        save(OUT / "selected_development_details.json", selected, exclusive=True)
+    return report
+
+
+def validate() -> dict:
+    preregister()
+    if (OUT / "validation_report.json").exists():
+        raise RuntimeError("Single fixed validation already examined; cannot overwrite receipt")
+    selection = json.loads((OUT / "selection_record.json").read_text())
+    params = {key: value for key, value in selection["config"].items() if key != "name"}
+    config = SessionConfig(**params)
+    if config not in candidates():
+        raise RuntimeError("Selected configuration absent from preregistration")
+    frame, source = load_verified(VALIDATE, early=False)
+    reports = [evaluate(frame, config, start="2018-01-01", end="2022-01-01",
+                        factor=factor, blocks=(7, 14, 28)) for factor in (1., 1.5, 2.)]
+    qualified = bool(reports[0]["assessment"]["strong_positive_expectancy_evidence"])
+    report = {"config": config.to_dict(), "source": source,
+              "selection_sha256": digest(OUT / "selection_record.json"),
+              "results": reports, "provisionally_qualified_for_final": qualified,
+              "independent_final": "UNTOUCHED", "paper_approved": False}
+    save(OUT / "validation_report.json", report, exclusive=True)
+    return report
+
+
+def capital_train() -> dict:
+    """Append a disclosed capital sensitivity; preserve original results."""
+    baseline_plan = preregister()
+    prefix = OUT / "capital_500000"
+    if prefix.with_name(prefix.name + "_development_report.json").exists():
+        raise RuntimeError("Capital sensitivity already evaluated; preserve receipt")
+    plan = {
+        "registered_at_utc": datetime.now(timezone.utc).isoformat(),
+        "baseline_preregistration_sha256": digest(OUT / "preregistration.json"),
+        "baseline_development_receipt_sha256": digest(OUT / "development_report.json"),
+        "original_initial_equity": 100000.0,
+        "sensitivity_initial_equity": 500000.0,
+        "justification": (
+            "A 0.8% funded-principal cap results in about $800 notional at "
+            "$100k, where $0.10 minimum commission per side dominates. "
+            "At $500k about $4000 notional may use the unchanged proportional "
+            "commission. This is an operational capital sensitivity; none "
+            "of the 24 strategy clocks/filters/stops/targets/holds is retuned."),
+        "candidates": baseline_plan["candidates"],
+        "candidate_count": 24,
+        "costs": asdict(DEFAULT_COSTS),
+        "funding_principal_fraction": .008,
+        "worst_loss_equity_fraction": .01,
+        "selection": baseline_plan["selection"],
+        "statistics": baseline_plan["statistics"],
+        "stress_factors": [1.5, 2.0],
+        "performance_examined_at_registration": {"100000": True, "500000": False},
+        "extra_development_runs": 24,
+        "independent_final": "UNTOUCHED",
+        "paper_approved": False,
+        "script_sha256": digest(Path(__file__)),
+    }
+    plan_path = prefix.with_name(prefix.name + "_preregistration.json")
+    save(plan_path, plan, exclusive=True)
+    frame, source = load_verified(TRAIN, early=True)
+    results = []
+    for config in candidates():
+        result = evaluate(frame, config, start="2015-01-01", end="2018-01-01",
+                          initial_equity=500000.0)
+        result["selection_eligible"] = bool(result["assessment"]["strong_positive_expectancy_evidence"])
+        results.append(result)
+        print(json.dumps({"candidate": config.name, "capital": 500000,
+                          "n": result["summary"]["eligible_trades"],
+                          "win_rate": result["summary"]["win_rate"],
+                          "net": result["summary"]["net_profit"],
+                          "eligible": result["selection_eligible"]}), flush=True)
+    viable = [row for row in results if row["selection_eligible"]]
+    ranked = sorted(viable or results, key=lambda row: (-row["summary"]["net_profit"], row["config"]["name"]))
+    selected = ranked[0] if viable else None
+    report = {
+        "preregistration_sha256": digest(plan_path), "source": source,
+        "initial_equity": 500000.0, "candidate_count": 24,
+        "eligible_count": len(viable),
+        "results": [{key: value for key, value in row.items()
+                     if key not in ("trades", "daily_returns")} for row in results],
+        "selected": selected["config"] if selected else None,
+        "best_diagnostic": {key: value for key, value in ranked[0].items()
+                            if key not in ("trades", "daily_returns")},
+        "validation": "UNTOUCHED pending single frozen winner" if viable else "NOT OPENED; capital sensitivity rejected on development",
+        "independent_final": "UNTOUCHED", "paper_approved": False,
+    }
+    save(prefix.with_name(prefix.name + "_development_report.json"), report, exclusive=True)
+    if selected:
+        save(prefix.with_name(prefix.name + "_selection_record.json"), {
+            "config": selected["config"], "initial_equity": 500000.0,
+            "selection_rule": plan["selection"], "development_source": source,
+            "development_summary": selected["summary"],
+            "development_bootstrap": selected["bootstrap"],
+            "preregistration_sha256": digest(plan_path),
+            "validation_results_examined": False, "final_results_examined": False,
+            "paper_approved": False}, exclusive=True)
+    return report
+
+
+def capital_validate() -> dict:
+    prefix = OUT / "capital_500000"
+    selection_path = prefix.with_name(prefix.name + "_selection_record.json")
+    report_path = prefix.with_name(prefix.name + "_validation_report.json")
+    if report_path.exists():
+        raise RuntimeError("Capital validation already evaluated; preserve receipt")
+    selection = json.loads(selection_path.read_text())
+    config = SessionConfig(**{key: value for key, value in selection["config"].items() if key != "name"})
+    frame, source = load_verified(VALIDATE, early=False)
+    results = [evaluate(frame, config, start="2018-01-01", end="2022-01-01",
+                        factor=factor, blocks=(7, 14, 28), initial_equity=500000.0)
+               for factor in (1., 1.5, 2.)]
+    report = {"config": config.to_dict(), "initial_equity": 500000.0,
+              "source": source, "selection_sha256": digest(selection_path),
+              "results": results,
+              "provisionally_qualified_for_final": bool(results[0]["assessment"]["strong_positive_expectancy_evidence"]),
+              "independent_final": "UNTOUCHED", "paper_approved": False}
+    save(report_path, report, exclusive=True)
+    return report
+
+
+def measured_book_preregister() -> dict:
+    """Register observed-book confirmation before observing its P&L."""
+    path = OUT / "measured_book_preregistration.json"
+    if path.exists():
+        return json.loads(path.read_text())
+    baseline = preregister()
+    plan = {
+        "registered_at_utc": datetime.now(timezone.utc).isoformat(),
+        "round": "observed original BID/ASK book confirmation",
+        "hypothesis": "Replacing a conservative fixed 2-pip spread assumption with authentic timestamp-paired observed book spreads may change net profitability; validate, never omit actual costs.",
+        "baseline_preregistration_sha256": digest(OUT / "preregistration.json"),
+        "baseline_negative_receipts": {
+            "100000": digest(OUT / "development_report.json"),
+            "500000": digest(OUT / "capital_500000_development_report.json")},
+        "prior_results_examined": "All 24 fixed-spread development strategies at $100k and $500k; all negative. No observed-book strategy P&L examined.",
+        "candidates": baseline["candidates"], "candidate_count": 24,
+        "initial_equity": 500000.0,
+        "data": {
+            "provider": "Dukascopy Bank SA original public historical datafeed",
+            "source_domain": "https://datafeed.dukascopy.com",
+            "timezone": "UTC", "symbol": "EURUSD",
+            "price_sides": ["BID", "ASK"],
+            "source_url_contract": "https://datafeed.dukascopy.com/datafeed/EURUSD/YYYY/MM-zero-index/DD/{BID,ASK}_candles_min_1.bi5",
+            "paired_training_path": str(PAIRED_TRAIN),
+            "paired_full_path": str(PAIRED_FULL),
+            "schema": "timestamp,open,high,low,close,volume are original BID; ask_open/high/low/close/volume are exact timestamp-matched original ASK",
+            "pairing": "left join on original BID UTC bar timestamp; preserve every BID exit bar",
+            "missing_or_crossed_ask": "block new entries with allowed mask; internal BID placeholder only on forbidden-entry bars to satisfy numeric engine, never an executable invented ASK",
+            "entry_quote_validity": "actual ask_open finite, >= actual bid_open; no spread floor, no guessed spread, no parameter-based spread filtering",
+            "raw_and_paired_sha256": "record source paths/hash receipts before each first dataset evaluation",
+            "development": ["2015-01-01", "2018-01-01"],
+            "selection_validation": ["2018-01-01", "2022-01-01"],
+            "reserved_final": "UNTOUCHED, never loaded by this module"},
+        "execution": {**baseline["execution"],
+                      "initial_equity": 500000.0,
+                      "entry": "actual entry ASK open plus 0.2-pip modeled slippage",
+                      "exit": "actual BID execution reference less 0.2-pip modeled slippage",
+                      "triggers": "original BID OHLC, stop-first; stops/targets anchored to entry BID",
+                      "maximum_signal_age_seconds": 900,
+                      "price_baseline_reporting": "BID gross reference, not midpoint gross",
+                      "same_clock_and_parameters": True},
+        "costs": asdict(DEFAULT_COSTS),
+        "fixed_spread_pips_field": "ignored only because actual observed ASK replaces assumed spread; commissions/slippage unchanged",
+        "cost_stress": {"factors": [1.5, 2.0],
+                        "rule": "same frozen strategy; multiply actual entry spread, slippage, commission rate and minimum commission; report both splits; no reselection from stress"},
+        "selection": {
+            "evaluate": "the same 24 preregistered configs on both development and selection-validation; this is a new disclosed source-confirmation round",
+            "required_per_split": "net wins >=50%, total and natural profit after all costs positive, zero observed 1% adverse/peak-drawdown breaches",
+            "minimum_total_natural_closes": 500,
+            "no_invented_per_split_count_requirement": True,
+            "rank": "largest minimum development/validation net return; validation net return descending; stable candidate name ascending",
+            "preferred_independent_final_natural_closes": 500,
+            "bootstrap": "confidence diagnostic, not an additional user acceptance rule",
+            "activation": "never enabled by this module; freeze separately before independent final"},
+        "statistics": baseline["statistics"],
+        "cumulative_session_runs_before_round": 48,
+        "new_confirmation_strategy_split_runs": 48,
+        "source_selection_limitation": "capital/source sensitivity was motivated by observed earlier development; validation is used for selection and is not an independent final test",
+        "paper_approved": False,
+        "script_sha256_at_registration": digest(Path(__file__)),
+    }
+    save(path, plan, exclusive=True)
+    return plan
+
+
+def measured_book_self_check() -> dict:
+    checks = self_check()
+    chunks = [pd.date_range(f"2017-05-{day:02d}T11:45Z", periods=11, freq="15min")
+              for day in (1, 2)]
+    times = chunks[0].append(chunks[1])
+    opens = 1.0 + np.arange(len(times)) * .00001
+    frame = pd.DataFrame({"time": times, "open": opens, "high": opens + .00002,
+                          "low": opens - .00001, "close": opens + .00001,
+                          "ask_open": opens + .00003})
+    # An unavailable entry quote must suppress the May 1 session without
+    # removing any BID observation; May 2 remains a valid actual-book entry.
+    frame.loc[1, "ask_open"] = np.nan
+    config = SessionConfig("ny08", "unconditional", 2, 40, 40)
+    result = evaluate(frame, config, start="2017-05-01", end="2017-05-15",
+                      initial_equity=500000., observed_book=True,
+                      book_source="synthetic_book_self_check_only", minimum_eligible_trades=1)
+    if len(result["trades"]) != 1:
+        raise AssertionError("Invalid ASK entry mask or daily clock gate failed")
+    trade = result["trades"][0]
+    expected = int(pd.Timestamp("2017-05-02T12:00Z").timestamp())
+    if trade["entry_time"] != expected or trade["entry_ask"] != frame.loc[12, "ask_open"]:
+        raise AssertionError("Current actual ASK quote or local session clock failed")
+    if result["engine_summary"]["bars"] != len(frame):
+        raise AssertionError("Invalid entry ASK dropped valid BID exit bars")
+    if result["observed_book_quote_quality"]["potential_session_entries_blocked"] != 1:
+        raise AssertionError("Invalid ASK exclusion not recorded")
+    fee_plus_friction = trade["spread_cost"] + trade["slippage_cost"] + trade["total_fees"]
+    if not np.isclose(trade["bid_gross_pnl"] - fee_plus_friction, trade["net_pnl"], atol=1e-8):
+        raise AssertionError("Observed book trade costs do not reconcile")
+    crossed = frame.copy()
+    crossed.loc[1, "ask_open"] = crossed.loc[1, "open"] - .00001
+    crossed_result = evaluate(crossed, config, start="2017-05-01", end="2017-05-15",
+                              initial_equity=500000., observed_book=True,
+                              book_source="synthetic_crossed_book_check_only", minimum_eligible_trades=1)
+    if crossed_result["trades"] != result["trades"]:
+        raise AssertionError("Crossed ASK quote did not suppress its new entry")
+    missing_after_entry = frame.copy()
+    missing_after_entry.loc[13:, "ask_open"] = np.nan
+    missing_result = evaluate(missing_after_entry, config, start="2017-05-01", end="2017-05-15",
+                              initial_equity=500000., observed_book=True,
+                              book_source="synthetic_missing_post_entry_ask_check_only", minimum_eligible_trades=1)
+    if missing_result["trades"] != result["trades"]:
+        raise AssertionError("Post-entry missing ASK changed a valid held-position BID liquidation")
+    output = {"checks": checks["checks"] + 7, "status": "passed", "synthetic_only": True,
+              "observed_book_checks": "NaN/crossed ASK blocks entry, correct DST-aware daily execution, actual ASK fill, all BID bars retained including exits without ASK, complete cash/cost reconciliation"}
+    save(OUT / "measured_book_synthetic_checks.json", output)
+    return output
+
+
+def _source_path(value: str, paired_path: Path) -> Path:
+    path = Path(value)
+    if path.is_absolute() or path.exists():
+        return path
+    return paired_path.parent / path
+
+
+def load_measured_book(*, early: bool, require_complete: bool = True) -> tuple[pd.DataFrame, dict]:
+    """Authenticate side files and pair by timestamp; never drop BID exits."""
+    paired_path = PAIRED_TRAIN if early and PAIRED_TRAIN.exists() else PAIRED_FULL
+    provenance_path = paired_path.with_name(paired_path.name.replace("_m15.csv", "_provenance.json"))
+    provenance = json.loads(provenance_path.read_text())
+    if (provenance.get("symbol") != "EURUSD" or provenance.get("timezone") != "UTC"
+            or provenance.get("source_domain") != "https://datafeed.dukascopy.com"
+            or set(provenance.get("quote_sides", [])) != {"BID", "ASK"}):
+        raise ValueError("Original provider UTC BID/ASK joint provenance required")
+    paired_hash = digest(paired_path)
+    if paired_hash != provenance["aggregate_outputs"]["M15"]["sha256"]:
+        raise ValueError("Joint-file checksum differs from provenance")
+    paired = pd.read_csv(paired_path)
+    if not paired["timestamp"].str.endswith("Z").all():
+        raise ValueError("Paired timestamps must be explicitly UTC")
+    paired["time"] = pd.to_datetime(paired["timestamp"], utc=True)
+    if (paired["time"] >= pd.Timestamp("2022-01-01", tz="UTC")).any():
+        raise ValueError("Paired source is outside pre-final bounds")
+    if not paired["time"].is_monotonic_increasing or paired["time"].duplicated().any():
+        raise ValueError("Joint source must have sorted unique timestamps")
+    if early:
+        paired = paired.loc[paired["time"] < pd.Timestamp("2018-01-01", tz="UTC")].reset_index(drop=True)
+    bid, bid_receipt = load_verified(TRAIN if early else VALIDATE, early=early)
+    columns = ["timestamp", "open", "high", "low", "close", "volume"]
+    if len(bid) != len(paired) or not bid["timestamp"].equals(paired["timestamp"]):
+        raise ValueError("Joint source omitted or changed actual BID exit timestamps")
+    if not np.array_equal(bid[columns[1:]].to_numpy(float), paired[columns[1:]].to_numpy(float)):
+        raise ValueError("Joint source changed original BID prices or volume")
+    side_receipts = {}
+    ask_raw = None
+    required_years = list(range(2015, 2018 if early else 2022))
+    complete_ask_years = []
+    source_complete = False
+    for side in ("bid", "ask"):
+        side_path = _source_path(provenance[f"{side}_file"], paired_path)
+        permitted_names = {
+            f"dukascopy_eurusd_{side}_early_training_2015_2017_m15.csv",
+            f"dukascopy_eurusd_{side}_development_2015_2021_m15.csv"}
+        if side_path.name not in permitted_names:
+            raise ValueError("Source side path must identify the named pre-final dataset")
+        side_hash = digest(side_path)
+        if side_hash != provenance[f"{side}_sha256"]:
+            raise ValueError(f"Original {side.upper()} source checksum mismatch")
+        side_prov_path = side_path.with_name(side_path.name.replace("_m15.csv", "_provenance.json"))
+        side_prov = json.loads(side_prov_path.read_text())
+        side_prov_hash = digest(side_prov_path)
+        declared_prov_hash = provenance.get(f"{side}_provenance_sha256")
+        if declared_prov_hash is not None and side_prov_hash != declared_prov_hash:
+            raise ValueError("Joint source has a stale side-provenance hash")
+        if (side_prov.get("symbol") != "EURUSD" or side_prov.get("timezone") != "UTC"
+                or side_prov.get("source_domain") != "https://datafeed.dukascopy.com"
+                or side_prov.get("quote_side") != side.upper()
+                or side_prov["aggregate_outputs"]["M15"]["sha256"] != side_hash):
+            raise ValueError(f"Original {side.upper()} authoritative provenance mismatch")
+        side_receipts[side] = {"file": str(side_path), "sha256": side_hash,
+                               "provenance": str(side_prov_path),
+                               "provenance_sha256": side_prov_hash}
+        if side == "ask":
+            complete_ask_years = side_prov.get("complete_years", [])
+            if complete_ask_years:
+                source_complete = set(required_years).issubset(complete_ask_years)
+            else:
+                requested = side_prov.get("requested_day_count", 0)
+                source_complete = bool(requested > 0
+                    and side_prov.get("received_day_count") == requested
+                    and not side_prov.get("download_failures")
+                    and not side_prov.get("missing_raw_archive_dates")
+                    and "PARTIAL" not in side_prov.get("coverage_status", "").upper())
+                complete_ask_years = required_years if source_complete else []
+            if require_complete and not source_complete:
+                raise ValueError(f"Incomplete original ASK coverage for required years {required_years}; complete years {complete_ask_years}. Canonical research blocked before P&L.")
+            ask_raw = pd.read_csv(side_path, usecols=["timestamp", "open"])
+    if ask_raw is None or ask_raw["timestamp"].duplicated().any() or not ask_raw["timestamp"].str.endswith("Z").all():
+        raise ValueError("Original ASK opens must be unique and explicitly UTC")
+    expected_ask = paired[["timestamp"]].merge(ask_raw, how="left", on="timestamp", validate="one_to_one")["open"].to_numpy(float)
+    bid_open = paired["open"].to_numpy(float)
+    actual_ask = paired["ask_open"].to_numpy(float)
+    expected_valid = np.isfinite(expected_ask) & (expected_ask >= bid_open)
+    actual_valid = np.isfinite(actual_ask) & (actual_ask >= bid_open)
+    if not np.array_equal(expected_valid, actual_valid) or not np.array_equal(actual_ask[actual_valid], expected_ask[expected_valid]):
+        raise ValueError("Paired ASK entry opens differ from original timestamp-paired provider observations")
+    receipt = {"paired_file": str(paired_path), "paired_sha256": paired_hash,
+               "paired_provenance_file": str(provenance_path), "paired_provenance_sha256": digest(provenance_path),
+               "side_sources": side_receipts, "verified_original_bid": bid_receipt,
+               "rows": len(paired), "first": paired.iloc[0]["timestamp"], "last": paired.iloc[-1]["timestamp"],
+               "valid_ask_opens": int(actual_valid.sum()), "invalid_ask_opens": int((~actual_valid).sum()),
+               "all_original_bid_bars_preserved": True,
+               "ask_opens_exactly_match_original_provider": True,
+               "complete_ask_years": complete_ask_years,
+               "complete_ask_coverage_for_declared_role": source_complete,
+               "observed_book_limit": "Matched candle timestamps do not prove simultaneous executable broker ticks; slippage remains modeled"}
+    return paired, receipt
+
+
+def measured_book_2015_diagnostic() -> dict:
+    """Source-complete one-year diagnostic; cannot replace full validation."""
+    measured_book_preregister()
+    plan_path = OUT / "measured_book_2015_diagnostic_preregistration.json"
+    report_path = OUT / "measured_book_2015_diagnostic_report.json"
+    if report_path.exists():
+        raise RuntimeError("Source-availability diagnostic already evaluated; preserve receipt")
+    plan = {
+        "registered_at_utc": datetime.now(timezone.utc).isoformat(),
+        "parent_preregistration_sha256": digest(OUT / "measured_book_preregistration.json"),
+        "reason": "Upstream ASK503 outage: 2015 complete, 2016 partial, 2017 only sample days; 2018–21 unavailable except samples. Restrict diagnostic to source-complete2015 before any observed-book strategy P&L.",
+        "diagnostic_interval": ["2015-01-01", "2016-01-01"],
+        "candidates": [config.to_dict() for config in candidates()],
+        "candidate_count": 24, "initial_equity": 500000.,
+        "costs": asdict(DEFAULT_COSTS),
+        "quote_model": "observed_bid_ask_opens",
+        "diagnostic_only": True, "never_select_or_qualify_for_final_from_this": True,
+        "canonical_development_validation": "still require complete2015–17 /2018–21 source archives",
+        "extra_exploratory_runs": 24,
+        "prior_actual_book_strategy_pnl_examined": False,
+        "independent_final": "UNTOUCHED", "paper_approved": False,
+        "script_sha256": digest(Path(__file__)),
+    }
+    save(plan_path, plan, exclusive=True)
+    frame, source = load_measured_book(early=True, require_complete=False)
+    if 2015 not in source["complete_ask_years"]:
+        raise ValueError("Even the diagnostic2015 source archives are incomplete")
+    save(OUT / "measured_book_2015_diagnostic_source_receipt.json", source, exclusive=True)
+    book_source = f"Dukascopy original paired BID/ASK M15; joint sha256={source['paired_sha256']}; complete2015 diagnostic only"
+    results = []
+    for config in candidates():
+        result = evaluate(frame, config, start="2015-01-01", end="2016-01-01",
+                          initial_equity=500000., observed_book=True,
+                          book_source=book_source, minimum_eligible_trades=500)
+        results.append(_compact(result))
+        print(json.dumps({"candidate": config.name, "diagnostic_only": True,
+                          "n": result["summary"]["eligible_trades"],
+                          "win": result["summary"]["win_rate"],
+                          "net": result["summary"]["net_profit"]}), flush=True)
+    report = {"diagnostic_only": True, "source": source,
+              "preregistration_sha256": digest(plan_path), "script_sha256": digest(Path(__file__)),
+              "interval": ["2015-01-01", "2016-01-01"], "initial_equity": 500000.,
+              "candidate_count": 24, "results": results,
+              "positive_sample_count": sum(row["summary"]["net_profit"] > 0 for row in results),
+              "selected": None, "canonical_full_confirmation": "BLOCKED by incomplete ASK archives",
+              "independent_final": "UNTOUCHED", "paper_approved": False}
+    save(report_path, report, exclusive=True)
+    return report
+
+
+def _compact(row: dict) -> dict:
+    return {key: value for key, value in row.items() if key not in ("trades", "daily_returns")}
+
+
+def measured_book_train() -> dict:
+    measured_book_preregister()
+    report_path = OUT / "measured_book_development_report.json"
+    if report_path.exists():
+        raise RuntimeError("Observed-book development was already examined; preserve receipt")
+    frame, source = load_measured_book(early=True)
+    save(OUT / "measured_book_development_source_receipt.json", source, exclusive=True)
+    results = []
+    book_source = f"Dukascopy original paired BID/ASK M15; joint sha256={source['paired_sha256']}"
+    for config in candidates():
+        result = evaluate(frame, config, start="2015-01-01", end="2018-01-01",
+                          initial_equity=500000., observed_book=True,
+                          book_source=book_source, minimum_eligible_trades=1)
+        results.append(_compact(result))
+        print(json.dumps({"candidate": config.name, "book": "observed", "split": "development",
+                          "n": result["summary"]["eligible_trades"], "win": result["summary"]["win_rate"],
+                          "net": result["summary"]["net_profit"],
+                          "sample_criteria": result["assessment"]["sample_criteria_passed"]}), flush=True)
+    report = {"round": "observed BID/ASK confirmation", "source": source,
+              "preregistration_sha256": digest(OUT / "measured_book_preregistration.json"),
+              "script_sha256": digest(Path(__file__)), "initial_equity": 500000.,
+              "results": results, "candidate_count": 24,
+              "development_sample_positive_count": sum(row["assessment"]["sample_criteria_passed"] for row in results),
+              "no_winner_selected_before_all_selection_validation": True,
+              "independent_final": "UNTOUCHED", "paper_approved": False}
+    save(report_path, report, exclusive=True)
+    return report
+
+
+def measured_book_validate() -> dict:
+    measured_book_preregister()
+    report_path = OUT / "measured_book_validation_report.json"
+    if report_path.exists():
+        raise RuntimeError("Observed-book selection-validation already examined; preserve receipt")
+    dev_report = json.loads((OUT / "measured_book_development_report.json").read_text())
+    frame, source = load_measured_book(early=False)
+    save(OUT / "measured_book_validation_source_receipt.json", source, exclusive=True)
+    book_source = f"Dukascopy original paired BID/ASK M15; joint sha256={source['paired_sha256']}"
+    dev_by_name = {row["config"]["name"]: row for row in dev_report["results"]}
+    results = []
+    for config in candidates():
+        result = evaluate(frame, config, start="2018-01-01", end="2022-01-01",
+                          initial_equity=500000., observed_book=True,
+                          book_source=book_source, minimum_eligible_trades=1)
+        dev = dev_by_name[config.name]
+        pooled_n = dev["summary"]["eligible_trades"] + result["summary"]["eligible_trades"]
+        eligible = bool(dev["assessment"]["sample_criteria_passed"]
+                        and result["assessment"]["sample_criteria_passed"] and pooled_n >= 500)
+        row = {"config": config.to_dict(), "development": dev,
+               "validation": _compact(result), "pooled_natural_closes": pooled_n,
+               "pooled_count_is_independent_final": False, "selection_eligible": eligible,
+               "selection_score_minimum_split_return": min(dev["summary"]["net_profit"], result["summary"]["net_profit"]) / 500000.}
+        results.append(row)
+        print(json.dumps({"candidate": config.name, "book": "observed", "split": "validation",
+                          "n": result["summary"]["eligible_trades"], "win": result["summary"]["win_rate"],
+                          "net": result["summary"]["net_profit"], "both_sample_pass": eligible}), flush=True)
+    eligible = [row for row in results if row["selection_eligible"]]
+    ranked = sorted(eligible or results, key=lambda row: (
+        -row["selection_score_minimum_split_return"],
+        -row["validation"]["summary"]["net_profit"], row["config"]["name"]))
+    winner = ranked[0] if eligible else None
+    report = {"round": "observed BID/ASK confirmation", "source": source,
+              "development_report_sha256": digest(OUT / "measured_book_development_report.json"),
+              "preregistration_sha256": digest(OUT / "measured_book_preregistration.json"),
+              "script_sha256": digest(Path(__file__)), "initial_equity": 500000.,
+              "results": results, "eligible_count": len(eligible),
+              "selected": winner["config"] if winner else None,
+              "best_diagnostic": ranked[0], "selection_validation_is_final_test": False,
+              "independent_final": "UNTOUCHED", "paper_approved": False}
+    save(report_path, report, exclusive=True)
+    if winner:
+        save(OUT / "measured_book_selection_record.json", {
+            "selected_at_utc": datetime.now(timezone.utc).isoformat(),
+            "config": winner["config"], "initial_equity": 500000.,
+            "development": winner["development"], "validation": winner["validation"],
+            "pooled_natural_closes": winner["pooled_natural_closes"],
+            "source": source, "quote_model": "observed_bid_ask_opens",
+            "script_sha256": digest(Path(__file__)),
+            "preregistration_sha256": digest(OUT / "measured_book_preregistration.json"),
+            "validation_report_sha256": digest(report_path),
+            "final_results_examined": False, "paper_approved": False}, exclusive=True)
+        config = SessionConfig(**{key: value for key, value in winner["config"].items() if key != "name"})
+        stress = []
+        for factor in (1., 1.5, 2.):
+            for name, start, end in (("development", "2015-01-01", "2018-01-01"),
+                                     ("validation", "2018-01-01", "2022-01-01")):
+                result = evaluate(frame, config, start=start, end=end, factor=factor,
+                                  blocks=(7, 14, 28), initial_equity=500000., observed_book=True,
+                                  book_source=book_source, minimum_eligible_trades=1)
+                stress.append({"split": name, **result})
+        save(OUT / "measured_book_selected_details_and_stress.json", {
+            "config": winner["config"], "results": stress,
+            "source": source, "independent_final": "UNTOUCHED", "paper_approved": False}, exclusive=True)
+    return report
+
+
+def conservative_validation_probe() -> dict:
+    """Original fixed-cost validation of five actual2015-positive configs.
+
+    This is a labeled conservative price/cost proxy. It does not supply the
+    missing historical ASK, qualify the incomplete full-book study, or open
+    the independent final interval.
+    """
+    diagnostic_path = OUT / "measured_book_2015_diagnostic_report.json"
+    diagnostic = json.loads(diagnostic_path.read_text())
+    members = sorted((row for row in diagnostic["results"]
+                      if row["summary"]["net_profit"] > 0), key=lambda row: row["config"]["name"])
+    if len(members) != 5:
+        raise RuntimeError("Expected the five recorded2015 sample-positive candidates; do not change membership")
+    plan_path = OUT / "conservative_validation_probe_preregistration.json"
+    report_path = OUT / "conservative_validation_probe_report.json"
+    if report_path.exists():
+        raise RuntimeError("Conservative validation probe already examined; preserve receipt")
+    plan = {
+        "registered_at_utc": datetime.now(timezone.utc).isoformat(),
+        "purpose": "Check the five fixed2015 actual-book sample-positive configurations against unseen-by-this-session-study2018–21 outcomes with the original conservative cost proxy; no missing ASK fabrication",
+        "diagnostic_source_sha256": digest(diagnostic_path),
+        "member_rule": "Exactly all five configs with net_profit>0 in the recorded complete2015 observed-book diagnostic; no other strategy or parameter",
+        "candidate_count": 5, "candidates": [row["config"] for row in members],
+        "original_development": {"interval": ["2015-01-01", "2016-01-01"],
+                                 "quote_model": "observed authentic BID/ASK opens",
+                                 "selection_used": True},
+        "validation": {"interval": ["2018-01-01", "2022-01-01"],
+                       "data_file": str(VALIDATE),
+                       "data_sha256": digest(VALIDATE),
+                       "quote_kind": "bid", "cost_model": "original fixed2pip spread assumption; NOT historical observed ASK",
+                       "initial_equity": 500000., "costs": asdict(DEFAULT_COSTS),
+                       "maximum_signal_age_seconds": 900},
+        "alert_rule": "Each split netwins>=50%, positive net and natural profit, zero1% risk breaches, total pooled natural closes>=500",
+        "bootstrap": "7-calendar-day,10000replications,seed20261004; additional confidence diagnostic",
+        "source_cost_mix": "2015 development uses observed ASK;2018–21 validation uses fixed2pip cost proxy. Do not claim a single observed-book cost source across both periods",
+        "no_retuning_from_probe": True,
+        "history": "2016–17 outcomes were seen in earlier fixed-cost session studies;2018–21 prices/outcomes have been used by other repository research families. These five validation results are selection-validation, never independent final",
+        "previous_session_runs": 72, "extra_probe_runs": 5,
+        "canonical_full_observed_book_confirmation": "still blocked on missing2016–21ASK",
+        "independent_final": "UNTOUCHED", "paper_approved": False,
+        "script_sha256_at_registration": digest(Path(__file__)),
+    }
+    if plan_path.exists():
+        registered = json.loads(plan_path.read_text())
+        if (registered["candidates"] != plan["candidates"]
+                or registered["validation"] != plan["validation"]):
+            raise RuntimeError("Existing conservative probe preregistration cannot be changed")
+    else:
+        save(plan_path, plan, exclusive=True)
+    frame, source = load_verified(VALIDATE, early=False)
+    save(OUT / "conservative_validation_probe_source_receipt.json", source, exclusive=True)
+    results = []
+    for dev in members:
+        config = SessionConfig(**{key: value for key, value in dev["config"].items() if key != "name"})
+        result = evaluate(frame, config, start="2018-01-01", end="2022-01-01",
+                          initial_equity=500000., minimum_eligible_trades=1)
+        pooled_n = dev["summary"]["eligible_trades"] + result["summary"]["eligible_trades"]
+        dev_s = dev["summary"]
+        dev_positive = bool(dev_s["win_rate"] >= .5 and dev_s["net_profit"] > 0
+                            and dev_s["mean_net_pnl_per_natural_trade"] > 0
+                            and dev_s["risk_breaches"] == 0
+                            and dev_s["max_trade_adverse_equity_fraction"] <= .01
+                            and dev_s["max_trade_peak_drawdown_equity_fraction"] <= .01)
+        both_pass = bool(dev_positive and result["assessment"]["sample_criteria_passed"] and pooled_n >= 500)
+        row = {"config": config.to_dict(), "development_observed_book_2015": dev,
+               "validation_fixed_cost_proxy_2018_2021": _compact(result),
+               "pooled_natural_closes": pooled_n, "mixed_source_cost_alert_rule_passed": both_pass,
+               "pooled_n_is_independent_final": False,
+               "canonical_observed_book_qualified": False}
+        results.append(row)
+        print(json.dumps({"candidate": config.name, "validation_quote_model": "fixed2pip_proxy",
+                          "dev_n": dev_s["eligible_trades"], "val_n": result["summary"]["eligible_trades"],
+                          "val_net": result["summary"]["net_profit"],
+                          "val_win": result["summary"]["win_rate"],
+                          "pooled_n": pooled_n, "alert": both_pass}), flush=True)
+    report = {"preregistration_sha256": digest(plan_path), "source": source,
+              "results": results, "candidate_count": 5,
+              "positive_probe_candidates": [row["config"] for row in results if row["mixed_source_cost_alert_rule_passed"]],
+              "quote_model": "BID plus original fixed2pip spread assumption; conservative proxy",
+              "canonical_full_observed_book_confirmation": "BLOCKED, not supplied by proxy",
+              "selected": None, "independent_final": "UNTOUCHED", "paper_approved": False}
+    save(report_path, report, exclusive=True)
+    return report
+
+
+def self_check() -> dict:
+    """Synthetic clock and causal feature checks; no market P&L."""
+    clock = pd.DatetimeIndex(["2017-03-10T13:00Z", "2017-03-13T12:00Z",
+                              "2017-03-24T08:00Z", "2017-03-27T07:00Z"])
+    rows = []
+    for execution in clock:
+        rows.extend([execution - pd.Timedelta(minutes=15), execution])
+    times = pd.DatetimeIndex(sorted(rows))
+    frame = pd.DataFrame({"time": times, "open": np.ones(len(times)), "close": np.ones(len(times))})
+    for session, expected in (("ny08", clock[:2]), ("london08", clock[2:])):
+        _, allowed, _ = signals(frame, SessionConfig(session, "unconditional", 2, 40, 20))
+        actual = pd.DatetimeIndex(frame.loc[allowed, "time"])
+        if not actual.equals(expected):
+            raise AssertionError(f"DST/local clock failure: {session}")
+    times = pd.date_range("2017-05-01T06:00Z", periods=40, freq="15min")
+    frame = pd.DataFrame({"time": times, "open": np.ones(40), "close": np.linspace(.9999, .999, 40)})
+    config = SessionConfig("ny08", "prior6h_down", 2, 40, 20)
+    before = signals(frame, config)
+    changed = frame.copy()
+    changed.loc[30:, "close"] = 2.0
+    after = signals(changed, config)
+    if not all(np.array_equal(left[:30], right[:30]) for left, right in zip(before, after)):
+        raise AssertionError("Future price edits changed completed earlier signals")
+    if before[0][:23].any() or not before[0][23:].all():
+        raise AssertionError("Prior-six-hour warmup error")
+    gapped = frame.drop(index=25).reset_index(drop=True)
+    if signals(gapped, config)[0][25:].any():
+        raise AssertionError("Missing M15 observations incorrectly treated as contiguous")
+    return {"checks": 5, "status": "passed", "synthetic_only": True}
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("action", choices=("preregister", "self-check", "train", "validate", "capital-train", "capital-validate", "book-preregister", "book-self-check", "book-train", "book-validate", "book-2015-diagnostic", "conservative-validation-probe"))
+    args = parser.parse_args()
+    if args.action == "preregister":
+        output = preregister()
+    elif args.action == "self-check":
+        output = self_check()
+        save(OUT / "synthetic_checks.json", output)
+    elif args.action == "train":
+        output = train()
+    elif args.action == "capital-train":
+        output = capital_train()
+    elif args.action == "capital-validate":
+        output = capital_validate()
+    elif args.action == "book-preregister":
+        output = measured_book_preregister()
+    elif args.action == "book-self-check":
+        output = measured_book_self_check()
+    elif args.action == "book-train":
+        output = measured_book_train()
+    elif args.action == "book-validate":
+        output = measured_book_validate()
+    elif args.action == "book-2015-diagnostic":
+        output = measured_book_2015_diagnostic()
+    elif args.action == "conservative-validation-probe":
+        output = conservative_validation_probe()
+    else:
+        output = validate()
+    print(json.dumps({key: value for key, value in output.items()
+                      if key not in ("results", "best_diagnostic", "candidates")}, indent=2))
+
+
+if __name__ == "__main__":
+    main()

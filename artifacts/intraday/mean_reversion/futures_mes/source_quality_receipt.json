@@ -1,0 +1,40 @@
+{
+  "source_commit": "60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264",
+  "m5_bar_count": 16816,
+  "m15_bar_count": 5606,
+  "m5_sha256": "7f051702bc80ea670b58645f12b6ce6cc89ff50cd982aec766cb4630937e283e",
+  "m15_sha256": "e04166fbd7b114382e14c8ad66da9e5f776b8ecb88703248ae248298763cc42f",
+  "m5_start": "2026-01-20T13:25:00+00:00",
+  "m5_end": "2026-04-15T23:25:00+00:00",
+  "invalid_ohlc": 0,
+  "duplicates": 0,
+  "off_tick": 0,
+  "unsorted": 0,
+  "zero_volume": 0,
+  "median_m5_range_points": 4.5,
+  "complete_m5_to_m15_matching_groups": 5605,
+  "aggregate_mismatches": {
+    "open": 0,
+    "high": 0,
+    "low": 0,
+    "close": 0,
+    "volume": 0
+  },
+  "contract_identity": "Tracked updater always requests MES.M26 but imported Jan/Feb rows lack original backfill/raw receipts; native contract identity unverified",
+  "roll_policy": "All March excluded; daily flat; no claim identity is proved by these mitigations",
+  "final_outcomes": "UNTOUCHED",
+  "development_source_qa": {
+    "bars": 4956,
+    "valid_sessions": 18,
+    "calendar_entry_slots": 4867,
+    "required_scheduled_flat_quotes_present": true,
+    "adjacent_completed_1645_signal_and_1650_execution_quotes_present": true
+  },
+  "validation_source_qa": {
+    "bars": 2472,
+    "valid_sessions": 9,
+    "calendar_entry_slots": 2428,
+    "required_scheduled_flat_quotes_present": true,
+    "adjacent_completed_1645_signal_and_1650_execution_quotes_present": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "provider": "ejtraderLabs public broker-history mirror",
+  "repository": "https://github.com/ejtraderLabs/historical-data",
+  "pinned_commit": "fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd",
+  "source_url": "https://raw.githubusercontent.com/ejtraderLabs/historical-data/fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd/EURUSD/EURUSDm15.csv",
+  "retrieved_at_utc": "2026-10-04T12:51:52.295746+00:00",
+  "symbol": "EURUSD",
+  "timeframe": "M15",
+  "quote_side": "UNKNOWN",
+  "timezone": "UNKNOWN; timestamps intentionally naive",
+  "price_divisor": 100000,
+  "rows": 230400,
+  "invalid_row_indices_excluded": [],
+  "duplicate_timestamps": 0,
+  "unsorted_transitions": 0,
+  "first": "2012-11-14T15:00:00",
+  "last": "2022-03-04T23:45:00",
+  "raw_sha256": "8f9a8d0f7fe483cdede1f19dade91b79928f63678c7a199f990ee555be10faf1",
+  "normalized_sha256": "48a346db09c65dddc25ce55917854e2367f53861210ecd74d371b132edfcd58b",
+  "limitations": [
+    "Original broker and timezone unknown: do not infer UTC session edges.",
+    "Actual M15 bars; not upsampled H1 candles.",
+    "No authenticated bid/ask spread or trade-fill path."
+  ]
+}

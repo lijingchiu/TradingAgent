@@ -1,0 +1,422 @@
+{
+  "updated_at": "2026-10-04T13:51:48.005586+00:00",
+  "status": "no_edge_blocked_source",
+  "label": "短週期策略尚未通過驗證",
+  "reason": "已完成多組真實5／15分鐘回測，尚未找到同時滿足至少500筆、淨勝率50%與扣成本獲利的已驗證策略。實際買賣報價確認仍缺完整年度資料。",
+  "periods": {
+    "development": "外匯2015–2017（部分至2019）；期貨2026-01-21至02-13",
+    "validation": "外匯2018–2021（部分2020–2021）；期貨2026-02-16至02-27",
+    "final": "外匯2022-04-01至2024-09-30；期貨2026年4月完整交易日；均尚未評估"
+  },
+  "parameter_variant_count": 522,
+  "source_evaluation_count": 566,
+  "diagnostic_evaluation_count": 29,
+  "untuned_control_count": 30,
+  "count_note": "策略／標的／週期／資金／費用情境組合計一次；相同組合的不同來源確認另計。期貨費用情境分開計數，修復後重跑不重複當作新參數。交易筆數與試驗數分開。",
+  "legacy_trial_count": 608,
+  "final_untouched": true,
+  "selected": null,
+  "paper_entry_allowed": false,
+  "families": [
+    {
+      "name": "布林區間回復",
+      "symbol": "EUR/USD · GBP/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 48,
+      "source_evaluations": 72,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "bb32_z1.8_rebound_stop20_target10",
+        "trade_count": 718,
+        "win_rate": 0.6852367688022284,
+        "net_profit": -231.9566599999368,
+        "currency": "USD",
+        "split": "驗證期",
+        "initial_equity": 100000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "mean_reversion/eurusd/development_report.json",
+        "mean_reversion/gbpusd/development_report.json",
+        "mean_reversion/authoritative_eurusd/development_report.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "跨貨幣相對回復",
+      "symbol": "EUR/USD · GBP/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 64,
+      "source_evaluations": 64,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "cross384_z1.5_extreme_with_own_rebound_other16_10_stop20_target10",
+        "trade_count": 552,
+        "win_rate": 0.6757246376811594,
+        "net_profit": -185.75648999995667,
+        "currency": "USD",
+        "split": "驗證期",
+        "initial_equity": 100000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "mean_reversion/relative/eurusd/development_report.json",
+        "mean_reversion/relative/gbpusd/development_report.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "突破與趨勢延續",
+      "symbol": "EUR/USD · GBP/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 16,
+      "source_evaluations": 24,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "ema_pullback20_trend192_t20_s25",
+        "trade_count": 525,
+        "win_rate": 0.5828571428571429,
+        "net_profit": -127.36498999991908,
+        "currency": "USD",
+        "split": "驗證期",
+        "initial_equity": 100000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "breakout/eurusd_mirror_devval.json",
+        "breakout/gbpusd_mirror_devval.json",
+        "breakout/eurusd_dukascopy_devval.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "成本敏感分類模型",
+      "symbol": "EUR/USD · GBP/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 24,
+      "source_evaluations": 36,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "random_forest_b20_h96_p0.55",
+        "trade_count": 1958,
+        "win_rate": 0.5020429009193054,
+        "net_profit": -672.6207999997241,
+        "currency": "USD",
+        "split": "驗證期",
+        "initial_equity": 100000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "model/eurusd_mirror_devval_age_fixed.json",
+        "model/gbpusd_mirror_devval_age_fixed.json",
+        "model/eurusd_direct_bid_devval.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "多週期趨勢深回撤",
+      "symbol": "EUR/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 48,
+      "source_evaluations": 48,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "ema384_1536_dip10_rebound30_target20_stop80",
+        "trade_count": 544,
+        "win_rate": 0.7408088235294118,
+        "net_profit": -678.764273384018,
+        "currency": "USD",
+        "split": "驗證期",
+        "initial_equity": 500000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "model/pullback_direct_bid_devval.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "區間低點掃蕩回復",
+      "symbol": "EUR/USD",
+      "timeframes": [
+        "5m",
+        "15m"
+      ],
+      "trials": 48,
+      "source_evaluations": 48,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "sweep96_any_s30_t20",
+        "trade_count": 591,
+        "win_rate": 0.5786802030456852,
+        "net_profit": -221.51612999990027,
+        "currency": "USD",
+        "split": "驗證期",
+        "initial_equity": 100000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "sweep/m5_development_validation.json",
+        "sweep/m15_development_validation.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "交易時段與前段回復",
+      "symbol": "EUR/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 48,
+      "source_evaluations": 48,
+      "status": "未通過",
+      "diagnostic": null,
+      "report_paths": [
+        "mean_reversion/session_study/development_report.json",
+        "mean_reversion/session_study/capital_500000_development_report.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "交易時段順勢與完整尾部",
+      "symbol": "EUR/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 18,
+      "source_evaluations": 18,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "london08_unconditional_hold8h_s80_t80",
+        "trade_count": 1038,
+        "win_rate": 0.44990366088631983,
+        "net_profit": -1623.896364473875,
+        "currency": "USD",
+        "split": "驗證期",
+        "initial_equity": 500000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "breakout/utc_flow_fixed_2pip.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "定價時點後回復",
+      "symbol": "EUR/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 16,
+      "source_evaluations": 16,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "ny1015_down30m_5pip_s30_t10",
+        "trade_count": 282,
+        "win_rate": 0.5638297872340425,
+        "net_profit": -380.00456430769475,
+        "currency": "USD",
+        "split": "驗證期",
+        "initial_equity": 500000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "sweep/fixing/development_validation.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "美元／日圓趨勢深回撤",
+      "symbol": "USD/JPY",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 24,
+      "source_evaluations": 24,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "usdjpy_ema384_1536_dip10_rebound20_target20_stop50",
+        "trade_count": 701,
+        "win_rate": 0.6048502139800286,
+        "net_profit": -76156.62989625894,
+        "currency": "JPY",
+        "split": "驗證期",
+        "initial_equity": 50000000.0,
+        "explanation": "具代表性的高勝率診斷案例；未通過成本後獲利，並非選定策略"
+      },
+      "report_paths": [
+        "jpy/usdjpy_mirror_devval.json"
+      ],
+      "note": "參數與資金配置在評估前登記；最後保留期未用於選擇。"
+    },
+    {
+      "name": "實際買賣報價確認",
+      "symbol": "EUR/USD",
+      "timeframes": [
+        "15m"
+      ],
+      "trials": 0,
+      "source_evaluations": 0,
+      "status": "等待完整資料",
+      "diagnostic": {
+        "trade_count": 259,
+        "win_rate": 0.5135135135135135,
+        "net_profit": 155.84834289817223,
+        "currency": "USD",
+        "split": "2015 年開發診斷",
+        "initial_equity": 500000.0,
+        "explanation": "只有完整2015年的樣本獲利；少於500筆且尚無完整驗證，未選定。"
+      },
+      "report_paths": [
+        "mean_reversion/session_study/measured_book_2015_diagnostic_report.json"
+      ],
+      "note": "另有24次完整2015年報價診斷；不得稱為2015–2021完整驗證。"
+    },
+    {
+      "name": "微型標普均值回歸",
+      "symbol": "MES",
+      "timeframes": [
+        "5m"
+      ],
+      "trials": 24,
+      "source_evaluations": 24,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "mes_m5_w12_z1_none_stop4_target4",
+        "trade_count": 349,
+        "win_rate": 0.501432664756447,
+        "net_profit": -2404.30349375,
+        "currency": "USD",
+        "split": "開發＋選擇驗證（同一策略）",
+        "initial_equity": 5000000.0,
+        "explanation": "交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
+        "cost_profile": "conservative_bps_proxy"
+      },
+      "report_paths": [
+        "mean_reversion/futures_mes/development_report.json"
+      ],
+      "note": "費用情境分開計数；同一策略交易不重複合計。原生5分鐘供應商成交資料，非已驗證買賣報價或合約轉倉證明。"
+    },
+    {
+      "name": "那斯達克均值回歸",
+      "symbol": "NQ",
+      "timeframes": [
+        "5m"
+      ],
+      "trials": 48,
+      "source_evaluations": 48,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "nq_m5_w6_z1_none_s20_t20",
+        "trade_count": 566,
+        "win_rate": 0.4381625441696113,
+        "net_profit": -57547.528775,
+        "currency": "USD",
+        "split": "開發＋選擇驗證（同一策略）",
+        "initial_equity": 80000000.0,
+        "explanation": "交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
+        "cost_profile": "conservative_bps_proxy"
+      },
+      "report_paths": [
+        "nq/development_report.json"
+      ],
+      "note": "費用情境分開計数；同一策略交易不重複合計。原生5分鐘供應商成交資料，非已驗證買賣報價或合約轉倉證明。"
+    },
+    {
+      "name": "微型標普趨勢與動量",
+      "symbol": "MES",
+      "timeframes": [
+        "5m"
+      ],
+      "trials": 48,
+      "source_evaluations": 48,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "mes_momentum_h6_ema48_momentum_stop8_target8",
+        "trade_count": 466,
+        "win_rate": 0.44635193133047213,
+        "net_profit": -4370.63293125,
+        "currency": "USD",
+        "split": "開發＋選擇驗證（同一策略）",
+        "initial_equity": 5000000.0,
+        "explanation": "交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
+        "cost_profile": "proportional_conservative"
+      },
+      "report_paths": [
+        "mean_reversion/futures_mes_momentum/development_report.json"
+      ],
+      "note": "費用情境分開計数；同一策略交易不重複合計。原生5分鐘供應商成交資料，非已驗證買賣報價或合約轉倉證明。"
+    },
+    {
+      "name": "那斯達克趨勢與動量",
+      "symbol": "NQ",
+      "timeframes": [
+        "5m"
+      ],
+      "trials": 48,
+      "source_evaluations": 48,
+      "status": "未通過",
+      "diagnostic": {
+        "name": "nq_m5_momentum_h6_ema48_positive_momentum_s40_t40",
+        "trade_count": 440,
+        "win_rate": 0.45454545454545453,
+        "net_profit": -46873.595525,
+        "currency": "USD",
+        "split": "開發＋選擇驗證（同一策略）",
+        "initial_equity": 80000000.0,
+        "explanation": "交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
+        "cost_profile": "conservative_bps_proxy"
+      },
+      "report_paths": [
+        "nq_momentum/development_report.json"
+      ],
+      "note": "費用情境分開計数；同一策略交易不重複合計。原生5分鐘供應商成交資料，非已驗證買賣報價或合約轉倉證明。"
+    }
+  ],
+  "sources": {
+    "provider": "Dukascopy 官方1分鐘歷史檔，逐筆檢查後完整聚合；另有明確標示時區未知的鏡像研究",
+    "quote_side": "BID；實際ASK資料目前只有2015年完整",
+    "time_zone": "官方資料UTC；未知鏡像禁止命名時段研究",
+    "bid_m5_bars": 523528,
+    "bid_m15_bars": 174523,
+    "ask_status": "2015完整，2016–2021不足；未補造價差。獨立公開FXCM鏡像有OHLC錯誤，未用於驗證。",
+    "futures_status": "MES／NQ原生M5供應商樣本；2026年1–2月選擇，4月保留。原生合約身分及實際買賣報價未獲完整證明。"
+  },
+  "report_url": "https://github.com/lijingchiu/TradingAgent/blob/main/artifacts/intraday/README.md",
+  "evidence_sha256": {
+    "mean_reversion/eurusd/development_report.json": "694c24a3b25d54e521312ba95de6e615b207198e8b44e54a4d67ddf7a42b4d3d",
+    "mean_reversion/gbpusd/development_report.json": "aa7de26887b3548703694e08ba643fe5d9d6e8649e1dfb369422bb0cd5aeed5f",
+    "mean_reversion/authoritative_eurusd/development_report.json": "60a44046874b668906a7211f84f66afb90683c44d750eb4ed9aab7e9d2219766",
+    "mean_reversion/relative/eurusd/development_report.json": "640015f0f60d62a8a9c3cd64123681e0afec241ccb1ca450c8364835a3b8b4a8",
+    "mean_reversion/relative/gbpusd/development_report.json": "a8046b2bfbd369384e222a7e88c3655331ae0bf5464f514bee2cd8844a34b658",
+    "breakout/eurusd_mirror_devval.json": "0e0950fcdf76bd9d9ce754eb8beb515ea0c3f2d9bbcda066998ab464b11d02d0",
+    "breakout/gbpusd_mirror_devval.json": "ddfc3e6c9e2b582199516157b58d9459d187ec91bbbdb497fa8c3d03cdb939c2",
+    "breakout/eurusd_dukascopy_devval.json": "91af288bf2abbfcb179836a1f543e6d7729f60c4408758a24c8ffcaf586d5ad6",
+    "model/eurusd_mirror_devval_age_fixed.json": "99e77fd08320a618019c2d93bbd2ef8720f33188296c085abfa49943270ecac4",
+    "model/gbpusd_mirror_devval_age_fixed.json": "1a630977e0802daed05d975093e07449bf3ee7f8e5f73996063f8ae3b3009fe5",
+    "model/eurusd_direct_bid_devval.json": "7bb914d1509830d8cdac4614b6439013084e98a475190f093735b18e2c2152cc",
+    "model/pullback_direct_bid_devval.json": "3360b93fbc7b203324eb511d392b3321043b8b29f5b286414e95fcf895ddecba",
+    "sweep/m5_development_validation.json": "31cc5ec6334dc1d4237baf834b62d3d0eee84cea75a5af9a11714b0a21319fe1",
+    "sweep/m15_development_validation.json": "cb70de1285ab4e54fa6cb1fce3b19b2ae4d6b4fb7447a1e036c20665aedfde91",
+    "mean_reversion/session_study/development_report.json": "b3ec1c02795b6a081c6778ed90ab034cd99d4c303c777242a651f47f339568f5",
+    "mean_reversion/session_study/capital_500000_development_report.json": "b6caa50033858ab17b258b9c4c832022989344b0c1f0516c9bdcaad1a189cb86",
+    "breakout/utc_flow_fixed_2pip.json": "8170163fb0c5d4e26055b8da9c70faf4cb963528b147dbc3a9d00f90038077c2",
+    "sweep/fixing/development_validation.json": "16a13e51ffe2ca821bc3b72c727cf9b14c8a5ee8446b953d99b6105235094cde",
+    "jpy/usdjpy_mirror_devval.json": "03f60522c149f9bb6b8ed0ff3dbea0f68aac02c33423c01b9d684dd787ad52b0",
+    "mean_reversion/session_study/measured_book_2015_diagnostic_report.json": "731173259dc5788737cd683ae107e9d117b74405f0fcbc55e1ee6f4e57d49a56",
+    "mean_reversion/futures_mes/development_report.json": "d581d0d373f59558b28f8a253526a4e4df3a36f288eeade04110cf205ebed0fa",
+    "nq/development_report.json": "f2d4bce11e35cf2b7f578914deb36b40fc9f6aaab64c0e6d3f3a72f8aefba99b",
+    "mean_reversion/futures_mes_momentum/development_report.json": "2e6aa69402ae58743cd8519947905785be60167e38ccef09016c43b984d638ca",
+    "nq_momentum/development_report.json": "4ed53373e819473174f13323f34ae32bbfae57509d2b52ce394ab9136e45203d"
+  }
+}

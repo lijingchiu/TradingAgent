@@ -6,3 +6,12 @@ state/.lock
 state/
 *.tmp
 artifacts/screenshots/
+*.nbc
+*.nbi
+*.part
+data/intraday/*.csv
+data/intraday/*.csv.gz
+data/intraday/dukascopy_raw/
+artifacts/intraday/jpy/*.csv
+data/intraday/**/*.qhs5
+data/intraday/fxcm_public_mirror/*.hpp

@@ -1,0 +1,15 @@
+{
+  "observed_utc": "2026-10-04T13:12:19.957320+00:00",
+  "freeserv_status": 429,
+  "freeserv_error": "Too Many Requests (Bot blocked). For instructions see https://www.dukascopy.com/wiki/en/development/data-export/",
+  "archive_error_status": 503,
+  "archive_error_body": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout",
+  "action": "Stopped bulk ASK downloads after sustained upstream failures; no verification bypass or price imputation",
+  "ASK_cached_archive_year_counts": {
+    "2020": 2,
+    "2017": 2,
+    "2016": 77,
+    "2021": 2,
+    "2015": 313
+  }
+}

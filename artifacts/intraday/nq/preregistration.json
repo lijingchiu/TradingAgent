@@ -1,0 +1,347 @@
+{
+  "created_at_utc": "2026-10-04T13:38:24.296515+00:00",
+  "written_before_any_nq_strategy_pnl": true,
+  "source": {
+    "repository": "https://github.com/axb0306/cme-futures-ohlc",
+    "pinned_commit": "60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264",
+    "url": "https://raw.githubusercontent.com/axb0306/cme-futures-ohlc/60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264/NQ/NQ_5min_20260120_20260415.csv",
+    "path": "artifacts/intraday/nq/source/NQ_5min_20260120_20260415.csv",
+    "sha256": "053a99028da0675d828141e5082af9bfadc9c2c24cbc2052077fdc3df3525005",
+    "timeframe": "native_M5",
+    "timestamp_timezone": "UTC_as_source_declares",
+    "bar_timestamp_convention": "Assumed bar-opening time; provider label semantics independently unverified",
+    "instrument": "NQ_root_csv_not_MNQ",
+    "contract_multiplier_usd_per_point": 20,
+    "quote_side": "last_trade_OHLC_as_declared_source",
+    "contract_identity": "updater_requests_CON.F.US.ENQ.M26_initial_backfill_unverified",
+    "source_quality_receipt_sha256": "195bae0ed9215ac9942f128cb9488aa77743e9e25ddf9eea6be29590a9f1eade"
+  },
+  "family": [
+    {
+      "name": "nq_m5_w6_z1_none_s20_t20",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 20,
+      "target_points": 20
+    },
+    {
+      "name": "nq_m5_w6_z1_none_s30_t30",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 30,
+      "target_points": 30
+    },
+    {
+      "name": "nq_m5_w6_z1_none_s40_t40",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_w6_z1_above_ema96_s20_t20",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 20,
+      "target_points": 20
+    },
+    {
+      "name": "nq_m5_w6_z1_above_ema96_s30_t30",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 30,
+      "target_points": 30
+    },
+    {
+      "name": "nq_m5_w6_z1_above_ema96_s40_t40",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_w6_z1.5_none_s20_t20",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 20,
+      "target_points": 20
+    },
+    {
+      "name": "nq_m5_w6_z1.5_none_s30_t30",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 30,
+      "target_points": 30
+    },
+    {
+      "name": "nq_m5_w6_z1.5_none_s40_t40",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_w6_z1.5_above_ema96_s20_t20",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 20,
+      "target_points": 20
+    },
+    {
+      "name": "nq_m5_w6_z1.5_above_ema96_s30_t30",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 30,
+      "target_points": 30
+    },
+    {
+      "name": "nq_m5_w6_z1.5_above_ema96_s40_t40",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_w12_z1_none_s20_t20",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 20,
+      "target_points": 20
+    },
+    {
+      "name": "nq_m5_w12_z1_none_s30_t30",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 30,
+      "target_points": 30
+    },
+    {
+      "name": "nq_m5_w12_z1_none_s40_t40",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_w12_z1_above_ema96_s20_t20",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 20,
+      "target_points": 20
+    },
+    {
+      "name": "nq_m5_w12_z1_above_ema96_s30_t30",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 30,
+      "target_points": 30
+    },
+    {
+      "name": "nq_m5_w12_z1_above_ema96_s40_t40",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_w12_z1.5_none_s20_t20",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 20,
+      "target_points": 20
+    },
+    {
+      "name": "nq_m5_w12_z1.5_none_s30_t30",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 30,
+      "target_points": 30
+    },
+    {
+      "name": "nq_m5_w12_z1.5_none_s40_t40",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_w12_z1.5_above_ema96_s20_t20",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 20,
+      "target_points": 20
+    },
+    {
+      "name": "nq_m5_w12_z1.5_above_ema96_s30_t30",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 30,
+      "target_points": 30
+    },
+    {
+      "name": "nq_m5_w12_z1.5_above_ema96_s40_t40",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 40,
+      "target_points": 40
+    }
+  ],
+  "declared_candidate_count": 24,
+  "declared_cost_operating_variant_count": 48,
+  "splits": {
+    "development": {
+      "start_inclusive": "2026-01-21",
+      "end_exclusive": "2026-02-14",
+      "sessions": 18
+    },
+    "validation": {
+      "start_inclusive": "2026-02-16",
+      "end_exclusive": "2026-02-28",
+      "sessions": 9
+    },
+    "final": {
+      "start_inclusive": "2026-04-01",
+      "end_exclusive": "2026-04-16",
+      "sessions": 10
+    }
+  },
+  "calendar": {
+    "timezone": "America/New_York",
+    "session_date": "NY_date_plus_one_after_18:00",
+    "weekdays": "Globex_session_date_Monday_to_Friday",
+    "exclude_entire_session_and_UTC_month": "2026-03; no March rows in strategy features or entries",
+    "excluded_short_session_dates": [
+      "2026-02-16",
+      "2026-04-03"
+    ],
+    "entry_execution_clock": "18:30_through_16:15_inclusive",
+    "mandatory_flat": "16:40_completed_signal_executes_16:45_open",
+    "missing_16:40_or_16:45_quotes": "block_entire_study_before_strategy_evaluation"
+  },
+  "signal": {
+    "prior_dip": "close[j-1] relative to population mean/std of window closes ending at j-2; z<=-threshold",
+    "completed_rebound_confirmation": "close[j]>open[j] and close[j]>close[j-1]",
+    "regime_when_enabled": "close[j-1]>=EMA96[j-2]",
+    "feature_reset": "every native timestamp gap >300 seconds, including maintenance/weekends",
+    "warmup": "all configurations require >=98 consecutive observations including the rebound bar; EMA96 excludes dip/rebound",
+    "entry": "Next native M5 open after completed rebound; max signal age 300 seconds",
+    "one_position": true,
+    "same_bar_reentry": false,
+    "holding_limit": "12_bars_or_daily_flat_whichever_first; hard_days1",
+    "stop_target_anchor": "entry_input_last_trade_open",
+    "OHLC_ambiguous_stop_target_priority": "stop_first",
+    "gap_exit": "actual_observed_open_unclipped",
+    "terminal_liquidations": "fees_and_PnL_in_account_totals_exclude_from_natural_close_statistics",
+    "selection_warmup": "up_to_two_calendar_days_before_first_session; allowedmaskblocksoutside_split"
+  },
+  "costs": {
+    "profiles": {
+      "conservative_bps_proxy": {
+        "spread_pips": 2,
+        "slippage_pips": 1,
+        "commission_bps": 0.35,
+        "minimum_commission": 0.1,
+        "carry_per_1000_per_day": 0.0,
+        "pip_size": 0.25
+      },
+      "operating_fixed_5_per_side": {
+        "spread_pips": 2,
+        "slippage_pips": 1,
+        "commission_bps": 0,
+        "minimum_commission": 5,
+        "carry_per_1000_per_day": 0.0,
+        "pip_size": 0.25
+      }
+    },
+    "operating_profile": "operating_fixed_5_per_side",
+    "conservative_sensitivity_profile": "conservative_bps_proxy",
+    "fee_scenario_disclosure": "24 unchanged signals under each of two profiles = 48 disclosed cost-operating variants; added flat USD5 per contract per side before any NQ P&L. Both are configured simulations, not measured broker schedules.",
+    "flat_fee_guard": "Every trade must have exactly one NQ contract or evaluation fails; minimum commission USD5 then implements USD5 per contract per side correctly",
+    "fill_side_cost_points": 0.5,
+    "baseline_fill_prices": "buy_last_trade_open_plus0.5; sell_exit_last_trade_reference_minus0.5",
+    "interpretation": "conservative_mid_proxy_applied_to_last_trade_OHLC_not_observed_book",
+    "verified_fee_schedule": false,
+    "final_stress_if_later_authorized": [
+      1.5,
+      2.0
+    ],
+    "stress_rounding": "round_each_side_price_friction_up_to0.25tick; scalecommission_andminimumfee"
+  },
+  "risk": {
+    "initial_virtual_equity_usd": 80000000.0,
+    "unit_step": 20,
+    "one_NQ_contract_when_capacity_allows": true,
+    "numeric_model": "fully_paid_nonnegative_price_units;0.8percentprincipalcap;1percentfullprincipalbudget",
+    "derivative_variation_margin_bound_established": false,
+    "activation_authorized": false,
+    "observed_checks": "Both adverse excursion versus entry equity and peak-to-trough trade drawdown must be <=1 percent"
+  },
+  "selection": {
+    "financial_eligibility_each_split": "natural_count>0,net_win_rate>=0.5,positive_natural_and_account_net,zero_observed_1percent_breaches",
+    "rank": "maximize_minimum_development_validation_net_return",
+    "tie_breakers": [
+      "maximum_validation_net_return",
+      "candidate_name_ascending"
+    ],
+    "rank_cost_profile": "operating_fixed_5_per_side; conservative profile retained as sensitivity, not used to pick a different final winner",
+    "frequency_projection": "27_dev_validation_sessions_plus10reserved_final_sessions;projected_count=observed_selection_count*37/27",
+    "minimum_observed_selection_natural_count_for_projection500": 365,
+    "frequency_eligibility_is_projection_not_actual_count": true,
+    "literal_user_count": "500_total_natural_closes_across_dev_validation_final",
+    "preferred_independent_final_count": 500,
+    "final_must_remain_unread_before_freeze": true
+  },
+  "statistics": {
+    "wilson": "95percent_independence_assumption",
+    "final_bootstrap_if_later_authorized": {
+      "unit": "UTC calendar realized daily returns; previous realized equity denominator; zero days retained",
+      "block_calendar_days": 7,
+      "replications": 10000,
+      "seed": 20261004,
+      "sensitivity_blocks_calendar_days": [
+        14,
+        28
+      ]
+    }
+  },
+  "software": {
+    "study_sha256": "884ebb7ea8fdbf1a9b75734d07fccb15d6525ad5c3b4319997b1a50e06937809",
+    "engine_sha256": "4d39faa9ad51be2b166e9485786aad72c4e174a53973cfc1cc64cb3a2944b8de",
+    "statistics_sha256": "be7955a5a052134c69f2b6aa9a16d286ab335cd6fa7cdc23640238946b5f3590"
+  },
+  "source_quality_only_final_inspection_permitted": true,
+  "source_audit_row_count": 16787,
+  "limitations": [
+    "Third-party TopstepX/ProjectX mirror; original API responses not authenticated here.",
+    "CSV has no per-row expiry identifier; initial historical native contract identity unverified.",
+    "Last-trade candles do not establish observable bid/ask spread or queue/fill ordering.",
+    "UTC timestamp semantics are source-declared; the bar-start label convention is assumed and independently unverified.",
+    "Commission schedule remains an explicit assumption and is not independently verified.",
+    "Virtual USD80 million supports whole-contract arithmetic only; it does not establish a derivative loss guarantee.",
+    "24 additional NQ signal configurations and 48 cost-operating variants are disclosed selection trials; sample profit does not establish future expectancy."
+  ]
+}

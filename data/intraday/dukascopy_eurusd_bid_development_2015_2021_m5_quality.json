@@ -1,0 +1,10 @@
+{
+  "file": "dukascopy_eurusd_bid_development_2015_2021_m5.csv",
+  "rows": 523528,
+  "duplicate_timestamps": 0,
+  "unsorted_transitions": 0,
+  "invalid_ohlc_rows": 0,
+  "zero_or_negative_volume_bars": 0,
+  "bar_alignment_errors": 0,
+  "expected_no_trading_gaps_preserved": true
+}

@@ -1,0 +1,8 @@
+{
+  "registered_at_utc": "2026-10-04T13:44:20.699938+00:00",
+  "extension_sha256": "7ecedd427caa109213ca3da7b04b3ceac8682cb326d82154336d33048b2155e0",
+  "calendar_clarification": "All UTC March rows are intentionally excluded. This removes March31 UTC opening bars of the Apr1 Globex session. Because incomplete sessions are excluded, momentum-family final omits Apr1 as well as the known Apr3 shortened session; nine complete reserved sessions remain. Do not compute April signals or outcomes before a joint frozen winner.",
+  "selection_sessions": 27,
+  "reserved_complete_sessions": 9,
+  "projection_rule": "selection natural count \u00d736/27. This is a projection, never an observed final count. Prior rejected families retain their original disclosed projection; no winning selection changes."
+}

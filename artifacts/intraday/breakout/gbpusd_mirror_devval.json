@@ -1,0 +1,4951 @@
+{
+  "symbol": "GBPUSD",
+  "source": "ejtraderLabs mirror; timezone undocumented; chronology only; midpoint quote assumption",
+  "quote_kind": "mid",
+  "quote_assumption": "Midpoint assumption; source quote side must be checked separately",
+  "data_path": "data/intraday/mirror_gbpusd_m15.csv",
+  "data_sha256": "df26ab9e4adf4a0856d683a73b3151f3ed91b381368c78a17eafc27033c56180",
+  "preregistration_sha256": "81956521d9450858613d16102faa359984fddd5fbb214b36eb82487dd78fd3b6",
+  "holdout_evaluated": false,
+  "candidates": [
+    {
+      "config": {
+        "name": "donchian12_trend192_t20_s25",
+        "family": "donchian",
+        "lookback": 12,
+        "trend_span": 192,
+        "target_pips": 20,
+        "stop_pips": 25,
+        "min_atr_pips": 4,
+        "max_atr_pips": 15,
+        "max_holding_bars": 96
+      },
+      "development": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99506.42327999989,
+          "net_profit": -493.57671999983336,
+          "net_return": -0.004935767199998334,
+          "closed_trades": 1233,
+          "natural_closed_trades": 1233,
+          "eligible_trades": 1233,
+          "wins": 662,
+          "losses": 571,
+          "breakeven_trades": 0,
+          "win_rate": 0.5369018653690186,
+          "net_profit_per_trade": -0.4003055312245202,
+          "natural_net_profit": -493.57671999983336,
+          "natural_net_profit_per_trade": -0.4003055312245202,
+          "mean_net_pips_per_trade": -6.827661437242472,
+          "profit_factor": 0.5308641595117001,
+          "natural_profit_factor": 0.5308641595117001,
+          "mean_winning_trade": 0.8436872205439285,
+          "mean_losing_trade": -1.8425528196145604,
+          "total_commission": 246.59999999999997,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 174.83351999985135,
+          "max_account_drawdown_close_marks": 0.0049891686000011395,
+          "max_trade_adverse_equity_fraction": 0.00011222305463320226,
+          "max_trade_peak_drawdown_equity_fraction": 0.00011904809602791608,
+          "max_funded_loss_equity_fraction": 0.008001998706434098,
+          "risk_breaches": 0,
+          "terminal_liquidations": 0,
+          "rejected_entries": 0,
+          "bars": 124097,
+          "first_epoch": 1420189200,
+          "last_epoch": 1577833200,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 3
+        },
+        "stability": {
+          "months_with_trades": 60,
+          "positive_months": 2,
+          "negative_months": 58,
+          "monthly": [
+            {
+              "month": "2015-01",
+              "trades": 15,
+              "net_profit": -15.168219999998076,
+              "net_win_rate": 0.26666666666666666
+            },
+            {
+              "month": "2015-02",
+              "trades": 23,
+              "net_profit": -6.928279999997274,
+              "net_win_rate": 0.5652173913043478
+            },
+            {
+              "month": "2015-03",
+              "trades": 3,
+              "net_profit": -0.18367999999964169,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2015-04",
+              "trades": 26,
+              "net_profit": -12.054959999996798,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2015-05",
+              "trades": 11,
+              "net_profit": -3.855279999998694,
+              "net_win_rate": 0.5454545454545454
+            },
+            {
+              "month": "2015-06",
+              "trades": 24,
+              "net_profit": -15.466699999997099,
+              "net_win_rate": 0.4166666666666667
+            },
+            {
+              "month": "2015-07",
+              "trades": 20,
+              "net_profit": -4.810399999997737,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2015-08",
+              "trades": 21,
+              "net_profit": -10.605579999997506,
+              "net_win_rate": 0.47619047619047616
+            },
+            {
+              "month": "2015-09",
+              "trades": 16,
+              "net_profit": -2.593839999998134,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2015-10",
+              "trades": 31,
+              "net_profit": -5.822519999996362,
+              "net_win_rate": 0.6129032258064516
+            },
+            {
+              "month": "2015-11",
+              "trades": 18,
+              "net_profit": -15.227759999997744,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2015-12",
+              "trades": 15,
+              "net_profit": -10.425839999998121,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2016-01",
+              "trades": 8,
+              "net_profit": -3.751939999998969,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2016-02",
+              "trades": 13,
+              "net_profit": -7.421239999998324,
+              "net_win_rate": 0.46153846153846156
+            },
+            {
+              "month": "2016-03",
+              "trades": 21,
+              "net_profit": -11.251579999997256,
+              "net_win_rate": 0.47619047619047616
+            },
+            {
+              "month": "2016-04",
+              "trades": 17,
+              "net_profit": -1.856839999997896,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2016-05",
+              "trades": 18,
+              "net_profit": -5.913339999997751,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2016-06",
+              "trades": 6,
+              "net_profit": -0.3492399999992639,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2016-07",
+              "trades": 15,
+              "net_profit": -6.150309999997978,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2016-08",
+              "trades": 17,
+              "net_profit": -12.51049999999757,
+              "net_win_rate": 0.4117647058823529
+            },
+            {
+              "month": "2016-09",
+              "trades": 21,
+              "net_profit": -11.759279999997052,
+              "net_win_rate": 0.47619047619047616
+            },
+            {
+              "month": "2016-10",
+              "trades": 10,
+              "net_profit": -8.12565999999846,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2016-11",
+              "trades": 23,
+              "net_profit": -13.17479999999656,
+              "net_win_rate": 0.4782608695652174
+            },
+            {
+              "month": "2016-12",
+              "trades": 17,
+              "net_profit": 0.07182000000232192,
+              "net_win_rate": 0.7058823529411765
+            },
+            {
+              "month": "2017-01",
+              "trades": 23,
+              "net_profit": -4.540099999996655,
+              "net_win_rate": 0.6086956521739131
+            },
+            {
+              "month": "2017-02",
+              "trades": 16,
+              "net_profit": -11.037479999997613,
+              "net_win_rate": 0.4375
+            },
+            {
+              "month": "2017-03",
+              "trades": 21,
+              "net_profit": 2.276680000002973,
+              "net_win_rate": 0.7142857142857143
+            },
+            {
+              "month": "2017-04",
+              "trades": 25,
+              "net_profit": -8.41543999999642,
+              "net_win_rate": 0.56
+            },
+            {
+              "month": "2017-05",
+              "trades": 25,
+              "net_profit": -20.712739999996383,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2017-06",
+              "trades": 31,
+              "net_profit": -18.365599999995766,
+              "net_win_rate": 0.5806451612903226
+            },
+            {
+              "month": "2017-07",
+              "trades": 23,
+              "net_profit": -1.8711399999968543,
+              "net_win_rate": 0.6521739130434783
+            },
+            {
+              "month": "2017-08",
+              "trades": 15,
+              "net_profit": -4.715819999997848,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2017-09",
+              "trades": 29,
+              "net_profit": -2.008759999996101,
+              "net_win_rate": 0.6551724137931034
+            },
+            {
+              "month": "2017-10",
+              "trades": 22,
+              "net_profit": -16.28017999999687,
+              "net_win_rate": 0.4090909090909091
+            },
+            {
+              "month": "2017-11",
+              "trades": 36,
+              "net_profit": -23.24389999999493,
+              "net_win_rate": 0.4444444444444444
+            },
+            {
+              "month": "2017-12",
+              "trades": 17,
+              "net_profit": -4.373919999997711,
+              "net_win_rate": 0.5882352941176471
+            },
+            {
+              "month": "2018-01",
+              "trades": 47,
+              "net_profit": -0.6293199999939958,
+              "net_win_rate": 0.6808510638297872
+            },
+            {
+              "month": "2018-02",
+              "trades": 16,
+              "net_profit": -2.469679999997962,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2018-03",
+              "trades": 30,
+              "net_profit": -11.848599999996079,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2018-04",
+              "trades": 24,
+              "net_profit": -11.437279999996882,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-05",
+              "trades": 8,
+              "net_profit": -3.9110399999989074,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-06",
+              "trades": 20,
+              "net_profit": -10.042579999997335,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-07",
+              "trades": 29,
+              "net_profit": -8.274129999996124,
+              "net_win_rate": 0.5862068965517241
+            },
+            {
+              "month": "2018-08",
+              "trades": 20,
+              "net_profit": -7.216319999997169,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2018-09",
+              "trades": 25,
+              "net_profit": -0.09587999999662467,
+              "net_win_rate": 0.68
+            },
+            {
+              "month": "2018-10",
+              "trades": 16,
+              "net_profit": -5.182759999997787,
+              "net_win_rate": 0.5625
+            },
+            {
+              "month": "2018-11",
+              "trades": 21,
+              "net_profit": -9.098979999997034,
+              "net_win_rate": 0.5238095238095238
+            },
+            {
+              "month": "2018-12",
+              "trades": 24,
+              "net_profit": -12.158259999996517,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2019-01",
+              "trades": 33,
+              "net_profit": -15.037759999995313,
+              "net_win_rate": 0.5151515151515151
+            },
+            {
+              "month": "2019-02",
+              "trades": 26,
+              "net_profit": -7.448099999996401,
+              "net_win_rate": 0.5769230769230769
+            },
+            {
+              "month": "2019-03",
+              "trades": 15,
+              "net_profit": -14.175079999997836,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2019-04",
+              "trades": 17,
+              "net_profit": -7.093739999997762,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2019-05",
+              "trades": 9,
+              "net_profit": -0.33953999999877504,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2019-06",
+              "trades": 27,
+              "net_profit": -9.430339999996104,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2019-07",
+              "trades": 10,
+              "net_profit": -5.116199999998529,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2019-08",
+              "trades": 24,
+              "net_profit": -22.529339999996296,
+              "net_win_rate": 0.375
+            },
+            {
+              "month": "2019-09",
+              "trades": 25,
+              "net_profit": -5.686059999996358,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2019-10",
+              "trades": 25,
+              "net_profit": -16.895899999996345,
+              "net_win_rate": 0.44
+            },
+            {
+              "month": "2019-11",
+              "trades": 15,
+              "net_profit": -6.122619999997878,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2019-12",
+              "trades": 35,
+              "net_profit": -2.7128399999952304,
+              "net_win_rate": 0.6571428571428571
+            }
+          ]
+        }
+      },
+      "validation": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99761.09634000028,
+          "net_profit": -238.90365999991116,
+          "net_return": -0.0023890365999991114,
+          "closed_trades": 648,
+          "natural_closed_trades": 647,
+          "eligible_trades": 647,
+          "wins": 353,
+          "losses": 294,
+          "breakeven_trades": 0,
+          "win_rate": 0.5455950540958269,
+          "net_profit_per_trade": -0.3686784876541839,
+          "natural_net_profit": -238.06753999991128,
+          "natural_net_profit_per_trade": -0.3679560123646233,
+          "mean_net_pips_per_trade": -6.183481175415812,
+          "profit_factor": 0.5592143951842907,
+          "natural_profit_factor": 0.5600784117010279,
+          "mean_winning_trade": 0.8586161189802937,
+          "mean_losing_trade": -1.8406769727889623,
+          "total_commission": 129.6,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 93.22055999992074,
+          "max_account_drawdown_close_marks": 0.00239339458699653,
+          "max_trade_adverse_equity_fraction": 2.6465807870069058e-05,
+          "max_trade_peak_drawdown_equity_fraction": 2.8827487608904653e-05,
+          "max_funded_loss_equity_fraction": 0.008001999002892272,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 49814,
+          "first_epoch": 1577944800,
+          "last_epoch": 1640991600,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 0
+        },
+        "stability": {
+          "months_with_trades": 24,
+          "positive_months": 1,
+          "negative_months": 23,
+          "monthly": [
+            {
+              "month": "2020-01",
+              "trades": 20,
+              "net_profit": -4.48759999999724,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2020-02",
+              "trades": 14,
+              "net_profit": -10.310919999998157,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2020-03",
+              "trades": 16,
+              "net_profit": -1.9974699999977474,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2020-04",
+              "trades": 28,
+              "net_profit": -8.646279999995906,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2020-05",
+              "trades": 21,
+              "net_profit": -9.34929999999686,
+              "net_win_rate": 0.5238095238095238
+            },
+            {
+              "month": "2020-06",
+              "trades": 29,
+              "net_profit": -11.248519999995743,
+              "net_win_rate": 0.5517241379310345
+            },
+            {
+              "month": "2020-07",
+              "trades": 50,
+              "net_profit": -19.76141999999279,
+              "net_win_rate": 0.54
+            },
+            {
+              "month": "2020-08",
+              "trades": 32,
+              "net_profit": -13.160799999995541,
+              "net_win_rate": 0.53125
+            },
+            {
+              "month": "2020-09",
+              "trades": 24,
+              "net_profit": -6.442819999996646,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2020-10",
+              "trades": 27,
+              "net_profit": -1.0233999999963028,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-11",
+              "trades": 38,
+              "net_profit": -13.851059999994769,
+              "net_win_rate": 0.5526315789473685
+            },
+            {
+              "month": "2020-12",
+              "trades": 36,
+              "net_profit": -1.5852999999952528,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2021-01",
+              "trades": 25,
+              "net_profit": -2.894559999996727,
+              "net_win_rate": 0.64
+            },
+            {
+              "month": "2021-02",
+              "trades": 32,
+              "net_profit": 2.6814800000040417,
+              "net_win_rate": 0.71875
+            },
+            {
+              "month": "2021-03",
+              "trades": 22,
+              "net_profit": -10.556619999997075,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-04",
+              "trades": 27,
+              "net_profit": -11.66047999999642,
+              "net_win_rate": 0.5185185185185185
+            },
+            {
+              "month": "2021-05",
+              "trades": 30,
+              "net_profit": -19.46409999999601,
+              "net_win_rate": 0.43333333333333335
+            },
+            {
+              "month": "2021-06",
+              "trades": 13,
+              "net_profit": -4.885179999998306,
+              "net_win_rate": 0.5384615384615384
+            },
+            {
+              "month": "2021-07",
+              "trades": 34,
+              "net_profit": -13.891439999995425,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2021-08",
+              "trades": 20,
+              "net_profit": -20.027699999997207,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2021-09",
+              "trades": 23,
+              "net_profit": -13.471449999996935,
+              "net_win_rate": 0.43478260869565216
+            },
+            {
+              "month": "2021-10",
+              "trades": 40,
+              "net_profit": -16.713679999994635,
+              "net_win_rate": 0.525
+            },
+            {
+              "month": "2021-11",
+              "trades": 17,
+              "net_profit": -4.3680399999977135,
+              "net_win_rate": 0.5882352941176471
+            },
+            {
+              "month": "2021-12",
+              "trades": 29,
+              "net_profit": -20.950879999995923,
+              "net_win_rate": 0.41379310344827586
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "donchian24_trend192_t30_s35",
+        "family": "donchian",
+        "lookback": 24,
+        "trend_span": 192,
+        "target_pips": 30,
+        "stop_pips": 35,
+        "min_atr_pips": 5,
+        "max_atr_pips": 20,
+        "max_holding_bars": 192
+      },
+      "development": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99687.33879000024,
+          "net_profit": -312.66120999993484,
+          "net_return": -0.0031266120999993486,
+          "closed_trades": 933,
+          "natural_closed_trades": 933,
+          "eligible_trades": 933,
+          "wins": 505,
+          "losses": 428,
+          "breakeven_trades": 0,
+          "win_rate": 0.5412647374062165,
+          "net_profit_per_trade": -0.33511383708460324,
+          "natural_net_profit": -312.66120999993484,
+          "natural_net_profit_per_trade": -0.33511383708460324,
+          "mean_net_pips_per_trade": -5.649360929850923,
+          "profit_factor": 0.6970088994400636,
+          "natural_profit_factor": 0.6970088994400636,
+          "mean_winning_trade": 1.4242659009901553,
+          "mean_losing_trade": -2.411017499999914,
+          "total_commission": 186.60000000000002,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 131.704799999888,
+          "max_account_drawdown_close_marks": 0.0032419474999974772,
+          "max_trade_adverse_equity_fraction": 3.8650220002660516e-05,
+          "max_trade_peak_drawdown_equity_fraction": 4.143988260179323e-05,
+          "max_funded_loss_equity_fraction": 0.008001989986504917,
+          "risk_breaches": 0,
+          "terminal_liquidations": 0,
+          "rejected_entries": 0,
+          "bars": 124097,
+          "first_epoch": 1420189200,
+          "last_epoch": 1577833200,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 1
+        },
+        "stability": {
+          "months_with_trades": 60,
+          "positive_months": 14,
+          "negative_months": 46,
+          "monthly": [
+            {
+              "month": "2015-01",
+              "trades": 11,
+              "net_profit": -10.159279999999264,
+              "net_win_rate": 0.36363636363636365
+            },
+            {
+              "month": "2015-02",
+              "trades": 20,
+              "net_profit": -2.280179999998797,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2015-03",
+              "trades": 3,
+              "net_profit": 0.35604000000017955,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2015-04",
+              "trades": 31,
+              "net_profit": -2.28527999999811,
+              "net_win_rate": 0.6129032258064516
+            },
+            {
+              "month": "2015-05",
+              "trades": 10,
+              "net_profit": 5.508580000000544,
+              "net_win_rate": 0.8
+            },
+            {
+              "month": "2015-06",
+              "trades": 18,
+              "net_profit": -8.098039999998887,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2015-07",
+              "trades": 16,
+              "net_profit": -3.829719999999039,
+              "net_win_rate": 0.5625
+            },
+            {
+              "month": "2015-08",
+              "trades": 18,
+              "net_profit": -18.04319999999882,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2015-09",
+              "trades": 11,
+              "net_profit": 0.0901800000006463,
+              "net_win_rate": 0.6363636363636364
+            },
+            {
+              "month": "2015-10",
+              "trades": 19,
+              "net_profit": 10.008100000001047,
+              "net_win_rate": 0.7894736842105263
+            },
+            {
+              "month": "2015-11",
+              "trades": 12,
+              "net_profit": -12.237819999999193,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2015-12",
+              "trades": 12,
+              "net_profit": -2.057239999999263,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2016-01",
+              "trades": 11,
+              "net_profit": -6.95023999999925,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2016-02",
+              "trades": 13,
+              "net_profit": -4.406919999999149,
+              "net_win_rate": 0.5384615384615384
+            },
+            {
+              "month": "2016-03",
+              "trades": 22,
+              "net_profit": 0.5266400000014024,
+              "net_win_rate": 0.6363636363636364
+            },
+            {
+              "month": "2016-04",
+              "trades": 25,
+              "net_profit": -2.807959999998401,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2016-05",
+              "trades": 17,
+              "net_profit": -2.5679599999989247,
+              "net_win_rate": 0.5882352941176471
+            },
+            {
+              "month": "2016-06",
+              "trades": 7,
+              "net_profit": -1.582879999999549,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2016-07",
+              "trades": 12,
+              "net_profit": 1.9546200000008098,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2016-08",
+              "trades": 15,
+              "net_profit": -13.368559999998865,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2016-09",
+              "trades": 13,
+              "net_profit": -4.420719999999074,
+              "net_win_rate": 0.5384615384615384
+            },
+            {
+              "month": "2016-10",
+              "trades": 7,
+              "net_profit": -9.956939999999403,
+              "net_win_rate": 0.2857142857142857
+            },
+            {
+              "month": "2016-11",
+              "trades": 17,
+              "net_profit": -6.586119999998704,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2016-12",
+              "trades": 16,
+              "net_profit": -1.266719999998836,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2017-01",
+              "trades": 19,
+              "net_profit": 4.877080000001363,
+              "net_win_rate": 0.6842105263157895
+            },
+            {
+              "month": "2017-02",
+              "trades": 10,
+              "net_profit": -9.224399999999203,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2017-03",
+              "trades": 18,
+              "net_profit": -0.9302399999986746,
+              "net_win_rate": 0.6111111111111112
+            },
+            {
+              "month": "2017-04",
+              "trades": 14,
+              "net_profit": -7.226699999998935,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2017-05",
+              "trades": 20,
+              "net_profit": -22.626779999998384,
+              "net_win_rate": 0.35
+            },
+            {
+              "month": "2017-06",
+              "trades": 17,
+              "net_profit": 1.6169800000011907,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2017-07",
+              "trades": 17,
+              "net_profit": 5.452380000001143,
+              "net_win_rate": 0.7058823529411765
+            },
+            {
+              "month": "2017-08",
+              "trades": 7,
+              "net_profit": 3.180380000000584,
+              "net_win_rate": 0.7142857142857143
+            },
+            {
+              "month": "2017-09",
+              "trades": 21,
+              "net_profit": 3.5640400000014125,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2017-10",
+              "trades": 15,
+              "net_profit": -9.353959999998896,
+              "net_win_rate": 0.4666666666666667
+            },
+            {
+              "month": "2017-11",
+              "trades": 24,
+              "net_profit": -24.675319999998106,
+              "net_win_rate": 0.375
+            },
+            {
+              "month": "2017-12",
+              "trades": 12,
+              "net_profit": -5.877759999999144,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-01",
+              "trades": 39,
+              "net_profit": 17.89598000000243,
+              "net_win_rate": 0.7435897435897436
+            },
+            {
+              "month": "2018-02",
+              "trades": 11,
+              "net_profit": -10.719199999999208,
+              "net_win_rate": 0.36363636363636365
+            },
+            {
+              "month": "2018-03",
+              "trades": 22,
+              "net_profit": -3.095679999998554,
+              "net_win_rate": 0.5909090909090909
+            },
+            {
+              "month": "2018-04",
+              "trades": 14,
+              "net_profit": -3.0340199999990816,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2018-05",
+              "trades": 7,
+              "net_profit": -12.96863999999943,
+              "net_win_rate": 0.14285714285714285
+            },
+            {
+              "month": "2018-06",
+              "trades": 14,
+              "net_profit": -14.718789999998968,
+              "net_win_rate": 0.35714285714285715
+            },
+            {
+              "month": "2018-07",
+              "trades": 18,
+              "net_profit": -7.863099999998716,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-08",
+              "trades": 14,
+              "net_profit": -6.970299999998958,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-09",
+              "trades": 17,
+              "net_profit": -6.409839999998772,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2018-10",
+              "trades": 13,
+              "net_profit": -12.376919999999004,
+              "net_win_rate": 0.38461538461538464
+            },
+            {
+              "month": "2018-11",
+              "trades": 17,
+              "net_profit": -14.582229999998662,
+              "net_win_rate": 0.4117647058823529
+            },
+            {
+              "month": "2018-12",
+              "trades": 18,
+              "net_profit": -13.23457999999861,
+              "net_win_rate": 0.4444444444444444
+            },
+            {
+              "month": "2019-01",
+              "trades": 25,
+              "net_profit": -6.484879999998195,
+              "net_win_rate": 0.56
+            },
+            {
+              "month": "2019-02",
+              "trades": 17,
+              "net_profit": 13.39984000000108,
+              "net_win_rate": 0.8235294117647058
+            },
+            {
+              "month": "2019-03",
+              "trades": 15,
+              "net_profit": -13.305779999998867,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2019-04",
+              "trades": 11,
+              "net_profit": -3.466219999999209,
+              "net_win_rate": 0.5454545454545454
+            },
+            {
+              "month": "2019-05",
+              "trades": 10,
+              "net_profit": -12.927199999999203,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2019-06",
+              "trades": 14,
+              "net_profit": -2.9646399999989748,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2019-07",
+              "trades": 6,
+              "net_profit": -11.31165999999948,
+              "net_win_rate": 0.16666666666666666
+            },
+            {
+              "month": "2019-08",
+              "trades": 15,
+              "net_profit": -14.836469999998716,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2019-09",
+              "trades": 18,
+              "net_profit": -4.986879999998636,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2019-10",
+              "trades": 19,
+              "net_profit": -7.406839999998588,
+              "net_win_rate": 0.5263157894736842
+            },
+            {
+              "month": "2019-11",
+              "trades": 8,
+              "net_profit": -12.020139999999346,
+              "net_win_rate": 0.25
+            },
+            {
+              "month": "2019-12",
+              "trades": 21,
+              "net_profit": 7.412900000001396,
+              "net_win_rate": 0.7142857142857143
+            }
+          ]
+        }
+      },
+      "validation": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99879.01912000003,
+          "net_profit": -120.9808799999683,
+          "net_return": -0.001209808799999683,
+          "closed_trades": 447,
+          "natural_closed_trades": 446,
+          "eligible_trades": 446,
+          "wins": 248,
+          "losses": 198,
+          "breakeven_trades": 0,
+          "win_rate": 0.5560538116591929,
+          "net_profit_per_trade": -0.2706507382549626,
+          "natural_net_profit": -120.14367999996844,
+          "natural_net_profit_per_trade": -0.2693804484304225,
+          "mean_net_pips_per_trade": -4.612659694003959,
+          "profit_factor": 0.750077013235095,
+          "natural_profit_factor": 0.7513765132789667,
+          "mean_winning_trade": 1.4640796774194125,
+          "mean_losing_trade": -2.4405830303029425,
+          "total_commission": 89.4,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 64.4596799999452,
+          "max_account_drawdown_close_marks": 0.0014270811970761989,
+          "max_trade_adverse_equity_fraction": 2.803425400288551e-05,
+          "max_trade_peak_drawdown_equity_fraction": 4.095362092004735e-05,
+          "max_funded_loss_equity_fraction": 0.008001958457106119,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 49814,
+          "first_epoch": 1577944800,
+          "last_epoch": 1640991600,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 0
+        },
+        "stability": {
+          "months_with_trades": 24,
+          "positive_months": 6,
+          "negative_months": 18,
+          "monthly": [
+            {
+              "month": "2020-01",
+              "trades": 10,
+              "net_profit": -4.9647799999992674,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2020-02",
+              "trades": 11,
+              "net_profit": -3.4471799999992028,
+              "net_win_rate": 0.5454545454545454
+            },
+            {
+              "month": "2020-03",
+              "trades": 11,
+              "net_profit": 17.017880000000666,
+              "net_win_rate": 1.0
+            },
+            {
+              "month": "2020-04",
+              "trades": 22,
+              "net_profit": 9.549760000001541,
+              "net_win_rate": 0.7272727272727273
+            },
+            {
+              "month": "2020-05",
+              "trades": 15,
+              "net_profit": -13.98579999999878,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2020-06",
+              "trades": 20,
+              "net_profit": -6.007439999998503,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2020-07",
+              "trades": 38,
+              "net_profit": -11.280919999997186,
+              "net_win_rate": 0.5526315789473685
+            },
+            {
+              "month": "2020-08",
+              "trades": 26,
+              "net_profit": -5.043599999998165,
+              "net_win_rate": 0.5769230769230769
+            },
+            {
+              "month": "2020-09",
+              "trades": 16,
+              "net_profit": 0.0018000000011240136,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2020-10",
+              "trades": 18,
+              "net_profit": -1.00231999999873,
+              "net_win_rate": 0.6111111111111112
+            },
+            {
+              "month": "2020-11",
+              "trades": 25,
+              "net_profit": -6.402979999998226,
+              "net_win_rate": 0.56
+            },
+            {
+              "month": "2020-12",
+              "trades": 30,
+              "net_profit": 4.60322000000199,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2021-01",
+              "trades": 18,
+              "net_profit": -12.503339999998706,
+              "net_win_rate": 0.4444444444444444
+            },
+            {
+              "month": "2021-02",
+              "trades": 20,
+              "net_profit": 1.5823200000012927,
+              "net_win_rate": 0.65
+            },
+            {
+              "month": "2021-03",
+              "trades": 14,
+              "net_profit": 4.469780000000883,
+              "net_win_rate": 0.7142857142857143
+            },
+            {
+              "month": "2021-04",
+              "trades": 22,
+              "net_profit": -14.314099999998449,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2021-05",
+              "trades": 20,
+              "net_profit": -9.583579999998635,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-06",
+              "trades": 10,
+              "net_profit": -12.323989999999178,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2021-07",
+              "trades": 18,
+              "net_profit": -1.112099999998809,
+              "net_win_rate": 0.6111111111111112
+            },
+            {
+              "month": "2021-08",
+              "trades": 13,
+              "net_profit": -11.881479999999051,
+              "net_win_rate": 0.38461538461538464
+            },
+            {
+              "month": "2021-09",
+              "trades": 15,
+              "net_profit": -9.083259999998942,
+              "net_win_rate": 0.4666666666666667
+            },
+            {
+              "month": "2021-10",
+              "trades": 28,
+              "net_profit": -13.517019999998038,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-11",
+              "trades": 9,
+              "net_profit": -10.223499999999316,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2021-12",
+              "trades": 17,
+              "net_profit": -10.69104999999871,
+              "net_win_rate": 0.47058823529411764
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "expansion4_trend192_t20_s25",
+        "family": "expansion",
+        "lookback": 4,
+        "trend_span": 192,
+        "target_pips": 20,
+        "stop_pips": 25,
+        "min_atr_pips": 4,
+        "max_atr_pips": 15,
+        "max_holding_bars": 96
+      },
+      "development": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99451.44006000028,
+          "net_profit": -548.5599399998165,
+          "net_return": -0.005485599399998165,
+          "closed_trades": 1355,
+          "natural_closed_trades": 1354,
+          "eligible_trades": 1354,
+          "wins": 724,
+          "losses": 630,
+          "breakeven_trades": 0,
+          "win_rate": 0.534711964549483,
+          "net_profit_per_trade": -0.4048412841327059,
+          "natural_net_profit": -548.2159399998167,
+          "natural_net_profit_per_trade": -0.404886218611386,
+          "mean_net_pips_per_trade": -6.919703957296614,
+          "profit_factor": 0.5275298839147954,
+          "natural_profit_factor": 0.5276862290810594,
+          "mean_winning_trade": 0.8459763950277462,
+          "mean_losing_trade": -1.8423854761903256,
+          "total_commission": 270.99999999999994,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 192.21359999983656,
+          "max_account_drawdown_close_marks": 0.005539933199997468,
+          "max_trade_adverse_equity_fraction": 0.00011227476247798146,
+          "max_trade_peak_drawdown_equity_fraction": 0.00011910294857573516,
+          "max_funded_loss_equity_fraction": 0.00800200019615591,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 124097,
+          "first_epoch": 1420189200,
+          "last_epoch": 1577833200,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 3
+        },
+        "stability": {
+          "months_with_trades": 60,
+          "positive_months": 5,
+          "negative_months": 55,
+          "monthly": [
+            {
+              "month": "2015-01",
+              "trades": 16,
+              "net_profit": -14.450679999997968,
+              "net_win_rate": 0.3125
+            },
+            {
+              "month": "2015-02",
+              "trades": 27,
+              "net_profit": -11.069279999996768,
+              "net_win_rate": 0.5185185185185185
+            },
+            {
+              "month": "2015-03",
+              "trades": 3,
+              "net_profit": -0.1918999999996409,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2015-04",
+              "trades": 26,
+              "net_profit": -14.411959999996776,
+              "net_win_rate": 0.46153846153846156
+            },
+            {
+              "month": "2015-05",
+              "trades": 9,
+              "net_profit": 1.7073200000010123,
+              "net_win_rate": 0.7777777777777778
+            },
+            {
+              "month": "2015-06",
+              "trades": 24,
+              "net_profit": -20.070979999997046,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2015-07",
+              "trades": 22,
+              "net_profit": -5.700039999997498,
+              "net_win_rate": 0.5909090909090909
+            },
+            {
+              "month": "2015-08",
+              "trades": 24,
+              "net_profit": -20.00753999999706,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2015-09",
+              "trades": 20,
+              "net_profit": -4.383879999997655,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2015-10",
+              "trades": 35,
+              "net_profit": -6.6427299999958604,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2015-11",
+              "trades": 22,
+              "net_profit": -10.011519999997338,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2015-12",
+              "trades": 18,
+              "net_profit": -16.166879999997665,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2016-01",
+              "trades": 10,
+              "net_profit": -2.1562799999987394,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2016-02",
+              "trades": 14,
+              "net_profit": -9.073279999998178,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2016-03",
+              "trades": 19,
+              "net_profit": -7.72425999999755,
+              "net_win_rate": 0.5263157894736842
+            },
+            {
+              "month": "2016-04",
+              "trades": 20,
+              "net_profit": 0.4743200000024528,
+              "net_win_rate": 0.7
+            },
+            {
+              "month": "2016-05",
+              "trades": 21,
+              "net_profit": -8.55051999999736,
+              "net_win_rate": 0.5238095238095238
+            },
+            {
+              "month": "2016-06",
+              "trades": 7,
+              "net_profit": -6.088519999999075,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2016-07",
+              "trades": 14,
+              "net_profit": -4.206639999998078,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2016-08",
+              "trades": 26,
+              "net_profit": -15.64861999999632,
+              "net_win_rate": 0.46153846153846156
+            },
+            {
+              "month": "2016-09",
+              "trades": 30,
+              "net_profit": -17.53143999999578,
+              "net_win_rate": 0.4666666666666667
+            },
+            {
+              "month": "2016-10",
+              "trades": 11,
+              "net_profit": -13.051819999998257,
+              "net_win_rate": 0.2727272727272727
+            },
+            {
+              "month": "2016-11",
+              "trades": 28,
+              "net_profit": -11.38069999999588,
+              "net_win_rate": 0.5357142857142857
+            },
+            {
+              "month": "2016-12",
+              "trades": 18,
+              "net_profit": -1.7353999999975236,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2017-01",
+              "trades": 31,
+              "net_profit": -8.624259999995468,
+              "net_win_rate": 0.5806451612903226
+            },
+            {
+              "month": "2017-02",
+              "trades": 24,
+              "net_profit": -12.256279999996465,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2017-03",
+              "trades": 22,
+              "net_profit": -2.6030799999968326,
+              "net_win_rate": 0.6363636363636364
+            },
+            {
+              "month": "2017-04",
+              "trades": 32,
+              "net_profit": -13.345519999995382,
+              "net_win_rate": 0.53125
+            },
+            {
+              "month": "2017-05",
+              "trades": 28,
+              "net_profit": -17.79967999999596,
+              "net_win_rate": 0.4642857142857143
+            },
+            {
+              "month": "2017-06",
+              "trades": 35,
+              "net_profit": -20.405199999995197,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2017-07",
+              "trades": 29,
+              "net_profit": -2.1167999999960383,
+              "net_win_rate": 0.6551724137931034
+            },
+            {
+              "month": "2017-08",
+              "trades": 17,
+              "net_profit": -0.2641399999976226,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2017-09",
+              "trades": 35,
+              "net_profit": -7.60677999999525,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2017-10",
+              "trades": 24,
+              "net_profit": -14.555459999996623,
+              "net_win_rate": 0.4583333333333333
+            },
+            {
+              "month": "2017-11",
+              "trades": 34,
+              "net_profit": -14.144139999995305,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2017-12",
+              "trades": 19,
+              "net_profit": -7.999099999997407,
+              "net_win_rate": 0.5263157894736842
+            },
+            {
+              "month": "2018-01",
+              "trades": 43,
+              "net_profit": 3.955440000005436,
+              "net_win_rate": 0.7209302325581395
+            },
+            {
+              "month": "2018-02",
+              "trades": 16,
+              "net_profit": -5.013339999997937,
+              "net_win_rate": 0.5625
+            },
+            {
+              "month": "2018-03",
+              "trades": 30,
+              "net_profit": -6.68121999999614,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2018-04",
+              "trades": 27,
+              "net_profit": -19.250299999996415,
+              "net_win_rate": 0.4074074074074074
+            },
+            {
+              "month": "2018-05",
+              "trades": 12,
+              "net_profit": -13.81247999999827,
+              "net_win_rate": 0.25
+            },
+            {
+              "month": "2018-06",
+              "trades": 18,
+              "net_profit": -0.7862599999976092,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2018-07",
+              "trades": 30,
+              "net_profit": -10.146309999995967,
+              "net_win_rate": 0.5666666666666667
+            },
+            {
+              "month": "2018-08",
+              "trades": 20,
+              "net_profit": -7.218919999997263,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2018-09",
+              "trades": 28,
+              "net_profit": -2.9345599999961856,
+              "net_win_rate": 0.6428571428571429
+            },
+            {
+              "month": "2018-10",
+              "trades": 17,
+              "net_profit": -1.5997599999976937,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2018-11",
+              "trades": 23,
+              "net_profit": -7.273899999996788,
+              "net_win_rate": 0.5652173913043478
+            },
+            {
+              "month": "2018-12",
+              "trades": 28,
+              "net_profit": -14.183459999995938,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2019-01",
+              "trades": 36,
+              "net_profit": -15.110319999994903,
+              "net_win_rate": 0.5277777777777778
+            },
+            {
+              "month": "2019-02",
+              "trades": 27,
+              "net_profit": -6.532999999996282,
+              "net_win_rate": 0.5925925925925926
+            },
+            {
+              "month": "2019-03",
+              "trades": 18,
+              "net_profit": -6.192019999997525,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2019-04",
+              "trades": 13,
+              "net_profit": -10.585199999998267,
+              "net_win_rate": 0.38461538461538464
+            },
+            {
+              "month": "2019-05",
+              "trades": 5,
+              "net_profit": 1.612440000000658,
+              "net_win_rate": 0.8
+            },
+            {
+              "month": "2019-06",
+              "trades": 29,
+              "net_profit": -18.89363999999572,
+              "net_win_rate": 0.4482758620689655
+            },
+            {
+              "month": "2019-07",
+              "trades": 14,
+              "net_profit": -9.973679999997913,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2019-08",
+              "trades": 22,
+              "net_profit": -21.4831399999966,
+              "net_win_rate": 0.36363636363636365
+            },
+            {
+              "month": "2019-09",
+              "trades": 26,
+              "net_profit": -10.469159999996167,
+              "net_win_rate": 0.5384615384615384
+            },
+            {
+              "month": "2019-10",
+              "trades": 28,
+              "net_profit": -11.372279999995982,
+              "net_win_rate": 0.5357142857142857
+            },
+            {
+              "month": "2019-11",
+              "trades": 19,
+              "net_profit": -16.453019999997213,
+              "net_win_rate": 0.3684210526315789
+            },
+            {
+              "month": "2019-12",
+              "trades": 31,
+              "net_profit": 1.975820000004175,
+              "net_win_rate": 0.7096774193548387
+            }
+          ]
+        }
+      },
+      "validation": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99743.61350000037,
+          "net_profit": -256.38649999990537,
+          "net_return": -0.0025638649999990535,
+          "closed_trades": 689,
+          "natural_closed_trades": 688,
+          "eligible_trades": 688,
+          "wins": 374,
+          "losses": 314,
+          "breakeven_trades": 0,
+          "win_rate": 0.5436046511627907,
+          "net_profit_per_trade": -0.3721139332364374,
+          "natural_net_profit": -255.55037999990557,
+          "natural_net_profit_per_trade": -0.37143950581381624,
+          "mean_net_pips_per_trade": -6.248940479508887,
+          "profit_factor": 0.5564203737577853,
+          "natural_profit_factor": 0.557226451209283,
+          "mean_winning_trade": 0.8599139304814071,
+          "mean_losing_trade": -1.8380834076431585,
+          "total_commission": 137.79999999999995,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 99.20375999991565,
+          "max_account_drawdown_close_marks": 0.0025670087999962563,
+          "max_trade_adverse_equity_fraction": 2.4022651124348843e-05,
+          "max_trade_peak_drawdown_equity_fraction": 2.882817030798895e-05,
+          "max_funded_loss_equity_fraction": 0.008001999875654808,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 49814,
+          "first_epoch": 1577944800,
+          "last_epoch": 1640991600,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 1
+        },
+        "stability": {
+          "months_with_trades": 24,
+          "positive_months": 0,
+          "negative_months": 24,
+          "monthly": [
+            {
+              "month": "2020-01",
+              "trades": 22,
+              "net_profit": -2.710459999996991,
+              "net_win_rate": 0.6363636363636364
+            },
+            {
+              "month": "2020-02",
+              "trades": 17,
+              "net_profit": -10.364119999997643,
+              "net_win_rate": 0.47058823529411764
+            },
+            {
+              "month": "2020-03",
+              "trades": 16,
+              "net_profit": -2.2058899999976687,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2020-04",
+              "trades": 29,
+              "net_profit": -10.545099999995742,
+              "net_win_rate": 0.5517241379310345
+            },
+            {
+              "month": "2020-05",
+              "trades": 22,
+              "net_profit": -8.402159999996728,
+              "net_win_rate": 0.5454545454545454
+            },
+            {
+              "month": "2020-06",
+              "trades": 29,
+              "net_profit": -7.636939999995823,
+              "net_win_rate": 0.5862068965517241
+            },
+            {
+              "month": "2020-07",
+              "trades": 61,
+              "net_profit": -29.481879999991133,
+              "net_win_rate": 0.5081967213114754
+            },
+            {
+              "month": "2020-08",
+              "trades": 37,
+              "net_profit": -14.300599999994851,
+              "net_win_rate": 0.5405405405405406
+            },
+            {
+              "month": "2020-09",
+              "trades": 26,
+              "net_profit": -1.961599999996419,
+              "net_win_rate": 0.6538461538461539
+            },
+            {
+              "month": "2020-10",
+              "trades": 27,
+              "net_profit": -1.0051999999963042,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-11",
+              "trades": 38,
+              "net_profit": -13.277059999994746,
+              "net_win_rate": 0.5526315789473685
+            },
+            {
+              "month": "2020-12",
+              "trades": 39,
+              "net_profit": -4.3928399999948216,
+              "net_win_rate": 0.6410256410256411
+            },
+            {
+              "month": "2021-01",
+              "trades": 27,
+              "net_profit": -9.396699999996484,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2021-02",
+              "trades": 37,
+              "net_profit": -6.198719999995229,
+              "net_win_rate": 0.6216216216216216
+            },
+            {
+              "month": "2021-03",
+              "trades": 25,
+              "net_profit": -10.72787999999669,
+              "net_win_rate": 0.52
+            },
+            {
+              "month": "2021-04",
+              "trades": 32,
+              "net_profit": -20.548759999995678,
+              "net_win_rate": 0.4375
+            },
+            {
+              "month": "2021-05",
+              "trades": 30,
+              "net_profit": -14.331159999996068,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-06",
+              "trades": 16,
+              "net_profit": -7.593639999997897,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-07",
+              "trades": 30,
+              "net_profit": -6.657939999996088,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2021-08",
+              "trades": 16,
+              "net_profit": -12.8912599999978,
+              "net_win_rate": 0.375
+            },
+            {
+              "month": "2021-09",
+              "trades": 21,
+              "net_profit": -12.5421899999972,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2021-10",
+              "trades": 39,
+              "net_profit": -20.17031999999472,
+              "net_win_rate": 0.48717948717948717
+            },
+            {
+              "month": "2021-11",
+              "trades": 16,
+              "net_profit": -10.505859999997778,
+              "net_win_rate": 0.4375
+            },
+            {
+              "month": "2021-12",
+              "trades": 36,
+              "net_profit": -17.70209999999503,
+              "net_win_rate": 0.5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "expansion8_trend192_t30_s35",
+        "family": "expansion",
+        "lookback": 8,
+        "trend_span": 192,
+        "target_pips": 30,
+        "stop_pips": 35,
+        "min_atr_pips": 5,
+        "max_atr_pips": 20,
+        "max_holding_bars": 192
+      },
+      "development": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99680.01337999973,
+          "net_profit": -319.9866199999269,
+          "net_return": -0.0031998661999992693,
+          "closed_trades": 1051,
+          "natural_closed_trades": 1051,
+          "eligible_trades": 1051,
+          "wins": 579,
+          "losses": 472,
+          "breakeven_trades": 0,
+          "win_rate": 0.5509039010466222,
+          "net_profit_per_trade": -0.30445920076111027,
+          "natural_net_profit": -319.9866199999269,
+          "natural_net_profit_per_trade": -0.30445920076111027,
+          "mean_net_pips_per_trade": -5.125020721133885,
+          "profit_factor": 0.7207484780832556,
+          "natural_profit_factor": 0.7207484780832556,
+          "mean_winning_trade": 1.4264003626943569,
+          "mean_losing_trade": -2.4276958262711004,
+          "total_commission": 210.2,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 148.4083199998738,
+          "max_account_drawdown_close_marks": 0.0034327067941127888,
+          "max_trade_adverse_equity_fraction": 0.00011228876135712644,
+          "max_trade_peak_drawdown_equity_fraction": 0.00011912124776956723,
+          "max_funded_loss_equity_fraction": 0.00800197422014025,
+          "risk_breaches": 0,
+          "terminal_liquidations": 0,
+          "rejected_entries": 0,
+          "bars": 124097,
+          "first_epoch": 1420189200,
+          "last_epoch": 1577833200,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 2
+        },
+        "stability": {
+          "months_with_trades": 60,
+          "positive_months": 18,
+          "negative_months": 42,
+          "monthly": [
+            {
+              "month": "2015-01",
+              "trades": 12,
+              "net_profit": -8.906539999999213,
+              "net_win_rate": 0.4166666666666667
+            },
+            {
+              "month": "2015-02",
+              "trades": 22,
+              "net_profit": 0.20126000000130273,
+              "net_win_rate": 0.6363636363636364
+            },
+            {
+              "month": "2015-03",
+              "trades": 4,
+              "net_profit": 1.6336200000002306,
+              "net_win_rate": 0.75
+            },
+            {
+              "month": "2015-04",
+              "trades": 31,
+              "net_profit": 4.656100000001835,
+              "net_win_rate": 0.6774193548387096
+            },
+            {
+              "month": "2015-05",
+              "trades": 13,
+              "net_profit": 9.164500000000691,
+              "net_win_rate": 0.8461538461538461
+            },
+            {
+              "month": "2015-06",
+              "trades": 22,
+              "net_profit": -13.225199999998614,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2015-07",
+              "trades": 14,
+              "net_profit": 0.38330000000081266,
+              "net_win_rate": 0.6428571428571429
+            },
+            {
+              "month": "2015-08",
+              "trades": 22,
+              "net_profit": -19.86167999999857,
+              "net_win_rate": 0.36363636363636365
+            },
+            {
+              "month": "2015-09",
+              "trades": 14,
+              "net_profit": 0.403760000000821,
+              "net_win_rate": 0.6428571428571429
+            },
+            {
+              "month": "2015-10",
+              "trades": 22,
+              "net_profit": 4.055430000001351,
+              "net_win_rate": 0.6818181818181818
+            },
+            {
+              "month": "2015-11",
+              "trades": 13,
+              "net_profit": -14.420019999999116,
+              "net_win_rate": 0.3076923076923077
+            },
+            {
+              "month": "2015-12",
+              "trades": 15,
+              "net_profit": -5.1493999999990585,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2016-01",
+              "trades": 13,
+              "net_profit": -4.260819999999144,
+              "net_win_rate": 0.5384615384615384
+            },
+            {
+              "month": "2016-02",
+              "trades": 13,
+              "net_profit": -4.38447999999915,
+              "net_win_rate": 0.5384615384615384
+            },
+            {
+              "month": "2016-03",
+              "trades": 29,
+              "net_profit": -4.639179999998111,
+              "net_win_rate": 0.5862068965517241
+            },
+            {
+              "month": "2016-04",
+              "trades": 24,
+              "net_profit": -3.4840199999984485,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2016-05",
+              "trades": 21,
+              "net_profit": -4.464299999998661,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2016-06",
+              "trades": 11,
+              "net_profit": 3.7093400000006573,
+              "net_win_rate": 0.7272727272727273
+            },
+            {
+              "month": "2016-07",
+              "trades": 17,
+              "net_profit": 1.3927600000011604,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2016-08",
+              "trades": 22,
+              "net_profit": -18.77425999999834,
+              "net_win_rate": 0.4090909090909091
+            },
+            {
+              "month": "2016-09",
+              "trades": 19,
+              "net_profit": -11.268699999998608,
+              "net_win_rate": 0.47368421052631576
+            },
+            {
+              "month": "2016-10",
+              "trades": 10,
+              "net_profit": -13.65859999999915,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2016-11",
+              "trades": 21,
+              "net_profit": -16.981619999998333,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2016-12",
+              "trades": 13,
+              "net_profit": 11.85686000000085,
+              "net_win_rate": 0.8461538461538461
+            },
+            {
+              "month": "2017-01",
+              "trades": 27,
+              "net_profit": 4.997640000001947,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2017-02",
+              "trades": 14,
+              "net_profit": -11.255379999998897,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2017-03",
+              "trades": 19,
+              "net_profit": 9.036380000001326,
+              "net_win_rate": 0.7368421052631579
+            },
+            {
+              "month": "2017-04",
+              "trades": 15,
+              "net_profit": -5.59207999999888,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2017-05",
+              "trades": 18,
+              "net_profit": -17.418879999998516,
+              "net_win_rate": 0.3888888888888889
+            },
+            {
+              "month": "2017-06",
+              "trades": 24,
+              "net_profit": -13.222099999998315,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2017-07",
+              "trades": 17,
+              "net_profit": 5.445520000001144,
+              "net_win_rate": 0.7058823529411765
+            },
+            {
+              "month": "2017-08",
+              "trades": 8,
+              "net_profit": 0.6877600000006732,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2017-09",
+              "trades": 23,
+              "net_profit": -1.2976799999984192,
+              "net_win_rate": 0.6086956521739131
+            },
+            {
+              "month": "2017-10",
+              "trades": 19,
+              "net_profit": -15.217139999998578,
+              "net_win_rate": 0.42105263157894735
+            },
+            {
+              "month": "2017-11",
+              "trades": 23,
+              "net_profit": -5.451719999998384,
+              "net_win_rate": 0.5652173913043478
+            },
+            {
+              "month": "2017-12",
+              "trades": 12,
+              "net_profit": -2.032519999999173,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2018-01",
+              "trades": 38,
+              "net_profit": 18.979480000002333,
+              "net_win_rate": 0.7631578947368421
+            },
+            {
+              "month": "2018-02",
+              "trades": 15,
+              "net_profit": -5.228619999998994,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2018-03",
+              "trades": 24,
+              "net_profit": -7.791959999998387,
+              "net_win_rate": 0.5416666666666666
+            },
+            {
+              "month": "2018-04",
+              "trades": 14,
+              "net_profit": -6.712219999999053,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-05",
+              "trades": 8,
+              "net_profit": -11.556979999999374,
+              "net_win_rate": 0.25
+            },
+            {
+              "month": "2018-06",
+              "trades": 13,
+              "net_profit": -4.472389999999113,
+              "net_win_rate": 0.5384615384615384
+            },
+            {
+              "month": "2018-07",
+              "trades": 18,
+              "net_profit": -3.9148399999987458,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2018-08",
+              "trades": 14,
+              "net_profit": -2.9253399999989886,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2018-09",
+              "trades": 21,
+              "net_profit": 3.512620000001432,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2018-10",
+              "trades": 15,
+              "net_profit": -13.381039999998858,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2018-11",
+              "trades": 20,
+              "net_profit": -22.104969999998392,
+              "net_win_rate": 0.35
+            },
+            {
+              "month": "2018-12",
+              "trades": 20,
+              "net_profit": -14.243699999998459,
+              "net_win_rate": 0.45
+            },
+            {
+              "month": "2019-01",
+              "trades": 29,
+              "net_profit": -4.515759999997927,
+              "net_win_rate": 0.5862068965517241
+            },
+            {
+              "month": "2019-02",
+              "trades": 16,
+              "net_profit": 7.91616000000105,
+              "net_win_rate": 0.75
+            },
+            {
+              "month": "2019-03",
+              "trades": 18,
+              "net_profit": -20.645259999998604,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2019-04",
+              "trades": 11,
+              "net_profit": -11.362739999999148,
+              "net_win_rate": 0.36363636363636365
+            },
+            {
+              "month": "2019-05",
+              "trades": 8,
+              "net_profit": -11.928419999999349,
+              "net_win_rate": 0.25
+            },
+            {
+              "month": "2019-06",
+              "trades": 14,
+              "net_profit": -2.9591199999989746,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2019-07",
+              "trades": 7,
+              "net_profit": -9.750779999999418,
+              "net_win_rate": 0.2857142857142857
+            },
+            {
+              "month": "2019-08",
+              "trades": 15,
+              "net_profit": -14.822489999998716,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2019-09",
+              "trades": 23,
+              "net_profit": -9.63381999999823,
+              "net_win_rate": 0.5217391304347826
+            },
+            {
+              "month": "2019-10",
+              "trades": 25,
+              "net_profit": -18.447619999998075,
+              "net_win_rate": 0.44
+            },
+            {
+              "month": "2019-11",
+              "trades": 9,
+              "net_profit": -6.510459999999317,
+              "net_win_rate": 0.4444444444444444
+            },
+            {
+              "month": "2019-12",
+              "trades": 20,
+              "net_profit": 9.85574000000131,
+              "net_win_rate": 0.75
+            }
+          ]
+        }
+      },
+      "validation": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99823.88480000022,
+          "net_profit": -176.11519999996563,
+          "net_return": -0.0017611519999996563,
+          "closed_trades": 479,
+          "natural_closed_trades": 479,
+          "eligible_trades": 479,
+          "wins": 254,
+          "losses": 225,
+          "breakeven_trades": 0,
+          "win_rate": 0.5302713987473904,
+          "net_profit_per_trade": -0.36767265135692195,
+          "natural_net_profit": -176.11519999996563,
+          "natural_net_profit_per_trade": -0.36767265135692195,
+          "mean_net_pips_per_trade": -6.236291880101456,
+          "profit_factor": 0.6801806204295119,
+          "natural_profit_factor": 0.6801806204295119,
+          "mean_winning_trade": 1.474628425196908,
+          "mean_losing_trade": -2.447425866666579,
+          "total_commission": 95.80000000000001,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 69.29711999994107,
+          "max_account_drawdown_close_marks": 0.0019518168540482155,
+          "max_trade_adverse_equity_fraction": 2.8049698281815954e-05,
+          "max_trade_peak_drawdown_equity_fraction": 4.1028795474115277e-05,
+          "max_funded_loss_equity_fraction": 0.008002000386166054,
+          "risk_breaches": 0,
+          "terminal_liquidations": 0,
+          "rejected_entries": 0,
+          "bars": 49814,
+          "first_epoch": 1577944800,
+          "last_epoch": 1640991600,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 0
+        },
+        "stability": {
+          "months_with_trades": 24,
+          "positive_months": 5,
+          "negative_months": 19,
+          "monthly": [
+            {
+              "month": "2020-01",
+              "trades": 12,
+              "net_profit": -1.9824399999991518,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2020-02",
+              "trades": 10,
+              "net_profit": 3.039200000000678,
+              "net_win_rate": 0.7
+            },
+            {
+              "month": "2020-03",
+              "trades": 18,
+              "net_profit": 8.108240000001242,
+              "net_win_rate": 0.7222222222222222
+            },
+            {
+              "month": "2020-04",
+              "trades": 24,
+              "net_profit": 4.348580000001726,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-05",
+              "trades": 19,
+              "net_profit": -20.209999999998438,
+              "net_win_rate": 0.3684210526315789
+            },
+            {
+              "month": "2020-06",
+              "trades": 31,
+              "net_profit": -9.433119999997686,
+              "net_win_rate": 0.5483870967741935
+            },
+            {
+              "month": "2020-07",
+              "trades": 38,
+              "net_profit": -11.262219999997187,
+              "net_win_rate": 0.5526315789473685
+            },
+            {
+              "month": "2020-08",
+              "trades": 28,
+              "net_profit": -17.898559999997925,
+              "net_win_rate": 0.4642857142857143
+            },
+            {
+              "month": "2020-09",
+              "trades": 17,
+              "net_profit": 1.6028400000011835,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2020-10",
+              "trades": 17,
+              "net_profit": 1.4782800000011809,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2020-11",
+              "trades": 30,
+              "net_profit": -3.0189799999979066,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2020-12",
+              "trades": 33,
+              "net_profit": -6.5390199999977225,
+              "net_win_rate": 0.5757575757575758
+            },
+            {
+              "month": "2021-01",
+              "trades": 19,
+              "net_profit": -7.26949999999868,
+              "net_win_rate": 0.5263157894736842
+            },
+            {
+              "month": "2021-02",
+              "trades": 22,
+              "net_profit": -3.0810999999985427,
+              "net_win_rate": 0.5909090909090909
+            },
+            {
+              "month": "2021-03",
+              "trades": 14,
+              "net_profit": -6.736839999999034,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-04",
+              "trades": 21,
+              "net_profit": -15.685159999998504,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2021-05",
+              "trades": 17,
+              "net_profit": -13.659019999998797,
+              "net_win_rate": 0.4117647058823529
+            },
+            {
+              "month": "2021-06",
+              "trades": 10,
+              "net_profit": -12.291309999999179,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2021-07",
+              "trades": 20,
+              "net_profit": -9.601439999998615,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-08",
+              "trades": 11,
+              "net_profit": -7.122419999999221,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2021-09",
+              "trades": 13,
+              "net_profit": -8.136139999999083,
+              "net_win_rate": 0.46153846153846156
+            },
+            {
+              "month": "2021-10",
+              "trades": 26,
+              "net_profit": -12.567319999998176,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-11",
+              "trades": 10,
+              "net_profit": -12.634199999999227,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2021-12",
+              "trades": 19,
+              "net_profit": -15.56354999999854,
+              "net_win_rate": 0.42105263157894735
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "ema_pullback20_trend192_t20_s25",
+        "family": "ema_pullback",
+        "lookback": 20,
+        "trend_span": 192,
+        "target_pips": 20,
+        "stop_pips": 25,
+        "min_atr_pips": 4,
+        "max_atr_pips": 15,
+        "max_holding_bars": 96
+      },
+      "development": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99417.32612000011,
+          "net_profit": -582.673879999787,
+          "net_return": -0.00582673879999787,
+          "closed_trades": 1574,
+          "natural_closed_trades": 1573,
+          "eligible_trades": 1573,
+          "wins": 862,
+          "losses": 711,
+          "breakeven_trades": 0,
+          "win_rate": 0.5479974570883662,
+          "net_profit_per_trade": -0.3701867090214657,
+          "natural_net_profit": -582.3298799997872,
+          "natural_net_profit_per_trade": -0.37020335664322135,
+          "mean_net_pips_per_trade": -6.3088773876579785,
+          "profit_factor": 0.5554257319815155,
+          "natural_profit_factor": 0.5555715520219278,
+          "mean_winning_trade": 0.8445005916474541,
+          "mean_losing_trade": -1.8428824050631398,
+          "total_commission": 314.8,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 223.0840799998103,
+          "max_account_drawdown_close_marks": 0.0058540615074990756,
+          "max_trade_adverse_equity_fraction": 0.0001323393930153574,
+          "max_trade_peak_drawdown_equity_fraction": 0.00013662829958881992,
+          "max_funded_loss_equity_fraction": 0.008001989922472239,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 124097,
+          "first_epoch": 1420189200,
+          "last_epoch": 1577833200,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 1
+        },
+        "stability": {
+          "months_with_trades": 60,
+          "positive_months": 5,
+          "negative_months": 55,
+          "monthly": [
+            {
+              "month": "2015-01",
+              "trades": 20,
+              "net_profit": -6.7885999999975875,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2015-02",
+              "trades": 31,
+              "net_profit": -7.96603999999595,
+              "net_win_rate": 0.5806451612903226
+            },
+            {
+              "month": "2015-03",
+              "trades": 6,
+              "net_profit": -5.192339999999228,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2015-04",
+              "trades": 38,
+              "net_profit": -17.60409999999531,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2015-05",
+              "trades": 13,
+              "net_profit": -7.084679999998439,
+              "net_win_rate": 0.46153846153846156
+            },
+            {
+              "month": "2015-06",
+              "trades": 28,
+              "net_profit": -10.331599999996707,
+              "net_win_rate": 0.5357142857142857
+            },
+            {
+              "month": "2015-07",
+              "trades": 21,
+              "net_profit": -1.4003799999976005,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2015-08",
+              "trades": 32,
+              "net_profit": -23.70736999999614,
+              "net_win_rate": 0.375
+            },
+            {
+              "month": "2015-09",
+              "trades": 24,
+              "net_profit": -6.276239999997176,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2015-10",
+              "trades": 33,
+              "net_profit": -7.50824999999616,
+              "net_win_rate": 0.5757575757575758
+            },
+            {
+              "month": "2015-11",
+              "trades": 30,
+              "net_profit": -13.706279999996372,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2015-12",
+              "trades": 23,
+              "net_profit": -17.266879999997048,
+              "net_win_rate": 0.391304347826087
+            },
+            {
+              "month": "2016-01",
+              "trades": 5,
+              "net_profit": -1.0988799999993693,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2016-02",
+              "trades": 15,
+              "net_profit": -3.3048199999981174,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2016-03",
+              "trades": 36,
+              "net_profit": -27.450969999995163,
+              "net_win_rate": 0.3888888888888889
+            },
+            {
+              "month": "2016-04",
+              "trades": 33,
+              "net_profit": -19.475729999995764,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2016-05",
+              "trades": 24,
+              "net_profit": -1.334079999997076,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2016-06",
+              "trades": 10,
+              "net_profit": -11.176839999998652,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2016-07",
+              "trades": 20,
+              "net_profit": 3.6383000000026477,
+              "net_win_rate": 0.75
+            },
+            {
+              "month": "2016-08",
+              "trades": 32,
+              "net_profit": -21.241799999995454,
+              "net_win_rate": 0.4375
+            },
+            {
+              "month": "2016-09",
+              "trades": 28,
+              "net_profit": -16.64735999999605,
+              "net_win_rate": 0.4642857142857143
+            },
+            {
+              "month": "2016-10",
+              "trades": 16,
+              "net_profit": -11.233139999997558,
+              "net_win_rate": 0.4375
+            },
+            {
+              "month": "2016-11",
+              "trades": 32,
+              "net_profit": -9.640089999995432,
+              "net_win_rate": 0.59375
+            },
+            {
+              "month": "2016-12",
+              "trades": 22,
+              "net_profit": 3.0375200000030658,
+              "net_win_rate": 0.7272727272727273
+            },
+            {
+              "month": "2017-01",
+              "trades": 33,
+              "net_profit": -26.69437999999521,
+              "net_win_rate": 0.5151515151515151
+            },
+            {
+              "month": "2017-02",
+              "trades": 25,
+              "net_profit": -14.240199999996303,
+              "net_win_rate": 0.48
+            },
+            {
+              "month": "2017-03",
+              "trades": 32,
+              "net_profit": -10.602079999995313,
+              "net_win_rate": 0.5625
+            },
+            {
+              "month": "2017-04",
+              "trades": 38,
+              "net_profit": -13.599479999994545,
+              "net_win_rate": 0.5526315789473685
+            },
+            {
+              "month": "2017-05",
+              "trades": 30,
+              "net_profit": -12.467699999995707,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2017-06",
+              "trades": 43,
+              "net_profit": -12.063499999994072,
+              "net_win_rate": 0.5813953488372093
+            },
+            {
+              "month": "2017-07",
+              "trades": 25,
+              "net_profit": -0.06425999999660537,
+              "net_win_rate": 0.68
+            },
+            {
+              "month": "2017-08",
+              "trades": 24,
+              "net_profit": -8.149489999996737,
+              "net_win_rate": 0.5416666666666666
+            },
+            {
+              "month": "2017-09",
+              "trades": 38,
+              "net_profit": -2.493079999994926,
+              "net_win_rate": 0.6578947368421053
+            },
+            {
+              "month": "2017-10",
+              "trades": 25,
+              "net_profit": -5.538219999996593,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2017-11",
+              "trades": 42,
+              "net_profit": -18.665389999994144,
+              "net_win_rate": 0.5238095238095238
+            },
+            {
+              "month": "2017-12",
+              "trades": 23,
+              "net_profit": -7.270579999996888,
+              "net_win_rate": 0.5652173913043478
+            },
+            {
+              "month": "2018-01",
+              "trades": 35,
+              "net_profit": 15.480700000004301,
+              "net_win_rate": 0.8571428571428571
+            },
+            {
+              "month": "2018-02",
+              "trades": 16,
+              "net_profit": -2.4763399999979603,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2018-03",
+              "trades": 39,
+              "net_profit": -7.1771999999949845,
+              "net_win_rate": 0.6153846153846154
+            },
+            {
+              "month": "2018-04",
+              "trades": 27,
+              "net_profit": -9.060139999996533,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2018-05",
+              "trades": 17,
+              "net_profit": -14.9158199999976,
+              "net_win_rate": 0.35294117647058826
+            },
+            {
+              "month": "2018-06",
+              "trades": 25,
+              "net_profit": -8.243759999996596,
+              "net_win_rate": 0.56
+            },
+            {
+              "month": "2018-07",
+              "trades": 33,
+              "net_profit": -6.850319999995503,
+              "net_win_rate": 0.6060606060606061
+            },
+            {
+              "month": "2018-08",
+              "trades": 23,
+              "net_profit": -12.799219999996698,
+              "net_win_rate": 0.4782608695652174
+            },
+            {
+              "month": "2018-09",
+              "trades": 29,
+              "net_profit": 0.6877400000039136,
+              "net_win_rate": 0.6896551724137931
+            },
+            {
+              "month": "2018-10",
+              "trades": 17,
+              "net_profit": -1.5756999999976926,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2018-11",
+              "trades": 26,
+              "net_profit": -4.656439999996407,
+              "net_win_rate": 0.6153846153846154
+            },
+            {
+              "month": "2018-12",
+              "trades": 31,
+              "net_profit": -17.12433999999548,
+              "net_win_rate": 0.4838709677419355
+            },
+            {
+              "month": "2019-01",
+              "trades": 50,
+              "net_profit": -16.510679999992973,
+              "net_win_rate": 0.56
+            },
+            {
+              "month": "2019-02",
+              "trades": 25,
+              "net_profit": -5.510199999996553,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2019-03",
+              "trades": 22,
+              "net_profit": -16.286219999996877,
+              "net_win_rate": 0.4090909090909091
+            },
+            {
+              "month": "2019-04",
+              "trades": 19,
+              "net_profit": -10.76821999999731,
+              "net_win_rate": 0.47368421052631576
+            },
+            {
+              "month": "2019-05",
+              "trades": 10,
+              "net_profit": 3.3361600000013265,
+              "net_win_rate": 0.8
+            },
+            {
+              "month": "2019-06",
+              "trades": 29,
+              "net_profit": -10.448119999995816,
+              "net_win_rate": 0.5517241379310345
+            },
+            {
+              "month": "2019-07",
+              "trades": 16,
+              "net_profit": -16.702759999997554,
+              "net_win_rate": 0.3125
+            },
+            {
+              "month": "2019-08",
+              "trades": 24,
+              "net_profit": -19.369359999996355,
+              "net_win_rate": 0.4166666666666667
+            },
+            {
+              "month": "2019-09",
+              "trades": 27,
+              "net_profit": -12.71485999999595,
+              "net_win_rate": 0.5185185185185185
+            },
+            {
+              "month": "2019-10",
+              "trades": 34,
+              "net_profit": -12.823199999995126,
+              "net_win_rate": 0.5588235294117647
+            },
+            {
+              "month": "2019-11",
+              "trades": 21,
+              "net_profit": -17.43595999999693,
+              "net_win_rate": 0.38095238095238093
+            },
+            {
+              "month": "2019-12",
+              "trades": 28,
+              "net_profit": -5.776609999996146,
+              "net_win_rate": 0.6071428571428571
+            }
+          ]
+        }
+      },
+      "validation": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99779.0675900001,
+          "net_profit": -220.93240999990462,
+          "net_return": -0.0022093240999990463,
+          "closed_trades": 697,
+          "natural_closed_trades": 697,
+          "eligible_trades": 697,
+          "wins": 393,
+          "losses": 304,
+          "breakeven_trades": 0,
+          "win_rate": 0.563845050215208,
+          "net_profit_per_trade": -0.3169761979912548,
+          "natural_net_profit": -220.93240999990462,
+          "natural_net_profit_per_trade": -0.3169761979912548,
+          "mean_net_pips_per_trade": -5.358215127021434,
+          "profit_factor": 0.604252555729961,
+          "natural_profit_factor": 0.604252555729961,
+          "mean_winning_trade": 0.858355623409793,
+          "mean_losing_trade": -1.8364018749998463,
+          "total_commission": 139.39999999999998,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 100.3252799999147,
+          "max_account_drawdown_close_marks": 0.0022738459711013634,
+          "max_trade_adverse_equity_fraction": 2.1245135179402425e-05,
+          "max_trade_peak_drawdown_equity_fraction": 2.8826825048962036e-05,
+          "max_funded_loss_equity_fraction": 0.008001967092493187,
+          "risk_breaches": 0,
+          "terminal_liquidations": 0,
+          "rejected_entries": 0,
+          "bars": 49814,
+          "first_epoch": 1577944800,
+          "last_epoch": 1640991600,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 0
+        },
+        "stability": {
+          "months_with_trades": 24,
+          "positive_months": 3,
+          "negative_months": 21,
+          "monthly": [
+            {
+              "month": "2020-01",
+              "trades": 19,
+              "net_profit": 2.9082400000025386,
+              "net_win_rate": 0.7368421052631579
+            },
+            {
+              "month": "2020-02",
+              "trades": 14,
+              "net_profit": -9.763899999997976,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2020-03",
+              "trades": 12,
+              "net_profit": -0.8031199999982181,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-04",
+              "trades": 29,
+              "net_profit": -16.39687999999567,
+              "net_win_rate": 0.4827586206896552
+            },
+            {
+              "month": "2020-05",
+              "trades": 24,
+              "net_profit": -15.256679999996361,
+              "net_win_rate": 0.4583333333333333
+            },
+            {
+              "month": "2020-06",
+              "trades": 30,
+              "net_profit": -0.9407599999957561,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-07",
+              "trades": 61,
+              "net_profit": 1.5185600000085289,
+              "net_win_rate": 0.6885245901639344
+            },
+            {
+              "month": "2020-08",
+              "trades": 42,
+              "net_profit": -4.485259999994284,
+              "net_win_rate": 0.6428571428571429
+            },
+            {
+              "month": "2020-09",
+              "trades": 26,
+              "net_profit": 0.8986400000035482,
+              "net_win_rate": 0.6923076923076923
+            },
+            {
+              "month": "2020-10",
+              "trades": 29,
+              "net_profit": -18.60351999999583,
+              "net_win_rate": 0.4482758620689655
+            },
+            {
+              "month": "2020-11",
+              "trades": 34,
+              "net_profit": -8.677899999995345,
+              "net_win_rate": 0.5882352941176471
+            },
+            {
+              "month": "2020-12",
+              "trades": 33,
+              "net_profit": -4.165639999995619,
+              "net_win_rate": 0.6363636363636364
+            },
+            {
+              "month": "2021-01",
+              "trades": 33,
+              "net_profit": -12.040439999995582,
+              "net_win_rate": 0.5454545454545454
+            },
+            {
+              "month": "2021-02",
+              "trades": 37,
+              "net_profit": -6.235719999995223,
+              "net_win_rate": 0.6216216216216216
+            },
+            {
+              "month": "2021-03",
+              "trades": 33,
+              "net_profit": -9.409819999995683,
+              "net_win_rate": 0.5757575757575758
+            },
+            {
+              "month": "2021-04",
+              "trades": 32,
+              "net_profit": -23.139019999995643,
+              "net_win_rate": 0.40625
+            },
+            {
+              "month": "2021-05",
+              "trades": 32,
+              "net_profit": -15.2617999999958,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-06",
+              "trades": 20,
+              "net_profit": -19.74733999999726,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2021-07",
+              "trades": 32,
+              "net_profit": -5.025739999995848,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2021-08",
+              "trades": 20,
+              "net_profit": -7.051859999997353,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2021-09",
+              "trades": 18,
+              "net_profit": -8.722219999997591,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-10",
+              "trades": 37,
+              "net_profit": -19.20563999999499,
+              "net_win_rate": 0.4864864864864865
+            },
+            {
+              "month": "2021-11",
+              "trades": 20,
+              "net_profit": -7.156759999997293,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2021-12",
+              "trades": 30,
+              "net_profit": -14.167829999995906,
+              "net_win_rate": 0.5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "ema_pullback32_trend192_t30_s35",
+        "family": "ema_pullback",
+        "lookback": 32,
+        "trend_span": 192,
+        "target_pips": 30,
+        "stop_pips": 35,
+        "min_atr_pips": 5,
+        "max_atr_pips": 20,
+        "max_holding_bars": 192
+      },
+      "development": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99652.33889999987,
+          "net_profit": -347.66109999992636,
+          "net_return": -0.0034766109999992637,
+          "closed_trades": 1056,
+          "natural_closed_trades": 1055,
+          "eligible_trades": 1055,
+          "wins": 575,
+          "losses": 480,
+          "breakeven_trades": 0,
+          "win_rate": 0.5450236966824644,
+          "net_profit_per_trade": -0.3292245265150818,
+          "natural_net_profit": -347.3168599999265,
+          "natural_net_profit_per_trade": -0.3292102938387929,
+          "mean_net_pips_per_trade": -5.64603926162749,
+          "profit_factor": 0.7032013068799747,
+          "natural_profit_factor": 0.7034080230905084,
+          "mean_winning_trade": 1.4325373043478828,
+          "mean_losing_trade": -2.4396371041665814,
+          "total_commission": 211.2,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 149.06831999987324,
+          "max_account_drawdown_close_marks": 0.003543301470396971,
+          "max_trade_adverse_equity_fraction": 0.00013242620999544225,
+          "max_trade_peak_drawdown_equity_fraction": 0.00013672109244707766,
+          "max_funded_loss_equity_fraction": 0.008001978172181113,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 124097,
+          "first_epoch": 1420189200,
+          "last_epoch": 1577833200,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 1
+        },
+        "stability": {
+          "months_with_trades": 60,
+          "positive_months": 14,
+          "negative_months": 46,
+          "monthly": [
+            {
+              "month": "2015-01",
+              "trades": 15,
+              "net_profit": -11.99397999999901,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2015-02",
+              "trades": 16,
+              "net_profit": -3.8691999999990236,
+              "net_win_rate": 0.5625
+            },
+            {
+              "month": "2015-03",
+              "trades": 7,
+              "net_profit": -11.948479999999483,
+              "net_win_rate": 0.14285714285714285
+            },
+            {
+              "month": "2015-04",
+              "trades": 36,
+              "net_profit": -6.3374599999977725,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2015-05",
+              "trades": 17,
+              "net_profit": -6.030079999998964,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2015-06",
+              "trades": 25,
+              "net_profit": -16.575829999998362,
+              "net_win_rate": 0.44
+            },
+            {
+              "month": "2015-07",
+              "trades": 13,
+              "net_profit": -0.8426399999992371,
+              "net_win_rate": 0.6153846153846154
+            },
+            {
+              "month": "2015-08",
+              "trades": 19,
+              "net_profit": -13.531999999998794,
+              "net_win_rate": 0.42105263157894735
+            },
+            {
+              "month": "2015-09",
+              "trades": 14,
+              "net_profit": -2.992419999999045,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2015-10",
+              "trades": 20,
+              "net_profit": -1.3689699999987017,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2015-11",
+              "trades": 18,
+              "net_profit": -11.553859999998842,
+              "net_win_rate": 0.4444444444444444
+            },
+            {
+              "month": "2015-12",
+              "trades": 14,
+              "net_profit": -16.711319999999027,
+              "net_win_rate": 0.2857142857142857
+            },
+            {
+              "month": "2016-01",
+              "trades": 5,
+              "net_profit": -0.5378399999996779,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2016-02",
+              "trades": 15,
+              "net_profit": -1.6384399999990402,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2016-03",
+              "trades": 31,
+              "net_profit": -16.609659999997895,
+              "net_win_rate": 0.4838709677419355
+            },
+            {
+              "month": "2016-04",
+              "trades": 27,
+              "net_profit": 1.513580000001718,
+              "net_win_rate": 0.6296296296296297
+            },
+            {
+              "month": "2016-05",
+              "trades": 19,
+              "net_profit": 0.02788000000118096,
+              "net_win_rate": 0.631578947368421
+            },
+            {
+              "month": "2016-06",
+              "trades": 16,
+              "net_profit": -0.5688599999989872,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2016-07",
+              "trades": 16,
+              "net_profit": 11.722860000001015,
+              "net_win_rate": 0.8125
+            },
+            {
+              "month": "2016-08",
+              "trades": 21,
+              "net_profit": -20.272379999998392,
+              "net_win_rate": 0.38095238095238093
+            },
+            {
+              "month": "2016-09",
+              "trades": 17,
+              "net_profit": -2.4503399999988114,
+              "net_win_rate": 0.5882352941176471
+            },
+            {
+              "month": "2016-10",
+              "trades": 12,
+              "net_profit": -14.686339999998994,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2016-11",
+              "trades": 24,
+              "net_profit": -18.326249999998076,
+              "net_win_rate": 0.4583333333333333
+            },
+            {
+              "month": "2016-12",
+              "trades": 14,
+              "net_profit": 9.441160000000941,
+              "net_win_rate": 0.7857142857142857
+            },
+            {
+              "month": "2017-01",
+              "trades": 24,
+              "net_profit": -14.543579999998231,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2017-02",
+              "trades": 16,
+              "net_profit": -12.323359999998743,
+              "net_win_rate": 0.4375
+            },
+            {
+              "month": "2017-03",
+              "trades": 21,
+              "net_profit": 12.394360000001447,
+              "net_win_rate": 0.7619047619047619
+            },
+            {
+              "month": "2017-04",
+              "trades": 21,
+              "net_profit": -4.465039999998461,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2017-05",
+              "trades": 17,
+              "net_profit": -14.522499999998693,
+              "net_win_rate": 0.4117647058823529
+            },
+            {
+              "month": "2017-06",
+              "trades": 23,
+              "net_profit": -9.698809999998392,
+              "net_win_rate": 0.6086956521739131
+            },
+            {
+              "month": "2017-07",
+              "trades": 22,
+              "net_profit": 0.9967400000015283,
+              "net_win_rate": 0.6363636363636364
+            },
+            {
+              "month": "2017-08",
+              "trades": 14,
+              "net_profit": -7.051839999998966,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2017-09",
+              "trades": 21,
+              "net_profit": -15.94919999999845,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2017-10",
+              "trades": 17,
+              "net_profit": -10.301799999998753,
+              "net_win_rate": 0.47058823529411764
+            },
+            {
+              "month": "2017-11",
+              "trades": 21,
+              "net_profit": 7.180540000001382,
+              "net_win_rate": 0.7142857142857143
+            },
+            {
+              "month": "2017-12",
+              "trades": 14,
+              "net_profit": -18.415899999998913,
+              "net_win_rate": 0.2857142857142857
+            },
+            {
+              "month": "2018-01",
+              "trades": 25,
+              "net_profit": 19.548880000001486,
+              "net_win_rate": 0.84
+            },
+            {
+              "month": "2018-02",
+              "trades": 17,
+              "net_profit": -6.183839999998855,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2018-03",
+              "trades": 22,
+              "net_profit": 7.990460000001367,
+              "net_win_rate": 0.7272727272727273
+            },
+            {
+              "month": "2018-04",
+              "trades": 16,
+              "net_profit": -3.9077599999989463,
+              "net_win_rate": 0.5625
+            },
+            {
+              "month": "2018-05",
+              "trades": 13,
+              "net_profit": -15.994599999999002,
+              "net_win_rate": 0.3076923076923077
+            },
+            {
+              "month": "2018-06",
+              "trades": 13,
+              "net_profit": -12.213399999999021,
+              "net_win_rate": 0.38461538461538464
+            },
+            {
+              "month": "2018-07",
+              "trades": 18,
+              "net_profit": 4.117900000001217,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2018-08",
+              "trades": 12,
+              "net_profit": -1.8915599999991397,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2018-09",
+              "trades": 16,
+              "net_profit": 7.950880000001052,
+              "net_win_rate": 0.75
+            },
+            {
+              "month": "2018-10",
+              "trades": 12,
+              "net_profit": 1.9693000000008152,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2018-11",
+              "trades": 19,
+              "net_profit": 8.462660000001264,
+              "net_win_rate": 0.7368421052631579
+            },
+            {
+              "month": "2018-12",
+              "trades": 18,
+              "net_profit": -21.328599999998545,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2019-01",
+              "trades": 34,
+              "net_profit": -4.822099999997565,
+              "net_win_rate": 0.5882352941176471
+            },
+            {
+              "month": "2019-02",
+              "trades": 15,
+              "net_profit": -1.3589799999989496,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2019-03",
+              "trades": 20,
+              "net_profit": -13.81473999999852,
+              "net_win_rate": 0.45
+            },
+            {
+              "month": "2019-04",
+              "trades": 15,
+              "net_profit": -9.389599999998886,
+              "net_win_rate": 0.4666666666666667
+            },
+            {
+              "month": "2019-05",
+              "trades": 7,
+              "net_profit": -5.3577199999994685,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2019-06",
+              "trades": 16,
+              "net_profit": -12.148439999998761,
+              "net_win_rate": 0.4375
+            },
+            {
+              "month": "2019-07",
+              "trades": 10,
+              "net_profit": -9.203919999999204,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2019-08",
+              "trades": 15,
+              "net_profit": -18.424519999998736,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2019-09",
+              "trades": 10,
+              "net_profit": -5.127639999999226,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2019-10",
+              "trades": 25,
+              "net_profit": -10.782199999998117,
+              "net_win_rate": 0.52
+            },
+            {
+              "month": "2019-11",
+              "trades": 10,
+              "net_profit": -9.008779999999227,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2019-12",
+              "trades": 15,
+              "net_profit": 6.442720000000988,
+              "net_win_rate": 0.7333333333333333
+            }
+          ]
+        }
+      },
+      "validation": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99856.36418000012,
+          "net_profit": -143.63581999996813,
+          "net_return": -0.0014363581999996813,
+          "closed_trades": 448,
+          "natural_closed_trades": 448,
+          "eligible_trades": 448,
+          "wins": 243,
+          "losses": 205,
+          "breakeven_trades": 0,
+          "win_rate": 0.5424107142857143,
+          "net_profit_per_trade": -0.32061566964278604,
+          "natural_net_profit": -143.63581999996813,
+          "natural_net_profit_per_trade": -0.32061566964278604,
+          "mean_net_pips_per_trade": -5.46784114850126,
+          "profit_factor": 0.7132425619676356,
+          "natural_profit_factor": 0.7132425619676356,
+          "mean_winning_trade": 1.4702088888889464,
+          "mean_losing_trade": -2.443397951219425,
+          "total_commission": 89.60000000000001,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 64.8043199999449,
+          "max_account_drawdown_close_marks": 0.0015780164324542257,
+          "max_trade_adverse_equity_fraction": 2.743193601775144e-05,
+          "max_trade_peak_drawdown_equity_fraction": 4.392789754257266e-05,
+          "max_funded_loss_equity_fraction": 0.008001879622706091,
+          "risk_breaches": 0,
+          "terminal_liquidations": 0,
+          "rejected_entries": 0,
+          "bars": 49814,
+          "first_epoch": 1577944800,
+          "last_epoch": 1640991600,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 1
+        },
+        "stability": {
+          "months_with_trades": 24,
+          "positive_months": 5,
+          "negative_months": 19,
+          "monthly": [
+            {
+              "month": "2020-01",
+              "trades": 9,
+              "net_profit": 1.5188400000006137,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-02",
+              "trades": 10,
+              "net_profit": -8.97377999999923,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2020-03",
+              "trades": 20,
+              "net_profit": -2.2811599999985317,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2020-04",
+              "trades": 27,
+              "net_profit": -11.851239999997928,
+              "net_win_rate": 0.5185185185185185
+            },
+            {
+              "month": "2020-05",
+              "trades": 20,
+              "net_profit": -10.216119999998444,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2020-06",
+              "trades": 22,
+              "net_profit": 9.57438000000152,
+              "net_win_rate": 0.7272727272727273
+            },
+            {
+              "month": "2020-07",
+              "trades": 35,
+              "net_profit": 12.809800000002411,
+              "net_win_rate": 0.7142857142857143
+            },
+            {
+              "month": "2020-08",
+              "trades": 27,
+              "net_profit": -7.520639999998075,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2020-09",
+              "trades": 17,
+              "net_profit": -6.41609999999876,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2020-10",
+              "trades": 15,
+              "net_profit": -9.430579999998876,
+              "net_win_rate": 0.4666666666666667
+            },
+            {
+              "month": "2020-11",
+              "trades": 24,
+              "net_profit": 3.8128000000016247,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-12",
+              "trades": 24,
+              "net_profit": -11.736899999998291,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-01",
+              "trades": 20,
+              "net_profit": -13.478599999998565,
+              "net_win_rate": 0.45
+            },
+            {
+              "month": "2021-02",
+              "trades": 21,
+              "net_profit": 2.93450000000135,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2021-03",
+              "trades": 22,
+              "net_profit": -3.0183399999985374,
+              "net_win_rate": 0.5909090909090909
+            },
+            {
+              "month": "2021-04",
+              "trades": 19,
+              "net_profit": -14.705279999998641,
+              "net_win_rate": 0.42105263157894735
+            },
+            {
+              "month": "2021-05",
+              "trades": 20,
+              "net_profit": -13.173539999998608,
+              "net_win_rate": 0.45
+            },
+            {
+              "month": "2021-06",
+              "trades": 12,
+              "net_profit": -13.090179999999126,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2021-07",
+              "trades": 15,
+              "net_profit": -9.052979999998946,
+              "net_win_rate": 0.4666666666666667
+            },
+            {
+              "month": "2021-08",
+              "trades": 10,
+              "net_profit": -4.813499999999305,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-09",
+              "trades": 9,
+              "net_profit": -6.244219999999359,
+              "net_win_rate": 0.4444444444444444
+            },
+            {
+              "month": "2021-10",
+              "trades": 20,
+              "net_profit": -9.645999999998596,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-11",
+              "trades": 12,
+              "net_profit": -17.426919999999058,
+              "net_win_rate": 0.25
+            },
+            {
+              "month": "2021-12",
+              "trades": 18,
+              "net_profit": -1.2100599999987636,
+              "net_win_rate": 0.6111111111111112
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "reversal4_trend192_t20_s25",
+        "family": "pullback_reversal",
+        "lookback": 4,
+        "trend_span": 192,
+        "target_pips": 20,
+        "stop_pips": 25,
+        "min_atr_pips": 4,
+        "max_atr_pips": 15,
+        "max_holding_bars": 96
+      },
+      "development": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99379.46096000029,
+          "net_profit": -620.5390399997935,
+          "net_return": -0.006205390399997936,
+          "closed_trades": 1518,
+          "natural_closed_trades": 1517,
+          "eligible_trades": 1517,
+          "wins": 813,
+          "losses": 704,
+          "breakeven_trades": 0,
+          "win_rate": 0.5359261700725115,
+          "net_profit_per_trade": -0.4087872463766756,
+          "natural_net_profit": -620.5130399997937,
+          "natural_net_profit_per_trade": -0.4090395781145641,
+          "mean_net_pips_per_trade": -6.938275712851512,
+          "profit_factor": 0.5267073742887879,
+          "natural_profit_factor": 0.5267178193740047,
+          "mean_winning_trade": 0.8494116728168505,
+          "mean_losing_trade": -1.8623362642043941,
+          "total_commission": 303.59999999999997,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 215.7011999998166,
+          "max_account_drawdown_close_marks": 0.0062592370154322665,
+          "max_trade_adverse_equity_fraction": 0.0001323248000568099,
+          "max_trade_peak_drawdown_equity_fraction": 0.00013661323369599024,
+          "max_funded_loss_equity_fraction": 0.008002005776682863,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 124097,
+          "first_epoch": 1420189200,
+          "last_epoch": 1577833200,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 2
+        },
+        "stability": {
+          "months_with_trades": 60,
+          "positive_months": 3,
+          "negative_months": 57,
+          "monthly": [
+            {
+              "month": "2015-01",
+              "trades": 21,
+              "net_profit": -10.781779999997424,
+              "net_win_rate": 0.47619047619047616
+            },
+            {
+              "month": "2015-02",
+              "trades": 33,
+              "net_profit": -8.89363999999571,
+              "net_win_rate": 0.5757575757575758
+            },
+            {
+              "month": "2015-03",
+              "trades": 6,
+              "net_profit": -7.601599999999201,
+              "net_win_rate": 0.16666666666666666
+            },
+            {
+              "month": "2015-04",
+              "trades": 27,
+              "net_profit": -16.075599999996616,
+              "net_win_rate": 0.4444444444444444
+            },
+            {
+              "month": "2015-05",
+              "trades": 15,
+              "net_profit": -5.602439999998224,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2015-06",
+              "trades": 30,
+              "net_profit": -18.113459999996394,
+              "net_win_rate": 0.43333333333333335
+            },
+            {
+              "month": "2015-07",
+              "trades": 18,
+              "net_profit": -3.5015799999979187,
+              "net_win_rate": 0.6111111111111112
+            },
+            {
+              "month": "2015-08",
+              "trades": 23,
+              "net_profit": -11.595239999997291,
+              "net_win_rate": 0.4782608695652174
+            },
+            {
+              "month": "2015-09",
+              "trades": 23,
+              "net_profit": -6.930379999997288,
+              "net_win_rate": 0.5652173913043478
+            },
+            {
+              "month": "2015-10",
+              "trades": 28,
+              "net_profit": -7.970659999996684,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2015-11",
+              "trades": 20,
+              "net_profit": -4.441679999997633,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2015-12",
+              "trades": 28,
+              "net_profit": -18.406479999996463,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2016-01",
+              "trades": 8,
+              "net_profit": -3.780319999998966,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2016-02",
+              "trades": 15,
+              "net_profit": -10.743079999998045,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2016-03",
+              "trades": 33,
+              "net_profit": -26.858239999995597,
+              "net_win_rate": 0.36363636363636365
+            },
+            {
+              "month": "2016-04",
+              "trades": 25,
+              "net_profit": -6.788319999996925,
+              "net_win_rate": 0.56
+            },
+            {
+              "month": "2016-05",
+              "trades": 24,
+              "net_profit": -11.386119999996893,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2016-06",
+              "trades": 12,
+              "net_profit": -7.407189999998495,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2016-07",
+              "trades": 14,
+              "net_profit": 6.651840000001804,
+              "net_win_rate": 0.8571428571428571
+            },
+            {
+              "month": "2016-08",
+              "trades": 28,
+              "net_profit": -19.291219999996013,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2016-09",
+              "trades": 25,
+              "net_profit": -10.978979999996515,
+              "net_win_rate": 0.52
+            },
+            {
+              "month": "2016-10",
+              "trades": 13,
+              "net_profit": -8.213579999998023,
+              "net_win_rate": 0.46153846153846156
+            },
+            {
+              "month": "2016-11",
+              "trades": 28,
+              "net_profit": -13.052639999995998,
+              "net_win_rate": 0.5357142857142857
+            },
+            {
+              "month": "2016-12",
+              "trades": 19,
+              "net_profit": 3.0191200000026517,
+              "net_win_rate": 0.7368421052631579
+            },
+            {
+              "month": "2017-01",
+              "trades": 40,
+              "net_profit": -26.06997999999421,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2017-02",
+              "trades": 29,
+              "net_profit": -16.27483999999571,
+              "net_win_rate": 0.4827586206896552
+            },
+            {
+              "month": "2017-03",
+              "trades": 30,
+              "net_profit": -9.590499999995618,
+              "net_win_rate": 0.5666666666666667
+            },
+            {
+              "month": "2017-04",
+              "trades": 39,
+              "net_profit": -9.839059999994443,
+              "net_win_rate": 0.5897435897435898
+            },
+            {
+              "month": "2017-05",
+              "trades": 29,
+              "net_profit": -5.33299999999599,
+              "net_win_rate": 0.6206896551724138
+            },
+            {
+              "month": "2017-06",
+              "trades": 37,
+              "net_profit": -24.22673999999491,
+              "net_win_rate": 0.5405405405405406
+            },
+            {
+              "month": "2017-07",
+              "trades": 25,
+              "net_profit": -5.594959999996542,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2017-08",
+              "trades": 20,
+              "net_profit": -6.0761699999971786,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2017-09",
+              "trades": 34,
+              "net_profit": -3.409499999995424,
+              "net_win_rate": 0.6470588235294118
+            },
+            {
+              "month": "2017-10",
+              "trades": 23,
+              "net_profit": -1.851199999996901,
+              "net_win_rate": 0.6521739130434783
+            },
+            {
+              "month": "2017-11",
+              "trades": 42,
+              "net_profit": -21.926749999994207,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2017-12",
+              "trades": 24,
+              "net_profit": -1.0842199999968278,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2018-01",
+              "trades": 41,
+              "net_profit": 10.040240000005136,
+              "net_win_rate": 0.7804878048780488
+            },
+            {
+              "month": "2018-02",
+              "trades": 18,
+              "net_profit": -8.514659999997638,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-03",
+              "trades": 31,
+              "net_profit": -10.939779999995954,
+              "net_win_rate": 0.5483870967741935
+            },
+            {
+              "month": "2018-04",
+              "trades": 24,
+              "net_profit": -6.396679999996942,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2018-05",
+              "trades": 13,
+              "net_profit": -7.634739999998208,
+              "net_win_rate": 0.46153846153846156
+            },
+            {
+              "month": "2018-06",
+              "trades": 28,
+              "net_profit": -19.12743999999607,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2018-07",
+              "trades": 37,
+              "net_profit": -8.789559999994943,
+              "net_win_rate": 0.5945945945945946
+            },
+            {
+              "month": "2018-08",
+              "trades": 22,
+              "net_profit": -10.940139999996857,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2018-09",
+              "trades": 35,
+              "net_profit": -5.011099999995219,
+              "net_win_rate": 0.6285714285714286
+            },
+            {
+              "month": "2018-10",
+              "trades": 21,
+              "net_profit": -3.545239999997138,
+              "net_win_rate": 0.6190476190476191
+            },
+            {
+              "month": "2018-11",
+              "trades": 25,
+              "net_profit": -3.367939999996518,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2018-12",
+              "trades": 28,
+              "net_profit": -28.287839999995775,
+              "net_win_rate": 0.32142857142857145
+            },
+            {
+              "month": "2019-01",
+              "trades": 41,
+              "net_profit": -10.927639999994263,
+              "net_win_rate": 0.5853658536585366
+            },
+            {
+              "month": "2019-02",
+              "trades": 26,
+              "net_profit": -7.356779999996389,
+              "net_win_rate": 0.5769230769230769
+            },
+            {
+              "month": "2019-03",
+              "trades": 20,
+              "net_profit": -17.985099999997125,
+              "net_win_rate": 0.35
+            },
+            {
+              "month": "2019-04",
+              "trades": 15,
+              "net_profit": -3.3626399999979375,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2019-05",
+              "trades": 12,
+              "net_profit": -0.3675199999983578,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2019-06",
+              "trades": 33,
+              "net_profit": -9.662779999995266,
+              "net_win_rate": 0.5757575757575758
+            },
+            {
+              "month": "2019-07",
+              "trades": 14,
+              "net_profit": -12.81219999999788,
+              "net_win_rate": 0.35714285714285715
+            },
+            {
+              "month": "2019-08",
+              "trades": 31,
+              "net_profit": -24.447099999995277,
+              "net_win_rate": 0.41935483870967744
+            },
+            {
+              "month": "2019-09",
+              "trades": 27,
+              "net_profit": -21.043799999995844,
+              "net_win_rate": 0.4074074074074074
+            },
+            {
+              "month": "2019-10",
+              "trades": 40,
+              "net_profit": -30.501379999994096,
+              "net_win_rate": 0.425
+            },
+            {
+              "month": "2019-11",
+              "trades": 18,
+              "net_profit": -17.34069999999734,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2019-12",
+              "trades": 29,
+              "net_profit": -2.1703299999960532,
+              "net_win_rate": 0.6551724137931034
+            }
+          ]
+        }
+      },
+      "validation": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99698.8915400001,
+          "net_profit": -301.10845999990397,
+          "net_return": -0.00301108459999904,
+          "closed_trades": 696,
+          "natural_closed_trades": 695,
+          "eligible_trades": 695,
+          "wins": 363,
+          "losses": 332,
+          "breakeven_trades": 0,
+          "win_rate": 0.5223021582733813,
+          "net_profit_per_trade": -0.43262709770101143,
+          "natural_net_profit": -300.27233999990415,
+          "natural_net_profit_per_trade": -0.4320465323739628,
+          "mean_net_pips_per_trade": -7.269403916595424,
+          "profit_factor": 0.5083293461396265,
+          "natural_profit_factor": 0.5090243039824541,
+          "mean_winning_trade": 0.8576048484849722,
+          "mean_losing_trade": -1.842117168674545,
+          "total_commission": 139.2,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 100.13351999991485,
+          "max_account_drawdown_close_marks": 0.0030419122999989488,
+          "max_trade_adverse_equity_fraction": 2.33354490264131e-05,
+          "max_trade_peak_drawdown_equity_fraction": 2.8607423535927432e-05,
+          "max_funded_loss_equity_fraction": 0.008001985726362572,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 49814,
+          "first_epoch": 1577944800,
+          "last_epoch": 1640991600,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 1
+        },
+        "stability": {
+          "months_with_trades": 24,
+          "positive_months": 2,
+          "negative_months": 22,
+          "monthly": [
+            {
+              "month": "2020-01",
+              "trades": 18,
+              "net_profit": -0.7127199999975526,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-02",
+              "trades": 20,
+              "net_profit": -21.50241999999703,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2020-03",
+              "trades": 11,
+              "net_profit": 1.5447000000015039,
+              "net_win_rate": 0.7272727272727273
+            },
+            {
+              "month": "2020-04",
+              "trades": 36,
+              "net_profit": -35.787459999994454,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2020-05",
+              "trades": 22,
+              "net_profit": -5.436839999996766,
+              "net_win_rate": 0.5909090909090909
+            },
+            {
+              "month": "2020-06",
+              "trades": 27,
+              "net_profit": -0.8109999999961852,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-07",
+              "trades": 60,
+              "net_profit": -13.608019999991456,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2020-08",
+              "trades": 48,
+              "net_profit": -7.454959999993443,
+              "net_win_rate": 0.625
+            },
+            {
+              "month": "2020-09",
+              "trades": 28,
+              "net_profit": -11.247619999996042,
+              "net_win_rate": 0.5357142857142857
+            },
+            {
+              "month": "2020-10",
+              "trades": 27,
+              "net_profit": -14.835259999996149,
+              "net_win_rate": 0.48148148148148145
+            },
+            {
+              "month": "2020-11",
+              "trades": 28,
+              "net_profit": -11.097639999996122,
+              "net_win_rate": 0.5357142857142857
+            },
+            {
+              "month": "2020-12",
+              "trades": 29,
+              "net_profit": 0.46452000000380944,
+              "net_win_rate": 0.6896551724137931
+            },
+            {
+              "month": "2021-01",
+              "trades": 27,
+              "net_profit": -9.121899999996398,
+              "net_win_rate": 0.5555555555555556
+            },
+            {
+              "month": "2021-02",
+              "trades": 38,
+              "net_profit": -2.788659999995139,
+              "net_win_rate": 0.6578947368421053
+            },
+            {
+              "month": "2021-03",
+              "trades": 25,
+              "net_profit": -15.884679999996633,
+              "net_win_rate": 0.44
+            },
+            {
+              "month": "2021-04",
+              "trades": 37,
+              "net_profit": -19.074099999995056,
+              "net_win_rate": 0.4864864864864865
+            },
+            {
+              "month": "2021-05",
+              "trades": 32,
+              "net_profit": -15.302659999995807,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2021-06",
+              "trades": 18,
+              "net_profit": -21.57483999999752,
+              "net_win_rate": 0.2222222222222222
+            },
+            {
+              "month": "2021-07",
+              "trades": 29,
+              "net_profit": -12.649639999996147,
+              "net_win_rate": 0.5172413793103449
+            },
+            {
+              "month": "2021-08",
+              "trades": 22,
+              "net_profit": -13.248579999997126,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2021-09",
+              "trades": 22,
+              "net_profit": -8.026119999997087,
+              "net_win_rate": 0.5454545454545454
+            },
+            {
+              "month": "2021-10",
+              "trades": 37,
+              "net_profit": -27.033479999994903,
+              "net_win_rate": 0.40540540540540543
+            },
+            {
+              "month": "2021-11",
+              "trades": 20,
+              "net_profit": -17.72625999999718,
+              "net_win_rate": 0.35
+            },
+            {
+              "month": "2021-12",
+              "trades": 34,
+              "net_profit": -17.35669999999527,
+              "net_win_rate": 0.5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "reversal8_trend192_t30_s35",
+        "family": "pullback_reversal",
+        "lookback": 8,
+        "trend_span": 192,
+        "target_pips": 30,
+        "stop_pips": 35,
+        "min_atr_pips": 5,
+        "max_atr_pips": 20,
+        "max_holding_bars": 192
+      },
+      "development": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99469.6769599998,
+          "net_profit": -530.3230399999107,
+          "net_return": -0.0053032303999991075,
+          "closed_trades": 1266,
+          "natural_closed_trades": 1265,
+          "eligible_trades": 1265,
+          "wins": 659,
+          "losses": 606,
+          "breakeven_trades": 0,
+          "win_rate": 0.5209486166007905,
+          "net_profit_per_trade": -0.418896556082078,
+          "natural_net_profit": -530.2970399999109,
+          "natural_net_profit_per_trade": -0.41920714624498884,
+          "mean_net_pips_per_trade": -7.183961569768825,
+          "profit_factor": 0.6403500319771901,
+          "natural_profit_factor": 0.6403613231218553,
+          "mean_winning_trade": 1.4328228224583268,
+          "mean_losing_trade": -2.4332133333332484,
+          "total_commission": 253.19999999999996,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 178.75487999984801,
+          "max_account_drawdown_close_marks": 0.005364843637622402,
+          "max_trade_adverse_equity_fraction": 0.0001323566577425214,
+          "max_trade_peak_drawdown_equity_fraction": 0.00013664612383798366,
+          "max_funded_loss_equity_fraction": 0.008002001662981833,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 124097,
+          "first_epoch": 1420189200,
+          "last_epoch": 1577833200,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 3
+        },
+        "stability": {
+          "months_with_trades": 60,
+          "positive_months": 9,
+          "negative_months": 51,
+          "monthly": [
+            {
+              "month": "2015-01",
+              "trades": 20,
+              "net_profit": -12.548339999998705,
+              "net_win_rate": 0.45
+            },
+            {
+              "month": "2015-02",
+              "trades": 26,
+              "net_profit": -15.153159999998344,
+              "net_win_rate": 0.46153846153846156
+            },
+            {
+              "month": "2015-03",
+              "trades": 12,
+              "net_profit": -12.422399999999136,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2015-04",
+              "trades": 34,
+              "net_profit": -12.377599999997846,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2015-05",
+              "trades": 17,
+              "net_profit": -9.356659999998936,
+              "net_win_rate": 0.47058823529411764
+            },
+            {
+              "month": "2015-06",
+              "trades": 25,
+              "net_profit": -16.11939999999842,
+              "net_win_rate": 0.44
+            },
+            {
+              "month": "2015-07",
+              "trades": 25,
+              "net_profit": -9.593219999998471,
+              "net_win_rate": 0.52
+            },
+            {
+              "month": "2015-08",
+              "trades": 21,
+              "net_profit": -21.06357999999862,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2015-09",
+              "trades": 16,
+              "net_profit": -3.9087199999990294,
+              "net_win_rate": 0.5625
+            },
+            {
+              "month": "2015-10",
+              "trades": 20,
+              "net_profit": -4.378719999998681,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2015-11",
+              "trades": 15,
+              "net_profit": -8.496159999999044,
+              "net_win_rate": 0.4666666666666667
+            },
+            {
+              "month": "2015-12",
+              "trades": 20,
+              "net_profit": -9.140659999998727,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2016-01",
+              "trades": 11,
+              "net_profit": -6.998859999999248,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2016-02",
+              "trades": 18,
+              "net_profit": -8.399459999998804,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2016-03",
+              "trades": 39,
+              "net_profit": -27.314259999997308,
+              "net_win_rate": 0.4358974358974359
+            },
+            {
+              "month": "2016-04",
+              "trades": 30,
+              "net_profit": -6.138199999998072,
+              "net_win_rate": 0.5666666666666667
+            },
+            {
+              "month": "2016-05",
+              "trades": 21,
+              "net_profit": -4.505979999998658,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2016-06",
+              "trades": 18,
+              "net_profit": -2.472149999998816,
+              "net_win_rate": 0.6111111111111112
+            },
+            {
+              "month": "2016-07",
+              "trades": 21,
+              "net_profit": 3.357000000001422,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2016-08",
+              "trades": 24,
+              "net_profit": -27.60437999999813,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2016-09",
+              "trades": 21,
+              "net_profit": -4.407739999998518,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2016-10",
+              "trades": 15,
+              "net_profit": -22.575599999998712,
+              "net_win_rate": 0.26666666666666666
+            },
+            {
+              "month": "2016-11",
+              "trades": 25,
+              "net_profit": -15.72225999999811,
+              "net_win_rate": 0.48
+            },
+            {
+              "month": "2016-12",
+              "trades": 13,
+              "net_profit": -0.29029999999905987,
+              "net_win_rate": 0.6153846153846154
+            },
+            {
+              "month": "2017-01",
+              "trades": 38,
+              "net_profit": -21.768959999997147,
+              "net_win_rate": 0.5526315789473685
+            },
+            {
+              "month": "2017-02",
+              "trades": 17,
+              "net_profit": -2.465539999998746,
+              "net_win_rate": 0.5882352941176471
+            },
+            {
+              "month": "2017-03",
+              "trades": 30,
+              "net_profit": -11.273839999997714,
+              "net_win_rate": 0.5333333333333333
+            },
+            {
+              "month": "2017-04",
+              "trades": 25,
+              "net_profit": 1.5426200000017813,
+              "net_win_rate": 0.64
+            },
+            {
+              "month": "2017-05",
+              "trades": 21,
+              "net_profit": -16.5450799999984,
+              "net_win_rate": 0.42857142857142855
+            },
+            {
+              "month": "2017-06",
+              "trades": 28,
+              "net_profit": -22.616159999997954,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2017-07",
+              "trades": 21,
+              "net_profit": -4.473579999998502,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2017-08",
+              "trades": 12,
+              "net_profit": -2.1312399999991456,
+              "net_win_rate": 0.5833333333333334
+            },
+            {
+              "month": "2017-09",
+              "trades": 22,
+              "net_profit": -6.791859999998451,
+              "net_win_rate": 0.5454545454545454
+            },
+            {
+              "month": "2017-10",
+              "trades": 21,
+              "net_profit": -8.349839999998496,
+              "net_win_rate": 0.5238095238095238
+            },
+            {
+              "month": "2017-11",
+              "trades": 29,
+              "net_profit": -9.035529999997905,
+              "net_win_rate": 0.5517241379310345
+            },
+            {
+              "month": "2017-12",
+              "trades": 21,
+              "net_profit": -13.169779999998433,
+              "net_win_rate": 0.47619047619047616
+            },
+            {
+              "month": "2018-01",
+              "trades": 33,
+              "net_profit": 19.337920000002004,
+              "net_win_rate": 0.7878787878787878
+            },
+            {
+              "month": "2018-02",
+              "trades": 22,
+              "net_profit": -14.086899999998476,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2018-03",
+              "trades": 23,
+              "net_profit": 1.965060000001477,
+              "net_win_rate": 0.6521739130434783
+            },
+            {
+              "month": "2018-04",
+              "trades": 17,
+              "net_profit": 4.731020000001052,
+              "net_win_rate": 0.7058823529411765
+            },
+            {
+              "month": "2018-05",
+              "trades": 14,
+              "net_profit": -22.20529999999889,
+              "net_win_rate": 0.21428571428571427
+            },
+            {
+              "month": "2018-06",
+              "trades": 18,
+              "net_profit": -16.56687999999865,
+              "net_win_rate": 0.3888888888888889
+            },
+            {
+              "month": "2018-07",
+              "trades": 21,
+              "net_profit": 0.6460600000014478,
+              "net_win_rate": 0.6190476190476191
+            },
+            {
+              "month": "2018-08",
+              "trades": 15,
+              "net_profit": -1.450639999998933,
+              "net_win_rate": 0.6
+            },
+            {
+              "month": "2018-09",
+              "trades": 20,
+              "net_profit": 9.944240000001312,
+              "net_win_rate": 0.75
+            },
+            {
+              "month": "2018-10",
+              "trades": 14,
+              "net_profit": 0.9976800000009607,
+              "net_win_rate": 0.6428571428571429
+            },
+            {
+              "month": "2018-11",
+              "trades": 25,
+              "net_profit": -8.889099999998088,
+              "net_win_rate": 0.52
+            },
+            {
+              "month": "2018-12",
+              "trades": 20,
+              "net_profit": -26.400299999998367,
+              "net_win_rate": 0.3
+            },
+            {
+              "month": "2019-01",
+              "trades": 38,
+              "net_profit": -3.0528599999973034,
+              "net_win_rate": 0.6052631578947368
+            },
+            {
+              "month": "2019-02",
+              "trades": 21,
+              "net_profit": -4.356819999998514,
+              "net_win_rate": 0.5714285714285714
+            },
+            {
+              "month": "2019-03",
+              "trades": 15,
+              "net_profit": -13.28377999999887,
+              "net_win_rate": 0.4
+            },
+            {
+              "month": "2019-04",
+              "trades": 17,
+              "net_profit": -10.417399999998743,
+              "net_win_rate": 0.47058823529411764
+            },
+            {
+              "month": "2019-05",
+              "trades": 11,
+              "net_profit": -3.342019999999205,
+              "net_win_rate": 0.5454545454545454
+            },
+            {
+              "month": "2019-06",
+              "trades": 20,
+              "net_profit": -5.977739999998525,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2019-07",
+              "trades": 12,
+              "net_profit": -10.27643999999905,
+              "net_win_rate": 0.4166666666666667
+            },
+            {
+              "month": "2019-08",
+              "trades": 18,
+              "net_profit": -22.47081999999846,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2019-09",
+              "trades": 22,
+              "net_profit": -15.321559999998268,
+              "net_win_rate": 0.45454545454545453
+            },
+            {
+              "month": "2019-10",
+              "trades": 28,
+              "net_profit": -14.681799999997818,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2019-11",
+              "trades": 10,
+              "net_profit": -4.987679999999259,
+              "net_win_rate": 0.5
+            },
+            {
+              "month": "2019-12",
+              "trades": 19,
+              "net_profit": 4.558620000001272,
+              "net_win_rate": 0.6842105263157895
+            }
+          ]
+        }
+      },
+      "validation": {
+        "summary": {
+          "initial_equity": 100000.0,
+          "ending_equity": 99783.40295999998,
+          "net_profit": -216.59703999996083,
+          "net_return": -0.0021659703999996082,
+          "closed_trades": 547,
+          "natural_closed_trades": 546,
+          "eligible_trades": 546,
+          "wins": 286,
+          "losses": 260,
+          "breakeven_trades": 0,
+          "win_rate": 0.5238095238095238,
+          "net_profit_per_trade": -0.39597265082259747,
+          "natural_net_profit": -215.4899799999609,
+          "natural_net_profit_per_trade": -0.39467029304022144,
+          "mean_net_pips_per_trade": -6.6809835536493205,
+          "profit_factor": 0.6595372648944288,
+          "natural_profit_factor": 0.6606869633901077,
+          "mean_winning_trade": 1.4670882517483095,
+          "mean_losing_trade": -2.4426046923076052,
+          "total_commission": 109.39999999999998,
+          "total_carry": 0.0,
+          "modeled_spread_slippage_cost": 79.01783999993282,
+          "max_account_drawdown_close_marks": 0.0022881034712047225,
+          "max_trade_adverse_equity_fraction": 2.743656778796183e-05,
+          "max_trade_peak_drawdown_equity_fraction": 4.39353145884243e-05,
+          "max_funded_loss_equity_fraction": 0.008001993075039295,
+          "risk_breaches": 0,
+          "terminal_liquidations": 1,
+          "rejected_entries": 0,
+          "bars": 49814,
+          "first_epoch": 1577944800,
+          "last_epoch": 1640991600,
+          "engine": "python",
+          "quote_kind": "mid",
+          "mid_model": "input_mid",
+          "assumed_spread_pips": 2.0,
+          "max_signal_age_seconds": 900,
+          "signal_age_bound_inferred_from_native_interval": false,
+          "stale_signal_entries_rejected": 2
+        },
+        "stability": {
+          "months_with_trades": 24,
+          "positive_months": 5,
+          "negative_months": 19,
+          "monthly": [
+            {
+              "month": "2020-01",
+              "trades": 13,
+              "net_profit": -4.4370399999990635,
+              "net_win_rate": 0.5384615384615384
+            },
+            {
+              "month": "2020-02",
+              "trades": 15,
+              "net_profit": -17.415339999998814,
+              "net_win_rate": 0.3333333333333333
+            },
+            {
+              "month": "2020-03",
+              "trades": 19,
+              "net_profit": 4.774660000001335,
+              "net_win_rate": 0.6842105263157895
+            },
+            {
+              "month": "2020-04",
+              "trades": 35,
+              "net_profit": -20.031359999997278,
+              "net_win_rate": 0.4857142857142857
+            },
+            {
+              "month": "2020-05",
+              "trades": 17,
+              "net_profit": -6.625679999998693,
+              "net_win_rate": 0.5294117647058824
+            },
+            {
+              "month": "2020-06",
+              "trades": 32,
+              "net_profit": 8.665360000002249,
+              "net_win_rate": 0.6875
+            },
+            {
+              "month": "2020-07",
+              "trades": 39,
+              "net_profit": 6.458200000002748,
+              "net_win_rate": 0.6666666666666666
+            },
+            {
+              "month": "2020-08",
+              "trades": 33,
+              "net_profit": -2.592579999997698,
+              "net_win_rate": 0.6060606060606061
+            },
+            {
+              "month": "2020-09",
+              "trades": 24,
+              "net_profit": -15.887339999998197,
+              "net_win_rate": 0.4583333333333333
+            },
+            {
+              "month": "2020-10",
+              "trades": 17,
+              "net_profit": -22.470299999998637,
+              "net_win_rate": 0.29411764705882354
+            },
+            {
+              "month": "2020-11",
+              "trades": 31,
+              "net_profit": 2.374340000002115,
+              "net_win_rate": 0.6451612903225806
+            },
+            {
+              "month": "2020-12",
+              "trades": 31,
+              "net_profit": -17.156379999997775,
+              "net_win_rate": 0.4838709677419355
+            },
+            {
+              "month": "2021-01",
+              "trades": 23,
+              "net_profit": -13.033559999998369,
+              "net_win_rate": 0.4782608695652174
+            },
+            {
+              "month": "2021-02",
+              "trades": 28,
+              "net_profit": 5.031560000001791,
+              "net_win_rate": 0.6785714285714286
+            },
+            {
+              "month": "2021-03",
+              "trades": 25,
+              "net_profit": -10.087559999998287,
+              "net_win_rate": 0.52
+            },
+            {
+              "month": "2021-04",
+              "trades": 21,
+              "net_profit": -11.930119999998531,
+              "net_win_rate": 0.47619047619047616
+            },
+            {
+              "month": "2021-05",
+              "trades": 23,
+              "net_profit": -9.165059999998444,
+              "net_win_rate": 0.5217391304347826
+            },
+            {
+              "month": "2021-06",
+              "trades": 15,
+              "net_profit": -20.05645999999888,
+              "net_win_rate": 0.26666666666666666
+            },
+            {
+              "month": "2021-07",
+              "trades": 20,
+              "net_profit": -5.824939999998643,
+              "net_win_rate": 0.55
+            },
+            {
+              "month": "2021-08",
+              "trades": 13,
+              "net_profit": -11.874259999999055,
+              "net_win_rate": 0.38461538461538464
+            },
+            {
+              "month": "2021-09",
+              "trades": 13,
+              "net_profit": -11.937659999999052,
+              "net_win_rate": 0.38461538461538464
+            },
+            {
+              "month": "2021-10",
+              "trades": 24,
+              "net_profit": -19.160999999998257,
+              "net_win_rate": 0.4166666666666667
+            },
+            {
+              "month": "2021-11",
+              "trades": 13,
+              "net_profit": -12.15389999999903,
+              "net_win_rate": 0.38461538461538464
+            },
+            {
+              "month": "2021-12",
+              "trades": 22,
+              "net_profit": -10.953559999998415,
+              "net_win_rate": 0.5
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "development_validation_eligible": 0,
+  "best_candidate": null,
+  "trade_count_note": "Development and validation counts are separate; none are final untouched-test evidence"
+}

@@ -1,0 +1,6 @@
+{
+  "checks": 12,
+  "status": "passed",
+  "synthetic_only": true,
+  "observed_book_checks": "NaN/crossed ASK blocks entry, correct DST-aware daily execution, actual ASK fill, all BID bars retained including exits without ASK, complete cash/cost reconciliation"
+}

@@ -1,0 +1,222 @@
+{
+  "registered_at_utc": "2026-10-04T13:17:09.214456+00:00",
+  "parent_preregistration_sha256": "5c539d9f2af2fee8ea886b25461eac90fb475a607b7cf344caffc94870e533ba",
+  "reason": "Upstream ASK503 outage: 2015 complete, 2016 partial, 2017 only sample days; 2018\u201321 unavailable except samples. Restrict diagnostic to source-complete2015 before any observed-book strategy P&L.",
+  "diagnostic_interval": [
+    "2015-01-01",
+    "2016-01-01"
+  ],
+  "candidates": [
+    {
+      "name": "ny08_unconditional_h2_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h2_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h4_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h4_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h6_s40_t20",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_unconditional_h6_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h2_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h2_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h4_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h4_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h6_s40_t20",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "ny08_prior6h_down_h6_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h2_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h2_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h4_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h4_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_unconditional_h6_s40_t20",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_unconditional_h6_s40_t40",
+      "session": "london08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h2_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h2_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h4_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h4_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "london08_prior6h_down_h6_s40_t20",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 20
+    },
+    {
+      "name": "london08_prior6h_down_h6_s40_t40",
+      "session": "london08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    }
+  ],
+  "candidate_count": 24,
+  "initial_equity": 500000.0,
+  "costs": {
+    "spread_pips": 2.0,
+    "slippage_pips": 0.2,
+    "commission_bps": 0.35,
+    "minimum_commission": 0.1,
+    "carry_per_1000_per_day": 0.0,
+    "pip_size": 0.0001
+  },
+  "quote_model": "observed_bid_ask_opens",
+  "diagnostic_only": true,
+  "never_select_or_qualify_for_final_from_this": true,
+  "canonical_development_validation": "still require complete2015\u201317 /2018\u201321 source archives",
+  "extra_exploratory_runs": 24,
+  "prior_actual_book_strategy_pnl_examined": false,
+  "independent_final": "UNTOUCHED",
+  "paper_approved": false,
+  "script_sha256": "9ade9afc4d2c197e129c02332424b0bfe4fc46700556f0cb03157fc8240a9a58"
+}

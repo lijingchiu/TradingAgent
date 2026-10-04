@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/LimiNode/fxcm-historical-data-bid",
+  "pinned_commit": "0d652a799a95228dd5876ebf9ba170c1c931ae0d",
+  "source_url": "https://raw.githubusercontent.com/LimiNode/fxcm-historical-data-bid/0d652a799a95228dd5876ebf9ba170c1c931ae0d/storage/EURUSD.qhs5",
+  "retrieved_at_utc": "2026-10-04T13:20:23.872794+00:00",
+  "quote_side": "BID",
+  "git_blob_sha1_expected": "b9e021486386970ba1f82f48b76e6e96c63f2da5",
+  "git_blob_sha1_observed": "b9e021486386970ba1f82f48b76e6e96c63f2da5",
+  "sha256": "e327cd0706a695647da0cab3281233352d8e9221841639cb5f0a8bac3bd386d6",
+  "bytes": 36993803,
+  "provenance_status": "Third-party historical mirror claims FXCM/intrade.bar; not independently authenticated directFXCM export"
+}

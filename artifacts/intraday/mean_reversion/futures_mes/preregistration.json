@@ -1,0 +1,264 @@
+{
+  "written_before_any_mes_strategy_pnl": true,
+  "instrument": "MES native-contract claim, independent provider mirror unverified",
+  "source_repository": "axb0306/cme-futures-ohlc",
+  "source_commit": "60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264",
+  "source_sha256": "7f051702bc80ea670b58645f12b6ce6cc89ff50cd982aec766cb4630937e283e",
+  "timeframe_minutes": 5,
+  "source_timezone": "UTC as declared by provider README and downloader UTC API parsing",
+  "data_kind": "TopstepX/ProjectX historical last-trade OHLCV, not observed bid/ask",
+  "development_start_inclusive": "2026-01-21T00:00:00Z",
+  "development_end_exclusive": "2026-02-14T00:00:00Z",
+  "validation_start_inclusive": "2026-02-17T00:00:00Z",
+  "validation_end_exclusive": "2026-02-28T00:00:00Z",
+  "final_start_inclusive": "2026-04-01T00:00:00Z",
+  "final_end_exclusive": "2026-04-16T00:00:00Z",
+  "excluded_calendar_months": [
+    3
+  ],
+  "excluded_globex_session_dates": [
+    "2026-02-16",
+    "2026-04-03"
+  ],
+  "exclusion_reason": "Quarterly March contract transition cannot be proven from row-level metadata; observed known holiday shortened sessions are excluded before outcomes",
+  "session_definition": "America/New_York Globex session date: time>=18:00 maps to next calendar date; session dates Monday-Friday only",
+  "entry_window": "Observed 18:05-23:55 or 00:00-16:35 New York, always previous completed M5 signal and exactly adjacent bar",
+  "scheduled_flat": "Previous completed 16:45 New York bar generates exit at observed 16:50 bar; required closing-bar coverage verified before testing",
+  "maximum_holding_bars": 12,
+  "maximum_holding_days": 1,
+  "one_position": true,
+  "signal_definition": "Completed close z-score at/below negative threshold and completed close>=open; optional completed close above EMA96. Window 6 or 12 closes, rolling population standard deviation. EMA96 minimum96 observations. Features reset at each split, first96 bars warmup.",
+  "execution": "Next observed open; stop first if both stop and target touched; modeled trade-price-as-mid fills with +/-0.5 point side costs; entire quantity is integer MES contracts",
+  "initial_virtual_equity_usd": 5000000.0,
+  "multiplier_usd_per_point": 5,
+  "tick_size_points": 0.25,
+  "unit_step": 5,
+  "maximum_notional_fraction": 0.008,
+  "costs": {
+    "spread_pips": 2.0,
+    "slippage_pips": 1.0,
+    "pip_size": 0.25,
+    "commission_bps_per_side": 0.35,
+    "minimum_commission_usd_per_side": 0.1,
+    "carry": 0.0,
+    "fee_basis": "Conservative proportional proxy retained from requested studies; official all-in actual brokerage/exchange fee schedule not verified"
+  },
+  "family": [
+    {
+      "name": "mes_m5_w6_z1_none_stop4_target4",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 4.0,
+      "target_points": 4.0
+    },
+    {
+      "name": "mes_m5_w6_z1_none_stop6_target6",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 6.0,
+      "target_points": 6.0
+    },
+    {
+      "name": "mes_m5_w6_z1_none_stop8_target8",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 8.0,
+      "target_points": 8.0
+    },
+    {
+      "name": "mes_m5_w6_z1_above_ema96_stop4_target4",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 4.0,
+      "target_points": 4.0
+    },
+    {
+      "name": "mes_m5_w6_z1_above_ema96_stop6_target6",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 6.0,
+      "target_points": 6.0
+    },
+    {
+      "name": "mes_m5_w6_z1_above_ema96_stop8_target8",
+      "window": 6,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 8.0,
+      "target_points": 8.0
+    },
+    {
+      "name": "mes_m5_w6_z1.5_none_stop4_target4",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 4.0,
+      "target_points": 4.0
+    },
+    {
+      "name": "mes_m5_w6_z1.5_none_stop6_target6",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 6.0,
+      "target_points": 6.0
+    },
+    {
+      "name": "mes_m5_w6_z1.5_none_stop8_target8",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 8.0,
+      "target_points": 8.0
+    },
+    {
+      "name": "mes_m5_w6_z1.5_above_ema96_stop4_target4",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 4.0,
+      "target_points": 4.0
+    },
+    {
+      "name": "mes_m5_w6_z1.5_above_ema96_stop6_target6",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 6.0,
+      "target_points": 6.0
+    },
+    {
+      "name": "mes_m5_w6_z1.5_above_ema96_stop8_target8",
+      "window": 6,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 8.0,
+      "target_points": 8.0
+    },
+    {
+      "name": "mes_m5_w12_z1_none_stop4_target4",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 4.0,
+      "target_points": 4.0
+    },
+    {
+      "name": "mes_m5_w12_z1_none_stop6_target6",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 6.0,
+      "target_points": 6.0
+    },
+    {
+      "name": "mes_m5_w12_z1_none_stop8_target8",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "none",
+      "stop_points": 8.0,
+      "target_points": 8.0
+    },
+    {
+      "name": "mes_m5_w12_z1_above_ema96_stop4_target4",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 4.0,
+      "target_points": 4.0
+    },
+    {
+      "name": "mes_m5_w12_z1_above_ema96_stop6_target6",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 6.0,
+      "target_points": 6.0
+    },
+    {
+      "name": "mes_m5_w12_z1_above_ema96_stop8_target8",
+      "window": 12,
+      "z_threshold": 1.0,
+      "regime": "above_ema96",
+      "stop_points": 8.0,
+      "target_points": 8.0
+    },
+    {
+      "name": "mes_m5_w12_z1.5_none_stop4_target4",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 4.0,
+      "target_points": 4.0
+    },
+    {
+      "name": "mes_m5_w12_z1.5_none_stop6_target6",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 6.0,
+      "target_points": 6.0
+    },
+    {
+      "name": "mes_m5_w12_z1.5_none_stop8_target8",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "none",
+      "stop_points": 8.0,
+      "target_points": 8.0
+    },
+    {
+      "name": "mes_m5_w12_z1.5_above_ema96_stop4_target4",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 4.0,
+      "target_points": 4.0
+    },
+    {
+      "name": "mes_m5_w12_z1.5_above_ema96_stop6_target6",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 6.0,
+      "target_points": 6.0
+    },
+    {
+      "name": "mes_m5_w12_z1.5_above_ema96_stop8_target8",
+      "window": 12,
+      "z_threshold": 1.5,
+      "regime": "above_ema96",
+      "stop_points": 8.0,
+      "target_points": 8.0
+    }
+  ],
+  "candidate_count": 24,
+  "selection_rule": "Using only development/validation: both natural net profit positive, both net win rate>=50%, zero observed entry-equity 1% risk breaches. Require projected development+validation+final natural trades>=500 using predeclared session-density projection, not April strategy outcomes. Rank by smaller net USD expectancy per natural trade across development and validation. Freeze one winner before final. If none qualify do not evaluate final.",
+  "session_density_days": {
+    "development": 18,
+    "validation": 9,
+    "final": 10
+  },
+  "total_backtest_trade_requirement": 500,
+  "final_does_not_need_500_by_itself": true,
+  "bootstrap": "7-session moving block daily net-return bootstrap,10000 repetitions,seed20261004; confidence diagnostics conditional on selection, not a multiple-trial correction",
+  "stress": "If a candidate qualifies before final, repeat frozen config with 2x assumed spread/slippage and 2x commission. Stress failure blocks approval; research has no production activation path.",
+  "risk_status": "Observed historical 1% entry-equity loss measurements only; futures variation-margin loss bound NOT established; cash ownership proof does not transfer. No paper activation regardless of results.",
+  "final_status": "UNTOUCHED; prices were inspected only for source quality, no strategy outcomes",
+  "study_code_sha256_before_pnl": "09eb968abca3ec7d7efbf7fecf16469ed88e78ff8118288ebd1c3ff799b7fdb2",
+  "engine_code_sha256_before_pnl": "4d39faa9ad51be2b166e9485786aad72c4e174a53973cfc1cc64cb3a2944b8de",
+  "source_quality_sha256": "4ac3924446066d859cdef9c68a4445c3636f7f33f7349a7c981d95ef654fe2fe",
+  "integrity_correction_after_first_development_run": {
+    "change": "Require both adjacent16:45signal/16:50execution quotes before PnL",
+    "parameter_family_unchanged": true,
+    "source_verified_adjacent_all_sessions": true,
+    "earlier_report_preserved": "development_report_before_complete_exit_clock_guard.json",
+    "april_outcomes_unread": true
+  },
+  "study_code_sha256_after_exit_clock_guard": "fc551aba6054c7445aad048dce104f5df94f5d554d1a9dede8f460cae86699db"
+}

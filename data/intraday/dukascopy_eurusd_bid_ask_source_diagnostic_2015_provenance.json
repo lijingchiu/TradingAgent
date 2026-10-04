@@ -1,0 +1,30 @@
+{
+  "provider": "Dukascopy Bank SA public historical datafeed",
+  "source_domain": "https://datafeed.dukascopy.com",
+  "symbol": "EURUSD",
+  "timezone": "UTC",
+  "quote_sides": [
+    "BID",
+    "ASK"
+  ],
+  "scope": "2015 source diagnostic only; no2016+validation or reserved2022+outcomes",
+  "raw_archive_coverage": "All313nonSaturday2015archivespresentforeachside; zero/inactiveM15blocks excludedperdocumentedsourceactivity rules",
+  "derived_from": "dukascopy_eurusd_bid_ask_early_training_2015_2017_m15.csv",
+  "derived_from_sha256": "3c57e23b1166253c37a1f7fa779826e53d5b57a5baa769d8bde2340747796a1a",
+  "parent_provenance": "dukascopy_eurusd_bid_ask_early_training_2015_2017_provenance.json",
+  "parent_provenance_sha256": "d211f207aed2327f644f5a497a5cdf43b18dd092846d9c4e61787e451448cb64",
+  "aggregate_outputs": {
+    "M15": {
+      "file": "dukascopy_eurusd_bid_ask_source_diagnostic_2015_m15.csv",
+      "rows": 24901,
+      "sha256": "467843a414ccadf3b2bb9492cbb60b042b858246760dd87da3358e11ffe832cc"
+    }
+  },
+  "valid_observed_ask_entry_rows": 24901,
+  "missing_or_inactive_ask_entry_rows": 0,
+  "limitations": [
+    "Raw archivecompletenessdoesnotguaranteeeveryminuteis executable.",
+    "ASKNaN rows are explicitly unavailable/inactive and mustprevententry, notfilledwith assumedspread.",
+    "Source-only diagnostic; performance mustbepredeclared beforeexamination."
+  ]
+}

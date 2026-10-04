@@ -1,0 +1,18 @@
+{
+  "updated_utc": "2026-10-04T13:03:33.077211+00:00",
+  "candidate_family_changed": false,
+  "holdout_evaluated": false,
+  "reason": "Required shared-engine execution integrity repair and direct-source consistency verification",
+  "corrections": [
+    "Maximum entry-signal age 900 seconds prevents opening Friday signals after a weekend gap",
+    "Explicit BID-to-fixed-spread modeled-mid conversion for direct BID archives; mirror quote side remains midpoint assumption"
+  ],
+  "preregistration_sha256": "81956521d9450858613d16102faa359984fddd5fbb214b36eb82487dd78fd3b6",
+  "engine_sha256": "50e071ec2b165f3efee3851f7cf919be6dd55cb4c18e160c6398ddad807e6596",
+  "reports": [
+    "eurusd_mirror_devval.json",
+    "gbpusd_mirror_devval.json",
+    "eurusd_dukascopy_devval.json"
+  ],
+  "outcome": "No eligible strategy; no final-test evaluation authorized by these candidates"
+}

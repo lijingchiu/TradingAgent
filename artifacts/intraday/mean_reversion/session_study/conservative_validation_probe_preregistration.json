@@ -1,0 +1,88 @@
+{
+  "registered_at_utc": "2026-10-04T13:19:47.455546+00:00",
+  "purpose": "Check the five fixed2015 actual-book sample-positive configurations against unseen-by-this-session-study2018\u201321 outcomes with the original conservative cost proxy; no missing ASK fabrication",
+  "diagnostic_source_sha256": "a1507d3d4a42f5999d99fda6ff3f1daca1038daf61c8ac02d2ca421bdd9c750f",
+  "member_rule": "Exactly all five configs with net_profit>0 in the recorded complete2015 observed-book diagnostic; no other strategy or parameter",
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "name": "ny08_prior6h_down_h4_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_prior6h_down_h6_s40_t40",
+      "session": "ny08",
+      "filter": "prior6h_down",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h2_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 2,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h4_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 4,
+      "stop_pips": 40,
+      "target_pips": 40
+    },
+    {
+      "name": "ny08_unconditional_h6_s40_t40",
+      "session": "ny08",
+      "filter": "unconditional",
+      "hours": 6,
+      "stop_pips": 40,
+      "target_pips": 40
+    }
+  ],
+  "original_development": {
+    "interval": [
+      "2015-01-01",
+      "2016-01-01"
+    ],
+    "quote_model": "observed authentic BID/ASK opens",
+    "selection_used": true
+  },
+  "validation": {
+    "interval": [
+      "2018-01-01",
+      "2022-01-01"
+    ],
+    "data_file": "data/intraday/dukascopy_eurusd_bid_development_2015_2021_m15.csv",
+    "data_sha256": "f84c31a66abc8311626ac000f821d0257e9ebd12000d6bf7a24c651ca3d19341",
+    "quote_kind": "bid",
+    "cost_model": "original fixed2pip spread assumption; NOT historical observed ASK",
+    "initial_equity": 500000.0,
+    "costs": {
+      "spread_pips": 2.0,
+      "slippage_pips": 0.2,
+      "commission_bps": 0.35,
+      "minimum_commission": 0.1,
+      "carry_per_1000_per_day": 0.0,
+      "pip_size": 0.0001
+    },
+    "maximum_signal_age_seconds": 900
+  },
+  "alert_rule": "Each split netwins>=50%, positive net and natural profit, zero1% risk breaches, total pooled natural closes>=500",
+  "bootstrap": "7-calendar-day,10000replications,seed20261004; additional confidence diagnostic",
+  "source_cost_mix": "2015 development uses observed ASK;2018\u201321 validation uses fixed2pip cost proxy. Do not claim a single observed-book cost source across both periods",
+  "no_retuning_from_probe": true,
+  "history": "2016\u201317 outcomes were seen in earlier fixed-cost session studies;2018\u201321 prices/outcomes have been used by other repository research families. These five validation results are selection-validation, never independent final",
+  "previous_session_runs": 72,
+  "extra_probe_runs": 5,
+  "canonical_full_observed_book_confirmation": "still blocked on missing2016\u201321ASK",
+  "independent_final": "UNTOUCHED",
+  "paper_approved": false,
+  "script_sha256_at_registration": "ef815501af4f38058be4e39828a6892e89a332896b5ebc996d598b2b97229500"
+}

@@ -1,0 +1,49 @@
+{
+  "paired_file": "data/intraday/dukascopy_eurusd_bid_ask_early_training_2015_2017_m15.csv",
+  "paired_sha256": "3c57e23b1166253c37a1f7fa779826e53d5b57a5baa769d8bde2340747796a1a",
+  "paired_provenance_file": "data/intraday/dukascopy_eurusd_bid_ask_early_training_2015_2017_provenance.json",
+  "paired_provenance_sha256": "d211f207aed2327f644f5a497a5cdf43b18dd092846d9c4e61787e451448cb64",
+  "side_sources": {
+    "bid": {
+      "file": "data/intraday/dukascopy_eurusd_bid_early_training_2015_2017_m15.csv",
+      "sha256": "d63cd14fb90bcf5df43538f18e417b46ac95a26b55606c8c45bb2ae3f93b47c8",
+      "provenance": "data/intraday/dukascopy_eurusd_bid_early_training_2015_2017_provenance.json",
+      "provenance_sha256": "69bfdebc83843b829b1e1e05655d78a58f90c513eb430cde51941de9b52b33e2"
+    },
+    "ask": {
+      "file": "data/intraday/dukascopy_eurusd_ask_early_training_2015_2017_m15.csv",
+      "sha256": "6301679e95135251598bc593cb8d70b4ab6db41703876e4527f8a3df47df6b06",
+      "provenance": "data/intraday/dukascopy_eurusd_ask_early_training_2015_2017_provenance.json",
+      "provenance_sha256": "a322f58c48e32753268eb3bf7667f09edf8b4496fe66ec96ff58b2547acd5694"
+    }
+  },
+  "verified_original_bid": {
+    "file": "data/intraday/dukascopy_eurusd_bid_early_training_2015_2017_m15.csv",
+    "sha256": "d63cd14fb90bcf5df43538f18e417b46ac95a26b55606c8c45bb2ae3f93b47c8",
+    "provenance_file": "data/intraday/dukascopy_eurusd_bid_early_training_2015_2017_provenance.json",
+    "provenance_sha256": "69bfdebc83843b829b1e1e05655d78a58f90c513eb430cde51941de9b52b33e2",
+    "rows": 74759,
+    "first": "2015-01-01T22:00:00Z",
+    "last": "2017-12-29T21:45:00Z",
+    "source_quality": {
+      "duplicates": 0,
+      "unsorted_transitions": 0,
+      "invalid_ohlc": 0,
+      "all_positive_vendor_volume": true,
+      "median_body_pips": 2.80000000000058,
+      "median_range_pips": 6.699999999999484
+    }
+  },
+  "rows": 74759,
+  "first": "2015-01-01T22:00:00Z",
+  "last": "2017-12-29T21:45:00Z",
+  "valid_ask_opens": 31065,
+  "invalid_ask_opens": 43694,
+  "all_original_bid_bars_preserved": true,
+  "ask_opens_exactly_match_original_provider": true,
+  "complete_ask_years": [
+    2015
+  ],
+  "complete_ask_coverage_for_declared_role": false,
+  "observed_book_limit": "Matched candle timestamps do not prove simultaneous executable broker ticks; slippage remains modeled"
+}

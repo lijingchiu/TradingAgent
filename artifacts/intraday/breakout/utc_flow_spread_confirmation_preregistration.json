@@ -1,0 +1,18 @@
+{
+  "registered_utc": "2026-10-04T13:06:30.544832+00:00",
+  "base_preregistration_sha256": "529690db39ed99134a5ba98d96fa4013b5ad323634ab6f42200254b5aff5b30a",
+  "protocol": "Source confirmation of exact same18UTCflowconfigs; not a candidateparameterexpansion",
+  "capital": 500000,
+  "unchanged": [
+    "All18sessions,momentumfilters,holdingclockhours,s80/t80distances",
+    "Initialvirtual500k",
+    "0.8%fullypaidnotionalcap and1%entryequity catastrophiclossbudget",
+    "Per-side.2pipslippage and.35bps/min$.1commissions",
+    "Dev2015\u20132017/validation2018\u20132021; no2022+finaltests",
+    "Signalage900seconds andcurrentobservedclockexpiry"
+  ],
+  "measured_spread_execution": "Synchronized actualDukascopy ASK opening buy+slip; existingposition closes onBID prices-slip. Stop/target anchored torawBID entry and unchanged distances. Not a spreadwaiver or feeexemption.",
+  "data_quality": "Invalid/missing/nonfinite/crossed ASK opening onlyblocksnewentry. PreserveallBIDbars for existingposition risk andexit evaluation. Record alignmentcoverage,invalidasks and actualspread distribution.",
+  "acceptance": "Require measuredspreadbaseline netprofit>0 and netwin>=50% inBOTHdev/val, zero riskbreaches. Fixed2pipoutcomes also disclosed asconservativestress includingfailure; neverconceal spread-sensitiveedge.",
+  "selection": "No additionalconfigs orcapital/costthreshold tuning permitted from measuredspreadoutcomes. Candidatefinaltesting onlyroot-selectedfrozenconfig."
+}

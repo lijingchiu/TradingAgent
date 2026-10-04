@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-10-04T12:51:14.454303+00:00",
+  "scope": "Independent fixed trend/momentum/pullback-continuation families; no RSI",
+  "timeframe": "M15 initial; no session filter on mirror with unknown timestamp timezone",
+  "symbols": [
+    "EURUSD",
+    "GBPUSD"
+  ],
+  "development": "2015-01-01 through 2019-12-31 UTC for direct source; mirror dates treated as chronological wall clock",
+  "validation": "2020-01-01 through 2021-12-31",
+  "holdout": "2022-03-01 through 2024-09-30 direct UTC source; not inspected or used to choose candidates",
+  "warmup_bars": 576,
+  "signal_rule": "Completed-bar features only, enter next bar open; positive EMA192 slope over16 bars and close above EMA192; fixed side/levels; one funded long position",
+  "costs": {
+    "spread_pips": 2,
+    "slippage_pips_each_side": 0.2,
+    "commission_bps_each_side": 0.35,
+    "minimum_commission_each_side": 0.1,
+    "carry": 0
+  },
+  "capital": 100000,
+  "maximum_funded_notional_fraction": 0.008,
+  "candidates": [
+    {
+      "name": "donchian12_trend192_t20_s25",
+      "family": "donchian",
+      "lookback": 12,
+      "trend_span": 192,
+      "target_pips": 20,
+      "stop_pips": 25,
+      "min_atr_pips": 4,
+      "max_atr_pips": 15,
+      "max_holding_bars": 96
+    },
+    {
+      "name": "donchian24_trend192_t30_s35",
+      "family": "donchian",
+      "lookback": 24,
+      "trend_span": 192,
+      "target_pips": 30,
+      "stop_pips": 35,
+      "min_atr_pips": 5,
+      "max_atr_pips": 20,
+      "max_holding_bars": 192
+    },
+    {
+      "name": "expansion4_trend192_t20_s25",
+      "family": "expansion",
+      "lookback": 4,
+      "trend_span": 192,
+      "target_pips": 20,
+      "stop_pips": 25,
+      "min_atr_pips": 4,
+      "max_atr_pips": 15,
+      "max_holding_bars": 96
+    },
+    {
+      "name": "expansion8_trend192_t30_s35",
+      "family": "expansion",
+      "lookback": 8,
+      "trend_span": 192,
+      "target_pips": 30,
+      "stop_pips": 35,
+      "min_atr_pips": 5,
+      "max_atr_pips": 20,
+      "max_holding_bars": 192
+    },
+    {
+      "name": "ema_pullback20_trend192_t20_s25",
+      "family": "ema_pullback",
+      "lookback": 20,
+      "trend_span": 192,
+      "target_pips": 20,
+      "stop_pips": 25,
+      "min_atr_pips": 4,
+      "max_atr_pips": 15,
+      "max_holding_bars": 96
+    },
+    {
+      "name": "ema_pullback32_trend192_t30_s35",
+      "family": "ema_pullback",
+      "lookback": 32,
+      "trend_span": 192,
+      "target_pips": 30,
+      "stop_pips": 35,
+      "min_atr_pips": 5,
+      "max_atr_pips": 20,
+      "max_holding_bars": 192
+    },
+    {
+      "name": "reversal4_trend192_t20_s25",
+      "family": "pullback_reversal",
+      "lookback": 4,
+      "trend_span": 192,
+      "target_pips": 20,
+      "stop_pips": 25,
+      "min_atr_pips": 4,
+      "max_atr_pips": 15,
+      "max_holding_bars": 96
+    },
+    {
+      "name": "reversal8_trend192_t30_s35",
+      "family": "pullback_reversal",
+      "lookback": 8,
+      "trend_span": 192,
+      "target_pips": 30,
+      "stop_pips": 35,
+      "min_atr_pips": 5,
+      "max_atr_pips": 20,
+      "max_holding_bars": 192
+    }
+  ],
+  "selection": "Validation positive net profit and net-win rate at least50%; rank validation net expected pips, subject to development net profit nonnegative and no risk breaches. Report trade counts separately, monthly stability, costs, and every candidate. No expanding candidate grid based on validation or holdout outcomes."
+}

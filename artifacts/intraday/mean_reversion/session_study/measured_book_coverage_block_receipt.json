@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-04T13:17:55.536861+00:00",
+  "operations": [
+    {
+      "role": "2015\u20132017 development",
+      "full_source_check_passed": false,
+      "blocked_before_strategy_pnl": true,
+      "reason": "Incomplete original ASK coverage for required years [2015, 2016, 2017]; complete years [2015]. Canonical research blocked before P&L."
+    },
+    {
+      "role": "2018\u20132021 validation",
+      "full_source_check_passed": false,
+      "blocked_before_strategy_pnl": true,
+      "reason": "[Errno 2] No such file or directory: 'data/intraday/dukascopy_eurusd_bid_ask_development_2015_2021_provenance.json'"
+    }
+  ],
+  "canonical_strategy_pnl_evaluated": false,
+  "actual_book_performance_only": "complete2015 exploratory diagnostic",
+  "paper_approved": false,
+  "independent_final": "UNTOUCHED"
+}

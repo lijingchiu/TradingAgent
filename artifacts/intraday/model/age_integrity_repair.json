@@ -1,0 +1,16 @@
+{
+  "recorded_at_utc": "2026-10-04T13:03:17.938464+00:00",
+  "reason": "Shared research engine originally allowed old completed signals to enter after missing bars or weekend gaps. Restrict M15 entries to next bar within900seconds; training labels reject the same stale attempts.",
+  "parameters_unchanged": true,
+  "final_holdout_never_evaluated": true,
+  "original_reports_preserved": [
+    "eurusd_mirror_devval.json",
+    "gbpusd_mirror_devval.json"
+  ],
+  "repaired_reports_new_names": [
+    "eurusd_mirror_devval_age_fixed.json",
+    "gbpusd_mirror_devval_age_fixed.json",
+    "eurusd_direct_bid_devval.json"
+  ],
+  "interpretation": "Technical correction and disclosed re-evaluation of the same family, never retuning based on final results."
+}

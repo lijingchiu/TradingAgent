@@ -1,0 +1,14 @@
+{
+  "registered_at_utc": "2026-10-04T13:40:59.965172+00:00",
+  "prior_protocol_sha256": "76d8f6467e5d76fcc4a096170d3a782c71ae63ad31ad0054e2f2e7c45ea130b2",
+  "prior_results": "MES and NQ mean-reversion families failed both split criteria; their reports retained, April strategy performance unexamined.",
+  "new_families": [
+    "MES M5 trend/momentum, 24 fixed signal configurations \u00d7 two disclosed fee scenarios",
+    "NQ M5 trend/momentum, 24 fixed signal configurations \u00d7 two disclosed fee scenarios"
+  ],
+  "new_family_design": "Causal completed-bar positive momentum or bullish pullback in rising EMA48/192; return horizon6/24; equal or asymmetric fixed targets/stops; max12nativebars; exact details preregistered by asset before any new-family PnL.",
+  "cost_scenarios": "Preserve original0.35bps/side conservative sensitivity. Before evaluating new-family outcomes, configure flat2USD/MES/side and5USD/NQ/side operating fees, assert exactlyonewholecontract, keep2ticksfullspread plus1tick/side slippage. Broker fee schedules unverified; simulation assumptions disclosed. NQ prior meanreversion already preregistered the same5USD operating sensitivity before its firstPnL.",
+  "selection": "Apply original both-splits profitability/win/risk rule and preregistered minimum split mean natural net return ranking across all eligible families, using each disclosed operating profile; disclose conservative profile separately. No final selection or evaluation if zeroeligible. Failed old families not retuned.",
+  "count": "Same frozenstrategy >=500 total natural trades; development/validation/final separated, no cross-strategy pooling. Final signalcount/performance stays unread until winner frozen.",
+  "exclusions": "All UTC March rows and March Globex session dates, plus incomplete/shortened sessions; no March featurewarmup. Fixed nativebar-start assumption is disclosed, source contract identity remains unverified."
+}

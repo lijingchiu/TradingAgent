@@ -1,0 +1,178 @@
+{
+  "created_utc": "2026-10-04T13:15:20.438786+00:00",
+  "hypothesis": "Buy EUR only after a completed pre-event downward imbalance, after London benchmark fixing or US morning data flow; expect temporary sell pressure to unwind, subject to actual test.",
+  "source": "Dukascopy authoritative native UTC BID M15",
+  "initial_equity": 500000,
+  "timeframe_minutes": 15,
+  "candidates": [
+    {
+      "name": "london1615_down30m_5pip_s30_t10",
+      "session": "london1615",
+      "window_minutes": 30,
+      "threshold_pips": 5,
+      "stop_pips": 30,
+      "target_pips": 10,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "london1615_down30m_5pip_s50_t20",
+      "session": "london1615",
+      "window_minutes": 30,
+      "threshold_pips": 5,
+      "stop_pips": 50,
+      "target_pips": 20,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "london1615_down30m_10pip_s30_t10",
+      "session": "london1615",
+      "window_minutes": 30,
+      "threshold_pips": 10,
+      "stop_pips": 30,
+      "target_pips": 10,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "london1615_down30m_10pip_s50_t20",
+      "session": "london1615",
+      "window_minutes": 30,
+      "threshold_pips": 10,
+      "stop_pips": 50,
+      "target_pips": 20,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "london1615_down60m_5pip_s30_t10",
+      "session": "london1615",
+      "window_minutes": 60,
+      "threshold_pips": 5,
+      "stop_pips": 30,
+      "target_pips": 10,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "london1615_down60m_5pip_s50_t20",
+      "session": "london1615",
+      "window_minutes": 60,
+      "threshold_pips": 5,
+      "stop_pips": 50,
+      "target_pips": 20,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "london1615_down60m_10pip_s30_t10",
+      "session": "london1615",
+      "window_minutes": 60,
+      "threshold_pips": 10,
+      "stop_pips": 30,
+      "target_pips": 10,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "london1615_down60m_10pip_s50_t20",
+      "session": "london1615",
+      "window_minutes": 60,
+      "threshold_pips": 10,
+      "stop_pips": 50,
+      "target_pips": 20,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "ny1015_down30m_5pip_s30_t10",
+      "session": "ny1015",
+      "window_minutes": 30,
+      "threshold_pips": 5,
+      "stop_pips": 30,
+      "target_pips": 10,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "ny1015_down30m_5pip_s50_t20",
+      "session": "ny1015",
+      "window_minutes": 30,
+      "threshold_pips": 5,
+      "stop_pips": 50,
+      "target_pips": 20,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "ny1015_down30m_10pip_s30_t10",
+      "session": "ny1015",
+      "window_minutes": 30,
+      "threshold_pips": 10,
+      "stop_pips": 30,
+      "target_pips": 10,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "ny1015_down30m_10pip_s50_t20",
+      "session": "ny1015",
+      "window_minutes": 30,
+      "threshold_pips": 10,
+      "stop_pips": 50,
+      "target_pips": 20,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "ny1015_down60m_5pip_s30_t10",
+      "session": "ny1015",
+      "window_minutes": 60,
+      "threshold_pips": 5,
+      "stop_pips": 30,
+      "target_pips": 10,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "ny1015_down60m_5pip_s50_t20",
+      "session": "ny1015",
+      "window_minutes": 60,
+      "threshold_pips": 5,
+      "stop_pips": 50,
+      "target_pips": 20,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "ny1015_down60m_10pip_s30_t10",
+      "session": "ny1015",
+      "window_minutes": 60,
+      "threshold_pips": 10,
+      "stop_pips": 30,
+      "target_pips": 10,
+      "holding_clock_hours": 2
+    },
+    {
+      "name": "ny1015_down60m_10pip_s50_t20",
+      "session": "ny1015",
+      "window_minutes": 60,
+      "threshold_pips": 10,
+      "stop_pips": 50,
+      "target_pips": 20,
+      "holding_clock_hours": 2
+    }
+  ],
+  "costs": {
+    "spread_pips": 2.0,
+    "slippage_pips": 0.2,
+    "commission_bps": 0.35,
+    "minimum_commission": 0.1,
+    "carry_per_1000_per_day": 0.0,
+    "pip_size": 0.0001
+  },
+  "development": [
+    "2015-01-01",
+    "2018-01-01"
+  ],
+  "validation": [
+    "2018-01-01",
+    "2022-01-01"
+  ],
+  "final": [
+    "2022-04-01",
+    "2024-10-01"
+  ],
+  "final_outcomes_evaluated": false,
+  "entry": "Actual 16:15 London or 10:15 NY Mon-Fri; DST aware; prior M15 candle completed; exact next open; preceding window must be consecutive",
+  "exit": "BID-derived bracket or fixed event-clock expiry after2h; gap exits on actual first available open; stop first on ambiguous OHLC",
+  "selection": "Require positive net and natural net P&L, >=50% net wins and zero measured1% breaches in BOTH development and validation; >=500 pooled natural closes; rank max minimum split net return, then validation net return, then stable name",
+  "limits": "Fully funded .8% purchase principal, worst purchase+fees <1% equity, no borrowing/shorts; observed peak drawdown independently checked"
+}

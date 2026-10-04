@@ -1,0 +1,65 @@
+{
+  "name": "M15 Bollinger mean reversion with a completed rebound and cost-aware price targets",
+  "written_before_development_results": true,
+  "production_enabled": false,
+  "legacy_EURUSD_final_must_not_be_reused": true,
+  "legacy_candidate_trials": 608,
+  "new_family_candidates_per_instrument": 24,
+  "development_instruments": ["EURUSD", "GBPUSD"],
+  "candidate_fields": {
+    "rolling_window_bars": [32, 96],
+    "zscore_entry_threshold": [1.8, 2.3],
+    "confirmation": ["none", "completed_close_reenters_lower_band"],
+    "stop_target_pip_pairs": [[20, 10], [20, 20], [30, 20]]
+  },
+  "fixed_rules": {
+    "pip_size": 0.0001,
+    "timeframe_minutes": 15,
+    "EMA_period": 384,
+    "warmup_bars": 1152,
+    "Wilder_ATR_periods": [14, 96],
+    "maximum_fast_slow_ATR_ratio": 2,
+    "minimum_fast_ATR_pips": 1,
+    "EMA_96bar_change_divided_by_ATR96_range": [-2, 4],
+    "distance_to_rolling_mean_must_cover_target": true,
+    "named_session_rules": false,
+    "entry": "Prior completed M15 signal to next observed M15 open",
+    "position_count": 1,
+    "direction": "long only, fully funded owned currency",
+    "max_holding_calendar_days": 5,
+    "stop_priority_when_both_touched": true,
+    "open_gap_filled_at_actual_open": true,
+    "terminal_closes_excluded_from_win_rate": true
+  },
+  "account_and_costs": {
+    "initial_equity_USD": 100000,
+    "maximum_entry_equity_loss_fraction": 0.01,
+    "maximum_whole_purchase_fraction": 0.008,
+    "round_trip_spread_pips": 2,
+    "slippage_each_side_pips": 0.2,
+    "commission_each_side_bps": 0.35,
+    "commission_minimum_each_side_USD": 0.10,
+    "ongoing_carry": 0
+  },
+  "chronological_protocol": {
+    "development_end_exclusive": "2018-01-01",
+    "validation_start_inclusive": "2018-01-01",
+    "validation_end_exclusive": "2022-01-01",
+    "new_independent_final_start_inclusive": "2022-04-01",
+    "new_independent_final_end_exclusive": "2024-10-01",
+    "final_warmup_source_start": "2022-03-05",
+    "freeze_selection_before_any_final_strategy_result": true,
+    "do_not_expand_family_or_choose_instrument_using_final_results": true,
+    "development_validation_require": "Both net positive after unchanged costs, >=50% net winners, enough frequency to plausibly deliver 500 final trades",
+    "required_final_naturally_closed_trades": 500,
+    "required_final_win_rate": 0.5,
+    "required_final_net_profit": "strictly positive",
+    "confidence": "Time-block bootstrap of net trade PnL; disclose lower bound and serial dependence",
+    "stress": "Double spread/slippage/commission without reselection"
+  },
+  "source_limitations": [
+    "Old pinned broker-mirror wall-clock timezone is unknown; do not infer named FX sessions",
+    "Independent authoritative data must retain its actual quote side, UTC timestamp, and gaps",
+    "Public OHLC is not a promise of executable broker prices"
+  ]
+}
