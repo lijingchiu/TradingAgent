@@ -6,14 +6,13 @@ on:
   workflow_dispatch:
     inputs:
       publish_pages:
-        description: 'Attempt optional interactive GitHub Pages deployment'
+        description: 'Publish interactive GitHub Pages dashboard'
         type: boolean
-        default: false
+        default: true
   schedule:
-    # Hourly UTC polling; forex session and freshness are checked by the app.
-    # Every-five-minute polling in a private repo can exhaust runner quotas.
+    # Public repository: five-minute price observations.
     # GitHub may delay/drop scheduled jobs; this is a polling cadence, not an SLA.
-    - cron: '2 * * * *'
+    - cron: '2-59/5 * * * *'
 
 concurrency:
   group: paper-trader-${{ github.repository }}
@@ -156,18 +155,18 @@ jobs:
               output.write('url=' + url + '\n')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
               summary.write('[TradingAgent monitoring snapshot](' + url + ')\n\n')
-              summary.write('This rendered Markdown monitor requires access to the private repository. Updates are polled hourly; inspect the recorded timestamp and data status.\n')
+              summary.write('This rendered Markdown monitor is updated on a five-minute schedule; inspect the recorded timestamp and data status.\n')
           PY
 
       - name: Upload dashboard snapshot
-        if: vars.PAGES_ENABLED == 'true' || (github.event_name == 'workflow_dispatch' && inputs.publish_pages)
+        if: github.event_name != 'workflow_dispatch' || inputs.publish_pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: app/web
 
   deploy:
     needs: paper
-    if: vars.PAGES_ENABLED == 'true' || (github.event_name == 'workflow_dispatch' && inputs.publish_pages)
+    if: github.event_name != 'workflow_dispatch' || inputs.publish_pages
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

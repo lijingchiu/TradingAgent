@@ -76,7 +76,7 @@ def build_snapshot(root: Path, state_dir: Path, web_dir: Path) -> dict:
              "url": "https://finance.yahoo.com/quote/EURUSD=X/", "date_range": "2024–2026",
              "data_quality": "指示性公開報價；已排除空值與未完成 K 線。不是券商可成交報價。原生日線品質異常，停用。"}],
         "execution_notes": ["自行建立的現金外匯模擬帳戶，沒有送單至真實券商。",
-            "排程每小時第 2 分鐘監控；GitHub 排程可能延遲。超出入場時窗就略過交易。",
+            "公開儲存庫每 5 分鐘監控；GitHub 排程可能延遲。超出入場時窗就略過交易。",
             "回測 OHLC 的盤中停損假設與模擬盤定時觀察有差異；模擬盤按實際取得的報價成交，不補造錯過的成交。",
             "1% 是相對入場資金的損失上限；累積帳戶回撤及浮盈高點回撤另外揭露。"]}
     snapshot["account"]["trade_count"] = len(snapshot["trades"])
@@ -94,7 +94,7 @@ def write_monitor(path: Path, s: dict) -> None:
     timestamp = s["generated_at"]
     lines = ["# TradingAgent 模擬交易監控", "",
         f"**{s['status'].get('label', '等待驗證')}**", "", s["status"].get("reason", ""), "",
-        f"更新時間：{timestamp}（UTC；台灣時間 +8 小時）。每小時自動更新；重新整理本頁可查看最新紀錄。", "",
+        f"更新時間：{timestamp}（UTC；台灣時間 +8 小時）。每 5 分鐘排程更新；重新整理本頁可查看最新紀錄。", "",
         "> 本頁只顯示模擬交易。回測獲利不會加入模擬帳戶。", "",
         "| 模擬帳戶 | 數值 |", "|---|---:|",
         f"| 初始資金 | {money(a['initial_equity'])} USD |",

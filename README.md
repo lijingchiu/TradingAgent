@@ -33,9 +33,9 @@ python -m trading_agent.cli serve --web-dir web --port 8000
 
 ## 持續監控與網址
 
-GitHub Actions 在 `main` 推送及排程時執行。`paper-state` 分支保存完整帳戶、交易與 `state/MONITOR.md`，每次以 API 取得實際監控頁面的網址，列於執行摘要。網頁版由 `web/index.html`、`styles.css`、`app.js`、`snapshot.json` 組成，可用 GitHub Pages 發佈。
+儲存庫已由擁有者改為公開。GitHub Actions 在 `main` 推送及每 5 分鐘排程時執行。`paper-state` 分支保存完整帳戶、交易與 `state/MONITOR.md`，每次以 API 取得實際監控頁面的網址，列於執行摘要。現行監控頁為 https://github.com/lijingchiu/TradingAgent/blob/paper-state/state/MONITOR.md 。網頁版由 `web/index.html`、`styles.css`、`app.js`、`snapshot.json` 組成，可用 GitHub Pages 發佈。
 
-若 Pages 尚未啟用，在儲存庫 Settings → Pages 將來源設為 GitHub Actions。啟用後可設定儲存庫變數 `PAGES_ENABLED=true`，或手動執行工作流程並勾選 `publish_pages`。程式不會變更儲存庫公開／私人設定，也不會要求憑證值寫入聊天或原始碼。
+擁有者已將 Pages 來源設為 GitHub Actions，之後每次排程都會更新網頁面板。程式不會變更儲存庫公開／私人設定，也不會要求憑證值寫入聊天或原始碼。若將環境移至其他儲存庫，須先在其 Settings → Pages 將來源設為 GitHub Actions。
 
 GitHub 排程可能延遲或被略過。過期報價、無效 K 線、超過入場時窗或回測閘門未通過，均禁止新倉。模擬盤按實際觀察到的報價成交，不回補離線期間假想的成交；回測盤中 OHLC 停損與定時觀察仍有差異。公開儲存庫排程亦可能因長期無活動而被停用，須留意 GitHub 的執行紀錄。
 

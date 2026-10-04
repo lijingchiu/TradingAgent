@@ -106,9 +106,10 @@ class GitHub:
             return self.request("/pages", "POST", {"build_type": "workflow"})
         return self.request("/pages", "PUT", {"build_type": "workflow"})
 
-    def dispatch(self, workflow: str, ref: str) -> Any:
+    def dispatch(self, workflow: str, ref: str, publish_pages: bool = False) -> Any:
         identifier = urllib.parse.quote(workflow, safe="")
-        return self.request(f"/actions/workflows/{identifier}/dispatches", "POST", {"ref": ref})
+        return self.request(f"/actions/workflows/{identifier}/dispatches", "POST",
+                            {"ref": ref, "inputs": {"publish_pages": publish_pages}})
 
     def wait_run(self, workflow: str, commit: str | None, timeout: int) -> dict[str, Any]:
         identifier = urllib.parse.quote(workflow, safe="")
@@ -162,6 +163,7 @@ def main() -> int:
     parser.add_argument("--timeout", type=int, default=180)
     parser.add_argument("--token-env", help="Use this existing environment binding name, never a token value")
     parser.add_argument("--url", help="Exact HTTPS URL observed in a completed deployment output (verify only)")
+    parser.add_argument("--publish-pages", action="store_true", help="Dispatch optional Pages deployment after Pages is enabled")
     args = parser.parse_args()
     try:
         token = os.environ.get(args.token_env, "") if args.token_env else (
@@ -174,7 +176,7 @@ def main() -> int:
         elif args.command == "enable-pages":
             result = api.enable_pages()
         elif args.command == "dispatch":
-            result = api.dispatch(args.workflow, args.ref)
+            result = api.dispatch(args.workflow, args.ref, args.publish_pages)
         elif args.command == "wait":
             result = api.wait_run(args.workflow, args.commit, max(0, args.timeout))
         else:
