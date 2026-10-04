@@ -1,0 +1,103 @@
+{
+  "repository": "https://github.com/ejtraderLabs/historical-data",
+  "commit": "fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd",
+  "retrieved_at": "2026-10-04T12:17:50.683108+00:00",
+  "records": [
+    {
+      "symbol": "EURUSD",
+      "timeframe": "h1",
+      "file": "eurusd_h1_raw.csv",
+      "url": "https://raw.githubusercontent.com/ejtraderLabs/historical-data/fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd/EURUSD/EURUSDh1.csv",
+      "sha256": "1b29ca23bdc7b2645ae48a0ccb06108263b69e586bdc7d0ba40e66d1e5966eb9",
+      "rows": 57600,
+      "first": {
+        "Date": "2012-11-16 00:00:00",
+        "open": "127801.00000000001",
+        "high": "127835.00000000001",
+        "low": "127777.0",
+        "close": "127810.0",
+        "tick_volume": "869"
+      },
+      "last": {
+        "Date": "2022-03-04 23:00:00",
+        "open": "109341.0",
+        "high": "109400.00000000001",
+        "low": "109247.0",
+        "close": "109305.00000000001",
+        "tick_volume": "1421"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "timeframe": "d1",
+      "file": "eurusd_d1_raw.csv",
+      "url": "https://raw.githubusercontent.com/ejtraderLabs/historical-data/fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd/EURUSD/EURUSDd1.csv",
+      "sha256": "0a59b41a5e08472aa95aae35c2e06750adefe84f8d2775d88562e302aedeebf2",
+      "rows": 2400,
+      "first": {
+        "Date": "2012-12-04",
+        "open": "130583.99999999999",
+        "high": "131073.0",
+        "low": "130453.0",
+        "close": "130935.0",
+        "tick_volume": "55870"
+      },
+      "last": {
+        "Date": "2022-03-04",
+        "open": "110651.00000000001",
+        "high": "110679.0",
+        "low": "108852.0",
+        "close": "109305.00000000001",
+        "tick_volume": "129366"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "timeframe": "h1",
+      "file": "gbpusd_h1_raw.csv",
+      "url": "https://raw.githubusercontent.com/ejtraderLabs/historical-data/fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd/GBPUSD/GBPUSDh1.csv",
+      "sha256": "affda7b6e6f4ea505e46f714de37a51bf5d466efb78c3247c5900a0f0a85d3d7",
+      "rows": 57600,
+      "first": {
+        "Date": "2012-11-16 05:00:00",
+        "open": "158611.0",
+        "high": "158618.0",
+        "low": "158572.0",
+        "close": "158599.0",
+        "tick_volume": "1032"
+      },
+      "last": {
+        "Date": "2022-03-04 23:00:00",
+        "open": "132484.0",
+        "high": "132487.0",
+        "low": "132331.0",
+        "close": "132331.0",
+        "tick_volume": "1656"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "timeframe": "d1",
+      "file": "gbpusd_d1_raw.csv",
+      "url": "https://raw.githubusercontent.com/ejtraderLabs/historical-data/fbd29b3cd85c0eea4f6e8b81c053f98fb3de22fd/GBPUSD/GBPUSDd1.csv",
+      "sha256": "4262953cabb6246fd3d2526ba020601fb24e6d8b3aae6e918ed2583bebbcbca4",
+      "rows": 2400,
+      "first": {
+        "Date": "2012-12-04",
+        "open": "160944.0",
+        "high": "161303.0",
+        "low": "160859.0",
+        "close": "160999.0",
+        "tick_volume": "53379"
+      },
+      "last": {
+        "Date": "2022-03-04",
+        "open": "133420.0",
+        "high": "133534.0",
+        "low": "132022.0",
+        "close": "132331.0",
+        "tick_volume": "126486"
+      }
+    }
+  ]
+}

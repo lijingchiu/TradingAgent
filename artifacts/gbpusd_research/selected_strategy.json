@@ -1,0 +1,37 @@
+{
+  "config": {
+    "name": "v2_rsi5_ema400_stop4_target3_minatr5",
+    "bar_hours": 4,
+    "rsi_period": 2,
+    "rsi_entry": 5.0,
+    "ema_period": 400,
+    "trend_filter": "above",
+    "atr_period": 14,
+    "stop_atr": 4.0,
+    "target_atr": 3.0,
+    "max_days": 5,
+    "minimum_atr_pips": 5.0,
+    "pip_size": 0.0001
+  },
+  "instrument": "GBPUSD",
+  "symbol": "GBPUSD=X",
+  "selection_eligible": false,
+  "selected_using": "Old development and validation only; independent GBPUSD final has not been acquired",
+  "candidate_count": 168,
+  "cumulative_candidate_count": 608,
+  "initial_equity": 100000.0,
+  "data_sha256": "4d751f35779dfef9e3e7b78199096e442e1d8b33dac0534a25569e46ff21430d",
+  "paper_approved": false,
+  "gate_reasons": [
+    "No GBPUSD H4 candidate passed development and validation after costs"
+  ],
+  "final_summary": null,
+  "cost_model": {
+    "spread_pips": 2.0,
+    "slippage_pips": 0.2,
+    "commission_bps": 0.35,
+    "minimum_commission": 0.1,
+    "carry_per_1000_per_day": 0.0,
+    "pip_size": 0.0001
+  }
+}

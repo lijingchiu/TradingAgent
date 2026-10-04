@@ -1,0 +1,4 @@
+name,description,currency_base,currency_profit,currency_margin,spread,spread_float,trade_contract_size,trade_tick_value,trade_tick_size,trade_stops_level,trade_freeze_level,point,digits,volume_min,volume_max,volume_step,volume_limit,margin_initial,margin_maintenance,swap_long,swap_short,swap_mode,session_deals,session_buy_orders,session_sell_orders
+EURUSD,Euro vs United States Dollar,EUR,USD,EUR,7,True,100000.0,1.0,1e-05,0,0,1e-05,5,0.01,50.0,0.01,0.0,0.0,0.0,-10.73,0.44,1,0,0,0
+US500.cash,"S&P 500 Index, Spot CFD",USD,USD,USD,55,True,1.0,0.01,0.01,0,0,0.01,2,0.01,1000.0,0.01,0.0,0.0,0.0,-148.0,-8.15,1,0,0,0
+XAUUSD,"Gold vs US Dollar, Spot CFD",USD,USD,USD,49,True,100.0,1.0,0.01,0,0,0.01,2,0.01,100.0,0.01,0.0,0.0,0.0,-95.03,-5.4,1,0,0,0

@@ -1,0 +1,99 @@
+{
+  "protocol": "Adaptive cost-aware research on old data only; freeze best diagnostic before once-only independent final evaluation",
+  "candidate_count": 440,
+  "research_stages": [
+    {
+      "name": "eurusd_h1_initial",
+      "symbol": "EURUSD",
+      "bar_hours": 1,
+      "trials": 24,
+      "result_sha256": "f5e6250e8361d858c7bd3a6137355f547d6061023831a14bcbcc72a262632677"
+    },
+    {
+      "name": "eurusd_h1_larger_targets",
+      "symbol": "EURUSD",
+      "bar_hours": 1,
+      "trials": 48,
+      "result_sha256": "bcf4baa99b14f718271c0f6d452bf0f62df96c7eb66c52d413d7651ca79d8834"
+    },
+    {
+      "name": "eurusd_h1_shorter_stops",
+      "symbol": "EURUSD",
+      "bar_hours": 1,
+      "trials": 48,
+      "result_sha256": "b124c0de689d517730b5a164bc8be6c5d50f6d20127b586846912d894ec9780e"
+    },
+    {
+      "name": "gbpusd_h1_same_family",
+      "symbol": "GBPUSD",
+      "bar_hours": 1,
+      "trials": 120,
+      "result_sha256": "30c14b4255fd7973656b37d3525767b79718f10b2994da6d429143afbf89be49"
+    },
+    {
+      "name": "eurusd_h1_slower_rsi",
+      "symbol": "EURUSD",
+      "bar_hours": 1,
+      "trials": 32,
+      "result_sha256": "86eb608a9ef6dd9b60f7c9517094676b14bfd7eb271c0920f43e93bb4f902a76"
+    },
+    {
+      "name": "eurusd_h4_initial",
+      "symbol": "EURUSD",
+      "bar_hours": 4,
+      "trials": 24,
+      "result_sha256": "379eceffb9515501a185a1ab502392b34d9d6753467979eb6a4d374b7f335b5d"
+    },
+    {
+      "name": "eurusd_h4_meanreversion",
+      "symbol": "EURUSD",
+      "bar_hours": 4,
+      "trials": 24,
+      "result_sha256": "d420a9491337edeea7a675bc9d418c10dc52bf3edea2a2287040293f52d4eaed"
+    },
+    {
+      "name": "eurusd_h4_meanreversion_higher_reward",
+      "symbol": "EURUSD",
+      "bar_hours": 4,
+      "trials": 24,
+      "result_sha256": "c15b90d4958bebcd8bb62deac5fbfc630b60e9bc088f8e9bb73c6a4853d0c88e"
+    },
+    {
+      "name": "eurusd_h4_cost_aware",
+      "symbol": "EURUSD",
+      "bar_hours": 4,
+      "trials": 96,
+      "result_sha256": "cb187c149cebfad4000f33fa6b02411ad5f399cfa733bd68090d2ec1d065f47a"
+    }
+  ],
+  "source_sha256": {
+    "EURUSD": "58bbb73a082b57186249e68796c9f968c4ab6e708cca765f2622fc8ee2742d54",
+    "GBPUSD": "4d751f35779dfef9e3e7b78199096e442e1d8b33dac0534a25569e46ff21430d"
+  },
+  "source_files": [
+    "data/eurusd_h1.csv",
+    "data/gbpusd_h1.csv"
+  ],
+  "development_end_exclusive": "2019-01-01",
+  "validation_start": "2019-01-01",
+  "validation_last_observation": "2022-03-04",
+  "final_start": "2025-03-15",
+  "final_source_file": "data/eurusd_yahoo_h1.csv",
+  "minimum_final_trades": 30,
+  "minimum_final_win_rate": 0.5,
+  "positive_final_net_profit_required": true,
+  "zero_risk_breaches_required": true,
+  "terminal_liquidations_excluded_from_win_rate": true,
+  "cost_model": {
+    "spread_pips": 2.0,
+    "slippage_pips": 0.2,
+    "commission_bps": 0.35,
+    "minimum_commission": 0.1,
+    "carry_per_1000_per_day": 0.0,
+    "pip_size": 0.0001
+  },
+  "initial_equity": 100000.0,
+  "selection_bias_disclosed": "Validation reused for cost diagnosis and pair/timeframe research; all440trials disclosed; no final outcomes read before freeze",
+  "prior_selection_failed": true,
+  "fallback_selection_rule": "Old EURUSD: >=30 trades and >=50% wins in both splits; maximize minimum split net return; restricted EMA<=200 for available independent warmup; no candidate with zero trades can rank above trading candidates"
+}

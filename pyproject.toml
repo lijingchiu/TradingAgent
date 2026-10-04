@@ -1,0 +1,9 @@
+[project]
+name = "trading-agent-paper"
+version = "0.1.0"
+description = "Auditable long-only, fully funded EUR/USD paper trading"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.unittest]
+start-directory = "tests"

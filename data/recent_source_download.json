@@ -1,0 +1,155 @@
+{
+  "repository": "https://github.com/Gianniskas/mt5-m1-bars-us500-eurusd-xauusd",
+  "commit": "c00b90394dbaf0e51bbe1a9097094075d5487b45",
+  "retrieved_at": "2026-10-04T12:18:53.306040+00:00",
+  "records": [
+    {
+      "file": "eurusd_h1_recent_raw.csv",
+      "url": "https://raw.githubusercontent.com/Gianniskas/mt5-m1-bars-us500-eurusd-xauusd/c00b90394dbaf0e51bbe1a9097094075d5487b45/EURUSD_h1.csv",
+      "sha256": "bbb45850d5fbdb568fd1ed1b518b0c23b43fb982b0226bc7247fe6c3ea03d608",
+      "bytes": 518472,
+      "rows": 8520,
+      "first": {
+        "datetime": "2025-01-02 00:00:00",
+        "open": "1.03514",
+        "high": "1.03576",
+        "low": "1.0348600000000001",
+        "close": "1.03553",
+        "volume": "1009",
+        "spread": "7"
+      },
+      "last": {
+        "datetime": "2026-05-15 23:00:00",
+        "open": "1.16214",
+        "high": "1.16255",
+        "low": "1.16191",
+        "close": "1.16233",
+        "volume": "1530",
+        "spread": "1"
+      }
+    },
+    {
+      "file": "eurusd_d1_recent_raw.csv",
+      "url": "https://raw.githubusercontent.com/Gianniskas/mt5-m1-bars-us500-eurusd-xauusd/c00b90394dbaf0e51bbe1a9097094075d5487b45/EURUSD_d1.csv",
+      "sha256": "522e21f517ddb5d4e03fb72c818bfa322554db36a83552f878763d52d3fff269",
+      "bytes": 21980,
+      "rows": 355,
+      "first": {
+        "datetime": "2025-01-02 00:00:00",
+        "open": "1.03514",
+        "high": "1.03754",
+        "low": "1.02241",
+        "close": "1.02666",
+        "volume": "82162",
+        "spread": "2"
+      },
+      "last": {
+        "datetime": "2026-05-15 00:00:00",
+        "open": "1.16669",
+        "high": "1.16724",
+        "low": "1.1616900000000001",
+        "close": "1.16233",
+        "volume": "87853",
+        "spread": "1"
+      }
+    },
+    {
+      "file": "recent_symbol_specs.csv",
+      "url": "https://raw.githubusercontent.com/Gianniskas/mt5-m1-bars-us500-eurusd-xauusd/c00b90394dbaf0e51bbe1a9097094075d5487b45/symbol_specs.csv",
+      "sha256": "ac31352c46fcd590891d51400e0e346a8816b63deef856342c9e29ee2551099c",
+      "bytes": 747,
+      "rows": 3,
+      "first": {
+        "name": "EURUSD",
+        "description": "Euro vs United States Dollar",
+        "currency_base": "EUR",
+        "currency_profit": "USD",
+        "currency_margin": "EUR",
+        "spread": "7",
+        "spread_float": "True",
+        "trade_contract_size": "100000.0",
+        "trade_tick_value": "1.0",
+        "trade_tick_size": "1e-05",
+        "trade_stops_level": "0",
+        "trade_freeze_level": "0",
+        "point": "1e-05",
+        "digits": "5",
+        "volume_min": "0.01",
+        "volume_max": "50.0",
+        "volume_step": "0.01",
+        "volume_limit": "0.0",
+        "margin_initial": "0.0",
+        "margin_maintenance": "0.0",
+        "swap_long": "-10.73",
+        "swap_short": "0.44",
+        "swap_mode": "1",
+        "session_deals": "0",
+        "session_buy_orders": "0",
+        "session_sell_orders": "0"
+      },
+      "last": {
+        "name": "XAUUSD",
+        "description": "Gold vs US Dollar, Spot CFD",
+        "currency_base": "USD",
+        "currency_profit": "USD",
+        "currency_margin": "USD",
+        "spread": "49",
+        "spread_float": "True",
+        "trade_contract_size": "100.0",
+        "trade_tick_value": "1.0",
+        "trade_tick_size": "0.01",
+        "trade_stops_level": "0",
+        "trade_freeze_level": "0",
+        "point": "0.01",
+        "digits": "2",
+        "volume_min": "0.01",
+        "volume_max": "100.0",
+        "volume_step": "0.01",
+        "volume_limit": "0.0",
+        "margin_initial": "0.0",
+        "margin_maintenance": "0.0",
+        "swap_long": "-95.03",
+        "swap_short": "-5.4",
+        "swap_mode": "1",
+        "session_deals": "0",
+        "session_buy_orders": "0",
+        "session_sell_orders": "0"
+      }
+    },
+    {
+      "file": "recent_spreads_summary.csv",
+      "url": "https://raw.githubusercontent.com/Gianniskas/mt5-m1-bars-us500-eurusd-xauusd/c00b90394dbaf0e51bbe1a9097094075d5487b45/spreads_summary.csv",
+      "sha256": "46d992c0d0417de247bf41f15787f320375fc408123460bb7267864ee78f90eb",
+      "bytes": 3468,
+      "rows": 67,
+      "first": {
+        "symbol": "US500.cash",
+        "hour_utc": "0",
+        "samples": "73",
+        "mean_spread": "55.211",
+        "p50": "55.205",
+        "p75": "55.219",
+        "p95": "55.219",
+        "p99": "55.233",
+        "max": "56.0"
+      },
+      "last": {
+        "symbol": "XAUUSD",
+        "hour_utc": "23",
+        "samples": "242",
+        "mean_spread": "48.749",
+        "p50": "48.69",
+        "p75": "49.661",
+        "p95": "51.723",
+        "p99": "52.107",
+        "max": "164.0"
+      }
+    },
+    {
+      "file": "recent_source_README.md",
+      "url": "https://raw.githubusercontent.com/Gianniskas/mt5-m1-bars-us500-eurusd-xauusd/c00b90394dbaf0e51bbe1a9097094075d5487b45/README.md",
+      "sha256": "3eb08a062853dff89cf263b9de354542c9afb7515bf948eeb38fbc007c7b8d77",
+      "bytes": 6530
+    }
+  ]
+}

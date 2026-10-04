@@ -1,0 +1,24 @@
+{
+  "config": {
+    "name": "rsi5_ema100_stop2_target1",
+    "bar_hours": 4,
+    "rsi_period": 2,
+    "rsi_entry": 5.0,
+    "ema_period": 100,
+    "trend_filter": "above",
+    "atr_period": 14,
+    "stop_atr": 2.0,
+    "target_atr": 1.0,
+    "max_days": 5,
+    "minimum_atr_pips": 3.0,
+    "pip_size": 0.0001
+  },
+  "instrument": "EURUSD",
+  "selection_eligible": false,
+  "selected_using": "development and validation only; diagnostic fallback because every candidate failed net-profit criteria",
+  "candidate_count": 440,
+  "data_sha256": "58bbb73a082b57186249e68796c9f968c4ab6e708cca765f2622fc8ee2742d54",
+  "final_start": "2025-03-15",
+  "initial_equity": 100000.0,
+  "paper_approved": false
+}

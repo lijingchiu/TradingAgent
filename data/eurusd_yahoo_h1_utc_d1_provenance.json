@@ -1,0 +1,37 @@
+{
+  "provider": "Yahoo Finance hourly chart endpoint",
+  "derived_dataset": "EURUSD complete UTC00:00\u201324:00 daily OHLC aggregated from actual1h quotes",
+  "source": "eurusd_yahoo_h1.csv",
+  "source_raw_sha256": "5573052705e8a4e1251f685ce1b5846a8064008ea10209458edaa9ffe9e06b08",
+  "source_normalized_sha256": "1ab3df7487a66485704d6c9fe83c46b62915881ebd73d1237d8fbd31d9a30290",
+  "output": "eurusd_yahoo_h1_utc_d1.csv",
+  "output_sha256": "0c363b48c09dc8bb1ecc3c26e504658a56fdbbc34c790e09ee41fc0be6f5af19",
+  "script": "aggregate_yahoo_h1.py",
+  "aggregation": "open hour00; high=max24hourhigh; low=min24hourlow; close hour23; require24uniquevalidhours; no imputation; completedUTCsessions only",
+  "retrieved_at_utc": "2026-10-04T12:22:24.562796+00:00",
+  "accepted_daily_sessions": 404,
+  "excluded_or_flagged_sessions": 315,
+  "excluded_session_details": "eurusd_yahoo_h1_utc_d1_exclusions.json",
+  "first": "2024-10-15T00:00:00Z",
+  "last": "2026-10-01T00:00:00Z",
+  "quality": {
+    "hourly_invalid_ohlc_count": 0,
+    "hourly_null_ohlc_count": 178,
+    "hourly_open_equals_close_rows": 1134,
+    "daily_open_equals_close_rows": 6,
+    "median_daily_body_pips": 27.571950000000456,
+    "median_daily_range_pips": 63.126150000000216,
+    "accepted_weekday_counts": {
+      "Tuesday": 102,
+      "Wednesday": 101,
+      "Thursday": 101,
+      "Monday": 100
+    }
+  },
+  "limitations": [
+    "Spot FX quotes are indicative; no observed executable bid/ask/spread.",
+    "Strict completeUTCday filter excludes partial Sunday and Friday sessions and missingquote holidays; entries/exits must use actual nextbar timestamps and not assume contiguous days.",
+    "Rolling730day hourly source horizon; archive new completed hourly bars for durability.",
+    "Not provider-native daily bars; use exact samehourlyaggregation in forwardpaper mode."
+  ]
+}

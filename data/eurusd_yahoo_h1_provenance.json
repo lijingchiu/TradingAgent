@@ -1,0 +1,4398 @@
+{
+  "provider": "Yahoo Finance chart public endpoint",
+  "symbol": "EURUSD=X",
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/EURUSD=X?period1=1728908542&period2=1791116542&interval=1h",
+  "retrieved_at_utc": "2026-10-04T12:22:24.562796+00:00",
+  "raw_sha256": "5573052705e8a4e1251f685ce1b5846a8064008ea10209458edaa9ffe9e06b08",
+  "normalized_sha256": "1ab3df7487a66485704d6c9fe83c46b62915881ebd73d1237d8fbd31d9a30290",
+  "provider_metadata": {
+    "currency": "USD",
+    "symbol": "EURUSD=X",
+    "exchangeName": "CCY",
+    "fullExchangeName": "CCY",
+    "instrumentType": "CURRENCY",
+    "firstTradeDate": 1070236800,
+    "regularMarketTime": 1790976587,
+    "hasPrePostMarketData": false,
+    "gmtoffset": 3600,
+    "timezone": "BST",
+    "exchangeTimezoneName": "Europe/London",
+    "regularMarketPrice": 1.1257,
+    "regularMarketChangePercent": 0.1126,
+    "fulldayPrice": 1.1257,
+    "fulldayChange": 0.0013,
+    "fulldayChangePercent": 0.1126,
+    "fiftyTwoWeekHigh": 1.2024,
+    "fiftyTwoWeekLow": 1.1219,
+    "regularMarketDayHigh": 1.1288,
+    "regularMarketDayLow": 1.1225,
+    "regularMarketVolume": 0,
+    "longName": "EUR/USD",
+    "shortName": "EUR/USD",
+    "chartPreviousClose": 1.0925,
+    "previousClose": 1.1245,
+    "scale": 4,
+    "priceHint": 4,
+    "currentTradingPeriod": {
+      "pre": {
+        "timezone": "BST",
+        "end": 1790895600,
+        "start": 1790895600,
+        "gmtoffset": 3600
+      },
+      "regular": {
+        "timezone": "BST",
+        "end": 1790981940,
+        "start": 1790895600,
+        "gmtoffset": 3600
+      },
+      "post": {
+        "timezone": "BST",
+        "end": 1790981940,
+        "start": 1790981940,
+        "gmtoffset": 3600
+      }
+    },
+    "tradingPeriods": [
+      [
+        {
+          "timezone": "BST",
+          "end": 1728946740,
+          "start": 1728860400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729033140,
+          "start": 1728946800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729119540,
+          "start": 1729033200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729205940,
+          "start": 1729119600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729292340,
+          "start": 1729206000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729551540,
+          "start": 1729465200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729637940,
+          "start": 1729551600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729724340,
+          "start": 1729638000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729810740,
+          "start": 1729724400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1729897140,
+          "start": 1729810800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1730159940,
+          "start": 1730073600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1730246340,
+          "start": 1730160000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1730332740,
+          "start": 1730246400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1730419140,
+          "start": 1730332800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1730505540,
+          "start": 1730419200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1730764740,
+          "start": 1730678400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1730851140,
+          "start": 1730764800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1730937540,
+          "start": 1730851200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1731023940,
+          "start": 1730937600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1731110340,
+          "start": 1731024000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1731369540,
+          "start": 1731283200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1731455940,
+          "start": 1731369600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1731542340,
+          "start": 1731456000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1731628740,
+          "start": 1731542400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1731715140,
+          "start": 1731628800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1731974340,
+          "start": 1731888000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732060740,
+          "start": 1731974400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732147140,
+          "start": 1732060800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732233540,
+          "start": 1732147200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732319940,
+          "start": 1732233600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732579140,
+          "start": 1732492800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732665540,
+          "start": 1732579200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732751940,
+          "start": 1732665600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732838340,
+          "start": 1732752000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1732924740,
+          "start": 1732838400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1733183940,
+          "start": 1733097600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1733270340,
+          "start": 1733184000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1733356740,
+          "start": 1733270400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1733443140,
+          "start": 1733356800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1733529540,
+          "start": 1733443200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1733788740,
+          "start": 1733702400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1733875140,
+          "start": 1733788800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1733961540,
+          "start": 1733875200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1734047940,
+          "start": 1733961600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1734134340,
+          "start": 1734048000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1734393540,
+          "start": 1734307200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1734479940,
+          "start": 1734393600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1734566340,
+          "start": 1734480000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1734652740,
+          "start": 1734566400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1734739140,
+          "start": 1734652800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1734998340,
+          "start": 1734912000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735084740,
+          "start": 1734998400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735171140,
+          "start": 1735084800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735257540,
+          "start": 1735171200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735343940,
+          "start": 1735257600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735603140,
+          "start": 1735516800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735689540,
+          "start": 1735603200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735775940,
+          "start": 1735689600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735862340,
+          "start": 1735776000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1735948740,
+          "start": 1735862400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1736207940,
+          "start": 1736121600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1736294340,
+          "start": 1736208000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1736380740,
+          "start": 1736294400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1736467140,
+          "start": 1736380800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1736553540,
+          "start": 1736467200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1736812740,
+          "start": 1736726400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1736899140,
+          "start": 1736812800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1736985540,
+          "start": 1736899200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1737071940,
+          "start": 1736985600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1737158340,
+          "start": 1737072000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1737417540,
+          "start": 1737331200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1737503940,
+          "start": 1737417600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1737590340,
+          "start": 1737504000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1737676740,
+          "start": 1737590400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1737763140,
+          "start": 1737676800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738022340,
+          "start": 1737936000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738108740,
+          "start": 1738022400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738195140,
+          "start": 1738108800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738281540,
+          "start": 1738195200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738367940,
+          "start": 1738281600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738627140,
+          "start": 1738540800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738713540,
+          "start": 1738627200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738799940,
+          "start": 1738713600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738886340,
+          "start": 1738800000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1738972740,
+          "start": 1738886400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1739231940,
+          "start": 1739145600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1739318340,
+          "start": 1739232000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1739404740,
+          "start": 1739318400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1739491140,
+          "start": 1739404800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1739577540,
+          "start": 1739491200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1739836740,
+          "start": 1739750400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1739923140,
+          "start": 1739836800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1740009540,
+          "start": 1739923200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1740095940,
+          "start": 1740009600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1740182340,
+          "start": 1740096000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1740441540,
+          "start": 1740355200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1740527940,
+          "start": 1740441600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1740614340,
+          "start": 1740528000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1740700740,
+          "start": 1740614400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1740787140,
+          "start": 1740700800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741046340,
+          "start": 1740960000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741132740,
+          "start": 1741046400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741219140,
+          "start": 1741132800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741305540,
+          "start": 1741219200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741391940,
+          "start": 1741305600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741651140,
+          "start": 1741564800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741737540,
+          "start": 1741651200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741823940,
+          "start": 1741737600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741910340,
+          "start": 1741824000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1741996740,
+          "start": 1741910400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1742255940,
+          "start": 1742169600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1742342340,
+          "start": 1742256000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1742428740,
+          "start": 1742342400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1742515140,
+          "start": 1742428800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1742601540,
+          "start": 1742515200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1742860740,
+          "start": 1742774400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1742947140,
+          "start": 1742860800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1743033540,
+          "start": 1742947200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1743119940,
+          "start": 1743033600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1743206340,
+          "start": 1743120000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1743461940,
+          "start": 1743375600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1743548340,
+          "start": 1743462000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1743634740,
+          "start": 1743548400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1743721140,
+          "start": 1743634800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1743807540,
+          "start": 1743721200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744066740,
+          "start": 1743980400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744153140,
+          "start": 1744066800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744239540,
+          "start": 1744153200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744325940,
+          "start": 1744239600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744412340,
+          "start": 1744326000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744671540,
+          "start": 1744585200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744757940,
+          "start": 1744671600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744844340,
+          "start": 1744758000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1744930740,
+          "start": 1744844400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1745017140,
+          "start": 1744930800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1745276340,
+          "start": 1745190000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1745362740,
+          "start": 1745276400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1745449140,
+          "start": 1745362800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1745535540,
+          "start": 1745449200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1745621940,
+          "start": 1745535600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1745881140,
+          "start": 1745794800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1745967540,
+          "start": 1745881200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1746053940,
+          "start": 1745967600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1746140340,
+          "start": 1746054000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1746226740,
+          "start": 1746140400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1746485940,
+          "start": 1746399600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1746572340,
+          "start": 1746486000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1746658740,
+          "start": 1746572400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1746745140,
+          "start": 1746658800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1746831540,
+          "start": 1746745200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747090740,
+          "start": 1747004400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747177140,
+          "start": 1747090800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747263540,
+          "start": 1747177200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747349940,
+          "start": 1747263600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747436340,
+          "start": 1747350000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747695540,
+          "start": 1747609200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747781940,
+          "start": 1747695600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747868340,
+          "start": 1747782000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1747954740,
+          "start": 1747868400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1748041140,
+          "start": 1747954800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1748300340,
+          "start": 1748214000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1748386740,
+          "start": 1748300400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1748473140,
+          "start": 1748386800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1748559540,
+          "start": 1748473200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1748645940,
+          "start": 1748559600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1748905140,
+          "start": 1748818800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1748991540,
+          "start": 1748905200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1749077940,
+          "start": 1748991600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1749164340,
+          "start": 1749078000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1749250740,
+          "start": 1749164400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1749509940,
+          "start": 1749423600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1749596340,
+          "start": 1749510000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1749682740,
+          "start": 1749596400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1749769140,
+          "start": 1749682800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1749855540,
+          "start": 1749769200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750114740,
+          "start": 1750028400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750201140,
+          "start": 1750114800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750287540,
+          "start": 1750201200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750373940,
+          "start": 1750287600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750460340,
+          "start": 1750374000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750719540,
+          "start": 1750633200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750805940,
+          "start": 1750719600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750892340,
+          "start": 1750806000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1750978740,
+          "start": 1750892400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1751065140,
+          "start": 1750978800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1751324340,
+          "start": 1751238000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1751410740,
+          "start": 1751324400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1751497140,
+          "start": 1751410800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1751583540,
+          "start": 1751497200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1751669940,
+          "start": 1751583600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1751929140,
+          "start": 1751842800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752015540,
+          "start": 1751929200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752101940,
+          "start": 1752015600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752188340,
+          "start": 1752102000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752274740,
+          "start": 1752188400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752533940,
+          "start": 1752447600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752620340,
+          "start": 1752534000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752706740,
+          "start": 1752620400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752793140,
+          "start": 1752706800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1752879540,
+          "start": 1752793200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1753138740,
+          "start": 1753052400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1753225140,
+          "start": 1753138800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1753311540,
+          "start": 1753225200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1753397940,
+          "start": 1753311600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1753484340,
+          "start": 1753398000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1753743540,
+          "start": 1753657200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1753829940,
+          "start": 1753743600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1753916340,
+          "start": 1753830000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1754002740,
+          "start": 1753916400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1754089140,
+          "start": 1754002800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1754348340,
+          "start": 1754262000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1754434740,
+          "start": 1754348400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1754521140,
+          "start": 1754434800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1754607540,
+          "start": 1754521200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1754693940,
+          "start": 1754607600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1754953140,
+          "start": 1754866800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755039540,
+          "start": 1754953200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755125940,
+          "start": 1755039600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755212340,
+          "start": 1755126000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755298740,
+          "start": 1755212400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755557940,
+          "start": 1755471600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755644340,
+          "start": 1755558000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755730740,
+          "start": 1755644400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755817140,
+          "start": 1755730800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1755903540,
+          "start": 1755817200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1756162740,
+          "start": 1756076400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1756249140,
+          "start": 1756162800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1756335540,
+          "start": 1756249200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1756421940,
+          "start": 1756335600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1756508340,
+          "start": 1756422000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1756767540,
+          "start": 1756681200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1756853940,
+          "start": 1756767600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1756940340,
+          "start": 1756854000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1757026740,
+          "start": 1756940400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1757113140,
+          "start": 1757026800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1757372340,
+          "start": 1757286000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1757458740,
+          "start": 1757372400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1757545140,
+          "start": 1757458800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1757631540,
+          "start": 1757545200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1757717940,
+          "start": 1757631600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1757977140,
+          "start": 1757890800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758063540,
+          "start": 1757977200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758149940,
+          "start": 1758063600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758236340,
+          "start": 1758150000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758322740,
+          "start": 1758236400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758581940,
+          "start": 1758495600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758668340,
+          "start": 1758582000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758754740,
+          "start": 1758668400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758841140,
+          "start": 1758754800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1758927540,
+          "start": 1758841200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1759186740,
+          "start": 1759100400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1759273140,
+          "start": 1759186800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1759359540,
+          "start": 1759273200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1759445940,
+          "start": 1759359600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1759532340,
+          "start": 1759446000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1759791540,
+          "start": 1759705200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1759877940,
+          "start": 1759791600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1759964340,
+          "start": 1759878000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1760050740,
+          "start": 1759964400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1760137140,
+          "start": 1760050800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1760396340,
+          "start": 1760310000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1760482740,
+          "start": 1760396400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1760569140,
+          "start": 1760482800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1760655540,
+          "start": 1760569200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1760741940,
+          "start": 1760655600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1761001140,
+          "start": 1760914800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1761087540,
+          "start": 1761001200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1761173940,
+          "start": 1761087600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1761260340,
+          "start": 1761174000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1761346740,
+          "start": 1761260400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1761609540,
+          "start": 1761523200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1761695940,
+          "start": 1761609600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1761782340,
+          "start": 1761696000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1761868740,
+          "start": 1761782400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1761955140,
+          "start": 1761868800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1762214340,
+          "start": 1762128000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1762300740,
+          "start": 1762214400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1762387140,
+          "start": 1762300800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1762473540,
+          "start": 1762387200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1762559940,
+          "start": 1762473600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1762819140,
+          "start": 1762732800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1762905540,
+          "start": 1762819200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1762991940,
+          "start": 1762905600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1763078340,
+          "start": 1762992000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1763164740,
+          "start": 1763078400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1763423940,
+          "start": 1763337600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1763510340,
+          "start": 1763424000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1763596740,
+          "start": 1763510400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1763683140,
+          "start": 1763596800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1763769540,
+          "start": 1763683200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764028740,
+          "start": 1763942400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764115140,
+          "start": 1764028800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764201540,
+          "start": 1764115200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764287940,
+          "start": 1764201600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764374340,
+          "start": 1764288000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764633540,
+          "start": 1764547200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764719940,
+          "start": 1764633600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764806340,
+          "start": 1764720000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764892740,
+          "start": 1764806400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1764979140,
+          "start": 1764892800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1765238340,
+          "start": 1765152000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1765324740,
+          "start": 1765238400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1765411140,
+          "start": 1765324800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1765497540,
+          "start": 1765411200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1765583940,
+          "start": 1765497600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1765843140,
+          "start": 1765756800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1765929540,
+          "start": 1765843200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1766015940,
+          "start": 1765929600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1766102340,
+          "start": 1766016000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1766188740,
+          "start": 1766102400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1766447940,
+          "start": 1766361600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1766534340,
+          "start": 1766448000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1766620740,
+          "start": 1766534400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1766707140,
+          "start": 1766620800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1766793540,
+          "start": 1766707200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767052740,
+          "start": 1766966400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767139140,
+          "start": 1767052800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767225540,
+          "start": 1767139200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767311940,
+          "start": 1767225600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767398340,
+          "start": 1767312000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767657540,
+          "start": 1767571200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767743940,
+          "start": 1767657600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767830340,
+          "start": 1767744000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1767916740,
+          "start": 1767830400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1768003140,
+          "start": 1767916800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1768262340,
+          "start": 1768176000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1768348740,
+          "start": 1768262400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1768435140,
+          "start": 1768348800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1768521540,
+          "start": 1768435200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1768607940,
+          "start": 1768521600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1768867140,
+          "start": 1768780800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1768953540,
+          "start": 1768867200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1769039940,
+          "start": 1768953600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1769126340,
+          "start": 1769040000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1769212740,
+          "start": 1769126400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1769471940,
+          "start": 1769385600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1769558340,
+          "start": 1769472000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1769644740,
+          "start": 1769558400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1769731140,
+          "start": 1769644800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1769817540,
+          "start": 1769731200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770076740,
+          "start": 1769990400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770163140,
+          "start": 1770076800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770249540,
+          "start": 1770163200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770335940,
+          "start": 1770249600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770422340,
+          "start": 1770336000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770681540,
+          "start": 1770595200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770767940,
+          "start": 1770681600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770854340,
+          "start": 1770768000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1770940740,
+          "start": 1770854400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1771027140,
+          "start": 1770940800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1771286340,
+          "start": 1771200000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1771372740,
+          "start": 1771286400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1771459140,
+          "start": 1771372800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1771545540,
+          "start": 1771459200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1771631940,
+          "start": 1771545600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1771891140,
+          "start": 1771804800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1771977540,
+          "start": 1771891200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1772063940,
+          "start": 1771977600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1772150340,
+          "start": 1772064000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1772236740,
+          "start": 1772150400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1772495940,
+          "start": 1772409600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1772582340,
+          "start": 1772496000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1772668740,
+          "start": 1772582400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1772755140,
+          "start": 1772668800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1772841540,
+          "start": 1772755200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773100740,
+          "start": 1773014400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773187140,
+          "start": 1773100800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773273540,
+          "start": 1773187200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773359940,
+          "start": 1773273600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773446340,
+          "start": 1773360000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773705540,
+          "start": 1773619200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773791940,
+          "start": 1773705600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773878340,
+          "start": 1773792000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1773964740,
+          "start": 1773878400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1774051140,
+          "start": 1773964800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1774310340,
+          "start": 1774224000,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1774396740,
+          "start": 1774310400,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1774483140,
+          "start": 1774396800,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1774569540,
+          "start": 1774483200,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "GMT",
+          "end": 1774655940,
+          "start": 1774569600,
+          "gmtoffset": 0
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1774911540,
+          "start": 1774825200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1774997940,
+          "start": 1774911600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1775084340,
+          "start": 1774998000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1775170740,
+          "start": 1775084400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1775257140,
+          "start": 1775170800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1775516340,
+          "start": 1775430000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1775602740,
+          "start": 1775516400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1775689140,
+          "start": 1775602800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1775775540,
+          "start": 1775689200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1775861940,
+          "start": 1775775600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776121140,
+          "start": 1776034800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776207540,
+          "start": 1776121200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776293940,
+          "start": 1776207600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776380340,
+          "start": 1776294000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776466740,
+          "start": 1776380400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776725940,
+          "start": 1776639600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776812340,
+          "start": 1776726000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776898740,
+          "start": 1776812400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1776985140,
+          "start": 1776898800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1777071540,
+          "start": 1776985200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1777330740,
+          "start": 1777244400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1777417140,
+          "start": 1777330800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1777503540,
+          "start": 1777417200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1777589940,
+          "start": 1777503600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1777676340,
+          "start": 1777590000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1777935540,
+          "start": 1777849200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778021940,
+          "start": 1777935600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778108340,
+          "start": 1778022000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778194740,
+          "start": 1778108400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778281140,
+          "start": 1778194800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778540340,
+          "start": 1778454000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778626740,
+          "start": 1778540400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778713140,
+          "start": 1778626800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778799540,
+          "start": 1778713200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1778885940,
+          "start": 1778799600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1779145140,
+          "start": 1779058800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1779231540,
+          "start": 1779145200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1779317940,
+          "start": 1779231600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1779404340,
+          "start": 1779318000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1779490740,
+          "start": 1779404400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1779749940,
+          "start": 1779663600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1779836340,
+          "start": 1779750000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1779922740,
+          "start": 1779836400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1780009140,
+          "start": 1779922800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1780095540,
+          "start": 1780009200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1780354740,
+          "start": 1780268400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1780441140,
+          "start": 1780354800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1780527540,
+          "start": 1780441200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1780613940,
+          "start": 1780527600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1780700340,
+          "start": 1780614000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1780959540,
+          "start": 1780873200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781045940,
+          "start": 1780959600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781132340,
+          "start": 1781046000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781218740,
+          "start": 1781132400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781305140,
+          "start": 1781218800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781564340,
+          "start": 1781478000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781650740,
+          "start": 1781564400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781737140,
+          "start": 1781650800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781823540,
+          "start": 1781737200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1781909940,
+          "start": 1781823600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1782169140,
+          "start": 1782082800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1782255540,
+          "start": 1782169200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1782341940,
+          "start": 1782255600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1782428340,
+          "start": 1782342000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1782514740,
+          "start": 1782428400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1782773940,
+          "start": 1782687600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1782860340,
+          "start": 1782774000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1782946740,
+          "start": 1782860400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1783033140,
+          "start": 1782946800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1783119540,
+          "start": 1783033200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1783378740,
+          "start": 1783292400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1783465140,
+          "start": 1783378800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1783551540,
+          "start": 1783465200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1783637940,
+          "start": 1783551600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1783724340,
+          "start": 1783638000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1783983540,
+          "start": 1783897200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784069940,
+          "start": 1783983600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784156340,
+          "start": 1784070000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784242740,
+          "start": 1784156400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784329140,
+          "start": 1784242800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784588340,
+          "start": 1784502000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784674740,
+          "start": 1784588400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784761140,
+          "start": 1784674800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784847540,
+          "start": 1784761200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1784933940,
+          "start": 1784847600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1785193140,
+          "start": 1785106800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1785279540,
+          "start": 1785193200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1785365940,
+          "start": 1785279600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1785452340,
+          "start": 1785366000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1785538740,
+          "start": 1785452400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1785797940,
+          "start": 1785711600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1785884340,
+          "start": 1785798000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1785970740,
+          "start": 1785884400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1786057140,
+          "start": 1785970800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1786143540,
+          "start": 1786057200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1786402740,
+          "start": 1786316400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1786489140,
+          "start": 1786402800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1786575540,
+          "start": 1786489200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1786661940,
+          "start": 1786575600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1786748340,
+          "start": 1786662000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787007540,
+          "start": 1786921200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787093940,
+          "start": 1787007600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787180340,
+          "start": 1787094000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787266740,
+          "start": 1787180400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787353140,
+          "start": 1787266800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787612340,
+          "start": 1787526000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787698740,
+          "start": 1787612400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787785140,
+          "start": 1787698800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787871540,
+          "start": 1787785200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1787957940,
+          "start": 1787871600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1788217140,
+          "start": 1788130800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1788303540,
+          "start": 1788217200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1788389940,
+          "start": 1788303600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1788476340,
+          "start": 1788390000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1788562740,
+          "start": 1788476400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1788821940,
+          "start": 1788735600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1788908340,
+          "start": 1788822000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1788994740,
+          "start": 1788908400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1789081140,
+          "start": 1788994800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1789167540,
+          "start": 1789081200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1789426740,
+          "start": 1789340400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1789513140,
+          "start": 1789426800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1789599540,
+          "start": 1789513200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1789685940,
+          "start": 1789599600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1789772340,
+          "start": 1789686000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790031540,
+          "start": 1789945200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790117940,
+          "start": 1790031600,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790204340,
+          "start": 1790118000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790290740,
+          "start": 1790204400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790377140,
+          "start": 1790290800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790636340,
+          "start": 1790550000,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790722740,
+          "start": 1790636400,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790809140,
+          "start": 1790722800,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790895540,
+          "start": 1790809200,
+          "gmtoffset": 3600
+        }
+      ],
+      [
+        {
+          "timezone": "BST",
+          "end": 1790981940,
+          "start": 1790895600,
+          "gmtoffset": 3600
+        }
+      ]
+    ],
+    "dataGranularity": "1h",
+    "range": "",
+    "validRanges": [
+      "1d",
+      "5d",
+      "1mo",
+      "3mo",
+      "6mo",
+      "1y",
+      "2y",
+      "5y",
+      "10y",
+      "ytd",
+      "max"
+    ]
+  },
+  "raw_rows": 12347,
+  "usable_rows": 12169,
+  "null_ohlc_timestamps_skipped": [
+    1729288800,
+    1729893600,
+    1730502000,
+    1731106800,
+    1731711600,
+    1732316400,
+    1732921200,
+    1733526000,
+    1734130800,
+    1734735600,
+    1735099200,
+    1735117200,
+    1735120800,
+    1735124400,
+    1735128000,
+    1735131600,
+    1735135200,
+    1735138800,
+    1735142400,
+    1735146000,
+    1735149600,
+    1735153200,
+    1735156800,
+    1735340400,
+    1735686000,
+    1735689600,
+    1735693200,
+    1735696800,
+    1735700400,
+    1735704000,
+    1735711200,
+    1735714800,
+    1735718400,
+    1735722000,
+    1735725600,
+    1735729200,
+    1735732800,
+    1735736400,
+    1735740000,
+    1735743600,
+    1735747200,
+    1735750800,
+    1735945200,
+    1736550000,
+    1737154800,
+    1737759600,
+    1738364400,
+    1738969200,
+    1739574000,
+    1740178800,
+    1740783600,
+    1741388400,
+    1741989600,
+    1741993200,
+    1742594400,
+    1742598000,
+    1743199200,
+    1743202800,
+    1743804000,
+    1744408800,
+    1745013600,
+    1745618400,
+    1746223200,
+    1746828000,
+    1747432800,
+    1748037600,
+    1748642400,
+    1749247200,
+    1749852000,
+    1750456800,
+    1751061600,
+    1751666400,
+    1752271200,
+    1752876000,
+    1753480800,
+    1754085600,
+    1754690400,
+    1755295200,
+    1755900000,
+    1756504800,
+    1757109600,
+    1757714400,
+    1758319200,
+    1758924000,
+    1759528800,
+    1760133600,
+    1760738400,
+    1761343200,
+    1761948000,
+    1761951600,
+    1762556400,
+    1763161200,
+    1763766000,
+    1764370800,
+    1764975600,
+    1765580400,
+    1766185200,
+    1766653200,
+    1766656800,
+    1766660400,
+    1766664000,
+    1766667600,
+    1766671200,
+    1766674800,
+    1766678400,
+    1766682000,
+    1766685600,
+    1766689200,
+    1766692800,
+    1766696400,
+    1766790000,
+    1767232800,
+    1767236400,
+    1767247200,
+    1767250800,
+    1767254400,
+    1767258000,
+    1767265200,
+    1767268800,
+    1767272400,
+    1767276000,
+    1767279600,
+    1767283200,
+    1767286800,
+    1767290400,
+    1767294000,
+    1767297600,
+    1767301200,
+    1767394800,
+    1767999600,
+    1768604400,
+    1769209200,
+    1769814000,
+    1770418800,
+    1771023600,
+    1771628400,
+    1772233200,
+    1772838000,
+    1773439200,
+    1773442800,
+    1774044000,
+    1774047600,
+    1774648800,
+    1774652400,
+    1775253600,
+    1775858400,
+    1776463200,
+    1776668400,
+    1776672000,
+    1777068000,
+    1777672800,
+    1777849200,
+    1777852800,
+    1777856400,
+    1777860000,
+    1777863600,
+    1778277600,
+    1778882400,
+    1779487200,
+    1780092000,
+    1780696800,
+    1781301600,
+    1781906400,
+    1782511200,
+    1783116000,
+    1783720800,
+    1784325600,
+    1784930400,
+    1785535200,
+    1786140000,
+    1786744800,
+    1787349600,
+    1787954400,
+    1788559200,
+    1789164000,
+    1789768800,
+    1790373600,
+    1790978400
+  ],
+  "invalid_ohlc_rows_skipped": [],
+  "first_usable": "2024-10-14T12:00:00Z",
+  "last_usable": "2026-10-02T21:00:00Z",
+  "timezone": "UTC from epoch timestamps",
+  "limitations": [
+    "Indicative forex quotes, not executable bid/ask.",
+    "No bid/ask spread or commissions/swap; use explicit conservative cost model.",
+    "Last hourly candle may still be forming or supplementary quote; only completed hourly bars can signal.",
+    "Intraday data available only rolling maximum730days.",
+    "Missinghourlyquotes and weekendgaps are not forwardfilled; use nextactualbar timestamp in fills and overnightcost.",
+    "No fixedsessionhourfilter can transfer from oldmirrorunknownbroker timezone without independenttimezoneverification."
+  ],
+  "quality": {
+    "duplicates": 0,
+    "off_hour_timestamp_rows": 0,
+    "unsorted_transitions": 0,
+    "clock_incomplete_bar_rows": 0,
+    "pre_2025_warmup_hourly_bars": 1330,
+    "as_of_utc": "2026-10-04T12:24:22.851925+00:00",
+    "price_median_1h_body_pips": 4.154399999998226,
+    "price_median_1h_range_pips": 9.746500000000768
+  }
+}

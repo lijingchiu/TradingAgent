@@ -1,0 +1,209 @@
+name: Paper trader and monitoring dashboard
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      publish_pages:
+        description: 'Attempt optional interactive GitHub Pages deployment'
+        type: boolean
+        default: false
+  schedule:
+    # Hourly UTC polling; forex session and freshness are checked by the app.
+    # Every-five-minute polling in a private repo can exhaust runner quotas.
+    # GitHub may delay/drop scheduled jobs; this is a polling cadence, not an SLA.
+    - cron: '2 * * * *'
+
+concurrency:
+  group: paper-trader-${{ github.repository }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    outputs:
+      tick_outcome: ${{ steps.tick.outcome }}
+      monitor_url: ${{ steps.monitor.outputs.url }}
+    steps:
+      - name: Check out application
+        uses: actions/checkout@v4
+        with:
+          path: app
+
+      - name: Locate durable paper ledger
+        id: ledger
+        working-directory: app
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +e
+          git ls-remote --exit-code --heads origin refs/heads/paper-state > "$RUNNER_TEMP/ledger-reference"
+          result=$?
+          set -e
+          if [ "$result" = 0 ]; then
+            echo 'ref=paper-state' >> "$GITHUB_OUTPUT"
+            echo 'exists=true' >> "$GITHUB_OUTPUT"
+          elif [ "$result" = 2 ]; then
+            echo "ref=$GITHUB_SHA" >> "$GITHUB_OUTPUT"
+            echo 'exists=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'Cannot verify existing paper-state branch; refusing ledger reset.' >&2
+            exit "$result"
+          fi
+
+      - name: Check out ledger separately
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.ledger.outputs.ref }}
+          path: ledger
+
+      - name: Restore paper account and events
+        if: steps.ledger.outputs.exists == 'true'
+        working-directory: app
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -f ../ledger/state/account.json ]; then
+            echo 'Existing ledger has no account.json; refusing to initialize a replacement account.' >&2
+            exit 1
+          fi
+          mkdir -p state
+          cp -a ../ledger/state/. state/
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install declared dependencies
+        working-directory: app
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f requirements.txt ]; then
+            python -m pip install -r requirements.txt
+          fi
+
+      - name: Verify risk and strategy behavior
+        working-directory: app
+        run: python -m unittest discover -s tests -v
+
+      - name: Process one paper observation
+        id: tick
+        continue-on-error: true
+        working-directory: app
+        run: python -m trading_agent.cli paper-tick --state-dir state --web-dir web
+
+      - name: Report failed market-data observation
+        if: steps.tick.outcome == 'failure'
+        run: |
+          echo '::warning::Paper observation failed. The dashboard and ledger will retain the recorded error status.'
+          echo 'Market-data observation: FAILED. Publishing error status, not a successful market update.' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Generate monitoring snapshot
+        working-directory: app
+        run: python -m trading_agent.cli dashboard --state-dir state --web-dir web
+
+      - name: Persist account and event ledger
+        working-directory: ledger
+        shell: bash
+        env:
+          LEDGER_EXISTS: ${{ steps.ledger.outputs.exists }}
+        run: |
+          set -euo pipefail
+          if [ "$LEDGER_EXISTS" != true ]; then
+            git switch -c paper-state
+          fi
+          test -f ../app/state/account.json
+          mkdir -p state
+          cp -a ../app/state/. state/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --force -- state
+          if ! git diff --cached --quiet; then
+            git commit -m "Update paper ledger for run $GITHUB_RUN_ID"
+            git push origin HEAD:refs/heads/paper-state
+          fi
+
+      - name: Report authenticated monitoring URL
+        id: monitor
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request
+          api_url = 'https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY'] + '/contents/state/MONITOR.md?ref=paper-state'
+          request = urllib.request.Request(api_url, headers={
+              'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+              'Accept': 'application/vnd.github+json',
+              'User-Agent': 'TradingAgent-monitor-link',
+              'X-GitHub-Api-Version': '2022-11-28',
+          })
+          with urllib.request.urlopen(request, timeout=30) as response:
+              monitor = json.load(response)
+          url = monitor['html_url']
+          if not url.startswith('https://github.com/') or '\n' in url or '\r' in url:
+              raise RuntimeError('GitHub did not return a valid monitoring file URL')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('url=' + url + '\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('[TradingAgent monitoring snapshot](' + url + ')\n\n')
+              summary.write('This rendered Markdown monitor requires access to the private repository. Updates are polled hourly; inspect the recorded timestamp and data status.\n')
+          PY
+
+      - name: Upload dashboard snapshot
+        if: vars.PAGES_ENABLED == 'true' || (github.event_name == 'workflow_dispatch' && inputs.publish_pages)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/web
+
+  deploy:
+    needs: paper
+    if: vars.PAGES_ENABLED == 'true' || (github.event_name == 'workflow_dispatch' && inputs.publish_pages)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Existing sites use the per-run token. Automatic site creation needs
+          # a separately configured PAT/App token with Pages/admin permission.
+          token: ${{ secrets.PAGES_ADMIN_TOKEN || github.token }}
+          enablement: ${{ secrets.PAGES_ADMIN_TOKEN != '' }}
+
+      - name: Publish dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Report actual deployed URL
+        env:
+          DASHBOARD_URL: ${{ steps.deployment.outputs.page_url }}
+        run: echo "Dashboard URL reported by GitHub deployment $DASHBOARD_URL" >> "$GITHUB_STEP_SUMMARY"
+
+  data-health:
+    # Keep the workflow visibly failed on a failed observation while allowing
+    # the dashboard deployment to publish the diagnostic account state first.
+    needs: [paper, deploy]
+    if: always() && needs.paper.outputs.tick_outcome == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Preserve failed observation result
+        run: |
+          echo '::error::Paper observation failed; inspect the paper job and dashboard error status.'
+          exit 1

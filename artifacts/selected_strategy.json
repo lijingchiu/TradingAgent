@@ -1,0 +1,64 @@
+{
+  "config": {
+    "name": "rsi5_ema100_stop2_target1",
+    "bar_hours": 4,
+    "rsi_period": 2,
+    "rsi_entry": 5.0,
+    "ema_period": 100,
+    "trend_filter": "above",
+    "atr_period": 14,
+    "stop_atr": 2.0,
+    "target_atr": 1.0,
+    "max_days": 5,
+    "minimum_atr_pips": 3.0,
+    "pip_size": 0.0001
+  },
+  "instrument": "EURUSD",
+  "selection_eligible": false,
+  "selected_using": "development and validation only; diagnostic fallback because every candidate failed net-profit criteria",
+  "candidate_count": 440,
+  "data_sha256": "58bbb73a082b57186249e68796c9f968c4ab6e708cca765f2622fc8ee2742d54",
+  "final_start": "2025-03-15",
+  "initial_equity": 100000.0,
+  "paper_approved": false,
+  "gate_reasons": [
+    "No candidate passed development and validation requirements",
+    "Final holdout has fewer than 30 naturally closed trades"
+  ],
+  "final_summary": {
+    "initial_equity": 100000.0,
+    "ending_equity": 100008.61806809559,
+    "net_profit": 8.61806809558766,
+    "net_return": 8.61806809558766e-05,
+    "closed_trades": 25,
+    "eligible_trades": 25,
+    "wins": 19,
+    "win_rate": 0.76,
+    "win_rate_wilson_95": [
+      0.5656994004476144,
+      0.8850384226967327
+    ],
+    "profit_factor": 1.3689724322498376,
+    "total_commission": 5.0,
+    "total_carry": 0.0,
+    "max_account_drawdown_close_marks": 9.383729010358914e-05,
+    "max_trade_adverse_equity_fraction": 6.511285287293814e-05,
+    "risk_breaches": 0,
+    "terminal_liquidations": 0,
+    "rejected_entries": 0,
+    "first_bar": "2025-03-17T00:00:00+00:00",
+    "last_bar": "2026-10-02T16:00:00+00:00",
+    "total_spread_slippage_cost": 4.138799999998318,
+    "total_transaction_cost": 9.138799999998318,
+    "gross_mid_profit": 17.756868095605583,
+    "max_trade_peak_drawdown_equity_fraction": 6.511285287293814e-05
+  },
+  "cost_model": {
+    "spread_pips": 2.0,
+    "slippage_pips": 0.2,
+    "commission_bps": 0.35,
+    "minimum_commission": 0.1,
+    "carry_per_1000_per_day": 0.0,
+    "pip_size": 0.0001
+  }
+}

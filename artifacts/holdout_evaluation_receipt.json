@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "rsi5_ema100_stop2_target1",
+    "bar_hours": 4,
+    "rsi_period": 2,
+    "rsi_entry": 5.0,
+    "ema_period": 100,
+    "trend_filter": "above",
+    "atr_period": 14,
+    "stop_atr": 2.0,
+    "target_atr": 1.0,
+    "max_days": 5,
+    "minimum_atr_pips": 3.0,
+    "pip_size": 0.0001
+  },
+  "final_sha256": "1ab3df7487a66485704d6c9fe83c46b62915881ebd73d1237d8fbd31d9a30290",
+  "final_source_file": "data/eurusd_yahoo_h1.csv",
+  "final_start": "2025-03-15",
+  "evaluated_at": "2026-10-04T12:31:54.533461+00:00"
+}
