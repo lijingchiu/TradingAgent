@@ -1,0 +1,373 @@
+{
+  "created_at_utc": "2026-10-04T14:06:11.954315+00:00",
+  "written_before_any_nq_directional_pnl": true,
+  "joint_directional_extension": {
+    "path": "artifacts/intraday/futures_directional_extension.json",
+    "sha256": "a5b0e9fb2b52796e05d071da5f9806cf9153477b432d67ad8b4bd31564fafb25"
+  },
+  "supplementary_reserved_protocol": {
+    "path": "artifacts/intraday/futures_additional_reserved_protocol.json",
+    "sha256": "f1f8446185c85fff4a06a5b491a2b35076b2454c680dda407b7bca3e95e520b7",
+    "scope": "Source QA only; apply same frozen full-session rules; no supplementary strategy features/counts/outcomes inspected before joint freeze"
+  },
+  "hypothesis": "Symmetric long/short trend momentum or trend pullback using one predeclared rule per completed bar; no direction chosen from future results",
+  "source": {
+    "path": "artifacts/intraday/nq/source/NQ_5min_20260120_20260415.csv",
+    "sha256": "053a99028da0675d828141e5082af9bfadc9c2c24cbc2052077fdc3df3525005",
+    "pinned_commit": "60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264",
+    "url": "https://raw.githubusercontent.com/axb0306/cme-futures-ohlc/60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264/NQ/NQ_5min_20260120_20260415.csv",
+    "instrument": "Actual NQ native M5, not MNQ proxy",
+    "price_side": "Last-trade OHLC, modeled mid proxy with assumed spread/slippage",
+    "timestamp_timezone": "Source-declared UTC; bar-opening label assumption independently unverified",
+    "historical_contract_identity": "Updater requests CON.F.US.ENQ.M26; initial backfill expiry/roll unverified",
+    "source_quality_receipt": "artifacts/intraday/nq/source_quality_receipt.json",
+    "source_quality_receipt_sha256": "195bae0ed9215ac9942f128cb9488aa77743e9e25ddf9eea6be29590a9f1eade"
+  },
+  "family": [
+    {
+      "name": "nq_m5_directional_h6_ema48_momentum_s40_t40",
+      "horizon": 6,
+      "ema_span": 48,
+      "style": "momentum",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_directional_h6_ema48_momentum_s40_t60",
+      "horizon": 6,
+      "ema_span": 48,
+      "style": "momentum",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h6_ema48_momentum_s60_t60",
+      "horizon": 6,
+      "ema_span": 48,
+      "style": "momentum",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h6_ema48_pullback_s40_t40",
+      "horizon": 6,
+      "ema_span": 48,
+      "style": "pullback",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_directional_h6_ema48_pullback_s40_t60",
+      "horizon": 6,
+      "ema_span": 48,
+      "style": "pullback",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h6_ema48_pullback_s60_t60",
+      "horizon": 6,
+      "ema_span": 48,
+      "style": "pullback",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h6_ema192_momentum_s40_t40",
+      "horizon": 6,
+      "ema_span": 192,
+      "style": "momentum",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_directional_h6_ema192_momentum_s40_t60",
+      "horizon": 6,
+      "ema_span": 192,
+      "style": "momentum",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h6_ema192_momentum_s60_t60",
+      "horizon": 6,
+      "ema_span": 192,
+      "style": "momentum",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h6_ema192_pullback_s40_t40",
+      "horizon": 6,
+      "ema_span": 192,
+      "style": "pullback",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_directional_h6_ema192_pullback_s40_t60",
+      "horizon": 6,
+      "ema_span": 192,
+      "style": "pullback",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h6_ema192_pullback_s60_t60",
+      "horizon": 6,
+      "ema_span": 192,
+      "style": "pullback",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h24_ema48_momentum_s40_t40",
+      "horizon": 24,
+      "ema_span": 48,
+      "style": "momentum",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_directional_h24_ema48_momentum_s40_t60",
+      "horizon": 24,
+      "ema_span": 48,
+      "style": "momentum",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h24_ema48_momentum_s60_t60",
+      "horizon": 24,
+      "ema_span": 48,
+      "style": "momentum",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h24_ema48_pullback_s40_t40",
+      "horizon": 24,
+      "ema_span": 48,
+      "style": "pullback",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_directional_h24_ema48_pullback_s40_t60",
+      "horizon": 24,
+      "ema_span": 48,
+      "style": "pullback",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h24_ema48_pullback_s60_t60",
+      "horizon": 24,
+      "ema_span": 48,
+      "style": "pullback",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h24_ema192_momentum_s40_t40",
+      "horizon": 24,
+      "ema_span": 192,
+      "style": "momentum",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_directional_h24_ema192_momentum_s40_t60",
+      "horizon": 24,
+      "ema_span": 192,
+      "style": "momentum",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h24_ema192_momentum_s60_t60",
+      "horizon": 24,
+      "ema_span": 192,
+      "style": "momentum",
+      "stop_points": 60,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h24_ema192_pullback_s40_t40",
+      "horizon": 24,
+      "ema_span": 192,
+      "style": "pullback",
+      "stop_points": 40,
+      "target_points": 40
+    },
+    {
+      "name": "nq_m5_directional_h24_ema192_pullback_s40_t60",
+      "horizon": 24,
+      "ema_span": 192,
+      "style": "pullback",
+      "stop_points": 40,
+      "target_points": 60
+    },
+    {
+      "name": "nq_m5_directional_h24_ema192_pullback_s60_t60",
+      "horizon": 24,
+      "ema_span": 192,
+      "style": "pullback",
+      "stop_points": 60,
+      "target_points": 60
+    }
+  ],
+  "signal_configuration_count": 24,
+  "disclosed_cost_operating_variants": 48,
+  "splits": {
+    "development": {
+      "start_inclusive": "2026-01-21",
+      "end_exclusive": "2026-02-14",
+      "sessions": 18
+    },
+    "validation": {
+      "start_inclusive": "2026-02-16",
+      "end_exclusive": "2026-02-28",
+      "sessions": 9
+    },
+    "final": {
+      "start_inclusive": "2026-04-01",
+      "end_exclusive": "2026-04-16",
+      "sessions": 9
+    }
+  },
+  "calendar": {
+    "timezone": "America/New_York",
+    "session_date": "NY date plus one at/after18:00",
+    "weekdays": "Monday through Friday session dates",
+    "exclude_all_UTC_and_session_March_rows_before_features": true,
+    "complete_sessions_only": "Exact276 native M5 opening timestamps18:00 through16:55; source calendar QA, independent of price outcomes",
+    "known_short_sessions_excluded": [
+      "2026-02-16",
+      "2026-04-03"
+    ],
+    "final_incomplete_after_March_removal_excluded": "2026-04-01",
+    "entry_execution_clock": "18:30 through16:15 inclusive",
+    "flat": "Completed16:40 signal exits16:45 open; execution16:45 daily_exit also blocks entry",
+    "missing_flat_reference": "Evaluation blocked before any strategy P&L"
+  },
+  "signal": {
+    "long_common": "close[i]>EMA[i] AND EMA[i]>EMA[i-horizon]",
+    "short_common": "close[i]<EMA[i] AND EMA[i]<EMA[i-horizon]",
+    "momentum_long": "Additionally close[i]>close[i-horizon]",
+    "momentum_short": "Additionally close[i]<close[i-horizon]",
+    "pullback_long": "Additionally close[i-1]<close[i-2] AND close[i]>close[i-1]",
+    "pullback_short": "Additionally close[i-1]>close[i-2] AND close[i]<close[i-1]",
+    "signal_encoding": "+1 long, -1 short, 0 flat; common regimes mutually exclusive",
+    "completed_bar": "Every EMA/return/confirmation uses observations at or before completed signal bar i",
+    "EMA": "adjust=False, min_periods=span",
+    "warmup": "span+horizon consecutive observations:54/72/198/216 by configuration",
+    "reset": "Every non300second timestamp interval; no cross-maintenance/weekend/roll indicators",
+    "execution": "First next M5 open, signal maximum age300seconds; one position; no same-bar close/reopen",
+    "max_holding_bars": 12,
+    "max_holding_days": 1,
+    "stop_target": "Directional distances around input entry last-trade open; long stopbelow/targetabove, short stopabove/targetbelow",
+    "opening_gaps": "Actual observed open, unclipped",
+    "ambiguous_stop_and_target": "Adverse stop first",
+    "sample_end": "Include costs/P&L in account; exclude artificial exits from natural count/win rate"
+  },
+  "costs": {
+    "profiles": {
+      "conservative_bps_proxy": {
+        "spread_pips": 2,
+        "slippage_pips": 1,
+        "commission_bps": 0.35,
+        "minimum_commission": 0.1,
+        "carry_per_1000_per_day": 0.0,
+        "pip_size": 0.25
+      },
+      "operating_fixed_5_per_side": {
+        "spread_pips": 2,
+        "slippage_pips": 1,
+        "commission_bps": 0,
+        "minimum_commission": 5,
+        "carry_per_1000_per_day": 0.0,
+        "pip_size": 0.25
+      }
+    },
+    "flat_fee_per_contract_per_side": {
+      "operating_fixed_5_per_side": 5.0,
+      "conservative_bps_proxy": null
+    },
+    "operating_profile": "operating_fixed_5_per_side",
+    "last_trade_proxy_side_friction": "+/-0.50points from halfspread0.25 + each-side slip0.25; quartertick valid",
+    "long": "Buy entry+0.50, sell exit-0.50",
+    "short": "Sell entry-0.50, buy-cover exit+0.50",
+    "fee_guard": "Exactly1 NQ contract; flat USD5 each side=USD10 roundtrip",
+    "broker_fee_schedule_verified": false,
+    "final_stress_if_later_authorized": [
+      1.5,
+      2.0
+    ],
+    "stress_rounding": "Round side friction up to0.25tick; scale every explicit flat or bps fee"
+  },
+  "risk": {
+    "virtual_initial_equity_usd": 80000000.0,
+    "contract_multiplier_usd_per_point": 20,
+    "contracts_per_trade": 1,
+    "numeric_notional_reserve_cap_fraction": 0.008,
+    "reserve_cap_basis": "0.8percent of min(initial equity,current entry equity); reference reserve is conservative for both sides",
+    "one_position": true,
+    "no_margin_or_financing_schedule_verified": true,
+    "modeled_trade_checks": "Adverse excursion and peak-to-trough drawdown versus entry equity<=1percent, using a conservative OHLC envelope",
+    "intrabar_risk_envelope": "Reachable favorable pre-exit mark capped at target, then adverse before modeled exit; conservative envelope, not observed tick ordering",
+    "modeled_breach": "Preserve uncapped loss/risk record; halt subsequent new entries after a modeled1percent breach",
+    "short_all_path_liability": "UNBOUNDED: notional reserve or observed stops do not cap all possible upward gaps",
+    "derivative_all_path_loss_bound_established": false,
+    "paper_live_activation": false
+  },
+  "selection": {
+    "financial_eligibility_each_split": "Natural count>0;net win fraction>=0.50;positive natural and account net;zero observed1percent breaches",
+    "rank_cost_profile": "operating_fixed_5_per_side",
+    "score": "Minimum development/validation MEAN NATURAL net P&L / initial equity",
+    "tie_breakers": [
+      "Maximum validation total net return",
+      "Stable candidate name ascending"
+    ],
+    "projection": "Natural selection count*36/27 from27 selection to36 total complete sessions; threshold375 for projected500",
+    "projection_is_observed_final_count": false,
+    "projection_is_rank_filter": false,
+    "joint_rank_scope": "All financially eligible OPERATING rows across assets; projection retained as a separate diagnostic",
+    "literal_user_count": "500 TOTAL natural closes from same frozen strategy across declared splits",
+    "preferred_final_independent_natural_count": 500,
+    "no_adaptive_params": true,
+    "final_requires_immutable_joint_selection_and_root_authorization": true
+  },
+  "statistics": {
+    "separate_direction_aware_module": "research/futures_statistics.py; no inverted prices or units passed into old long-only statistics",
+    "wilson": "95percent descriptive independence-assumption interval",
+    "final_bootstrap_if_later_authorized": {
+      "unit": "UTC daily realized account returns using previous realized equity, zero calendar days retained",
+      "block_calendar_days": 7,
+      "replications": 10000,
+      "seed": 20261004,
+      "sensitivity_blocks": [
+        14,
+        28
+      ]
+    }
+  },
+  "software": {
+    "directional_sha256": "508f04420fd88b4e8c9e22113211cf9987879d9f805209baac3845eb040dde66",
+    "shared_nq_study_sha256": "884ebb7ea8fdbf1a9b75734d07fccb15d6525ad5c3b4319997b1a50e06937809",
+    "shared_nq_momentum_sha256": "02db9a2cb4849380592e4c88f25db9aaa96c1bddc470731bcf2e8c0bfe6de2cd",
+    "futures_engine_sha256": "1e4b5fb5fbfedeb7db0a58ef5ea52e0f0d166d006f1a776bc875083f2e8fc657",
+    "futures_statistics_sha256": "ee87b05791d44c746eb2f43b58c1483cba90c993931c6c3453aacda1183389c8"
+  },
+  "interfaces": {
+    "engine": "(timestamps, opens, highs, lows, closes, direction_signals, stop_distances, target_distances, *, contract_multiplier: 'float', initial_equity: 'float', costs: 'CostModel' = CostModel(spread_pips=2, slippage_pips=1, commission_bps=0.35, minimum_commission=0.1, carry_per_1000_per_day=0.0, pip_size=0.25), flat_fee_per_contract_per_side: 'float | None' = None, max_holding_bars: 'int' = 12, max_holding_days: 'int' = 5, exit_signals=None, daily_exit=None, entry_allowed=None, max_signal_age_seconds: 'int' = 300, start_index: 'int' = 0, end_index: 'int | None' = None, include_trades: 'bool' = True, include_equity_curve: 'bool' = False) -> 'dict[str, Any]'",
+    "statistics": "(trades: 'Iterable[Any]', terminal_reason: 'str' = 'sample_end') -> 'dict[str, Any]'"
+  },
+  "limitations": [
+    "Research only; no broker/live/paper gate activation.",
+    "Short liabilities are unbounded across possible future paths; observed<=1percent is not a mathematical future guarantee.",
+    "Third-party last-trade source, historical expiry, timestamp label, bid/ask fills and broker fees remain independently unverified.",
+    "Virtual equity is an exposure-model parameter and does not certify an exchange margin account.",
+    "Earlier48 NQ signal configs/96 cost variants remain unchanged; this adds24 configs/48 variants."
+  ]
+}

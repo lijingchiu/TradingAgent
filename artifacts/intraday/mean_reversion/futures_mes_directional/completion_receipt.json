@@ -1,0 +1,29 @@
+{
+  "completed_at_utc": "2026-10-04T14:06:45.240003+00:00",
+  "unique_configurations": 24,
+  "strategy_cost_variants": 48,
+  "financial_criteria_pass_count": 0,
+  "eligible_count": 0,
+  "highest_same_strategy_actual_natural_trades": 936,
+  "all_development_nets_negative": true,
+  "all_validation_nets_negative": true,
+  "risk_breaches": 0,
+  "maximum_sample_adverse_loss_fraction": 1.3810493212743042e-05,
+  "maximum_sample_peak_drawdown_fraction": 2.4006392902429918e-05,
+  "reserved_final": "UNTOUCHED; no strategy features, counts or PnL",
+  "paper_activation_authorized": false,
+  "derivative_all_path_loss_bound_established": false,
+  "report_sha256": "d7396a4a6c90fc071fedb0f2e29d94c3fc488e50b38c2cc0e688ae87532079c8",
+  "preregistration_sha256": "cf614bac474eb5f858831dc854e574ddb832be727eb94b19622feca91f9c34e0",
+  "frozen_code_sha256": {
+    "research/intraday_mean_reversion/futures_mes_directional.py": "d35a93e0793269e44e49dd34dc38d46422d372ad054cff6f5ca9f075d89c5d02",
+    "research/intraday_mean_reversion/futures_mes.py": "6a31df9676490a8c5f437416ff540f2f3c057bb9f6535b7cc28070fd83ab62e8",
+    "research/intraday_mean_reversion/futures_mes_momentum.py": "c4771fcdfa2d561e10ca49635ed19b070b713b5953f9cfcdc4d2ee62050a3a2e",
+    "research/futures_engine.py": "1e4b5fb5fbfedeb7db0a58ef5ea52e0f0d166d006f1a776bc875083f2e8fc657",
+    "research/futures_statistics.py": "ee87b05791d44c746eb2f43b58c1483cba90c993931c6c3453aacda1183389c8",
+    "research/statistics.py": "be7955a5a052134c69f2b6aa9a16d286ab335cd6fa7cdc23640238946b5f3590",
+    "trading_agent/risk.py": "ab2f04aa580466a95d3f433877dd58c060d1c3be65376c38fbc2a09012fe67c8",
+    "artifacts/intraday/futures_directional_extension.json": "a5b0e9fb2b52796e05d071da5f9806cf9153477b432d67ad8b4bd31564fafb25",
+    "artifacts/intraday/futures_momentum_calendar_clarification.json": "4ed4791de908050069d8c9dad53030a24ca8cda58f79bc21e014871e8990d32c"
+  }
+}

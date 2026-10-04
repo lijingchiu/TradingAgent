@@ -1,0 +1,28 @@
+{
+  "registered_at_utc": "2026-10-04T13:59:41.152311+00:00",
+  "purpose": "Additional untouched reserved final source acquired before any directional strategy PnL or April evaluation. A single frozen globally selected strategy must use unchanged signals/parameters/costs; do not evaluate other candidates here or add this after seeing April results.",
+  "source_repository": "moyger/futures-scalper-validation",
+  "source_revision": "999bad45ef8ab8bdfbbcc54e9b42ea359a5bcb7e",
+  "sources": [
+    {
+      "symbol": "MES",
+      "path": "data/real/MES_5min_real.csv",
+      "git_blob_sha": "5830e5d7828042cc79da7f69ac8513a9a14eda8f"
+    },
+    {
+      "symbol": "NQ",
+      "path": "data/real/NQ_5min_real.csv",
+      "git_blob_sha": "0bb3aa6e9772a5a2c76b9cdf81bc6ce86f67baa2"
+    }
+  ],
+  "provider_claim": "Publisher fetch_data.py requests Yahoo MES=F/NQ=F interval5m period60d. Download source code as evidence only; do not execute it or use synthetic bundledsample/trade_log/backtestoutputs.",
+  "allowed_inspection_before_freeze": "CSV hash,timezones,OHLC,tickgrid,volume,duplicates,expected completeness and calendar exclusions ONLY. No signals,trades,PnL,visualtrendreview.",
+  "planned_reserved_interval": [
+    "2026-07-01",
+    "2026-08-12"
+  ],
+  "exclusions": "AllJuneUTCorGlobexsession rows toexcludequarterlyrollmonth, complete276nativebar sessions only, excludeJuly1incompleteJune30UTCprefix andJuly3knownshortenedholiday andallpartiallastday/evenings outsideinterval. Exclusions registeredbeforeprices/PnL; additional source-quality exclusions only mechanical and receiptlogged.",
+  "timestamp_model": "Yahoo sourcebar-start assumptiondisclosed; timezoneconvertactualoffsetindexUTC/NY. No filling missingbars/updatingfromnewAPI to silentlychange sample.",
+  "evaluation_rule": "If and onlyif globalwinnerfinanciallypasses bothdevval andfrozenbeforeAprilperformance, evaluateSAMEwinner onApril9completefinalsessions andthislaterreservedsource; reporteachdistinctsource/intervalnaturalcounts, costs andnetperformance separately thentransparentpooledsame-strategy count. Requireeach finalsourcepositive net,>=50netwins,no1%measuredbreaches for qualification; no poolingfailedsourceaway. If sourceQCfails, do NOT use it, reportmissing500evidence. Do not evaluate final signalcounts for eligibility. No changingstrategy afteranyfinaloutcome.",
+  "limitations": "Yahoo continuousroot futuresnativecontractmapping/BBO/actualbrokercharges unverified, cannotcertifyliveexecutableexpectancy; shortallpathliabilityboundunestablished, noordergateactivation."
+}

@@ -1,0 +1,33 @@
+"""Pull real intraday futures bars from Yahoo into the shape data/loaders.py:load_csv expects.
+
+Yahoo serves at most ~60 days of 5-minute history, so re-running this on a later
+date produces a DIFFERENT window. The snapshot used for the validation report is
+committed under data/real/ with checksums in validation/runs/checksums.txt --
+verify against those before comparing numbers.
+"""
+from pathlib import Path
+import sys
+
+import pandas as pd
+import yfinance as yf
+
+OUT = Path("data/real")
+OUT.mkdir(parents=True, exist_ok=True)
+
+TARGETS = [("MNQ=F", "MNQ"), ("MES=F", "MES"), ("NQ=F", "NQ"), ("ES=F", "ES")]
+
+for yf_sym, name in TARGETS:
+    df = yf.download(yf_sym, interval="5m", period="60d", progress=False, auto_adjust=False)
+    if df is None or df.empty:
+        print(f"{name}: NO DATA", file=sys.stderr)
+        continue
+    if isinstance(df.columns, pd.MultiIndex):
+        df.columns = df.columns.get_level_values(0)
+    df.columns = [str(c).lower() for c in df.columns]
+    df = df[["open", "high", "low", "close", "volume"]].dropna()
+    df.index.name = "timestamp"
+    df = df[~df.index.duplicated(keep="first")].sort_index()
+    path = OUT / f"{name}_5min_real.csv"
+    df.to_csv(path)
+    print(f"{name}: {len(df)} bars, {df.index.normalize().nunique()} sessions, "
+          f"{df.index.min()} -> {df.index.max()} -> {path}")

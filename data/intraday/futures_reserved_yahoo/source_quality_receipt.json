@@ -1,0 +1,538 @@
+{
+  "checked_at_utc": "2026-10-04T14:02:40.221886+00:00",
+  "registered_protocol": "artifacts/intraday/futures_additional_reserved_protocol.json",
+  "protocol_sha256": "f1f8446185c85fff4a06a5b491a2b35076b2454c680dda407b7bca3e95e520b7",
+  "sources": [
+    {
+      "symbol": "MES",
+      "file": "data/intraday/futures_reserved_yahoo/MES_5min_real.csv",
+      "sha256": "1e8c6e042db41e48626dc441734848c49687932a4f4bfb4262e5d30e10edfc27",
+      "rows": 13835,
+      "first_timestamp": "2026-06-01T04:00:00+00:00",
+      "last_timestamp": "2026-08-11T23:45:00+00:00",
+      "invalid_ohlc": 0,
+      "off_tick_rows": 0,
+      "duplicates": 0,
+      "nonincreasing_timestamps": 0,
+      "off_native_grid": 0,
+      "zero_or_negative_volume": 44,
+      "sessions": [
+        {
+          "date": "2026-07-01",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": true,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-02",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-03",
+          "observations": 72,
+          "positive_volume_valid_observations": 71,
+          "complete_276": false,
+          "excluded_policy": true,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-06",
+          "observations": 277,
+          "positive_volume_valid_observations": 277,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-07",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-08",
+          "observations": 273,
+          "positive_volume_valid_observations": 272,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-09",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-10",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-13",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-14",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-15",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-16",
+          "observations": 274,
+          "positive_volume_valid_observations": 273,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-17",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-20",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-21",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-22",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-23",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-24",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-27",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-28",
+          "observations": 273,
+          "positive_volume_valid_observations": 272,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-29",
+          "observations": 274,
+          "positive_volume_valid_observations": 273,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-30",
+          "observations": 276,
+          "positive_volume_valid_observations": 275,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-31",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-03",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-04",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-05",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-06",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-07",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-10",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-11",
+          "observations": 275,
+          "positive_volume_valid_observations": 273,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        }
+      ],
+      "complete_eligible_sessions": 0,
+      "exclusions_are_source_quality_only": true,
+      "strategy_features_or_pnl_evaluated": false,
+      "source_limitations": [
+        "Yahoo continuousroot nativeexpiry/BBO/actualfees unverified",
+        "Publisher drops missing/duplicate rows before CSV; original rawAPI response absent",
+        "ExplicitNYoffset timestamps; modeledbar-start convention not independently certified",
+        "No syntheticsample or publisherbacktest log inspected"
+      ]
+    },
+    {
+      "symbol": "NQ",
+      "file": "data/intraday/futures_reserved_yahoo/NQ_5min_real.csv",
+      "sha256": "68718e2488bf0af3b9276f989a0c909055a5410cfa0ccafb004e107ac83e4193",
+      "rows": 13832,
+      "first_timestamp": "2026-06-01T04:00:00+00:00",
+      "last_timestamp": "2026-08-11T23:45:00+00:00",
+      "invalid_ohlc": 0,
+      "off_tick_rows": 0,
+      "duplicates": 0,
+      "nonincreasing_timestamps": 0,
+      "off_native_grid": 0,
+      "zero_or_negative_volume": 43,
+      "sessions": [
+        {
+          "date": "2026-07-01",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": true,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-02",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-03",
+          "observations": 72,
+          "positive_volume_valid_observations": 71,
+          "complete_276": false,
+          "excluded_policy": true,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-06",
+          "observations": 276,
+          "positive_volume_valid_observations": 276,
+          "complete_276": true,
+          "excluded_policy": false,
+          "eligible_source_session": true
+        },
+        {
+          "date": "2026-07-07",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-08",
+          "observations": 273,
+          "positive_volume_valid_observations": 272,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-09",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-10",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-13",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-14",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-15",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-16",
+          "observations": 274,
+          "positive_volume_valid_observations": 273,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-17",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-20",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-21",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-22",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-23",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-24",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-27",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-28",
+          "observations": 273,
+          "positive_volume_valid_observations": 272,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-29",
+          "observations": 274,
+          "positive_volume_valid_observations": 273,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-30",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-07-31",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-03",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-04",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-05",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-06",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-07",
+          "observations": 275,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-10",
+          "observations": 274,
+          "positive_volume_valid_observations": 274,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        },
+        {
+          "date": "2026-08-11",
+          "observations": 275,
+          "positive_volume_valid_observations": 273,
+          "complete_276": false,
+          "excluded_policy": false,
+          "eligible_source_session": false
+        }
+      ],
+      "complete_eligible_sessions": 1,
+      "exclusions_are_source_quality_only": true,
+      "strategy_features_or_pnl_evaluated": false,
+      "source_limitations": [
+        "Yahoo continuousroot nativeexpiry/BBO/actualfees unverified",
+        "Publisher drops missing/duplicate rows before CSV; original rawAPI response absent",
+        "ExplicitNYoffset timestamps; modeledbar-start convention not independently certified",
+        "No syntheticsample or publisherbacktest log inspected"
+      ]
+    }
+  ],
+  "strategy_features_or_pnl_evaluated": false
+}

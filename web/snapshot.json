@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T13:51:48.583835+00:00",
+  "generated_at": "2026-10-04T14:08:12.291284+00:00",
   "mode": "paper",
   "status": {
     "code": "validation_failed",
@@ -12533,7 +12533,7 @@
     "1% 是相對入場資金的損失上限；累積帳戶回撤及浮盈高點回撤另外揭露。"
   ],
   "intraday_research": {
-    "updated_at": "2026-10-04T13:51:48.005586+00:00",
+    "updated_at": "2026-10-04T14:08:11.623364+00:00",
     "status": "no_edge_blocked_source",
     "label": "短週期策略尚未通過驗證",
     "reason": "已完成多組真實5／15分鐘回測，尚未找到同時滿足至少500筆、淨勝率50%與扣成本獲利的已驗證策略。實際買賣報價確認仍缺完整年度資料。",
@@ -12542,8 +12542,8 @@
       "validation": "外匯2018–2021（部分2020–2021）；期貨2026-02-16至02-27",
       "final": "外匯2022-04-01至2024-09-30；期貨2026年4月完整交易日；均尚未評估"
     },
-    "parameter_variant_count": 522,
-    "source_evaluation_count": 566,
+    "parameter_variant_count": 618,
+    "source_evaluation_count": 662,
     "diagnostic_evaluation_count": 29,
     "untuned_control_count": 30,
     "count_note": "策略／標的／週期／資金／費用情境組合計一次；相同組合的不同來源確認另計。期貨費用情境分開計數，修復後重跑不重複當作新參數。交易筆數與試驗數分開。",
@@ -12833,7 +12833,7 @@
           "currency": "USD",
           "split": "開發＋選擇驗證（同一策略）",
           "initial_equity": 5000000.0,
-          "explanation": "交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
+          "explanation": "交易最多的單一配置診斷，非選定策略；原比例費用假設；期貨資料、費用及風險模型尚有未驗證限制。",
           "cost_profile": "conservative_bps_proxy"
         },
         "report_paths": [
@@ -12853,13 +12853,13 @@
         "diagnostic": {
           "name": "nq_m5_w6_z1_none_s20_t20",
           "trade_count": 566,
-          "win_rate": 0.4381625441696113,
-          "net_profit": -57547.528775,
+          "win_rate": 0.43992932862190814,
+          "net_profit": -43175.0,
           "currency": "USD",
           "split": "開發＋選擇驗證（同一策略）",
           "initial_equity": 80000000.0,
-          "explanation": "交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
-          "cost_profile": "conservative_bps_proxy"
+          "explanation": "交易最多的單一配置診斷，非選定策略；每口每側USD5假設費用；期貨資料、費用及風險模型尚有未驗證限制。",
+          "cost_profile": "operating_fixed_5_per_side"
         },
         "report_paths": [
           "nq/development_report.json"
@@ -12878,13 +12878,13 @@
         "diagnostic": {
           "name": "mes_momentum_h6_ema48_momentum_stop8_target8",
           "trade_count": 466,
-          "win_rate": 0.44635193133047213,
-          "net_profit": -4370.63293125,
+          "win_rate": 0.4334763948497854,
+          "net_profit": -5105.25,
           "currency": "USD",
           "split": "開發＋選擇驗證（同一策略）",
           "initial_equity": 5000000.0,
-          "explanation": "交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
-          "cost_profile": "proportional_conservative"
+          "explanation": "交易最多的單一配置診斷，非選定策略；每口每側USD2假設費用；期貨資料、費用及風險模型尚有未驗證限制。",
+          "cost_profile": "flat2_operating_assumption"
         },
         "report_paths": [
           "mean_reversion/futures_mes_momentum/development_report.json"
@@ -12903,16 +12903,66 @@
         "diagnostic": {
           "name": "nq_m5_momentum_h6_ema48_positive_momentum_s40_t40",
           "trade_count": 440,
-          "win_rate": 0.45454545454545453,
-          "net_profit": -46873.595525,
+          "win_rate": 0.4590909090909091,
+          "net_profit": -35705.0,
           "currency": "USD",
           "split": "開發＋選擇驗證（同一策略）",
           "initial_equity": 80000000.0,
-          "explanation": "交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
-          "cost_profile": "conservative_bps_proxy"
+          "explanation": "交易最多的單一配置診斷，非選定策略；每口每側USD5假設費用；期貨資料、費用及風險模型尚有未驗證限制。",
+          "cost_profile": "operating_fixed_5_per_side"
         },
         "report_paths": [
           "nq_momentum/development_report.json"
+        ],
+        "note": "費用情境分開計数；同一策略交易不重複合計。原生5分鐘供應商成交資料，非已驗證買賣報價或合約轉倉證明。"
+      },
+      {
+        "name": "微型標普雙向趨勢",
+        "symbol": "MES",
+        "timeframes": [
+          "5m"
+        ],
+        "trials": 48,
+        "source_evaluations": 48,
+        "status": "未通過",
+        "diagnostic": {
+          "name": "mes_directional_h6_ema48_momentum_stop8_target8",
+          "trade_count": 936,
+          "win_rate": 0.44551282051282054,
+          "net_profit": -10105.25,
+          "currency": "USD",
+          "split": "開發＋選擇驗證（同一策略）",
+          "initial_equity": 5000000.0,
+          "explanation": "交易最多的單一配置診斷，非選定策略；每口每側USD2假設費用；期貨資料、費用及風險模型尚有未驗證限制。",
+          "cost_profile": "flat2_operating_assumption"
+        },
+        "report_paths": [
+          "mean_reversion/futures_mes_directional/development_report.json"
+        ],
+        "note": "費用情境分開計数；同一策略交易不重複合計。原生5分鐘供應商成交資料，非已驗證買賣報價或合約轉倉證明。"
+      },
+      {
+        "name": "那斯達克雙向趨勢",
+        "symbol": "NQ",
+        "timeframes": [
+          "5m"
+        ],
+        "trials": 48,
+        "source_evaluations": 48,
+        "status": "未通過",
+        "diagnostic": {
+          "name": "nq_m5_directional_h6_ema48_momentum_s40_t40",
+          "trade_count": 902,
+          "win_rate": 0.4844789356984479,
+          "net_profit": -41170.0,
+          "currency": "USD",
+          "split": "開發＋選擇驗證（同一策略）",
+          "initial_equity": 80000000.0,
+          "explanation": "交易最多的單一配置診斷，非選定策略；每口每側USD5假設費用；期貨資料、費用及風險模型尚有未驗證限制。",
+          "cost_profile": "operating_fixed_5_per_side"
+        },
+        "report_paths": [
+          "nq_directional/development_report.json"
         ],
         "note": "費用情境分開計数；同一策略交易不重複合計。原生5分鐘供應商成交資料，非已驗證買賣報價或合約轉倉證明。"
       }
@@ -12951,7 +13001,9 @@
       "mean_reversion/futures_mes/development_report.json": "d581d0d373f59558b28f8a253526a4e4df3a36f288eeade04110cf205ebed0fa",
       "nq/development_report.json": "f2d4bce11e35cf2b7f578914deb36b40fc9f6aaab64c0e6d3f3a72f8aefba99b",
       "mean_reversion/futures_mes_momentum/development_report.json": "2e6aa69402ae58743cd8519947905785be60167e38ccef09016c43b984d638ca",
-      "nq_momentum/development_report.json": "4ed53373e819473174f13323f34ae32bbfae57509d2b52ce394ab9136e45203d"
+      "nq_momentum/development_report.json": "4ed53373e819473174f13323f34ae32bbfae57509d2b52ce394ab9136e45203d",
+      "mean_reversion/futures_mes_directional/development_report.json": "d7396a4a6c90fc071fedb0f2e29d94c3fc488e50b38c2cc0e688ae87532079c8",
+      "nq_directional/development_report.json": "8eda7f84b7c3951e1151a88724c49135f9f301ab5ca2d15cc0fd057d7183678d"
     }
   }
 }

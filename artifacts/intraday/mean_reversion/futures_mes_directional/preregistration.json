@@ -1,0 +1,299 @@
+{
+  "registered_before_any_directional_strategy_pnl": true,
+  "joint_directional_extension_sha256": "a5b0e9fb2b52796e05d071da5f9806cf9153477b432d67ad8b4bd31564fafb25",
+  "calendar_clarification_sha256": "4ed4791de908050069d8c9dad53030a24ca8cda58f79bc21e014871e8990d32c",
+  "family": [
+    {
+      "name": "mes_directional_h6_ema48_momentum_stop8_target8",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_directional_h6_ema48_momentum_stop8_target12",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h6_ema48_momentum_stop12_target12",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h6_ema48_pullback_stop8_target8",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_directional_h6_ema48_pullback_stop8_target12",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h6_ema48_pullback_stop12_target12",
+      "horizon": 6,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h6_ema192_momentum_stop8_target8",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_directional_h6_ema192_momentum_stop8_target12",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h6_ema192_momentum_stop12_target12",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h6_ema192_pullback_stop8_target8",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_directional_h6_ema192_pullback_stop8_target12",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h6_ema192_pullback_stop12_target12",
+      "horizon": 6,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h24_ema48_momentum_stop8_target8",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_directional_h24_ema48_momentum_stop8_target12",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h24_ema48_momentum_stop12_target12",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "momentum",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h24_ema48_pullback_stop8_target8",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_directional_h24_ema48_pullback_stop8_target12",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h24_ema48_pullback_stop12_target12",
+      "horizon": 24,
+      "ema_period": 48,
+      "style": "pullback",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h24_ema192_momentum_stop8_target8",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_directional_h24_ema192_momentum_stop8_target12",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h24_ema192_momentum_stop12_target12",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "momentum",
+      "stop_points": 12,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h24_ema192_pullback_stop8_target8",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 8
+    },
+    {
+      "name": "mes_directional_h24_ema192_pullback_stop8_target12",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 8,
+      "target_points": 12
+    },
+    {
+      "name": "mes_directional_h24_ema192_pullback_stop12_target12",
+      "horizon": 24,
+      "ema_period": 192,
+      "style": "pullback",
+      "stop_points": 12,
+      "target_points": 12
+    }
+  ],
+  "unique_configurations": 24,
+  "cost_profiles": {
+    "flat2_operating_assumption": {
+      "costs": {
+        "pip_size": 0.25,
+        "spread_pips": 2.0,
+        "slippage_pips": 1.0,
+        "commission_bps": 0.0,
+        "minimum_commission": 0.1,
+        "carry_per_1000_per_day": 0.0
+      },
+      "flat_fee_per_contract_per_side": 2.0
+    },
+    "legacy_proportional_035bps_sensitivity": {
+      "costs": {
+        "pip_size": 0.25,
+        "spread_pips": 2.0,
+        "slippage_pips": 1.0,
+        "commission_bps": 0.35,
+        "minimum_commission": 0.1,
+        "carry_per_1000_per_day": 0.0
+      },
+      "flat_fee_per_contract_per_side": null
+    }
+  },
+  "strategy_cost_variants": 48,
+  "source_file": "artifacts/intraday/mean_reversion/futures_mes/source/MES_5min_20260120_20260415.csv",
+  "source_sha256": "7f051702bc80ea670b58645f12b6ce6cc89ff50cd982aec766cb4630937e283e",
+  "source_commit": "60abd3fb6369c6ce0b6a4a65b0f2562fc96b1264",
+  "source_price_kind": "ActualLAST_TRADE OHLCV vendorMESclaim, UTC declared; assumedMIDexecution proxy, notobservedMID/BBO. Backfill nativecontract identity unverified.",
+  "directional_rules": {
+    "long_common": "Completed close>EMA AND EMA[i]>EMA[i-horizon]",
+    "short_common": "Completed close<EMA AND EMA[i]<EMA[i-horizon]",
+    "momentum": "Completed horizonreturn positive forlong /negative forshort",
+    "pullback": "Prior1bar completedreturn opposite trend, current completed1barreturn in trend direction",
+    "causality": "Direction selected by samefixedrule eachcompletedbar, no posthoc globalassetdirection. Exactlyoneposition total; no samebar re-entry; signal i-1 executesactualnativeadjacentquote i.",
+    "features": "EMA/returns warmup reset on every non300secobservedgap and eachsplit; noMarch or incomplete-session featureinput"
+  },
+  "dates": {
+    "development_globex": [
+      "2026-01-21",
+      "2026-02-14"
+    ],
+    "validation_globex": [
+      "2026-02-16",
+      "2026-02-28"
+    ],
+    "reserved_final_globex": [
+      "2026-04-01",
+      "2026-04-16"
+    ]
+  },
+  "complete_session_bar_count": 276,
+  "exclusions": {
+    "all_utc_months": [
+      3
+    ],
+    "all_globex_months": [
+      3
+    ],
+    "shortened_dates": [
+      "2026-02-16",
+      "2026-04-03"
+    ],
+    "policy_incomplete_april1": "EntireApr1Globexsessionexcluded becauseMarch31UTCprefixforbidden; noApr1warmup",
+    "incomplete_native_sessions": "Discardentiresession beforefeatures ifanyof276native5minslots absent/extra"
+  },
+  "timing": {
+    "completed_signal_availability": "Rawbarstart+300sec; allowedNY18:30through16:15",
+    "flat_deadline": "Native16:40completedbar gives exit atactual16:45quote; exactpairadjacent300secs verified",
+    "holding_bars": 12,
+    "holding_calendar_days": 1,
+    "signal_age_seconds": 300
+  },
+  "initial_virtual_equity_usd": 5000000.0,
+  "contract_multiplier_usd_per_point": 5,
+  "exact_contracts": 1,
+  "raw_positive_units": 5,
+  "tick_size_points": 0.25,
+  "notional_reserve_limit_entry_equity": 0.008,
+  "cost_status": "Bothfeeprofiles simulationassumptions, no verifiedbrokerallinfee schedule. LegacyMES.35bpscanbeCHEAPERthanflat2USD/side attheseprices; itissensitivity, notuniformhighercoststress. Spread2ticksfull+.25pointslipside creates.5pointfilloffseteachside.",
+  "pnl": "Genuine direction\u00d7positive multiplier\u00d7actual fillpricedifference\u2212positivefees. Actual quotes and units retained; negativeprice/negatedshortquote hacks prohibited. No lossclipping. New separatefuturesengine/statistics only, immutableoldlongcashFXengine notreused.",
+  "selection": "BothsplitTOTALandNATURALnetpositive, netwin>=50%, bothmeasuredMAEandpeakdrawdown<=1%;projectedtotalnaturalcount>=500 using36/27sessions ratio withoutAprilstrategyfeatures/counts. Rankminimumsplit meanNATURALnetPnL/initialequity, tiebreakvalidationtotalreturn thenstableasset/config/profile names. Globalwinnerselectionbelongsroot; nofinalpath inthisscript.",
+  "statistics": "Separate signed-direction futuresstatistics validatesgross-fill-cost-net. Reuseimmutablewilson/dailyreturns/7calendar-day bootstrap10kseed20261004 onlystathelpers; validation<14daysinsufficientconfidence recorded.",
+  "risk_limitations": "Short futures losses are unbounded under arbitrary actualprices; long futures negativeprices/variationmargin also notcashownership. Reservednotional iscapitalallocation, NOTworstcase lossproof. Historical1%riskmeasurements only, no production/paperactivation.",
+  "final": "UNTOUCHED; noApril indicators/counts/PnL",
+  "old_trials": "Alloldzscore/longmomentum receipts frozen; no earlier strategy was retuned",
+  "frozen_file_sha256": {
+    "research/intraday_mean_reversion/futures_mes_directional.py": "d35a93e0793269e44e49dd34dc38d46422d372ad054cff6f5ca9f075d89c5d02",
+    "research/intraday_mean_reversion/futures_mes.py": "6a31df9676490a8c5f437416ff540f2f3c057bb9f6535b7cc28070fd83ab62e8",
+    "research/intraday_mean_reversion/futures_mes_momentum.py": "c4771fcdfa2d561e10ca49635ed19b070b713b5953f9cfcdc4d2ee62050a3a2e",
+    "research/futures_engine.py": "1e4b5fb5fbfedeb7db0a58ef5ea52e0f0d166d006f1a776bc875083f2e8fc657",
+    "research/futures_statistics.py": "ee87b05791d44c746eb2f43b58c1483cba90c993931c6c3453aacda1183389c8",
+    "research/statistics.py": "be7955a5a052134c69f2b6aa9a16d286ab335cd6fa7cdc23640238946b5f3590",
+    "trading_agent/risk.py": "ab2f04aa580466a95d3f433877dd58c060d1c3be65376c38fbc2a09012fe67c8",
+    "artifacts/intraday/futures_directional_extension.json": "a5b0e9fb2b52796e05d071da5f9806cf9153477b432d67ad8b4bd31564fafb25",
+    "artifacts/intraday/futures_momentum_calendar_clarification.json": "4ed4791de908050069d8c9dad53030a24ca8cda58f79bc21e014871e8990d32c"
+  },
+  "code_freeze_time_utc": "2026-10-04T14:04:36.897191+00:00",
+  "independent_engine_audit_status": "Pending; do not execute source strategy PnL before independent audit READY"
+}

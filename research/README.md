@@ -78,6 +78,24 @@ These commands evaluate development/selection observations, not April futures
 or the 2022–2024 FX final. The remaining fixed families have CLI help and their
 own preregistrations under `artifacts/intraday`; model-specific commands and
 feature/label semantics are in [model instructions](intraday_model/README.md).
+The separate genuine-price bidirectional futures engine and its signed-cost
+statistics are in `futures_engine.py` and `futures_statistics.py`. They preserve
+the earlier long-only engine byte for byte. Their fixed selection runs are:
+
+```bash
+.venv/bin/python -m research.intraday_mean_reversion.futures_mes_directional --develop
+.venv/bin/python -m research.intraday_nq.directional evaluate-selection
+.venv/bin/python -m research.futures_reserved_quality
+```
+
+The last command checks pinned later CSV geometry/calendar coverage only;
+it does not evaluate strategy outcomes. The later snapshot has systematic
+missing midnight observations; strict complete-session filtering leaves
+MES zero and NQ one eligible session. It is not a broad independent dataset.
+Bidirectional contract collateral is not a maximum-loss guarantee; shorts,
+negative futures prices and variation-margin liabilities remain unbounded
+by this research model. Observed risk checks and breach halts are explicit.
+
 Do not run a reserved final candidate until one winner across eligible families
 has been frozen with source, code, parameters, costs and selection evidence.
 If no candidate qualifies, retain the untouched final and closed paper gate.

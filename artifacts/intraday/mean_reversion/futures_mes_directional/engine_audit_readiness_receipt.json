@@ -1,0 +1,11 @@
+{
+  "ready_at_utc": "2026-10-04T14:05:25.289458+00:00",
+  "independent_auditor": "/root/audit_bot",
+  "audit_status": "READY development/validation ONLY",
+  "preregistration_sha256": "cf614bac474eb5f858831dc854e574ddb832be727eb94b19622feca91f9c34e0",
+  "synthetic_tests_passed": 34,
+  "source_strategy_outcomes_evaluated_before_readiness": false,
+  "reserved_final_features_counts_pnl_evaluated": false,
+  "derivative_all_path_loss_bound_established": false,
+  "paper_activation_authorized": false
+}

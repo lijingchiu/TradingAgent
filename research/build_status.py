@@ -84,6 +84,8 @@ def build():
         ("那斯達克均值回歸", "NQ", "nq/development_report.json"),
         ("微型標普趨勢與動量", "MES", "mean_reversion/futures_mes_momentum/development_report.json"),
         ("那斯達克趨勢與動量", "NQ", "nq_momentum/development_report.json"),
+        ("微型標普雙向趨勢", "MES", "mean_reversion/futures_mes_directional/development_report.json"),
+        ("那斯達克雙向趨勢", "NQ", "nq_directional/development_report.json"),
     ]
     futures_final_untouched=True
     for name,symbol,path in future_definitions:
@@ -91,7 +93,9 @@ def build():
         report=load(path); candidates=rows(report)
         if not candidates: raise ValueError("Empty futures report")
         future_rows=[]
-        for row in candidates:
+        operating=[row for row in candidates if row.get("cost_profile") in
+                   ("flat2_operating_assumption","operating_fixed_5_per_side")]
+        for row in operating or candidates:
             runs=row["runs"]
             dev=runs["development"]["engine_summary"]
             val=runs["validation"]["engine_summary"]
@@ -101,7 +105,9 @@ def build():
             future_rows.append((natural,dict(name=row["config"]["name"],trade_count=natural,
                 win_rate=wins/natural if natural else 0,net_profit=net,currency="USD",
                 split="開發＋選擇驗證（同一策略）",initial_equity=dev["initial_equity"],
-                explanation="交易最多的單一配置診斷，非選定策略；期貨資料、費用及風險模型尚有未驗證限制。",
+                explanation=("交易最多的單一配置診斷，非選定策略；"+
+                             (f"每口每側USD{'2' if symbol=='MES' else '5'}假設費用；" if operating else "原比例費用假設；")+
+                             "期貨資料、費用及風險模型尚有未驗證限制。"),
                 cost_profile=row.get("cost_profile","conservative_bps_proxy"))))
         eligible=sum(bool(row.get("financial_eligible",row.get("passes_financial_criteria",False))) for row in candidates)
         families.append(dict(name=name,symbol=symbol,timeframes=["5m"],trials=len(candidates),
@@ -141,7 +147,9 @@ def build():
         lines.append(f'| {f["name"]} | {f["trials"]} | {d.get("trade_count","—")} | {win} | {amount} | {d.get("split","開發期")} | {f["status"]} |')
     lines.extend(["", "表中的高勝率案例是診斷例，不能視為選定策略。不同策略的交易不能合併湊成500笔。自然平倉筆數排除資料終點強制平倉，帳戶淨損益仍包含其費用與盈虧。",
                   "", "期貨使用固定版本TopstepX／ProjectX來源的原生MES／NQ M5成交OHLC，排除所有三月、已知短交易日及不完整時段，單一整口、當日平倉。開發18個Globex交易日、選擇驗證9日；均值回歸登記四月10日，新動量研究因UTC三月排除亦排除不完整四月1日，保留9個完整日。實际策略績效均未評估。初始資金MES500萬／NQ8,000萬美元是數值研究情境，並非模擬帳戶餘額。",
-                  "", "期貨價格按成交OHLC加成本模型處理，沒有宣稱實際BBO：完整價差2ticks、每側1tick滑價、原0.35bps每側費用；另在評估前登記每口每側MES2美元／NQ5美元費用情境。固定費用要求交易量恰為一口，沒有免除成本。佣金方案、K線標記起止約定與初始原生合約身分仍未完整驗證；此現金全額數值模型不能證明實際期貨負價格及變動保證金風險界線，不能据此啟用模擬交易。",
+                  "", "期貨價格按成交OHLC加成本模型處理，沒有宣稱實際BBO：完整價差2ticks、每側1tick滑價、原0.35bps每側費用；另在評估前登記每口每側MES2美元／NQ5美元費用情境。固定費用要求交易量恰為一口，沒有免除成本；比例費用在MES可能低於固定2美元，不能一概稱為更嚴成本壓力。佣金方案、K線標記起止約定與初始原生合約身分仍未完整驗證，不能據此啟用模擬交易。",
+                  "", "雙向期貨使用獨立真實價格引擎，依已完成趨勢決定多／空；正數口數與真實價格不反轉。單口抵押保留額≤初始與當前權益較小者0.8%，費用另外扣除，實際跳空損失不截斷。保守OHLC風險包絡量測單筆入場損失及浮盈高點回撤，超過1%後停止新入場。抵押額不是最大損失：做空、負價格與變動保證金的實際期貨損失界線尚未建立。",
+                  "", "[另段保留資料方案](futures_additional_reserved_protocol.json)在雙向候選績效前登記2026年7–8月Yahoo原生M5快照；僅做來源品質檢查。每日午夜缺漏及零成交量排除後，276根完整交易日只剩MES0日／NQ1日，不能聲稱取得廣泛500筆保留證據；沒有補造K線，也未計算此段策略結果。",
                   "", "完整官方開發資料包含523,528根M5及174,523根M15。使用真實1分鐘UTC BID OHLC，排除休市空成交量區塊，要求完整連續5／15筆才聚合；不以小時線補造。價格、時間、完整率和SHA-256存於data/intraday/*_provenance.json，原始價格可由下載程式重建。",
                   "", "固定基線含2點完整價差、每側0.2點滑價、每側0.35bps佣金與最低0.10美元。較大模擬資金變體保持相同費率，處理0.8%全額投入限制下的最低費用負擔。USD/JPY以JPY50,000,000起始、0.01JPY一點及JPY10最低每側費用獨立對帳，沒有把日圓淨利當成美元。",
                   "", "實際報價模式於現有ASK開盤價加滑價買入、BID扣滑價賣出；無ASK或報價交錯時禁止新增部位，保留BID退出行情。BID毛利減實際價差、滑價及佣金必須等於帳戶淨利。2015年259筆的獲利診斷不構成500筆驗證，週區塊信賴區間仍跨零。",

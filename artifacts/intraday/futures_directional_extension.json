@@ -1,0 +1,21 @@
+{
+  "registered_at_utc": "2026-10-04T13:57:15.586787+00:00",
+  "previous_joint_extension_sha256": "7ecedd427caa109213ca3da7b04b3ceac8682cb326d82154336d33048b2155e0",
+  "previous_results": "All completed long-only MES/NQ meanreversion and momentum families failed eligibility; previous results/engine frozen. NoAprilstrategyoutcomes inspected.",
+  "new_hypothesis": "A single causal bidirectional trend rule may capture rising or falling index sessions; short trades were absent from the failed long-only engine. Direction follows the completed-price regime, not a future known trend.",
+  "families": [
+    "MES M5 horizon6/24 \u00d7EMA48/192 \u00d7momentum/pullback \u00d7stops-targets8/8,8/12,12/12:24signals \u00d72feeprofiles",
+    "NQ M5 horizon6/24 \u00d7EMA48/192 \u00d7momentum/pullback \u00d7stops-targets40/40,40/60,60/60:24signals \u00d72feeprofiles"
+  ],
+  "signals": "LONG close[i]>EMA[i] and EMA[i]>EMA[i-h];SHORT close[i]<EMA[i] and EMA[i]<EMA[i-h]. Momentum additionally hreturnhastrenddirection; pullback prior1barreturnoppositetrend then currentcompleted1barreturntrenddirection. Completedcausalbar;exactnextnativeopen;oneposition;nosamebarreentry.",
+  "engine": "Separate research/futures_engine.py, genuinepositive actualobservedpriceOHLC andsignedcashPnL; no syntheticnegative/invertedprices. Old research/intraday_engine.py immutable. IndependentDecimalshortfill/accounting/riskfixturesbeforestrategyPnL; rawgaplossuncut,stopfirstonambiguousOHLC.",
+  "costs": "Source last-trade modeledquoteproxy2ticksfullspread plus1tickslippageperside. Onewholecontract multiplierMES5/NQ20. Operating MES2USD/NQ5USDpercontractperside configuredunverifiedcharges; original.35bps+minimum.1USDside sensitivitydisclosed, profilesfrozenbeforeoutcomes. No measuredactualBBO/brokerfeesclaims.",
+  "capital_and_risk": "MES5m/NQ80m initial numerical equity, reserveonewholecontractnotional<=.8%equity with fees. Shortpotentiallossunboundedandlongnegativefuturesprices/variationmarginboundsUNESTABLISHED. This is NOTthe fullypurchasedcashFX<=1%lossproof. OnlymeasureobservedpertradeMAE/peakDD and flaguncut1%breaches. Researchonly; productionentrygateclosed evenifsampleprofitable.",
+  "selection": "Require positive total+natural net and netwins>=50%, noobserved1%MAE/peakDDbreaches BOTH devandval; rankmaximummin(splitmean naturalnetPnL/initialequity), tievalidationtotalnetreturn/stableassetconfigname. ConsiderALLeligiblefixedoperatingprofile rows acrossassetfamilies, neverassetlocalwinneronly. Legacyproportionalfee sensitivitydisclosed separately; its relative expense varies by asset. FreezeONEglobalwinner beforeanyAprilstrategyoutcome/count/features.",
+  "splits": "Samecomplete276barGlobexsessions Jan21-Feb13development18days /Feb16-Feb27selection9days afterFeb16holidayexclusion. ExcludeallUTCMarchandMarchsessions; Apr1incompleteprefixandApr3shortenedexcluded. NinecompleteAprreservedfinalsessions. NoAprilstrategyfeatures/count/outcomes beforefreeze.",
+  "count": "Samefrozenstrategy>=500total naturalclosedtrades; dev/val/finalcountsseparate; no cross-config/profile/tradepooling. Devvalcount\u00d736/27 projectionexplicitlyNOTobservedfinalcount. Do notcountsample_endasnaturalbutincludeitsP&L/feesinaccount.",
+  "final_stress": "If oneeligiblewinnerfrozen, preregisterexactoperating1.5x/2xfrictionandfees forsamewinner alongwithoriginalconservativeprofile; evaluatefinaloncematchingfrozenmanifest, no retuning fromfailedfinal.",
+  "fx_final": "2022-04through2024-09unchangedanduntouched.",
+  "pre_outcome_clarification_at_utc": "2026-10-04T13:59:04.114537+00:00",
+  "fee_profile_clarification": "Original.35bps is a legacy proportional fee sensitivity, not uniformly stricter than operating fixedfee. AtMESpriceabout7000, .35bps\u00d7$5multiplier isabout$1.225/side, belowconfigured$2/side. NQproportionalfeeabout$17.5 exceedsfixed$5/side. Predeclare1.5x/2xoperatingfriction+fee stress for frozenwinner; neverchoose costlabel from nicest outcome."
+}
