@@ -1,0 +1,290 @@
+[
+  {
+    "feature": "atr_pips",
+    "development_bin": "(3.1990000000000003, 5.23]",
+    "trades": 111,
+    "stop_rate": 0.15315315315315314,
+    "win_rate": 0.6216216216216216,
+    "mean_net_pips": -1.609797855908313,
+    "net_pnl": -100.92308472509885
+  },
+  {
+    "feature": "atr_pips",
+    "development_bin": "(5.23, 5.995]",
+    "trades": 110,
+    "stop_rate": 0.1,
+    "win_rate": 0.6,
+    "mean_net_pips": -0.39799537741895724,
+    "net_pnl": -24.005893623272783
+  },
+  {
+    "feature": "atr_pips",
+    "development_bin": "(5.995, 6.944]",
+    "trades": 110,
+    "stop_rate": 0.05454545454545454,
+    "win_rate": 0.6545454545454545,
+    "mean_net_pips": 0.09722438294842946,
+    "net_pnl": 5.797793420429318
+  },
+  {
+    "feature": "atr_pips",
+    "development_bin": "(6.944, 17.741]",
+    "trades": 111,
+    "stop_rate": 0.08108108108108109,
+    "win_rate": 0.6216216216216216,
+    "mean_net_pips": -0.20296394303222168,
+    "net_pnl": -9.601368022480663
+  },
+  {
+    "feature": "atr_fast_slow_ratio",
+    "development_bin": "(0.717, 0.933]",
+    "trades": 111,
+    "stop_rate": 0.15315315315315314,
+    "win_rate": 0.5855855855855856,
+    "mean_net_pips": -1.4002507337761099,
+    "net_pnl": -86.96586309470739
+  },
+  {
+    "feature": "atr_fast_slow_ratio",
+    "development_bin": "(0.933, 1.014]",
+    "trades": 110,
+    "stop_rate": 0.08181818181818182,
+    "win_rate": 0.6363636363636364,
+    "mean_net_pips": -0.6882118671786194,
+    "net_pnl": -42.79671651969767
+  },
+  {
+    "feature": "atr_fast_slow_ratio",
+    "development_bin": "(1.014, 1.103]",
+    "trades": 110,
+    "stop_rate": 0.10909090909090909,
+    "win_rate": 0.6090909090909091,
+    "mean_net_pips": -1.0664569145915845,
+    "net_pnl": -64.73633285193574
+  },
+  {
+    "feature": "atr_fast_slow_ratio",
+    "development_bin": "(1.103, 2.137]",
+    "trades": 111,
+    "stop_rate": 0.04504504504504504,
+    "win_rate": 0.6666666666666666,
+    "mean_net_pips": 1.0282885438712908,
+    "net_pnl": 65.76635951591781
+  },
+  {
+    "feature": "ema_slope_atr",
+    "development_bin": "(-2.8129999999999997, -0.704]",
+    "trades": 111,
+    "stop_rate": 0.07207207207207207,
+    "win_rate": 0.6486486486486487,
+    "mean_net_pips": 0.7134366327021442,
+    "net_pnl": 45.28855405213092
+  },
+  {
+    "feature": "ema_slope_atr",
+    "development_bin": "(-0.704, -0.00527]",
+    "trades": 110,
+    "stop_rate": 0.12727272727272726,
+    "win_rate": 0.6454545454545455,
+    "mean_net_pips": -0.9990643075689686,
+    "net_pnl": -61.10937585401194
+  },
+  {
+    "feature": "ema_slope_atr",
+    "development_bin": "(-0.00527, 0.823]",
+    "trades": 110,
+    "stop_rate": 0.1,
+    "win_rate": 0.5909090909090909,
+    "mean_net_pips": -0.8629939025923095,
+    "net_pnl": -51.84913344321571
+  },
+  {
+    "feature": "ema_slope_atr",
+    "development_bin": "(0.823, 2.81]",
+    "trades": 111,
+    "stop_rate": 0.09009009009009009,
+    "win_rate": 0.6126126126126126,
+    "mean_net_pips": -0.9789768665437372,
+    "net_pnl": -61.06259770532627
+  },
+  {
+    "feature": "distance_from_ema_atr",
+    "development_bin": "(-14.437, -4.408]",
+    "trades": 111,
+    "stop_rate": 0.07207207207207207,
+    "win_rate": 0.6486486486486487,
+    "mean_net_pips": 0.8610437830330508,
+    "net_pnl": 54.12173297295193
+  },
+  {
+    "feature": "distance_from_ema_atr",
+    "development_bin": "(-4.408, -1.071]",
+    "trades": 110,
+    "stop_rate": 0.12727272727272726,
+    "win_rate": 0.6818181818181818,
+    "mean_net_pips": -0.6204283694739512,
+    "net_pnl": -36.571668745503054
+  },
+  {
+    "feature": "distance_from_ema_atr",
+    "development_bin": "(-1.071, 1.932]",
+    "trades": 110,
+    "stop_rate": 0.09090909090909091,
+    "win_rate": 0.5272727272727272,
+    "mean_net_pips": -1.4608653417934983,
+    "net_pnl": -89.34928841421454
+  },
+  {
+    "feature": "distance_from_ema_atr",
+    "development_bin": "(1.932, 9.37]",
+    "trades": 111,
+    "stop_rate": 0.0990990990990991,
+    "win_rate": 0.6396396396396397,
+    "mean_net_pips": -0.9093236103730318,
+    "net_pnl": -56.933328763657315
+  },
+  {
+    "feature": "zscore20",
+    "development_bin": "(-3.977, -2.105]",
+    "trades": 111,
+    "stop_rate": 0.0990990990990991,
+    "win_rate": 0.6036036036036037,
+    "mean_net_pips": -0.002558963031251309,
+    "net_pnl": 2.1677718309880145
+  },
+  {
+    "feature": "zscore20",
+    "development_bin": "(-2.105, -1.536]",
+    "trades": 110,
+    "stop_rate": 0.1,
+    "win_rate": 0.6727272727272727,
+    "mean_net_pips": 0.16872115088656692,
+    "net_pnl": 13.123065837456176
+  },
+  {
+    "feature": "zscore20",
+    "development_bin": "(-1.536, -0.64]",
+    "trades": 110,
+    "stop_rate": 0.10909090909090909,
+    "win_rate": 0.5545454545454546,
+    "mean_net_pips": -2.3184066138869883,
+    "net_pnl": -142.58359071034738
+  },
+  {
+    "feature": "zscore20",
+    "development_bin": "(-0.64, 0.758]",
+    "trades": 111,
+    "stop_rate": 0.08108108108108109,
+    "win_rate": 0.6666666666666666,
+    "mean_net_pips": 0.022054745516737743,
+    "net_pnl": -1.4397999085197997
+  },
+  {
+    "feature": "completed_bar_body_fraction",
+    "development_bin": "(-1.001, -0.794]",
+    "trades": 111,
+    "stop_rate": 0.10810810810810811,
+    "win_rate": 0.5675675675675675,
+    "mean_net_pips": -0.4287840124724935,
+    "net_pnl": -23.430055620340294
+  },
+  {
+    "feature": "completed_bar_body_fraction",
+    "development_bin": "(-0.794, -0.656]",
+    "trades": 110,
+    "stop_rate": 0.05454545454545454,
+    "win_rate": 0.6818181818181818,
+    "mean_net_pips": 0.5324729006175755,
+    "net_pnl": 32.23668225872777
+  },
+  {
+    "feature": "completed_bar_body_fraction",
+    "development_bin": "(-0.656, -0.486]",
+    "trades": 110,
+    "stop_rate": 0.07272727272727272,
+    "win_rate": 0.6909090909090909,
+    "mean_net_pips": 0.785288672580222,
+    "net_pnl": 48.611031204902844
+  },
+  {
+    "feature": "completed_bar_body_fraction",
+    "development_bin": "(-0.486, 0.935]",
+    "trades": 111,
+    "stop_rate": 0.15315315315315314,
+    "win_rate": 0.5585585585585585,
+    "mean_net_pips": -2.9879289796528665,
+    "net_pnl": -186.15021079371328
+  },
+  {
+    "feature": "current_quote_spread_pips",
+    "development_bin": "(-0.001, 0.3]",
+    "trades": 114,
+    "stop_rate": 0.11403508771929824,
+    "win_rate": 0.5789473684210527,
+    "mean_net_pips": -1.6008397164277652,
+    "net_pnl": -99.49434786400062
+  },
+  {
+    "feature": "current_quote_spread_pips",
+    "development_bin": "(0.3, 0.4]",
+    "trades": 132,
+    "stop_rate": 0.09090909090909091,
+    "win_rate": 0.6363636363636364,
+    "mean_net_pips": -0.531602154604301,
+    "net_pnl": -38.20347333081916
+  },
+  {
+    "feature": "current_quote_spread_pips",
+    "development_bin": "(0.4, 0.5]",
+    "trades": 119,
+    "stop_rate": 0.09243697478991597,
+    "win_rate": 0.6134453781512605,
+    "mean_net_pips": -0.7080166881975144,
+    "net_pnl": -48.59646436846367
+  },
+  {
+    "feature": "current_quote_spread_pips",
+    "development_bin": "(0.5, 1.7]",
+    "trades": 77,
+    "stop_rate": 0.09090909090909091,
+    "win_rate": 0.6883116883116883,
+    "mean_net_pips": 1.3327250506737645,
+    "net_pnl": 57.56173261286043
+  },
+  {
+    "feature": "current_quote_hour_utc",
+    "development_bin": "(6.999, 8.312]",
+    "trades": 111,
+    "stop_rate": 0.12612612612612611,
+    "win_rate": 0.6576576576576577,
+    "mean_net_pips": -0.05108440258694186,
+    "net_pnl": -4.011334024616109
+  },
+  {
+    "feature": "current_quote_hour_utc",
+    "development_bin": "(8.312, 11.25]",
+    "trades": 124,
+    "stop_rate": 0.08064516129032258,
+    "win_rate": 0.6693548387096774,
+    "mean_net_pips": -0.6313358309380277,
+    "net_pnl": -41.69806038122212
+  },
+  {
+    "feature": "current_quote_hour_utc",
+    "development_bin": "(11.25, 13.5]",
+    "trades": 104,
+    "stop_rate": 0.11538461538461539,
+    "win_rate": 0.5865384615384616,
+    "mean_net_pips": -1.3054869243444285,
+    "net_pnl": -75.320407249309
+  },
+  {
+    "feature": "current_quote_hour_utc",
+    "development_bin": "(13.5, 15.75]",
+    "trades": 103,
+    "stop_rate": 0.06796116504854369,
+    "win_rate": 0.5728155339805825,
+    "mean_net_pips": -0.14150210892107606,
+    "net_pnl": -7.7027512952757835
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "feature": "atr_pips",
+    "development_bin": "(3.862, 5.98]",
+    "trades": 49,
+    "stop_rate": 0.30612244897959184,
+    "win_rate": 0.5918367346938775,
+    "mean_net_pips": -1.5454070329080054,
+    "net_pnl": -43.00921211703088
+  },
+  {
+    "feature": "atr_pips",
+    "development_bin": "(5.98, 6.701]",
+    "trades": 48,
+    "stop_rate": 0.375,
+    "win_rate": 0.4375,
+    "mean_net_pips": -3.813716911188488,
+    "net_pnl": -103.79047001863033
+  },
+  {
+    "feature": "atr_pips",
+    "development_bin": "(6.701, 7.418]",
+    "trades": 48,
+    "stop_rate": 0.20833333333333334,
+    "win_rate": 0.7083333333333334,
+    "mean_net_pips": 0.40891399206103385,
+    "net_pnl": 11.429668084191597
+  },
+  {
+    "feature": "atr_pips",
+    "development_bin": "(7.418, 16.517]",
+    "trades": 48,
+    "stop_rate": 0.22916666666666666,
+    "win_rate": 0.5833333333333334,
+    "mean_net_pips": -1.6442619479871017,
+    "net_pnl": -43.27586649741313
+  },
+  {
+    "feature": "atr_fast_slow_ratio",
+    "development_bin": "(0.9999999999999999, 1.047]",
+    "trades": 49,
+    "stop_rate": 0.2857142857142857,
+    "win_rate": 0.5510204081632653,
+    "mean_net_pips": -1.768625847382257,
+    "net_pnl": -48.93663406330949
+  },
+  {
+    "feature": "atr_fast_slow_ratio",
+    "development_bin": "(1.047, 1.092]",
+    "trades": 48,
+    "stop_rate": 0.3541666666666667,
+    "win_rate": 0.5,
+    "mean_net_pips": -2.919388015827307,
+    "net_pnl": -77.90926857349125
+  },
+  {
+    "feature": "atr_fast_slow_ratio",
+    "development_bin": "(1.092, 1.172]",
+    "trades": 48,
+    "stop_rate": 0.3125,
+    "win_rate": 0.6666666666666666,
+    "mean_net_pips": -1.08255326372575,
+    "net_pnl": -30.31243335187728
+  },
+  {
+    "feature": "atr_fast_slow_ratio",
+    "development_bin": "(1.172, 1.987]",
+    "trades": 48,
+    "stop_rate": 0.16666666666666666,
+    "win_rate": 0.6041666666666666,
+    "mean_net_pips": -0.8192543811190328,
+    "net_pnl": -21.48754456020473
+  },
+  {
+    "feature": "ema_slope_atr",
+    "development_bin": "(-2.834, -0.837]",
+    "trades": 49,
+    "stop_rate": 0.20408163265306123,
+    "win_rate": 0.6326530612244898,
+    "mean_net_pips": -0.37648905860936227,
+    "net_pnl": -11.607937722518997
+  },
+  {
+    "feature": "ema_slope_atr",
+    "development_bin": "(-0.837, -0.103]",
+    "trades": 48,
+    "stop_rate": 0.3333333333333333,
+    "win_rate": 0.6041666666666666,
+    "mean_net_pips": -1.4035048214782921,
+    "net_pnl": -37.848861721872964
+  },
+  {
+    "feature": "ema_slope_atr",
+    "development_bin": "(-0.103, 0.784]",
+    "trades": 48,
+    "stop_rate": 0.3333333333333333,
+    "win_rate": 0.4583333333333333,
+    "mean_net_pips": -3.505508398172734,
+    "net_pnl": -93.37770267099984
+  },
+  {
+    "feature": "ema_slope_atr",
+    "development_bin": "(0.784, 2.61]",
+    "trades": 48,
+    "stop_rate": 0.25,
+    "win_rate": 0.625,
+    "mean_net_pips": -1.3333220795600609,
+    "net_pnl": -35.81137843349096
+  },
+  {
+    "feature": "distance_from_ema_atr",
+    "development_bin": "(-13.27, -5.262]",
+    "trades": 49,
+    "stop_rate": 0.24489795918367346,
+    "win_rate": 0.5918367346938775,
+    "mean_net_pips": -0.9833960168466988,
+    "net_pnl": -28.497893844063775
+  },
+  {
+    "feature": "distance_from_ema_atr",
+    "development_bin": "(-5.262, -1.967]",
+    "trades": 48,
+    "stop_rate": 0.3125,
+    "win_rate": 0.625,
+    "mean_net_pips": -1.0107415258749421,
+    "net_pnl": -26.589253553466424
+  },
+  {
+    "feature": "distance_from_ema_atr",
+    "development_bin": "(-1.967, 1.5]",
+    "trades": 48,
+    "stop_rate": 0.3333333333333333,
+    "win_rate": 0.4583333333333333,
+    "mean_net_pips": -3.7622746601806067,
+    "net_pnl": -100.91803314708703
+  },
+  {
+    "feature": "distance_from_ema_atr",
+    "development_bin": "(1.5, 8.024]",
+    "trades": 48,
+    "stop_rate": 0.22916666666666666,
+    "win_rate": 0.6458333333333334,
+    "mean_net_pips": -0.849768259954924,
+    "net_pnl": -22.640700004265533
+  },
+  {
+    "feature": "zscore20",
+    "development_bin": "(-2.6109999999999998, -1.778]",
+    "trades": 49,
+    "stop_rate": 0.40816326530612246,
+    "win_rate": 0.42857142857142855,
+    "mean_net_pips": -3.9131256755769956,
+    "net_pnl": -106.45985823746103
+  },
+  {
+    "feature": "zscore20",
+    "development_bin": "(-1.778, -1.495]",
+    "trades": 48,
+    "stop_rate": 0.22916666666666666,
+    "win_rate": 0.6041666666666666,
+    "mean_net_pips": -0.8451238830194708,
+    "net_pnl": -23.567817357858928
+  },
+  {
+    "feature": "zscore20",
+    "development_bin": "(-1.495, -0.852]",
+    "trades": 48,
+    "stop_rate": 0.3125,
+    "win_rate": 0.6041666666666666,
+    "mean_net_pips": -1.720778232652736,
+    "net_pnl": -47.33509327094965
+  },
+  {
+    "feature": "zscore20",
+    "development_bin": "(-0.852, 0.893]",
+    "trades": 48,
+    "stop_rate": 0.16666666666666666,
+    "win_rate": 0.6875,
+    "mean_net_pips": -0.06611663705108832,
+    "net_pnl": -1.2831116826131352
+  },
+  {
+    "feature": "completed_bar_body_fraction",
+    "development_bin": "(0.018199999999999997, 0.216]",
+    "trades": 49,
+    "stop_rate": 0.2857142857142857,
+    "win_rate": 0.5714285714285714,
+    "mean_net_pips": -1.4040214307387828,
+    "net_pnl": -40.838810287873315
+  },
+  {
+    "feature": "completed_bar_body_fraction",
+    "development_bin": "(0.216, 0.373]",
+    "trades": 48,
+    "stop_rate": 0.3333333333333333,
+    "win_rate": 0.5625,
+    "mean_net_pips": -2.354498718410523,
+    "net_pnl": -62.021432254272845
+  },
+  {
+    "feature": "completed_bar_body_fraction",
+    "development_bin": "(0.373, 0.582]",
+    "trades": 48,
+    "stop_rate": 0.25,
+    "win_rate": 0.5833333333333334,
+    "mean_net_pips": -1.6363349759944867,
+    "net_pnl": -43.272324628670475
+  },
+  {
+    "feature": "completed_bar_body_fraction",
+    "development_bin": "(0.582, 0.969]",
+    "trades": 48,
+    "stop_rate": 0.25,
+    "win_rate": 0.6041666666666666,
+    "mean_net_pips": -1.2025623082572943,
+    "net_pnl": -32.5133133780661
+  },
+  {
+    "feature": "current_quote_spread_pips",
+    "development_bin": "(-0.001, 0.3]",
+    "trades": 50,
+    "stop_rate": 0.32,
+    "win_rate": 0.6,
+    "mean_net_pips": -1.9073657286764634,
+    "net_pnl": -53.453251504689426
+  },
+  {
+    "feature": "current_quote_spread_pips",
+    "development_bin": "(0.3, 0.4]",
+    "trades": 61,
+    "stop_rate": 0.2459016393442623,
+    "win_rate": 0.6065573770491803,
+    "mean_net_pips": -1.1171248743829658,
+    "net_pnl": -37.604635986508285
+  },
+  {
+    "feature": "current_quote_spread_pips",
+    "development_bin": "(0.4, 0.5]",
+    "trades": 54,
+    "stop_rate": 0.2777777777777778,
+    "win_rate": 0.5740740740740741,
+    "mean_net_pips": -1.8583769556566114,
+    "net_pnl": -56.90454323597793
+  },
+  {
+    "feature": "current_quote_spread_pips",
+    "development_bin": "(0.5, 2.0]",
+    "trades": 28,
+    "stop_rate": 0.2857142857142857,
+    "win_rate": 0.5,
+    "mean_net_pips": -1.9362428163339243,
+    "net_pnl": -30.68344982170712
+  },
+  {
+    "feature": "current_quote_hour_utc",
+    "development_bin": "(6.999, 9.5]",
+    "trades": 52,
+    "stop_rate": 0.25,
+    "win_rate": 0.6153846153846154,
+    "mean_net_pips": -0.9120110527143154,
+    "net_pnl": -26.953050351630413
+  },
+  {
+    "feature": "current_quote_hour_utc",
+    "development_bin": "(9.5, 12.5]",
+    "trades": 47,
+    "stop_rate": 0.2765957446808511,
+    "win_rate": 0.6170212765957447,
+    "mean_net_pips": -1.3136514287657748,
+    "net_pnl": -33.693486073806056
+  },
+  {
+    "feature": "current_quote_hour_utc",
+    "development_bin": "(12.5, 14.25]",
+    "trades": 50,
+    "stop_rate": 0.34,
+    "win_rate": 0.56,
+    "mean_net_pips": -2.1187901912015543,
+    "net_pnl": -60.59168399600909
+  },
+  {
+    "feature": "current_quote_hour_utc",
+    "development_bin": "(14.25, 15.75]",
+    "trades": 44,
+    "stop_rate": 0.25,
+    "win_rate": 0.5227272727272727,
+    "mean_net_pips": -2.3403262904722144,
+    "net_pnl": -57.4076601274372
+  }
+]

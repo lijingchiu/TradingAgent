@@ -1,0 +1,4785 @@
+{
+  "source": "FXCM official public paired BID/ASK indicative M1 candles",
+  "docs_url": "https://github.com/fxcm/MarketData/blob/924393dd545fab187527d95ef8b1178284b274b6/README.md",
+  "docs_commit": "924393dd545fab187527d95ef8b1178284b274b6",
+  "docs_blob": "eaab97d15b8596c52c83ba52f25678e7fbec02a8",
+  "timestamp_timezone": "UTC",
+  "downloaded_at_utc": "2026-10-04T14:41:33.732834+00:00",
+  "archive_records": [
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "ca82e74733a08d6e39a624bbae4da0c18ea9b83620d87ba4d3835f4554ec9241",
+      "bytes": 121375,
+      "quality": {
+        "rows": 5632,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2017-01-03T00:00:00+00:00",
+        "last_utc": "2017-01-06T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "156c7c4683e9a9469cad460b720a05d7290d236059a2985a841a3f1ca1063193",
+      "bytes": 154425,
+      "quality": {
+        "rows": 7192,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 92,
+        "crossed_close_rows": 92,
+        "first_utc": "2017-01-08T22:00:00+00:00",
+        "last_utc": "2017-01-13T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3b51cfc1eb48e7d23c86eb3476ff039b620c200319d7ab6d7e21ad7f588b120c",
+      "bytes": 152522,
+      "quality": {
+        "rows": 7193,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 171,
+        "crossed_close_rows": 171,
+        "first_utc": "2017-01-15T22:00:00+00:00",
+        "last_utc": "2017-01-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fac722d802b94d60552dcc29fe0c1211ea9965cbd1a861df453867bd50542fc7",
+      "bytes": 151277,
+      "quality": {
+        "rows": 7197,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 162,
+        "crossed_close_rows": 162,
+        "first_utc": "2017-01-22T22:00:00+00:00",
+        "last_utc": "2017-01-27T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "35ba59b61140b00edfced3cb7d6319c8486a784920ae142c53582ac538988e50",
+      "bytes": 150854,
+      "quality": {
+        "rows": 7198,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 273,
+        "crossed_close_rows": 273,
+        "first_utc": "2017-01-29T22:00:00+00:00",
+        "last_utc": "2017-02-03T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cd38b4e32b9f1a314f9dd01c9c30cdcd7aee353705777312345508c81fef0c5d",
+      "bytes": 147553,
+      "quality": {
+        "rows": 7192,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 140,
+        "crossed_close_rows": 140,
+        "first_utc": "2017-02-05T22:00:00+00:00",
+        "last_utc": "2017-02-10T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "109d04153389bcc7241404fec860b2c43e4ee19d4f703e6ee67e0c2130a91aac",
+      "bytes": 147025,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2017-02-12T22:01:00+00:00",
+        "last_utc": "2017-02-17T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1a2abd84a1d416061bf1dd967dbad4d37fedaff9fbba13ef1e67cd288070fda7",
+      "bytes": 146621,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2017-02-19T22:01:00+00:00",
+        "last_utc": "2017-02-24T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5632c4f023ef2364e6f7eead168c3ea1b3e17bdfa071524f6ffd4594a01bea88",
+      "bytes": 147173,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 102,
+        "crossed_close_rows": 102,
+        "first_utc": "2017-02-26T22:01:00+00:00",
+        "last_utc": "2017-03-03T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2173196cb76c8259459b8c3564e2d3d72522ae52c38fc61847ccd4823c9a66c8",
+      "bytes": 145300,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 116,
+        "crossed_close_rows": 116,
+        "first_utc": "2017-03-05T22:01:00+00:00",
+        "last_utc": "2017-03-10T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "149e058b438907d646661bf984f055edaa5f15ab7a87479777be681f59c73df2",
+      "bytes": 145439,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 91,
+        "crossed_close_rows": 91,
+        "first_utc": "2017-03-12T21:02:00+00:00",
+        "last_utc": "2017-03-17T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3f4d4dedd1a090122929a1ae636b623d9a8b2f05f1a2428ed29028d85fe035c2",
+      "bytes": 144697,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 47,
+        "crossed_close_rows": 47,
+        "first_utc": "2017-03-19T21:02:00+00:00",
+        "last_utc": "2017-03-24T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c19b0271125df3f07171407ac1a0e937bae10ab52228f077768826cc09c150a7",
+      "bytes": 144599,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 50,
+        "crossed_close_rows": 50,
+        "first_utc": "2017-03-26T21:02:00+00:00",
+        "last_utc": "2017-03-31T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5be07cd42a039c0192529899e4e8b103566cfb1500f1ffb614d94cd2113d479a",
+      "bytes": 142218,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 49,
+        "crossed_close_rows": 49,
+        "first_utc": "2017-04-02T21:01:00+00:00",
+        "last_utc": "2017-04-07T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "616004289c65c7a934986daa4da00dbec20d2126a2006c741df365703b076b99",
+      "bytes": 139841,
+      "quality": {
+        "rows": 7157,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 47,
+        "crossed_close_rows": 47,
+        "first_utc": "2017-04-09T21:02:00+00:00",
+        "last_utc": "2017-04-14T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4923847f55899c5094f6d88b5f5a34bfa0bf1139f119428db201fbc69a4ceebd",
+      "bytes": 141333,
+      "quality": {
+        "rows": 7158,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 62,
+        "crossed_close_rows": 62,
+        "first_utc": "2017-04-16T21:01:00+00:00",
+        "last_utc": "2017-04-21T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "97fd3f094e2936760711ffa429a284907b2ff6d8655476a99de8b47223b8ae3a",
+      "bytes": 147840,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 110,
+        "crossed_close_rows": 110,
+        "first_utc": "2017-04-23T21:01:00+00:00",
+        "last_utc": "2017-04-28T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "800ed18cb62d3e6edc74d2e2337f4f74e76777c7a199e9597f57529dd2964ff4",
+      "bytes": 140969,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 47,
+        "crossed_close_rows": 47,
+        "first_utc": "2017-04-30T21:01:00+00:00",
+        "last_utc": "2017-05-05T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3564a312f03ba9e294a9cb7f80d55a4c6bee0101a4fc7f8b47f38bc0f2619c59",
+      "bytes": 144473,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 29,
+        "crossed_close_rows": 29,
+        "first_utc": "2017-05-07T21:01:00+00:00",
+        "last_utc": "2017-05-12T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e259ae37f46f97facb4e937c930a0bb6730153d12a2f34840b1460e722db3f10",
+      "bytes": 145967,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 37,
+        "crossed_close_rows": 37,
+        "first_utc": "2017-05-14T21:01:00+00:00",
+        "last_utc": "2017-05-19T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a7fdb660d8158aab0ab9698ddd1f87675856950860e2b3ad5ab14dde38de9e6c",
+      "bytes": 147372,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 86,
+        "crossed_close_rows": 86,
+        "first_utc": "2017-05-21T21:01:00+00:00",
+        "last_utc": "2017-05-26T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bbaaea50cf94669722559f6d2af7043db5d18a856e21567f8017e28341584bbd",
+      "bytes": 142650,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 117,
+        "crossed_close_rows": 117,
+        "first_utc": "2017-05-28T21:03:00+00:00",
+        "last_utc": "2017-06-02T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0f0728495d481f19664eeeee5fc25c8a59959e4f3719814e3806628dad65aa06",
+      "bytes": 144730,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 222,
+        "crossed_close_rows": 222,
+        "first_utc": "2017-06-04T21:02:00+00:00",
+        "last_utc": "2017-06-09T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "167cda795c3028ddbb4eb78fb9af586e0f5bd1191a690be93ec71f86bf4dad66",
+      "bytes": 142450,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 189,
+        "crossed_close_rows": 189,
+        "first_utc": "2017-06-11T21:01:00+00:00",
+        "last_utc": "2017-06-16T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6c3e517eb4c9865a04cbc26383eb3f05636d92bbfbc15105dbc21940efe5aa5c",
+      "bytes": 138355,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 129,
+        "crossed_close_rows": 129,
+        "first_utc": "2017-06-18T21:01:00+00:00",
+        "last_utc": "2017-06-23T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d3226bf47c9f2f640b6cd3adecee5052361793c537bb88ee961bc4c84f9142d6",
+      "bytes": 145981,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 116,
+        "crossed_close_rows": 116,
+        "first_utc": "2017-06-25T21:01:00+00:00",
+        "last_utc": "2017-06-30T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a0552599c86246ba56563d39d1b03455904d0671aa3489757c76c7a9554ffedf",
+      "bytes": 142438,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 94,
+        "crossed_close_rows": 94,
+        "first_utc": "2017-07-02T21:01:00+00:00",
+        "last_utc": "2017-07-07T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2e7b15617b124ede8ff6c98b02957edb3f1cfb6a29cdc0c186be64e38a2871ed",
+      "bytes": 142103,
+      "quality": {
+        "rows": 7171,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 134,
+        "crossed_close_rows": 134,
+        "first_utc": "2017-07-09T21:01:00+00:00",
+        "last_utc": "2017-07-14T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "44526c83e1760f323cc177fc7b83b28efbed31459f68e2b4375c3d6c4b59fa4a",
+      "bytes": 144906,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 90,
+        "crossed_close_rows": 90,
+        "first_utc": "2017-07-16T21:02:00+00:00",
+        "last_utc": "2017-07-21T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "30a3ec6fa3ddf506ddfc3829fee83c1cc9443a1df34126313b56c56a0de0b9fc",
+      "bytes": 147836,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 56,
+        "crossed_close_rows": 56,
+        "first_utc": "2017-07-23T21:03:00+00:00",
+        "last_utc": "2017-07-28T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "19bcd4e127618c7d23f3ff044b7b6d13c734ee4028a7f831022285bdfccef268",
+      "bytes": 148347,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 81,
+        "crossed_close_rows": 81,
+        "first_utc": "2017-07-30T21:04:00+00:00",
+        "last_utc": "2017-08-04T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "90119d4e09923be5c21a8350e4f27a0fcf347871eb361246921bb94577df62d1",
+      "bytes": 147924,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 86,
+        "crossed_close_rows": 86,
+        "first_utc": "2017-08-06T21:02:00+00:00",
+        "last_utc": "2017-08-11T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cb6621eab4f8671e5f80afd64c588716c722763a28718a59cf93d9f58aae4ec0",
+      "bytes": 148325,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 177,
+        "crossed_close_rows": 177,
+        "first_utc": "2017-08-13T21:01:00+00:00",
+        "last_utc": "2017-08-18T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a23a65657e6677f537650f346f5a792771059c3774889f059fd756fe8c71fdbd",
+      "bytes": 144317,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 147,
+        "crossed_close_rows": 147,
+        "first_utc": "2017-08-20T21:02:00+00:00",
+        "last_utc": "2017-08-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "90a44dbb3fb1f1ae433ad1385dabe0b622e25425605b90703e190abafbfd237c",
+      "bytes": 148880,
+      "quality": {
+        "rows": 7194,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 293,
+        "crossed_close_rows": 293,
+        "first_utc": "2017-08-27T21:02:00+00:00",
+        "last_utc": "2017-09-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b212adc2824e8b375dd053a99d2ac8a5164e17fae8311fe9fdaeb63c03829029",
+      "bytes": 147667,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 283,
+        "crossed_close_rows": 283,
+        "first_utc": "2017-09-03T21:00:00+00:00",
+        "last_utc": "2017-09-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "36fb8a79186ba0fb4b92df08dfc7a1fb13347d2554afd80da13fa1744185a89a",
+      "bytes": 146759,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 268,
+        "crossed_close_rows": 268,
+        "first_utc": "2017-09-10T21:00:00+00:00",
+        "last_utc": "2017-09-15T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "70e577381a987b2f8439d0fa1323712db609f6117fa429779aef50015699c480",
+      "bytes": 146870,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 292,
+        "crossed_close_rows": 292,
+        "first_utc": "2017-09-17T21:00:00+00:00",
+        "last_utc": "2017-09-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5812d37fc905da347820922c74eb4ce762feedd1c9582f496a02b9b7989fb19f",
+      "bytes": 146346,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 378,
+        "crossed_close_rows": 378,
+        "first_utc": "2017-09-24T21:00:00+00:00",
+        "last_utc": "2017-09-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0a211536c8b6ad71665f1a5e34a227d821110af81648d7a7ca70c1c59126956a",
+      "bytes": 143907,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 277,
+        "crossed_close_rows": 277,
+        "first_utc": "2017-10-01T21:00:00+00:00",
+        "last_utc": "2017-10-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "91d5fd0a920d9459c3bcd2d1187b278bdc2bae6af4562da5201ed445dac5c69e",
+      "bytes": 141735,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 644,
+        "crossed_close_rows": 644,
+        "first_utc": "2017-10-08T21:00:00+00:00",
+        "last_utc": "2017-10-13T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "343033fdbcae1e8b999cd65b60cf7a1502a0406402c09a43e36a7e22009a6b37",
+      "bytes": 142935,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 354,
+        "crossed_close_rows": 354,
+        "first_utc": "2017-10-15T21:00:00+00:00",
+        "last_utc": "2017-10-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8b40a7811d065245754a25db0bd5a6dcad393b0e0984f51eed5cef860d1c918d",
+      "bytes": 143016,
+      "quality": {
+        "rows": 7185,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 419,
+        "crossed_close_rows": 419,
+        "first_utc": "2017-10-22T21:00:00+00:00",
+        "last_utc": "2017-10-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5efef82fef73ef35074920c17f11d04bbc71ca6e5e3e5496dfd55d10872ca75c",
+      "bytes": 142528,
+      "quality": {
+        "rows": 7178,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 367,
+        "crossed_close_rows": 367,
+        "first_utc": "2017-10-29T21:06:00+00:00",
+        "last_utc": "2017-11-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0c7dabfc646706e54f29e10646d90d4e4a59ebe24b0257aba53e95a5d9ca5c32",
+      "bytes": 140870,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 407,
+        "crossed_close_rows": 407,
+        "first_utc": "2017-11-05T22:00:00+00:00",
+        "last_utc": "2017-11-10T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b2cc79d24e291a52c27b5b39cd5356c6799bfd3be590af92b5b1a6cc788dd4e3",
+      "bytes": 142241,
+      "quality": {
+        "rows": 7171,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 357,
+        "crossed_close_rows": 357,
+        "first_utc": "2017-11-12T22:00:00+00:00",
+        "last_utc": "2017-11-17T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2c5fcd5dfd0a9e7455bfd49384e5f17a7b133e9190a661d1ab87bcdb790e578e",
+      "bytes": 142216,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 343,
+        "crossed_close_rows": 343,
+        "first_utc": "2017-11-19T22:00:00+00:00",
+        "last_utc": "2017-11-24T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5e175b614d4eeef350319dda8ea2d82f90e2bcfeba2ed355adae2104014a527e",
+      "bytes": 145650,
+      "quality": {
+        "rows": 7190,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 426,
+        "crossed_close_rows": 426,
+        "first_utc": "2017-11-26T22:00:00+00:00",
+        "last_utc": "2017-12-01T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d3b984c9516bd87948e586c5ef86e63ab038279114080973c876d4490c5f0fad",
+      "bytes": 142539,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 436,
+        "crossed_close_rows": 436,
+        "first_utc": "2017-12-03T22:00:00+00:00",
+        "last_utc": "2017-12-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e85fb4eee85f80851c95fce345d2c5c8503682aeacc086b41367e0531fa0f07a",
+      "bytes": 141833,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 341,
+        "crossed_close_rows": 341,
+        "first_utc": "2017-12-10T22:00:00+00:00",
+        "last_utc": "2017-12-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "30047448f92cf260487adb1a435d790ebaaf25d287f0abfdd91ae793a608fcaa",
+      "bytes": 141087,
+      "quality": {
+        "rows": 7190,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 304,
+        "crossed_close_rows": 304,
+        "first_utc": "2017-12-17T22:00:00+00:00",
+        "last_utc": "2017-12-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "093353e9b89f2d909d3779a5b1ca10fbb1b84344299cd1f57302df4fc921e471",
+      "bytes": 103096,
+      "quality": {
+        "rows": 5382,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 225,
+        "crossed_close_rows": 225,
+        "first_utc": "2017-12-26T04:02:00+00:00",
+        "last_utc": "2017-12-29T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2017,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2017/53.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "5fc75ac857b6889f2c51066b3a6fdc5414ec62b8b41d7290ac8f68199d5e89aa",
+      "bytes": 108946,
+      "quality": {
+        "rows": 5504,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 226,
+        "crossed_close_rows": 226,
+        "first_utc": "2018-01-01T22:00:00+00:00",
+        "last_utc": "2018-01-05T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fac86fa1def06404f5040ebec94a2673c6814f83a8d0b389c41f5d6421bbe8ac",
+      "bytes": 145564,
+      "quality": {
+        "rows": 7190,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 426,
+        "crossed_close_rows": 426,
+        "first_utc": "2018-01-07T22:01:00+00:00",
+        "last_utc": "2018-01-12T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4eb56b87f2a1669d1d39fbb586aa1dfb97b4571f7b476e6d2ad6fccc420d98b4",
+      "bytes": 153069,
+      "quality": {
+        "rows": 7195,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 365,
+        "crossed_close_rows": 365,
+        "first_utc": "2018-01-14T22:00:00+00:00",
+        "last_utc": "2018-01-19T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ed2f5e30df295805206b63dfe67b56d0b3b807c5d4112055aa4ff8099aeafe73",
+      "bytes": 154853,
+      "quality": {
+        "rows": 7192,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 278,
+        "crossed_close_rows": 278,
+        "first_utc": "2018-01-21T22:00:00+00:00",
+        "last_utc": "2018-01-26T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "393b163257e76423571e30351aadb60fe8154b9576363250bbe58cabd2eb7318",
+      "bytes": 153675,
+      "quality": {
+        "rows": 7197,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 423,
+        "crossed_close_rows": 423,
+        "first_utc": "2018-01-28T22:00:00+00:00",
+        "last_utc": "2018-02-02T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d21db633b9d6085fc9e11fcc2926999b71dd22a8f980d3273cec68364895eb07",
+      "bytes": 154786,
+      "quality": {
+        "rows": 7195,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 511,
+        "crossed_close_rows": 511,
+        "first_utc": "2018-02-04T22:00:00+00:00",
+        "last_utc": "2018-02-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d477754b655f86f3f12a11932e161ff9f269afebaa1467f01d4437c6bc3d3ebf",
+      "bytes": 150664,
+      "quality": {
+        "rows": 7190,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 509,
+        "crossed_close_rows": 509,
+        "first_utc": "2018-02-11T22:00:00+00:00",
+        "last_utc": "2018-02-16T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f093bc8cdcf59f61af9b58bc7270822af6fd182ee91d7c3231f2eac1e5989a86",
+      "bytes": 147379,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 564,
+        "crossed_close_rows": 564,
+        "first_utc": "2018-02-18T22:00:00+00:00",
+        "last_utc": "2018-02-23T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f1a840a62543f31d97c9ee6b99c8e1cc150fa8eece160364f7fa9bef61b77615",
+      "bytes": 147822,
+      "quality": {
+        "rows": 7195,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 714,
+        "crossed_close_rows": 714,
+        "first_utc": "2018-02-25T22:00:00+00:00",
+        "last_utc": "2018-03-02T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ea367b00c10ad45727f64cb2c5938240333d429761f611cca541c61e446092bd",
+      "bytes": 148278,
+      "quality": {
+        "rows": 7192,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 381,
+        "crossed_close_rows": 381,
+        "first_utc": "2018-03-04T22:00:00+00:00",
+        "last_utc": "2018-03-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8f37bd82d4bd1a5ade7f84110a09972f81931657403c96ff5291f450baf63ea2",
+      "bytes": 143342,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 270,
+        "crossed_close_rows": 270,
+        "first_utc": "2018-03-11T21:01:00+00:00",
+        "last_utc": "2018-03-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3c5d9bc9cdac8ec69fa2cc9a9168f84ddc6bc067a15e0bf687fd6fd5620154b9",
+      "bytes": 146996,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 214,
+        "crossed_close_rows": 214,
+        "first_utc": "2018-03-18T21:00:00+00:00",
+        "last_utc": "2018-03-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c5a9aff501684c776c3b83a0bafb695f2b2520296db41f4486b63d8f63bab4a6",
+      "bytes": 143556,
+      "quality": {
+        "rows": 7159,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 206,
+        "crossed_close_rows": 206,
+        "first_utc": "2018-03-25T21:00:00+00:00",
+        "last_utc": "2018-03-30T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d38cfe8611bc993b27010317f7f69cb9354a75bee75c8987c4a8d96be1d09bb1",
+      "bytes": 143079,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 71,
+        "crossed_close_rows": 71,
+        "first_utc": "2018-04-01T21:00:00+00:00",
+        "last_utc": "2018-04-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d1dbb0a34c916717e0132e13ca015f008d64441d28c46ccdbd0e5829c4935393",
+      "bytes": 144153,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 40,
+        "crossed_close_rows": 40,
+        "first_utc": "2018-04-08T21:00:00+00:00",
+        "last_utc": "2018-04-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "47cb38d0ce657168ef4c31aa3c46f15d1f8d631a03639ff86f8c3858e754c1a5",
+      "bytes": 143495,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 51,
+        "crossed_close_rows": 51,
+        "first_utc": "2018-04-15T21:00:00+00:00",
+        "last_utc": "2018-04-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8d8683c62b3845a54f1d7d4541d53ac7fa71a7e9b8bd9919f6003e0e40afdc97",
+      "bytes": 145265,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 89,
+        "crossed_close_rows": 89,
+        "first_utc": "2018-04-22T21:02:00+00:00",
+        "last_utc": "2018-04-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f3169776209061e655339d1c259c1aed99f59e3b31eb15c8b6880dfbce35cbf5",
+      "bytes": 146846,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 98,
+        "crossed_close_rows": 98,
+        "first_utc": "2018-04-29T21:00:00+00:00",
+        "last_utc": "2018-05-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d96b4ea80ac8f9abe242beb8b416304aad3fc4da72ca535771c4aabaf774e0bb",
+      "bytes": 146285,
+      "quality": {
+        "rows": 7148,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 135,
+        "crossed_close_rows": 135,
+        "first_utc": "2018-05-06T21:04:00+00:00",
+        "last_utc": "2018-05-11T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d2922db25c8adb2a0593d90c2d6d7df8aad0dec741124f1375ebcd82fb6dc73a",
+      "bytes": 147095,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 92,
+        "crossed_close_rows": 92,
+        "first_utc": "2018-05-13T21:05:00+00:00",
+        "last_utc": "2018-05-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d5107612dfa4bae14b9169185d5f062f8c628ac9c34b5c72988acad20e7499e9",
+      "bytes": 147615,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 84,
+        "crossed_close_rows": 84,
+        "first_utc": "2018-05-20T21:04:00+00:00",
+        "last_utc": "2018-05-25T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5d1be770d39df29d20c36eaa140f762b34f8a88d4e2e1220b4f1e4dbbc7a493c",
+      "bytes": 150726,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 90,
+        "crossed_close_rows": 90,
+        "first_utc": "2018-05-27T21:00:00+00:00",
+        "last_utc": "2018-06-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "446c35245b5ad48ee7c70a8c9d75a5334b805f3f8fb8b31c3b79c9f931362de1",
+      "bytes": 146767,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 70,
+        "crossed_close_rows": 70,
+        "first_utc": "2018-06-03T21:04:00+00:00",
+        "last_utc": "2018-06-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5f28a30a870324b9fb59d34945301f1ac8ee8acf616825b4e78964507631be71",
+      "bytes": 147105,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 65,
+        "crossed_close_rows": 65,
+        "first_utc": "2018-06-10T21:01:00+00:00",
+        "last_utc": "2018-06-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b14da3802e52ceec1cfb6375624181a25da60c5ed87c26771987f962f43ee168",
+      "bytes": 148951,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 50,
+        "crossed_close_rows": 50,
+        "first_utc": "2018-06-17T21:00:00+00:00",
+        "last_utc": "2018-06-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b59d4ff9817e5c0d534e3cc5a8d32e4fb83fc3af8f9a50d027b69abb6b726e49",
+      "bytes": 150292,
+      "quality": {
+        "rows": 7188,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 117,
+        "crossed_close_rows": 117,
+        "first_utc": "2018-06-24T21:00:00+00:00",
+        "last_utc": "2018-06-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0ac3e5855a8946484866516b4f6c05e4d763678901ef486ffe4780d955c96732",
+      "bytes": 145011,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 144,
+        "crossed_close_rows": 144,
+        "first_utc": "2018-07-01T21:00:00+00:00",
+        "last_utc": "2018-07-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c28c0dba47b2e4f7b8bb81370703ebefd3f7be44aa4eae713c59f672cc7a60db",
+      "bytes": 145726,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 125,
+        "crossed_close_rows": 125,
+        "first_utc": "2018-07-08T21:06:00+00:00",
+        "last_utc": "2018-07-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c83b60eded065d1cfb24f0e657fb6bc0e2d547a45a119ebf4f1b0bfcd8c4f381",
+      "bytes": 146122,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 69,
+        "crossed_close_rows": 69,
+        "first_utc": "2018-07-15T21:00:00+00:00",
+        "last_utc": "2018-07-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fcca03efaaa6235f53537783b5511ee999ba025138ea8eb1fa6a0e884ab6e774",
+      "bytes": 145842,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 80,
+        "crossed_close_rows": 80,
+        "first_utc": "2018-07-22T21:00:00+00:00",
+        "last_utc": "2018-07-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cea1aad4d7d37006301f54813c5d9c775a1fc535ed8bfe60e62896239423a3b1",
+      "bytes": 141524,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 72,
+        "crossed_close_rows": 72,
+        "first_utc": "2018-07-29T21:00:00+00:00",
+        "last_utc": "2018-08-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5fbfb175be1110ed157691838849593c6b988eaf37ca5091b2e752d685f95361",
+      "bytes": 143072,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 93,
+        "crossed_close_rows": 93,
+        "first_utc": "2018-08-05T21:03:00+00:00",
+        "last_utc": "2018-08-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "293b8cc3ecd5ad0ad83debfca4b922041f1b1275615d75611b4105fddfa2d429",
+      "bytes": 147954,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 137,
+        "crossed_close_rows": 137,
+        "first_utc": "2018-08-12T21:00:00+00:00",
+        "last_utc": "2018-08-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "faf1c5a21bc409d72facc5111117f69e2b8e74463caa9dc56a1bd43b769745b9",
+      "bytes": 146105,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 121,
+        "crossed_close_rows": 121,
+        "first_utc": "2018-08-19T21:00:00+00:00",
+        "last_utc": "2018-08-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cc5554cf59091e094c8240345a3ec87a3ff8c686dbf229e61969380a6dcdbfd0",
+      "bytes": 145973,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 121,
+        "crossed_close_rows": 121,
+        "first_utc": "2018-08-26T21:00:00+00:00",
+        "last_utc": "2018-08-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5859e5a7fa870f8c5fa90417beb857f52acd3f3b001b45e38902c6305178cfdf",
+      "bytes": 144039,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 119,
+        "crossed_close_rows": 119,
+        "first_utc": "2018-09-02T21:00:00+00:00",
+        "last_utc": "2018-09-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ac1eec30bd53e1601da2a943b8c66e8660842eba405217ff7b8e29fede7074fb",
+      "bytes": 143782,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 106,
+        "crossed_close_rows": 106,
+        "first_utc": "2018-09-09T21:01:00+00:00",
+        "last_utc": "2018-09-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7138d60cc8780f0fdbcfabc8a7eaab9f31c3115b7bea737ee7a4899ebfda54a3",
+      "bytes": 145153,
+      "quality": {
+        "rows": 7188,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 110,
+        "crossed_close_rows": 110,
+        "first_utc": "2018-09-16T21:00:00+00:00",
+        "last_utc": "2018-09-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "37ef80a77505da71680d47c866cb015912d4cfffe4ee20fac4e645d7a8b6ead2",
+      "bytes": 145001,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 96,
+        "crossed_close_rows": 96,
+        "first_utc": "2018-09-23T21:00:00+00:00",
+        "last_utc": "2018-09-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6c8c1a2d80a0565b6568d22672eff524c95a828ae01e0081bacae6700a6768de",
+      "bytes": 145501,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 117,
+        "crossed_close_rows": 117,
+        "first_utc": "2018-09-30T21:00:00+00:00",
+        "last_utc": "2018-10-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "11ad2d946126a6fb76941dfa8cf9e3dfbb912f18c90f9617f573dc1fc7330c3e",
+      "bytes": 145743,
+      "quality": {
+        "rows": 7190,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 109,
+        "crossed_close_rows": 109,
+        "first_utc": "2018-10-07T21:00:00+00:00",
+        "last_utc": "2018-10-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9b3e2d57988b441b8499b12aa6d3db781407eaf2c2f3f26c8d26f032d7b253e0",
+      "bytes": 144828,
+      "quality": {
+        "rows": 7191,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 107,
+        "crossed_close_rows": 107,
+        "first_utc": "2018-10-14T21:02:00+00:00",
+        "last_utc": "2018-10-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "84ec6c19da0ca72350f8b93fe7b64f560251f510e5fab1e83777dfbe9ae95200",
+      "bytes": 145937,
+      "quality": {
+        "rows": 7185,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 60,
+        "crossed_close_rows": 60,
+        "first_utc": "2018-10-21T21:00:00+00:00",
+        "last_utc": "2018-10-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "254a020320b8f61094a5c7457f04895fafb2a0f240a52bd0f0cdfa695ffe66ce",
+      "bytes": 144833,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 83,
+        "crossed_close_rows": 83,
+        "first_utc": "2018-10-28T21:00:00+00:00",
+        "last_utc": "2018-11-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f90c957d3f3808f0cd682099c168f77903ba9d20510dc1f3a1e67750d14814a7",
+      "bytes": 146640,
+      "quality": {
+        "rows": 7193,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 107,
+        "crossed_close_rows": 107,
+        "first_utc": "2018-11-04T22:00:00+00:00",
+        "last_utc": "2018-11-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "98aef7b4e3eaa88b31d66cd15618995512436a3032577ce96643a9313f5392a7",
+      "bytes": 149877,
+      "quality": {
+        "rows": 7195,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 108,
+        "crossed_close_rows": 108,
+        "first_utc": "2018-11-11T22:01:00+00:00",
+        "last_utc": "2018-11-16T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e46dba609228d857e8656515aa342ce7a8f8e01b7c438df06bc2cf33164cad58",
+      "bytes": 143247,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 105,
+        "crossed_close_rows": 105,
+        "first_utc": "2018-11-18T22:00:00+00:00",
+        "last_utc": "2018-11-23T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fa02b7aef35416b793ca8c04d68472938b09fd73055dc7ca2bb59861b7395334",
+      "bytes": 145398,
+      "quality": {
+        "rows": 7185,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 69,
+        "crossed_close_rows": 69,
+        "first_utc": "2018-11-25T22:00:00+00:00",
+        "last_utc": "2018-11-30T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "64e285186d9f79b10a068a5b9bb58248b7a6df4ccd8e169e7e96b0e1f427fbe2",
+      "bytes": 146974,
+      "quality": {
+        "rows": 7190,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 70,
+        "crossed_close_rows": 70,
+        "first_utc": "2018-12-02T22:00:00+00:00",
+        "last_utc": "2018-12-07T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b5caa382734e594b10cd3467a157f1ae306a34db4badd4577cd0e979c01e419c",
+      "bytes": 145689,
+      "quality": {
+        "rows": 7191,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 74,
+        "crossed_close_rows": 74,
+        "first_utc": "2018-12-09T22:00:00+00:00",
+        "last_utc": "2018-12-14T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dc10be7046afe5c33bb18bea875d0da51cfc4f4559ff9d7a3a3795f5e5802287",
+      "bytes": 147248,
+      "quality": {
+        "rows": 7191,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 56,
+        "crossed_close_rows": 56,
+        "first_utc": "2018-12-16T22:01:00+00:00",
+        "last_utc": "2018-12-21T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "35c1e23747a28bf2ce2093ae1ca2c3bbecd7355407a4edd3fb48c847c99ac151",
+      "bytes": 105600,
+      "quality": {
+        "rows": 5118,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2018-12-23T22:00:00+00:00",
+        "last_utc": "2018-12-28T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2018,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2018/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a729ad29ee69b2b9edfaaab8cb5cdf01aecf8fd9928ef9693230a06553747a35",
+      "bytes": 107929,
+      "quality": {
+        "rows": 5124,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2018-12-30T22:00:00+00:00",
+        "last_utc": "2019-01-04T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/1.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f23eb7edb801ef347a17e351d34861d3e1dcc3f0c361fecd7ae8395a361c893e",
+      "bytes": 147502,
+      "quality": {
+        "rows": 7189,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 76,
+        "crossed_close_rows": 76,
+        "first_utc": "2019-01-06T22:01:00+00:00",
+        "last_utc": "2019-01-11T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "07786ff41e0da127354cdc6ac3c5b46d2323ea0e3d55caf989a73a1e983ddc7d",
+      "bytes": 144296,
+      "quality": {
+        "rows": 7195,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 44,
+        "crossed_close_rows": 44,
+        "first_utc": "2019-01-13T22:00:00+00:00",
+        "last_utc": "2019-01-18T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2cfd113b587eab76054197d7c92d62ec45982a7043848e7bd124a2dc7533c99d",
+      "bytes": 141541,
+      "quality": {
+        "rows": 7190,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 62,
+        "crossed_close_rows": 62,
+        "first_utc": "2019-01-20T22:00:00+00:00",
+        "last_utc": "2019-01-25T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "407d049b57844cc084e1e4b1bc0e7d56ed0591bd01935981d1146972a40cd45e",
+      "bytes": 142742,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 75,
+        "crossed_close_rows": 75,
+        "first_utc": "2019-01-27T22:00:00+00:00",
+        "last_utc": "2019-02-01T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9b4566dc5acb8543c5a174f613dc633afc287ec62468c4d36873d313492a6549",
+      "bytes": 138188,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 47,
+        "crossed_close_rows": 47,
+        "first_utc": "2019-02-03T22:00:00+00:00",
+        "last_utc": "2019-02-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1f1714a66b72586f2c0a352af1cd50bdfa4d73d6a25f49775165cb23143c59b1",
+      "bytes": 140930,
+      "quality": {
+        "rows": 7178,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 96,
+        "crossed_close_rows": 96,
+        "first_utc": "2019-02-10T22:00:00+00:00",
+        "last_utc": "2019-02-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7eca6e73c8a82c4aea3b3bab356ffbe773f965878761b556206a70b443a962c4",
+      "bytes": 140743,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 125,
+        "crossed_close_rows": 125,
+        "first_utc": "2019-02-17T22:00:00+00:00",
+        "last_utc": "2019-02-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a48078e0282cba504dcb8b6b33ad719a61230278f2a8aa80f7731bf82539b4bd",
+      "bytes": 140427,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 114,
+        "crossed_close_rows": 114,
+        "first_utc": "2019-02-24T22:00:00+00:00",
+        "last_utc": "2019-03-01T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "f776364ba1c130a80606b5f14b13bcec007716d22eb948e98339a776a6669fd2",
+      "bytes": 139223,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 67,
+        "crossed_close_rows": 67,
+        "first_utc": "2019-03-03T22:00:00+00:00",
+        "last_utc": "2019-03-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3ad14968cc3cccb62c53fc1eec844185a825bec7d7920cbe4768480bc2258a88",
+      "bytes": 138756,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 112,
+        "crossed_close_rows": 112,
+        "first_utc": "2019-03-10T21:00:00+00:00",
+        "last_utc": "2019-03-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "50242293489fea4265be6a649e182a2d0adacb2e29a4ee44a5452d8abb7fc6c1",
+      "bytes": 139716,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 101,
+        "crossed_close_rows": 101,
+        "first_utc": "2019-03-17T21:00:00+00:00",
+        "last_utc": "2019-03-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2b7cfc9c0e1413db094362019a8128052dbd06ea254b919a9ec4fa8dcd285f04",
+      "bytes": 142222,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 3,
+        "crossed_close_rows": 3,
+        "first_utc": "2019-03-24T21:06:00+00:00",
+        "last_utc": "2019-03-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f3695a3decb7701d02d0f567d5888f682d81ece3ca4434d8ed8bdb6c35616633",
+      "bytes": 135722,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 98,
+        "crossed_close_rows": 98,
+        "first_utc": "2019-03-31T21:04:00+00:00",
+        "last_utc": "2019-04-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "01ab075f4e861ca52c01318c69e5d66250be32c56cd6e216c87505b5a2eaaf44",
+      "bytes": 136162,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 68,
+        "crossed_close_rows": 68,
+        "first_utc": "2019-04-07T21:02:00+00:00",
+        "last_utc": "2019-04-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d83b87b04563af3939e05cbf5c5a68ea551986cb7cb8dff1e124e826093e5f5f",
+      "bytes": 131479,
+      "quality": {
+        "rows": 7113,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 52,
+        "crossed_close_rows": 52,
+        "first_utc": "2019-04-14T21:00:00+00:00",
+        "last_utc": "2019-04-19T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5863e54c6ed3c3bbdc4499369ce1981e2fb7bf176f070423d40d831bb3614121",
+      "bytes": 134666,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 79,
+        "crossed_close_rows": 79,
+        "first_utc": "2019-04-21T21:01:00+00:00",
+        "last_utc": "2019-04-26T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "efab23e9fd6651279e16fa1c97526d131cccb22359cd997f134f5bd22f7887e3",
+      "bytes": 133661,
+      "quality": {
+        "rows": 7117,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 69,
+        "crossed_close_rows": 69,
+        "first_utc": "2019-04-28T21:01:00+00:00",
+        "last_utc": "2019-05-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c477a4f49e28b89dd0b30244fe478ce16d53973ca39d4132688229fdcef7db7a",
+      "bytes": 139009,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 67,
+        "crossed_close_rows": 67,
+        "first_utc": "2019-05-05T21:01:00+00:00",
+        "last_utc": "2019-05-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b27b5d41bfc968d8591d1148d17819e8b30e730236e5bf6704444e224d51bd5f",
+      "bytes": 134317,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 117,
+        "crossed_close_rows": 117,
+        "first_utc": "2019-05-12T21:00:00+00:00",
+        "last_utc": "2019-05-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5dbc556ef01cd922792ab66bb5cc08eab84ab64464be671603de91c3edbcdff6",
+      "bytes": 135272,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 9,
+        "crossed_close_rows": 9,
+        "first_utc": "2019-05-19T21:00:00+00:00",
+        "last_utc": "2019-05-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0fb795976ce46ecb1c36fa2291fb22d846db6dba1784cdd7e891cf4c494bf406",
+      "bytes": 129727,
+      "quality": {
+        "rows": 7099,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 493,
+        "crossed_close_rows": 493,
+        "first_utc": "2019-05-26T21:00:00+00:00",
+        "last_utc": "2019-05-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "74c43341b0e3f5c47864b6031bbee87b0d53534f4ce1be86aef7db94aefe5d43",
+      "bytes": 138503,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 477,
+        "crossed_close_rows": 477,
+        "first_utc": "2019-06-02T21:15:00+00:00",
+        "last_utc": "2019-06-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "05e1eefede6e85952149a27b2cd5d78331ad05195a59ec689290a7332abf2dab",
+      "bytes": 133758,
+      "quality": {
+        "rows": 7130,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 471,
+        "crossed_close_rows": 471,
+        "first_utc": "2019-06-09T21:00:00+00:00",
+        "last_utc": "2019-06-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "06504eafefee309e9e851abf659e4c611f43c71234637b135dbad83efa30319f",
+      "bytes": 137952,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 198,
+        "crossed_close_rows": 198,
+        "first_utc": "2019-06-16T21:01:00+00:00",
+        "last_utc": "2019-06-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "819318ef10493572d21d47e4bc9841f6af90002baab096a891770b070dd2cd54",
+      "bytes": 138689,
+      "quality": {
+        "rows": 7159,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 115,
+        "crossed_close_rows": 115,
+        "first_utc": "2019-06-23T21:00:00+00:00",
+        "last_utc": "2019-06-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a4444e14667d68302dcb4d55594aa87e09155785e0856989e1590b5db64c2c68",
+      "bytes": 134357,
+      "quality": {
+        "rows": 7132,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 141,
+        "crossed_close_rows": 141,
+        "first_utc": "2019-06-30T21:00:00+00:00",
+        "last_utc": "2019-07-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "eccfcfc19ac51752f63e13908d5dbf0b8cb2a7198c7f084d134d6c4ce18402ad",
+      "bytes": 134320,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 101,
+        "crossed_close_rows": 101,
+        "first_utc": "2019-07-07T21:01:00+00:00",
+        "last_utc": "2019-07-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "94c990b4f5590b4db6e1938513dc99bb61ea15706828af7afa3854b4e1192327",
+      "bytes": 135470,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 167,
+        "crossed_close_rows": 167,
+        "first_utc": "2019-07-14T21:03:00+00:00",
+        "last_utc": "2019-07-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "778508730b2f32442ad432ca2d1c6bfe02af1630e0ef003cd284dcd496ace07c",
+      "bytes": 133240,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 146,
+        "crossed_close_rows": 146,
+        "first_utc": "2019-07-21T21:02:00+00:00",
+        "last_utc": "2019-07-26T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "df72d8090c22b42e77acfdc7d57daf86c70bad4470776667c7b2f4e150287273",
+      "bytes": 137520,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 201,
+        "crossed_close_rows": 201,
+        "first_utc": "2019-07-28T21:00:00+00:00",
+        "last_utc": "2019-08-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cfc3a2423dbcbb2904f6b9350d1d58b8716e67b8cad552609f842181591cb7ef",
+      "bytes": 143659,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 163,
+        "crossed_close_rows": 163,
+        "first_utc": "2019-08-04T21:04:00+00:00",
+        "last_utc": "2019-08-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c60227bfb3bf8aed2c8937b41bf2d0435425526327c7f8dc194e44859e77d45c",
+      "bytes": 138279,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 250,
+        "crossed_close_rows": 250,
+        "first_utc": "2019-08-11T21:00:00+00:00",
+        "last_utc": "2019-08-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2aa89e76e99c2ccefc4ef6ea4af46e760862f794dc881d8bc6ed05acae9eebc7",
+      "bytes": 134952,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 173,
+        "crossed_close_rows": 173,
+        "first_utc": "2019-08-18T21:00:00+00:00",
+        "last_utc": "2019-08-23T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f339310c2d97c68dafdd28c8b250d1794a038dfd194ec6af66300bc063d7dccd",
+      "bytes": 135865,
+      "quality": {
+        "rows": 7158,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 152,
+        "crossed_close_rows": 152,
+        "first_utc": "2019-08-25T21:00:00+00:00",
+        "last_utc": "2019-08-30T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "04b9d04d2c20ea977419bee0e8ec50c38fc7b383f327cb2fd21e32fff5cacfe9",
+      "bytes": 136944,
+      "quality": {
+        "rows": 7140,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 123,
+        "crossed_close_rows": 123,
+        "first_utc": "2019-09-01T21:00:00+00:00",
+        "last_utc": "2019-09-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "81c4d66e3f5ca4e5fd54a563ab55091b3cac02e144a33540173f618d81667baf",
+      "bytes": 137489,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 130,
+        "crossed_close_rows": 130,
+        "first_utc": "2019-09-08T21:00:00+00:00",
+        "last_utc": "2019-09-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "998af94098d920f8390c35eb6afb0be8164238989d9346896fb0ae9a69af9ac0",
+      "bytes": 138560,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 199,
+        "crossed_close_rows": 199,
+        "first_utc": "2019-09-15T21:00:00+00:00",
+        "last_utc": "2019-09-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a972d57b8f947dfde6452a60607b14b88c507128325770711a41e22cc3ebd57d",
+      "bytes": 136312,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 180,
+        "crossed_close_rows": 180,
+        "first_utc": "2019-09-22T21:03:00+00:00",
+        "last_utc": "2019-09-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e97e9a8e3bc62f84fe75b6bf8b173f3b9e500ccbbf4f3db2a09a89410a27a5f5",
+      "bytes": 136319,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 223,
+        "crossed_close_rows": 223,
+        "first_utc": "2019-09-29T21:00:00+00:00",
+        "last_utc": "2019-10-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "595394ed0ca6f11c4e63340d6a5c2c3e42e909c5fd21c695fcb7c24373d9eee0",
+      "bytes": 136437,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 228,
+        "crossed_close_rows": 228,
+        "first_utc": "2019-10-06T21:00:00+00:00",
+        "last_utc": "2019-10-11T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8fa54db582af66b227b7ac03cfef4e598f49caa68978bb671ff5e9c44a10662d",
+      "bytes": 136875,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 192,
+        "crossed_close_rows": 192,
+        "first_utc": "2019-10-13T21:01:00+00:00",
+        "last_utc": "2019-10-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3340f426aa1ccb593f7a0037032281e1688cbb11ae0ff2ace5ae6acd2ab939e2",
+      "bytes": 132930,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 303,
+        "crossed_close_rows": 303,
+        "first_utc": "2019-10-20T21:00:00+00:00",
+        "last_utc": "2019-10-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7a186d2f460b816ca24b5d67f8875dbf42e55e93d4fcca129da54663b665c403",
+      "bytes": 132928,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 341,
+        "crossed_close_rows": 341,
+        "first_utc": "2019-10-27T21:00:00+00:00",
+        "last_utc": "2019-11-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1ca47629dec6a2b0993dbf84ef05b6d45dec83282b6b908dfbf0023fd11487c8",
+      "bytes": 133186,
+      "quality": {
+        "rows": 7179,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 394,
+        "crossed_close_rows": 394,
+        "first_utc": "2019-11-03T22:00:00+00:00",
+        "last_utc": "2019-11-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "db64b555b5d9b458c0ef287a32536d3eee1715c5ff3a49772fa9c6a8004b539f",
+      "bytes": 131200,
+      "quality": {
+        "rows": 7159,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 250,
+        "crossed_close_rows": 250,
+        "first_utc": "2019-11-10T22:00:00+00:00",
+        "last_utc": "2019-11-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4f0594c40ff2cf40fe32b8faf447ac2891494c8eebbe0aee23f510a47fb6d8b0",
+      "bytes": 129624,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 257,
+        "crossed_close_rows": 257,
+        "first_utc": "2019-11-17T22:00:00+00:00",
+        "last_utc": "2019-11-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7f94bd0c445bc4d7526a182fb98ea4e62eea5f7358d450c85857e839eaaf6b85",
+      "bytes": 126584,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 333,
+        "crossed_close_rows": 333,
+        "first_utc": "2019-11-24T22:00:00+00:00",
+        "last_utc": "2019-11-29T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5498b65898e05c45b439ad22212ea66dfa3f29f052272b75645b534ed8dcb0c1",
+      "bytes": 129120,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 463,
+        "crossed_close_rows": 463,
+        "first_utc": "2019-12-01T22:00:00+00:00",
+        "last_utc": "2019-12-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8e05871cfa9dc190949a433d29f1d81923cb7c1d1b5dcd4a1aa4047ff928c310",
+      "bytes": 132389,
+      "quality": {
+        "rows": 7178,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 257,
+        "crossed_close_rows": 257,
+        "first_utc": "2019-12-08T22:00:00+00:00",
+        "last_utc": "2019-12-13T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "68113aaf13ae285cfc6266820061c8e6ecbd342f1505134677ce66f607f2b41c",
+      "bytes": 131907,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 271,
+        "crossed_close_rows": 271,
+        "first_utc": "2019-12-15T22:00:00+00:00",
+        "last_utc": "2019-12-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c5faa89b9758a6f5991e63352ea793cb83f1e4d1a19e9d0fd2295db557f84f77",
+      "bytes": 91307,
+      "quality": {
+        "rows": 5009,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 106,
+        "crossed_close_rows": 106,
+        "first_utc": "2019-12-22T22:01:00+00:00",
+        "last_utc": "2019-12-27T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2019,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2019/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0694418a120ff86752c28a5c8093a3727292f1950b48d20df3cd4dab50411243",
+      "bytes": 94914,
+      "quality": {
+        "rows": 5010,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 196,
+        "crossed_close_rows": 196,
+        "first_utc": "2019-12-29T22:03:00+00:00",
+        "last_utc": "2020-01-03T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/1.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "35e307834ac82849bd22bbd70c85dd5eb5567ac584abea73928a9fbfab9e0400",
+      "bytes": 133447,
+      "quality": {
+        "rows": 7171,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 262,
+        "crossed_close_rows": 262,
+        "first_utc": "2020-01-05T22:01:00+00:00",
+        "last_utc": "2020-01-10T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d95423870ac748a3fffd2ebc60b562f170974a8f2bd3032f3e354ce777b0e79d",
+      "bytes": 129061,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 335,
+        "crossed_close_rows": 335,
+        "first_utc": "2020-01-12T22:00:00+00:00",
+        "last_utc": "2020-01-17T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4498292fe52977cee55499f60ed97dde5b8e13c97de37b902f1133abbf424303",
+      "bytes": 129348,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 239,
+        "crossed_close_rows": 239,
+        "first_utc": "2020-01-19T22:00:00+00:00",
+        "last_utc": "2020-01-24T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "aed19a5dd3eb82f1259d11b8689044ae1de20a25d9b51cd55e59eb699ed3b754",
+      "bytes": 130114,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 289,
+        "crossed_close_rows": 289,
+        "first_utc": "2020-01-26T22:00:00+00:00",
+        "last_utc": "2020-01-31T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0b956641d74d173551619859a2a8e68b7d96c524d8196a0b1bb837843b7d0ab8",
+      "bytes": 129426,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 312,
+        "crossed_close_rows": 312,
+        "first_utc": "2020-02-02T22:00:00+00:00",
+        "last_utc": "2020-02-07T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "949f72163da934b859e7c6f68d52aa273f9b6f2d8e04d75555a48056c16f7b71",
+      "bytes": 130780,
+      "quality": {
+        "rows": 7158,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 358,
+        "crossed_close_rows": 358,
+        "first_utc": "2020-02-09T22:00:00+00:00",
+        "last_utc": "2020-02-14T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e015a156f10612fdc99f6b728681b042c3a360d5a82968e7b093bd2997e6bc01",
+      "bytes": 132398,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 478,
+        "crossed_close_rows": 478,
+        "first_utc": "2020-02-16T22:01:00+00:00",
+        "last_utc": "2020-02-21T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "18b36015e6b689797be69150b2bd33a9236f5c7c228469ec90b5af9502315cbf",
+      "bytes": 144152,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 428,
+        "crossed_close_rows": 428,
+        "first_utc": "2020-02-23T22:00:00+00:00",
+        "last_utc": "2020-02-28T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "583ca887db457cee4553dbdedefbe94be00ed04c8a8ffdb756bf3bea4dda9da5",
+      "bytes": 151243,
+      "quality": {
+        "rows": 7195,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 356,
+        "crossed_close_rows": 356,
+        "first_utc": "2020-03-01T22:00:00+00:00",
+        "last_utc": "2020-03-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5c67db9a6e0959042c0434b269746d3035d386c8e4921a959bbbeb9279132e9e",
+      "bytes": 163159,
+      "quality": {
+        "rows": 7149,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 231,
+        "crossed_close_rows": 231,
+        "first_utc": "2020-03-08T21:00:00+00:00",
+        "last_utc": "2020-03-13T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "05c858a44ce0a0b208002e96cfb90c1b29e66c8dc873974c1b4473dfd5ba3b41",
+      "bytes": 166740,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 171,
+        "crossed_close_rows": 171,
+        "first_utc": "2020-03-15T21:00:00+00:00",
+        "last_utc": "2020-03-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b3213aab0fc8732b35d952fe3751fa89c29e390b3b3803721dd5c5495c78725d",
+      "bytes": 162257,
+      "quality": {
+        "rows": 7102,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 116,
+        "crossed_close_rows": 116,
+        "first_utc": "2020-03-22T21:12:00+00:00",
+        "last_utc": "2020-03-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2995087956b192065e1cfb3e6b0e1f6c8739078b94e7ecc16d1c013e51a1d07e",
+      "bytes": 156047,
+      "quality": {
+        "rows": 7074,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 85,
+        "crossed_close_rows": 85,
+        "first_utc": "2020-03-29T21:07:00+00:00",
+        "last_utc": "2020-04-03T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "58589ef379f7c98c3ba9ca1cdca639df6828e9cdb8cbb0f2cd6f7a90f57ccd0f",
+      "bytes": 148038,
+      "quality": {
+        "rows": 7089,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 99,
+        "crossed_close_rows": 99,
+        "first_utc": "2020-04-05T21:03:00+00:00",
+        "last_utc": "2020-04-10T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5b442f49df9f45419f66c561c0dd605c055c8a0a41d7e8c228222a76e6702d78",
+      "bytes": 146942,
+      "quality": {
+        "rows": 7087,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 142,
+        "crossed_close_rows": 142,
+        "first_utc": "2020-04-12T21:00:00+00:00",
+        "last_utc": "2020-04-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a774481d2540ab0d1465b92c79c9e74812edffce118c39a6fef601d5b932c94b",
+      "bytes": 146682,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 232,
+        "crossed_close_rows": 232,
+        "first_utc": "2020-04-19T21:14:00+00:00",
+        "last_utc": "2020-04-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a51d707481dcde0c3063c655bf7133a9e9edc930e0f4f0e1a400af14afb3dde5",
+      "bytes": 145626,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 218,
+        "crossed_close_rows": 218,
+        "first_utc": "2020-04-26T21:03:00+00:00",
+        "last_utc": "2020-05-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3fba579b4d9bba926e9bf48a513ca24b52f0b49ca81163eb856ab4cc3d916db4",
+      "bytes": 144785,
+      "quality": {
+        "rows": 7159,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 264,
+        "crossed_close_rows": 264,
+        "first_utc": "2020-05-03T21:03:00+00:00",
+        "last_utc": "2020-05-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3ee33971e768eefe3b5a003ec74a8a85be443df293b2e7b094c99710b5c21712",
+      "bytes": 142904,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 207,
+        "crossed_close_rows": 207,
+        "first_utc": "2020-05-10T21:00:00+00:00",
+        "last_utc": "2020-05-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "df12a29afa9c5f191983e6d10c3a9b8c74e68997d897a26d2939c8f13702195b",
+      "bytes": 143288,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 240,
+        "crossed_close_rows": 240,
+        "first_utc": "2020-05-17T21:05:00+00:00",
+        "last_utc": "2020-05-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6d9b29f0c4451f16e90b04af99ceb058ac1fd00e9fa3494bc7ec03a6adc19322",
+      "bytes": 144593,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 258,
+        "crossed_close_rows": 258,
+        "first_utc": "2020-05-24T21:03:00+00:00",
+        "last_utc": "2020-05-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e87a93662f1c0842cf93969b43f121f655f394d46359ac4449b37467a59d17c8",
+      "bytes": 147944,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 309,
+        "crossed_close_rows": 309,
+        "first_utc": "2020-05-31T21:00:00+00:00",
+        "last_utc": "2020-06-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9991481d6da89965f80cc677a21911f100b1402f82e409cebd39c5c4f64eccdb",
+      "bytes": 150499,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 242,
+        "crossed_close_rows": 242,
+        "first_utc": "2020-06-07T21:00:00+00:00",
+        "last_utc": "2020-06-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6cd4b0557ed3dc53fe59efe3152756aa439db6c8d5e9320a119632b95635d068",
+      "bytes": 149320,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 331,
+        "crossed_close_rows": 331,
+        "first_utc": "2020-06-14T21:00:00+00:00",
+        "last_utc": "2020-06-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a31ab92c2d2d57c0e00f6cde464044a25c08e8d07ab5d175efa4416e3cad3cd7",
+      "bytes": 145923,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 348,
+        "crossed_close_rows": 348,
+        "first_utc": "2020-06-21T21:00:00+00:00",
+        "last_utc": "2020-06-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "640b0781cedd4197a92069a888d4153409e9e311c64e6fefc7a910ba8bdcca33",
+      "bytes": 143239,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 250,
+        "crossed_close_rows": 250,
+        "first_utc": "2020-06-28T21:01:00+00:00",
+        "last_utc": "2020-07-03T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "13fc6a044bc333b2423284d6af16c3597114e384a07e22dbb5d5942f705c65e7",
+      "bytes": 98712,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 262,
+        "crossed_close_rows": 262,
+        "first_utc": "2020-07-05T21:00:00+00:00",
+        "last_utc": "2020-07-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "248fd6498e3255e6deded956296e2b538ce9622012698afaad2bd690cdcc7625",
+      "bytes": 142299,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 390,
+        "crossed_close_rows": 390,
+        "first_utc": "2020-07-12T21:01:00+00:00",
+        "last_utc": "2020-07-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "93bb83e244fb15e6bcd1d68c503d6bc1903df57e164e3ee2d6ab64d3828b8e05",
+      "bytes": 145305,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 526,
+        "crossed_close_rows": 526,
+        "first_utc": "2020-07-19T21:05:00+00:00",
+        "last_utc": "2020-07-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7100cc9fcf54902499576b2563b6ea250a98c4901e3e35d7d684210be296d181",
+      "bytes": 149360,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 587,
+        "crossed_close_rows": 587,
+        "first_utc": "2020-07-26T21:00:00+00:00",
+        "last_utc": "2020-07-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ff4a45711965ca77af8b51c3f1d3be843624e7cbedd1ba7923fedd8d0244111f",
+      "bytes": 148252,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 436,
+        "crossed_close_rows": 436,
+        "first_utc": "2020-08-02T21:01:00+00:00",
+        "last_utc": "2020-08-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ede27dd2f5be8d29fcb717c321b735f269370eb3d0f11eeaf3fa3745833beddf",
+      "bytes": 146921,
+      "quality": {
+        "rows": 7157,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 219,
+        "crossed_close_rows": 219,
+        "first_utc": "2020-08-09T21:00:00+00:00",
+        "last_utc": "2020-08-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "801a3b87f32c93c05fa7b93cc3b31b40426c3ad7b3c711cd1c04cc1f16852b94",
+      "bytes": 147047,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 237,
+        "crossed_close_rows": 237,
+        "first_utc": "2020-08-16T21:00:00+00:00",
+        "last_utc": "2020-08-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8b503fa6be781653c7bbb658be3beba34dedc7248d10d8f26add4f2d726890a8",
+      "bytes": 146504,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 212,
+        "crossed_close_rows": 212,
+        "first_utc": "2020-08-23T21:03:00+00:00",
+        "last_utc": "2020-08-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f1290a1c1c9259211873d2af5f27a3c35cf3c65b29a54a5c609e3155b1e09f9b",
+      "bytes": 148385,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 223,
+        "crossed_close_rows": 223,
+        "first_utc": "2020-08-30T21:03:00+00:00",
+        "last_utc": "2020-09-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c6914e4cb4c41b7992f8556a39c443f49eb3f5fc96e6f15feac958d05d435a56",
+      "bytes": 145106,
+      "quality": {
+        "rows": 7170,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 198,
+        "crossed_close_rows": 198,
+        "first_utc": "2020-09-06T21:00:00+00:00",
+        "last_utc": "2020-09-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4bd8bd5145d9fe57b2733cba1b8f6e62e165ffe110ef5fc89b39279f7bc0a18d",
+      "bytes": 145415,
+      "quality": {
+        "rows": 7161,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 187,
+        "crossed_close_rows": 187,
+        "first_utc": "2020-09-13T21:00:00+00:00",
+        "last_utc": "2020-09-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4a2099cc7354b3d498ee37b4c14f7ab0ae38782fd80b5c8092e3e0b88373e692",
+      "bytes": 148023,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 161,
+        "crossed_close_rows": 161,
+        "first_utc": "2020-09-20T21:00:00+00:00",
+        "last_utc": "2020-09-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "be4a568a6a3b2a4e6e53d38c6aead71637755574fc678e2f923fe6d4a1a99544",
+      "bytes": 146439,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 114,
+        "crossed_close_rows": 114,
+        "first_utc": "2020-09-27T21:00:00+00:00",
+        "last_utc": "2020-10-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2f9e8adf2a2a2344ec1eb4ac00fbb199b8136d55f6c03e5536f87edf019e2306",
+      "bytes": 141660,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 217,
+        "crossed_close_rows": 217,
+        "first_utc": "2020-10-04T21:00:00+00:00",
+        "last_utc": "2020-10-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fbb5da346e6e8af6ef42248bf8253fc5b5e389110cafeb153cbf3065d2c1d905",
+      "bytes": 140581,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 249,
+        "crossed_close_rows": 249,
+        "first_utc": "2020-10-11T21:00:00+00:00",
+        "last_utc": "2020-10-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7f7ef07734a25caebe10ab65a2efa37d9ec2532bcce33cd22a87eb919b0eaf63",
+      "bytes": 141271,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 241,
+        "crossed_close_rows": 241,
+        "first_utc": "2020-10-18T21:00:00+00:00",
+        "last_utc": "2020-10-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8e290d2492c5927716ef9c6b4132740c920a9a4f9cdb29955f10114fed568420",
+      "bytes": 142881,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 384,
+        "crossed_close_rows": 384,
+        "first_utc": "2020-10-25T21:00:00+00:00",
+        "last_utc": "2020-10-30T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bf94101a450007388e23940a95a24c526af72f18555c5d1152b8505d6e8b59e5",
+      "bytes": 148752,
+      "quality": {
+        "rows": 7170,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 967,
+        "crossed_close_rows": 967,
+        "first_utc": "2020-11-01T22:00:00+00:00",
+        "last_utc": "2020-11-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b194928b43a37e622565a81be1ca88c4b7dffe8730c8b66ce945ef2936104f9d",
+      "bytes": 144065,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 904,
+        "crossed_close_rows": 904,
+        "first_utc": "2020-11-08T22:00:00+00:00",
+        "last_utc": "2020-11-13T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c3c0eef6211efbd20b4778d60b34d2b71d1f903f00454ffe78e7f6d6c183662f",
+      "bytes": 139206,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 610,
+        "crossed_close_rows": 610,
+        "first_utc": "2020-11-15T22:00:00+00:00",
+        "last_utc": "2020-11-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d19ac28f14e4d4061f07ea08c8e84eaca04988f7f531b308f9dd9dfd581d0574",
+      "bytes": 139307,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 332,
+        "crossed_close_rows": 332,
+        "first_utc": "2020-11-22T22:00:00+00:00",
+        "last_utc": "2020-11-27T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f0abc8314e10dc74e3d4c221a8e795c057a178515eda2121ea8dd93c800c2e56",
+      "bytes": 143339,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 433,
+        "crossed_close_rows": 433,
+        "first_utc": "2020-11-29T22:00:00+00:00",
+        "last_utc": "2020-12-04T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "727ca4eaed571e1ef76044cd994f5121a50fe0bdc92f24899b5284106a74c92c",
+      "bytes": 142125,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 396,
+        "crossed_close_rows": 396,
+        "first_utc": "2020-12-06T22:00:00+00:00",
+        "last_utc": "2020-12-11T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6b636adf37dd502012199460970149b5b8d96cfb7c00fc5ed3fae840adaafa11",
+      "bytes": 143004,
+      "quality": {
+        "rows": 7159,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 215,
+        "crossed_close_rows": 215,
+        "first_utc": "2020-12-13T22:00:00+00:00",
+        "last_utc": "2020-12-18T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ba9ee1021469b9c1f7a0ad1cd7d1f4a4b3487c269b0ed7aeb614d36c250b5228",
+      "bytes": 114780,
+      "quality": {
+        "rows": 5542,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 115,
+        "crossed_close_rows": 115,
+        "first_utc": "2020-12-20T22:00:00+00:00",
+        "last_utc": "2020-12-24T19:03:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2020,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2020/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "581074ba833a03c661c66d8c6b0254b918567db621e919c0d6884715d87b93fe",
+      "bytes": 112864,
+      "quality": {
+        "rows": 5497,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 108,
+        "crossed_close_rows": 108,
+        "first_utc": "2020-12-27T22:44:00+00:00",
+        "last_utc": "2020-12-31T19:01:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "cdbb2e2bbff4f0b323bf6080c7f205e2028c35ca9ebc7867d53785c3cab52f92",
+      "bytes": 149035,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 252,
+        "crossed_close_rows": 252,
+        "first_utc": "2021-01-03T22:00:00+00:00",
+        "last_utc": "2021-01-08T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3b4eff1692bbfc5676f6ef3a7034d0fb09f6058973e7caa554d6f1671573a6ac",
+      "bytes": 146670,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 253,
+        "crossed_close_rows": 253,
+        "first_utc": "2021-01-10T22:00:00+00:00",
+        "last_utc": "2021-01-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "573effc245568dd94b0c7bca5fb625d76373c3c2cf49b376442718f78b215e99",
+      "bytes": 142065,
+      "quality": {
+        "rows": 7157,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 230,
+        "crossed_close_rows": 230,
+        "first_utc": "2021-01-17T22:00:00+00:00",
+        "last_utc": "2021-01-22T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ab60ac24c1715d1cf548c9f4dcc226f8d45a66de56a11bcb211bf8e03a0846f6",
+      "bytes": 144870,
+      "quality": {
+        "rows": 7161,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 239,
+        "crossed_close_rows": 239,
+        "first_utc": "2021-01-24T22:00:00+00:00",
+        "last_utc": "2021-01-29T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1a48c63819c9340c12d42c5e708ed4e6c204909d592558e24db8193c17b4d762",
+      "bytes": 143058,
+      "quality": {
+        "rows": 7179,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 269,
+        "crossed_close_rows": 269,
+        "first_utc": "2021-01-31T22:00:00+00:00",
+        "last_utc": "2021-02-05T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0fab642502fca4b8aaed7bb220ba7a5c905e9f95672178f60bed129eac487176",
+      "bytes": 138633,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 211,
+        "crossed_close_rows": 211,
+        "first_utc": "2021-02-07T22:00:00+00:00",
+        "last_utc": "2021-02-12T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1235813c51386be83169faf49c07506beec2bdee7b8d25ad644cf431234fbe45",
+      "bytes": 139035,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 248,
+        "crossed_close_rows": 248,
+        "first_utc": "2021-02-14T22:00:00+00:00",
+        "last_utc": "2021-02-19T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a32eab07ebfee032959418d7d1c260710288b32cfaa7657170b4295559d39654",
+      "bytes": 145804,
+      "quality": {
+        "rows": 7144,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 343,
+        "crossed_close_rows": 343,
+        "first_utc": "2021-02-21T22:00:00+00:00",
+        "last_utc": "2021-02-26T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bc87dbd0f3980df59d6d29087d1237b183de62faa7564c6c7264257a2123b76e",
+      "bytes": 145261,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 251,
+        "crossed_close_rows": 251,
+        "first_utc": "2021-02-28T22:00:00+00:00",
+        "last_utc": "2021-03-05T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b322a8c31d54610e8c5be1ae3da96cdaaa520fb84b17ef854a39f874662e563c",
+      "bytes": 143637,
+      "quality": {
+        "rows": 7111,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 294,
+        "crossed_close_rows": 294,
+        "first_utc": "2021-03-07T22:00:00+00:00",
+        "last_utc": "2021-03-12T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e148398d19c964933d304b66401179a5bb01dc0a023d992c5fb6fdbaa4dafbea",
+      "bytes": 142638,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 189,
+        "crossed_close_rows": 189,
+        "first_utc": "2021-03-14T21:01:00+00:00",
+        "last_utc": "2021-03-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d79bee846a70d553b4b52179e8c77528a2568ed9ede8e4b10e9bf2c91f9e8bd2",
+      "bytes": 141674,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 223,
+        "crossed_close_rows": 223,
+        "first_utc": "2021-03-21T21:00:00+00:00",
+        "last_utc": "2021-03-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1611e534bdc66544f72d6396d66dd540539bfe378d797f353a99e7f1dfb98d65",
+      "bytes": 138098,
+      "quality": {
+        "rows": 7126,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 210,
+        "crossed_close_rows": 210,
+        "first_utc": "2021-03-28T21:01:00+00:00",
+        "last_utc": "2021-04-02T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9d614d043b7dda8e063d139ab6e735e1dd8f0bf9714e2ae07bb92b48550ea39a",
+      "bytes": 138550,
+      "quality": {
+        "rows": 7110,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 189,
+        "crossed_close_rows": 189,
+        "first_utc": "2021-04-04T21:03:00+00:00",
+        "last_utc": "2021-04-09T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f0a56c811ea7c4483ade78f25014a159c519328fd618f3bbafdd5ede064ab56b",
+      "bytes": 137737,
+      "quality": {
+        "rows": 7120,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 275,
+        "crossed_close_rows": 275,
+        "first_utc": "2021-04-11T21:00:00+00:00",
+        "last_utc": "2021-04-16T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b28d421d7af5f55c03330ed94c9cf3653c6f107e215dc85a0edfd1ab653410e1",
+      "bytes": 139215,
+      "quality": {
+        "rows": 7116,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 206,
+        "crossed_close_rows": 206,
+        "first_utc": "2021-04-18T21:00:00+00:00",
+        "last_utc": "2021-04-23T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "083569be798e0bb568c55a37578ea16c6cc4f9ef056d629765668da5bddb400b",
+      "bytes": 95064,
+      "quality": {
+        "rows": 7135,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 210,
+        "crossed_close_rows": 210,
+        "first_utc": "2021-04-25T21:00:00+00:00",
+        "last_utc": "2021-04-30T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "46e2b69c6b979ecbd1bcd9a711e39dbb95ad6346f581dcb91fe7ba8e7f15daf4",
+      "bytes": 93664,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 300,
+        "crossed_close_rows": 300,
+        "first_utc": "2021-05-02T21:00:00+00:00",
+        "last_utc": "2021-05-07T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "290bdafb79c8692e83b1faf50caf6f0cf8fec61759e12bb0300794265691e5e6",
+      "bytes": 96356,
+      "quality": {
+        "rows": 7147,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 329,
+        "crossed_close_rows": 329,
+        "first_utc": "2021-05-09T21:01:00+00:00",
+        "last_utc": "2021-05-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d83d80fff67f9749aff57ba62c730fe5b4aa9ebdcdf1981a44640ce244f54e63",
+      "bytes": 95092,
+      "quality": {
+        "rows": 7123,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 300,
+        "crossed_close_rows": 300,
+        "first_utc": "2021-05-16T21:00:00+00:00",
+        "last_utc": "2021-05-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "93ca29506127cc03bbf0b0a3ae1ad4f26f9ee4c82a91cb18c0035d526b3975e3",
+      "bytes": 95815,
+      "quality": {
+        "rows": 7143,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 248,
+        "crossed_close_rows": 248,
+        "first_utc": "2021-05-23T21:00:00+00:00",
+        "last_utc": "2021-05-28T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f72880f46d758127ec52876803c68991a35e1a68e5e1dbdab10efd2a061ff3ee",
+      "bytes": 93505,
+      "quality": {
+        "rows": 7085,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 110,
+        "crossed_close_rows": 110,
+        "first_utc": "2021-05-30T21:01:00+00:00",
+        "last_utc": "2021-06-04T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8477d9d180f7a871ebc9cd29097d7d082ce2ceb9eab5514f343297609f1fd512",
+      "bytes": 91661,
+      "quality": {
+        "rows": 7075,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 84,
+        "crossed_close_rows": 84,
+        "first_utc": "2021-06-06T21:01:00+00:00",
+        "last_utc": "2021-06-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5ebe6331c10d2643e148a9ecb7da1139b921ac8138a0ff5d40180ec3f8c6cf86",
+      "bytes": 96250,
+      "quality": {
+        "rows": 7117,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 86,
+        "crossed_close_rows": 86,
+        "first_utc": "2021-06-13T21:00:00+00:00",
+        "last_utc": "2021-06-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1c2497b50b82e06d0656bc7f83d74cdc0eef3741dc6d0d1e3d65cdbc78782c50",
+      "bytes": 96433,
+      "quality": {
+        "rows": 7116,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 95,
+        "crossed_close_rows": 95,
+        "first_utc": "2021-06-20T21:00:00+00:00",
+        "last_utc": "2021-06-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fe860a62166833fd61fd0fe8bdb0ca8f123bc2a90f1d5ec01c83298649f0cca0",
+      "bytes": 95169,
+      "quality": {
+        "rows": 7116,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 81,
+        "crossed_close_rows": 81,
+        "first_utc": "2021-06-27T21:00:00+00:00",
+        "last_utc": "2021-07-02T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "59990a65063ccf549d743d901f7bb6a4fa49f8f1a788759e2fc8f92a3c39b7b0",
+      "bytes": 95540,
+      "quality": {
+        "rows": 7129,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 69,
+        "crossed_close_rows": 69,
+        "first_utc": "2021-07-04T21:03:00+00:00",
+        "last_utc": "2021-07-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5269e78ffde7cb6d085a514db367441413d7b3e625e6bba5ff2ec412bfe0f1a4",
+      "bytes": 94321,
+      "quality": {
+        "rows": 7092,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 32,
+        "crossed_close_rows": 32,
+        "first_utc": "2021-07-11T21:01:00+00:00",
+        "last_utc": "2021-07-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dc11e73a6ece8b456070763b50bad3e7cace648ff671cac0b87939f8966ee45c",
+      "bytes": 95150,
+      "quality": {
+        "rows": 7110,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 72,
+        "crossed_close_rows": 72,
+        "first_utc": "2021-07-18T21:05:00+00:00",
+        "last_utc": "2021-07-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9bf603d9688ed68c477e2b299a6913eea181ac0580a37a4533fd5f4b3add0dc0",
+      "bytes": 93685,
+      "quality": {
+        "rows": 7116,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 84,
+        "crossed_close_rows": 84,
+        "first_utc": "2021-07-25T21:05:00+00:00",
+        "last_utc": "2021-07-30T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f0034ce434a22efce8c3dbac429768e2d9752eb718c3c6315b7c016fc09e05c7",
+      "bytes": 91371,
+      "quality": {
+        "rows": 7102,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 77,
+        "crossed_close_rows": 77,
+        "first_utc": "2021-08-01T21:05:00+00:00",
+        "last_utc": "2021-08-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "053f15187cd4056d51e3f4532304b727e386d1f2cd8e07fe4960dad6ef125679",
+      "bytes": 88634,
+      "quality": {
+        "rows": 7047,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 94,
+        "crossed_close_rows": 94,
+        "first_utc": "2021-08-08T21:05:00+00:00",
+        "last_utc": "2021-08-13T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f45ff0545f82a16d38f04a53140f192aad8f4c6d1173ab3bcb770c0d170a33f9",
+      "bytes": 91164,
+      "quality": {
+        "rows": 7089,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 143,
+        "crossed_close_rows": 143,
+        "first_utc": "2021-08-15T21:00:00+00:00",
+        "last_utc": "2021-08-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "30cc6e9155082a16c630dca85f5d5a38113a67983a10107107e2cd7b782e8eed",
+      "bytes": 91247,
+      "quality": {
+        "rows": 7090,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 90,
+        "crossed_close_rows": 90,
+        "first_utc": "2021-08-22T21:05:00+00:00",
+        "last_utc": "2021-08-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a0773ea291e284d21f3412036740e25b0e5bc5902ec639ca028b5d83027fd6e4",
+      "bytes": 89357,
+      "quality": {
+        "rows": 7079,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 134,
+        "crossed_close_rows": 134,
+        "first_utc": "2021-08-29T21:00:00+00:00",
+        "last_utc": "2021-09-03T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8cc0bddf3081d8ad40ed3224fd1e8ef2c90eb181f8489f381db318f2ac95f7c5",
+      "bytes": 89333,
+      "quality": {
+        "rows": 7111,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 207,
+        "crossed_close_rows": 207,
+        "first_utc": "2021-09-05T21:00:00+00:00",
+        "last_utc": "2021-09-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3d2b0e83097ebf84cdbfaa52b3c6e824e5bf45660fa8513d9100ea6dae359468",
+      "bytes": 89417,
+      "quality": {
+        "rows": 7100,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 331,
+        "crossed_close_rows": 331,
+        "first_utc": "2021-09-12T21:00:00+00:00",
+        "last_utc": "2021-09-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cf6a30251d69ddeabd74598a69a092d77ef8ec5f777ec18bde714e16a42f3b9e",
+      "bytes": 90209,
+      "quality": {
+        "rows": 7122,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 384,
+        "crossed_close_rows": 384,
+        "first_utc": "2021-09-19T21:01:00+00:00",
+        "last_utc": "2021-09-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b197705c8bc58ea155f02ece3f9501e9490b1ab8d9b7718cdd99bf411ffa9b84",
+      "bytes": 92280,
+      "quality": {
+        "rows": 7097,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 406,
+        "crossed_close_rows": 406,
+        "first_utc": "2021-09-26T21:00:00+00:00",
+        "last_utc": "2021-10-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a29a0ed81a86f0fa2ddb6f62e41bbd099f39ea369c923a4948cbbf23bec23924",
+      "bytes": 91065,
+      "quality": {
+        "rows": 7137,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 413,
+        "crossed_close_rows": 413,
+        "first_utc": "2021-10-03T21:03:00+00:00",
+        "last_utc": "2021-10-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4eeb4f534b43ef0bd2c53f8e13869e3c9e3f3206ee4d00441764a577adaf2abd",
+      "bytes": 89942,
+      "quality": {
+        "rows": 7097,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 319,
+        "crossed_close_rows": 319,
+        "first_utc": "2021-10-10T21:00:00+00:00",
+        "last_utc": "2021-10-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7573d6f70cefabb57793164287c97057a8cd5b5d23964cd0221e5e58c504ffac",
+      "bytes": 90868,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 356,
+        "crossed_close_rows": 356,
+        "first_utc": "2021-10-17T21:00:00+00:00",
+        "last_utc": "2021-10-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5aaa294c02e2994a16e5ba08c727b4292e0f323563333f92d089e95c54e9a4f5",
+      "bytes": 92942,
+      "quality": {
+        "rows": 7132,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 374,
+        "crossed_close_rows": 374,
+        "first_utc": "2021-10-24T21:03:00+00:00",
+        "last_utc": "2021-10-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1c9f5163f94c1fa97e5d030c4e613c50d145683262ff38ef900c4a450bd1fd53",
+      "bytes": 93088,
+      "quality": {
+        "rows": 7149,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 328,
+        "crossed_close_rows": 328,
+        "first_utc": "2021-10-31T21:02:00+00:00",
+        "last_utc": "2021-11-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f16689f62dc3987625e3f52bdb46c8944267cf56c264e6dc0a63a33aeae2a3bd",
+      "bytes": 94868,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 294,
+        "crossed_close_rows": 294,
+        "first_utc": "2021-11-07T22:01:00+00:00",
+        "last_utc": "2021-11-12T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "262e0dc43da18fec359b0dcdcd44778299134061d855f56defb9866a071e597d",
+      "bytes": 96730,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 303,
+        "crossed_close_rows": 303,
+        "first_utc": "2021-11-14T22:01:00+00:00",
+        "last_utc": "2021-11-19T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "721833b838672db3789d1d473783a8ee5157696c6f43ffaca84d719801be60e8",
+      "bytes": 96667,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 250,
+        "crossed_close_rows": 250,
+        "first_utc": "2021-11-21T22:00:00+00:00",
+        "last_utc": "2021-11-26T21:56:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2f8a563c4437364ac88b290cdec42e0f5e2f913e56abdf35e4654f968aab73ef",
+      "bytes": 99689,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 247,
+        "crossed_close_rows": 247,
+        "first_utc": "2021-11-28T22:00:00+00:00",
+        "last_utc": "2021-12-03T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "591dc10149dfca5147e1676998e2e151dbaf7e80c5e4f86b9f21f4d651687d23",
+      "bytes": 94941,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 271,
+        "crossed_close_rows": 271,
+        "first_utc": "2021-12-05T22:00:00+00:00",
+        "last_utc": "2021-12-10T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "45c1765f41356ea2de8ff9d4a639540ef3711ccecc788f52f74b960d1c5568a3",
+      "bytes": 95587,
+      "quality": {
+        "rows": 7146,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 239,
+        "crossed_close_rows": 239,
+        "first_utc": "2021-12-12T22:04:00+00:00",
+        "last_utc": "2021-12-17T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a5c74a4472394d0abf38b43149b302f2034ff8241a749d32ba0e45086914d242",
+      "bytes": 91746,
+      "quality": {
+        "rows": 6953,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 84,
+        "crossed_close_rows": 84,
+        "first_utc": "2021-12-19T22:00:00+00:00",
+        "last_utc": "2021-12-24T19:09:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "de2c627999b29626f6e35fdde3610967cf5cf4d7890647769710ffb6613c7b61",
+      "bytes": 91321,
+      "quality": {
+        "rows": 6977,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 82,
+        "crossed_close_rows": 82,
+        "first_utc": "2021-12-26T22:29:00+00:00",
+        "last_utc": "2021-12-31T20:01:00+00:00"
+      }
+    },
+    {
+      "symbol": "EURUSD",
+      "year_label": 2021,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/EURUSD/2021/53.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    }
+  ],
+  "missing_week_urls": [
+    "https://candledata.fxcorporate.com/m1/EURUSD/2017/53.csv.gz",
+    "https://candledata.fxcorporate.com/m1/EURUSD/2019/1.csv.gz",
+    "https://candledata.fxcorporate.com/m1/EURUSD/2020/1.csv.gz",
+    "https://candledata.fxcorporate.com/m1/EURUSD/2021/53.csv.gz"
+  ],
+  "usable_unique_minutes": 1852112,
+  "identical_overlap_rows_removed": 0,
+  "outputs": {
+    "m5": {
+      "path": "data/intraday/fxcm_official/eurusd_development_validation_2017_2021_m5.csv",
+      "sha256": "860de9cf2d6cbb0597cc8568a0f93884db733377107317e690017bb0be77b45e",
+      "quality": {
+        "minutes": 5,
+        "input_minutes": 1852112,
+        "complete_bars": 365651,
+        "incomplete_blocks_omitted": 6684,
+        "crossed_open_bars_kept_but_entry_blocked": 10962,
+        "valid_spread_pips_median": 0.1999999999990898,
+        "valid_spread_pips_p95": 0.4999999999988347,
+        "volume": "NOT PROVIDED; no synthetic volume added"
+      }
+    },
+    "m15": {
+      "path": "data/intraday/fxcm_official/eurusd_development_validation_2017_2021_m15.csv",
+      "sha256": "f1a9bcee08fde94087d2124aa0c3679302fcb34cc6b517dad29daf5e79e1f966",
+      "quality": {
+        "minutes": 15,
+        "input_minutes": 1852112,
+        "complete_bars": 119364,
+        "incomplete_blocks_omitted": 4784,
+        "crossed_open_bars_kept_but_entry_blocked": 3575,
+        "valid_spread_pips_median": 0.1999999999990898,
+        "valid_spread_pips_p95": 0.4999999999988347,
+        "volume": "NOT PROVIDED; no synthetic volume added"
+      }
+    }
+  },
+  "strategy_outcomes_evaluated": false,
+  "limitations": [
+    "Provider says indicative lowest-spread Active Trader quotes, not verified executable broker fills",
+    "Provider specifies personal use; raw archives and candle CSVs are not published",
+    "Crossed ASK opens block entry; valid BID exit bars are retained",
+    "Missing minutes and archives are not fabricated; incomplete M5/M15 blocks are omitted"
+  ]
+}

@@ -1,0 +1,4785 @@
+{
+  "source": "FXCM official public paired BID/ASK indicative M1 candles",
+  "docs_url": "https://github.com/fxcm/MarketData/blob/924393dd545fab187527d95ef8b1178284b274b6/README.md",
+  "docs_commit": "924393dd545fab187527d95ef8b1178284b274b6",
+  "docs_blob": "eaab97d15b8596c52c83ba52f25678e7fbec02a8",
+  "timestamp_timezone": "UTC",
+  "downloaded_at_utc": "2026-10-04T15:00:40.823559+00:00",
+  "archive_records": [
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "462f1ded8da522d8c8a0fd513b23e31c837c64b642ff36b4651cb59e27a162c7",
+      "bytes": 122471,
+      "quality": {
+        "rows": 5632,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 1,
+        "crossed_close_rows": 1,
+        "first_utc": "2017-01-03T00:00:00+00:00",
+        "last_utc": "2017-01-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fecb44ae47d9c87d114175fcd28983383237bd02699e9a9321a70d733d7aed4c",
+      "bytes": 159194,
+      "quality": {
+        "rows": 7178,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 15,
+        "crossed_close_rows": 15,
+        "first_utc": "2017-01-08T22:00:00+00:00",
+        "last_utc": "2017-01-13T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "54c8755b4e049cb74572938416d1cc2765cd3755fb441d71dd294e5189aabc24",
+      "bytes": 161160,
+      "quality": {
+        "rows": 7197,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 12,
+        "first_utc": "2017-01-15T22:00:00+00:00",
+        "last_utc": "2017-01-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a3728fd043a183576b1439940ce5041c8714759db4d90686cf504f53d1f98356",
+      "bytes": 159201,
+      "quality": {
+        "rows": 7196,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2017-01-22T22:00:00+00:00",
+        "last_utc": "2017-01-27T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b69bdf1e9ea7fa7aef88016ea1f35082bf22880e21309c22f7b0694bfc5502c5",
+      "bytes": 156742,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 16,
+        "crossed_close_rows": 16,
+        "first_utc": "2017-01-29T22:00:00+00:00",
+        "last_utc": "2017-02-03T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2a2687c3c78af8247d69def1bad581b35277511b5ab1f9a137f1c43d84f1d26d",
+      "bytes": 154336,
+      "quality": {
+        "rows": 7161,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 48,
+        "crossed_close_rows": 48,
+        "first_utc": "2017-02-05T22:00:00+00:00",
+        "last_utc": "2017-02-10T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6542fd2fb7ba9a866e53db4b9fece8de0661a664644252739ff7a7fc5024f5fd",
+      "bytes": 151942,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2017-02-12T22:08:00+00:00",
+        "last_utc": "2017-02-17T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "29534843dd45ac16c0cb7dad12d02ad517d8c34d7ec14921fec010164e37251f",
+      "bytes": 150782,
+      "quality": {
+        "rows": 7109,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 10,
+        "crossed_close_rows": 10,
+        "first_utc": "2017-02-19T22:02:00+00:00",
+        "last_utc": "2017-02-24T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1c6fb69b1a10ae0e9a6b0832cbb68bef75bc064b770d8763c5efd1ccbde6059f",
+      "bytes": 153039,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 15,
+        "crossed_close_rows": 15,
+        "first_utc": "2017-02-26T22:03:00+00:00",
+        "last_utc": "2017-03-03T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "ced80ef93104bb31410a223e15dbd1d43e6ee3fb0fd5f67fef4202f65c3b4e2f",
+      "bytes": 147493,
+      "quality": {
+        "rows": 7128,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 18,
+        "crossed_close_rows": 18,
+        "first_utc": "2017-03-05T22:02:00+00:00",
+        "last_utc": "2017-03-10T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "76334f308e91d52981a51ed974d25f4f88e1eb55edbf178cee81ffe461469b8c",
+      "bytes": 150596,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 16,
+        "crossed_close_rows": 16,
+        "first_utc": "2017-03-12T21:02:00+00:00",
+        "last_utc": "2017-03-17T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2f10f6c6c4f1b0f99de7f5a7c4859365eefc87b1a5e81787e2fd375dc9c47c6f",
+      "bytes": 148212,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2017-03-19T21:01:00+00:00",
+        "last_utc": "2017-03-24T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6f47ac1f8b32638187fa655768c118306d2d66bdd14bf316261c73c1f93c0c79",
+      "bytes": 151265,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2017-03-26T21:03:00+00:00",
+        "last_utc": "2017-03-31T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d76cc16f48a3d197011c4fe12836e5ac3dc74743f8c927e5285176152d2e804b",
+      "bytes": 146888,
+      "quality": {
+        "rows": 7118,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 30,
+        "crossed_close_rows": 30,
+        "first_utc": "2017-04-02T21:02:00+00:00",
+        "last_utc": "2017-04-07T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "39492888696dec9408b7f1cab1ec0c1b83eb4d3cf9c4d70ffccc0838d2f6fffc",
+      "bytes": 142956,
+      "quality": {
+        "rows": 7077,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 21,
+        "crossed_close_rows": 21,
+        "first_utc": "2017-04-09T21:03:00+00:00",
+        "last_utc": "2017-04-14T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "acd0c69782030caf72dff6064afc77d18efbd30fd2aaf7e16344a3f26e1c8022",
+      "bytes": 147572,
+      "quality": {
+        "rows": 7108,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2017-04-16T21:08:00+00:00",
+        "last_utc": "2017-04-21T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ea67af4f47ad2e2b4e6bb0794aa0e02dcab20c516d781a86d5d903dafc833519",
+      "bytes": 149520,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2017-04-23T21:01:00+00:00",
+        "last_utc": "2017-04-28T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "68dadbf53351479eda1ec5dc4a361366af771f9da12ad7eb18eecdf17bdb1eb0",
+      "bytes": 145608,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2017-04-30T21:02:00+00:00",
+        "last_utc": "2017-05-05T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "178620fca00df8131fc807f82e682731b6a5eb7cc775259f073d934cbf959dcb",
+      "bytes": 148388,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 3,
+        "crossed_close_rows": 3,
+        "first_utc": "2017-05-07T21:02:00+00:00",
+        "last_utc": "2017-05-12T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fd708a86357b6d0a328823357c3e7f89d7a202605d3f9d5a3d4dce8752eedd30",
+      "bytes": 149049,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 6,
+        "crossed_close_rows": 6,
+        "first_utc": "2017-05-14T21:02:00+00:00",
+        "last_utc": "2017-05-19T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d6f20fd28c8519eda37f30c1dcb30fd63bb109af472a5daedf15a430cf46a029",
+      "bytes": 151070,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 38,
+        "crossed_close_rows": 38,
+        "first_utc": "2017-05-21T21:02:00+00:00",
+        "last_utc": "2017-05-26T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ea2fe1da9b425716178fc351f6d2e4d72b4d6a9c79d86156545ee5fcb6ea6db4",
+      "bytes": 148728,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 57,
+        "crossed_close_rows": 57,
+        "first_utc": "2017-05-28T21:01:00+00:00",
+        "last_utc": "2017-06-02T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0a96abf3681d9440d17d0a66134bf8fd078b8f29aefeaeb0d6e4db5a2c0dd493",
+      "bytes": 151559,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 121,
+        "crossed_close_rows": 121,
+        "first_utc": "2017-06-04T21:02:00+00:00",
+        "last_utc": "2017-06-09T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7e16fa72dc6d14a1f7ab6506ef85c952fc51b332893e93c41dd826ac33caa293",
+      "bytes": 150108,
+      "quality": {
+        "rows": 7143,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 87,
+        "crossed_close_rows": 87,
+        "first_utc": "2017-06-11T21:01:00+00:00",
+        "last_utc": "2017-06-16T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0a5aa2e7a9664b0bad4408c47f50c710f22f2ee6ac236457b6e3c64caae8e6f4",
+      "bytes": 145788,
+      "quality": {
+        "rows": 7157,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 87,
+        "crossed_close_rows": 87,
+        "first_utc": "2017-06-18T21:01:00+00:00",
+        "last_utc": "2017-06-23T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c0359a05460ebb83a931d8b6d9b21e7eb8b3de93c1eedc97e2981d3250320504",
+      "bytes": 147558,
+      "quality": {
+        "rows": 7149,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 173,
+        "crossed_close_rows": 173,
+        "first_utc": "2017-06-25T21:02:00+00:00",
+        "last_utc": "2017-06-30T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b0aa11affb6aecf3d9cdc442e42fc54540f204f6034aff5805e8577c4e8857d3",
+      "bytes": 145776,
+      "quality": {
+        "rows": 7127,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 98,
+        "crossed_close_rows": 98,
+        "first_utc": "2017-07-02T21:01:00+00:00",
+        "last_utc": "2017-07-07T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0a8af0fe3b83c22a104174ed7c09d727a445368e8b097dd836b065b36c48eeb7",
+      "bytes": 144934,
+      "quality": {
+        "rows": 7140,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 208,
+        "crossed_close_rows": 208,
+        "first_utc": "2017-07-09T21:01:00+00:00",
+        "last_utc": "2017-07-14T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "403b9afcd78f889c68947ee8d742520b35a33bac4fa2d8c175ed181ca555937d",
+      "bytes": 146806,
+      "quality": {
+        "rows": 7134,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 171,
+        "crossed_close_rows": 171,
+        "first_utc": "2017-07-16T21:02:00+00:00",
+        "last_utc": "2017-07-21T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "39625c8725dda91083c6f57cf4f9d3c64887b4e88ff645a04afdab77d4e750a4",
+      "bytes": 148681,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 70,
+        "crossed_close_rows": 70,
+        "first_utc": "2017-07-23T21:01:00+00:00",
+        "last_utc": "2017-07-28T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5cf67f8216c8a164f04a737e2b05771cd8daf7e8bd23a7ba7347d7c919e1c2f7",
+      "bytes": 146961,
+      "quality": {
+        "rows": 7125,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 82,
+        "crossed_close_rows": 82,
+        "first_utc": "2017-07-30T21:01:00+00:00",
+        "last_utc": "2017-08-04T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "44c8127cc892a20ec203cedce9e4d8239ca9e6fd36428f741037be60d8323f79",
+      "bytes": 145919,
+      "quality": {
+        "rows": 7133,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 96,
+        "crossed_close_rows": 96,
+        "first_utc": "2017-08-06T21:01:00+00:00",
+        "last_utc": "2017-08-11T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5a90ece9392b4bda618f47f7da877d1ae0a7cd9aa073cfadd63c5ce4beb3f06a",
+      "bytes": 145855,
+      "quality": {
+        "rows": 7140,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 107,
+        "crossed_close_rows": 107,
+        "first_utc": "2017-08-13T21:15:00+00:00",
+        "last_utc": "2017-08-18T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "775f04560640f1ea80c02c622843c7a6719aa79590b2de1fe90a8c32794bf500",
+      "bytes": 143691,
+      "quality": {
+        "rows": 7128,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 132,
+        "crossed_close_rows": 132,
+        "first_utc": "2017-08-20T21:02:00+00:00",
+        "last_utc": "2017-08-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "23550e0f8a650bd6b75b56133a85da374e8477ce6eebfa01c25d4f7abe7f117a",
+      "bytes": 146242,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 214,
+        "crossed_close_rows": 214,
+        "first_utc": "2017-08-27T21:00:00+00:00",
+        "last_utc": "2017-09-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b5dda2e0dfda28fdee3c1d292c840a6e4420720f4dc097027eac75f8cd133b7b",
+      "bytes": 146264,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 122,
+        "crossed_close_rows": 122,
+        "first_utc": "2017-09-03T21:00:00+00:00",
+        "last_utc": "2017-09-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "81b467914da5f287fe42938b33ee4fe7eb641644a6838efb2430a545438786ef",
+      "bytes": 149788,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 186,
+        "crossed_close_rows": 186,
+        "first_utc": "2017-09-10T21:00:00+00:00",
+        "last_utc": "2017-09-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d437a7916313bfd8f5200c1f2afeb49d165bf1427ab4f8fb02d5acf62aa556b5",
+      "bytes": 153707,
+      "quality": {
+        "rows": 7170,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 92,
+        "crossed_close_rows": 92,
+        "first_utc": "2017-09-17T21:00:00+00:00",
+        "last_utc": "2017-09-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "65d99876b8f8aa59a4f22919621eda3058b6bebf4e9a21e8da2b35509be8d297",
+      "bytes": 151819,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 146,
+        "crossed_close_rows": 146,
+        "first_utc": "2017-09-24T21:00:00+00:00",
+        "last_utc": "2017-09-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c92b1f6de778da874e24920a4337b6e26b2f1c3f608495f91cd5853c968998e4",
+      "bytes": 149280,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 143,
+        "crossed_close_rows": 143,
+        "first_utc": "2017-10-01T21:00:00+00:00",
+        "last_utc": "2017-10-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a1af37ba2759d733531ee83b077b66e7ad8b44c1bce24a76a63567a23d582876",
+      "bytes": 149788,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 195,
+        "crossed_close_rows": 195,
+        "first_utc": "2017-10-08T21:00:00+00:00",
+        "last_utc": "2017-10-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "37d5f96c05ae494f9759dddfb36b10b40dcf6afbf9baa5ba5357dace623a090b",
+      "bytes": 149803,
+      "quality": {
+        "rows": 7149,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 204,
+        "crossed_close_rows": 204,
+        "first_utc": "2017-10-15T21:06:00+00:00",
+        "last_utc": "2017-10-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "091cdbdb0486c880ce0d8e1a0395907430270d2127b3c370b68003f683899fc8",
+      "bytes": 150071,
+      "quality": {
+        "rows": 7147,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 158,
+        "crossed_close_rows": 158,
+        "first_utc": "2017-10-22T21:01:00+00:00",
+        "last_utc": "2017-10-27T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4ff23b44c7fd9dc9ed89ef2573e7f5ea894628fe4de45dd38cbe5d282c5c2375",
+      "bytes": 149383,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 169,
+        "crossed_close_rows": 169,
+        "first_utc": "2017-10-29T21:05:00+00:00",
+        "last_utc": "2017-11-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3ed177af8e17aeb600660c4c98bca7b6e4129950a92ec373e249fea65d0a8168",
+      "bytes": 147477,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 146,
+        "crossed_close_rows": 146,
+        "first_utc": "2017-11-05T22:01:00+00:00",
+        "last_utc": "2017-11-10T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "402c56a5ba2e0dc7d95c1ba9a7c8c635769d08159890f9446cfe274a8c9309d9",
+      "bytes": 149789,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 110,
+        "crossed_close_rows": 110,
+        "first_utc": "2017-11-12T22:00:00+00:00",
+        "last_utc": "2017-11-17T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b6ddca371fc8160f273038b12fd55b99e045c1a5aa34071180bb8217e14c175f",
+      "bytes": 146537,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 113,
+        "crossed_close_rows": 113,
+        "first_utc": "2017-11-19T22:00:00+00:00",
+        "last_utc": "2017-11-24T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6b69554fa6839fac96a87d9d42af25af2b2a62473f0779694eedceab7b85915e",
+      "bytes": 152888,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 146,
+        "crossed_close_rows": 146,
+        "first_utc": "2017-11-26T22:01:00+00:00",
+        "last_utc": "2017-12-01T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a411fe6e22d0502e04782dfc237ad60b88f74686c297d87ce175b4ff1b78165f",
+      "bytes": 152488,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 210,
+        "crossed_close_rows": 210,
+        "first_utc": "2017-12-03T22:02:00+00:00",
+        "last_utc": "2017-12-08T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "865846d1bd6ab7dd69c76fb530eda88f256a2d8b59c0b66d7a5e17c41e1a1d3f",
+      "bytes": 149367,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 149,
+        "crossed_close_rows": 149,
+        "first_utc": "2017-12-10T22:04:00+00:00",
+        "last_utc": "2017-12-15T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4c1710345996bfe819ecf7f996d04b9dcac1e34e92474ff6053931f6e520120f",
+      "bytes": 146606,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 123,
+        "crossed_close_rows": 123,
+        "first_utc": "2017-12-17T22:01:00+00:00",
+        "last_utc": "2017-12-22T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5f230e98d599894abe026d4db660672ddabcca5e7e6b884bce9ec0dd6e81ed66",
+      "bytes": 106263,
+      "quality": {
+        "rows": 5354,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 132,
+        "crossed_close_rows": 132,
+        "first_utc": "2017-12-26T04:02:00+00:00",
+        "last_utc": "2017-12-29T21:55:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2017,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2017/53.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b545e3c0cf5e86d6a10cb5d172fa95dfd761db68acf014d734953b0562f2deea",
+      "bytes": 111395,
+      "quality": {
+        "rows": 5421,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2018-01-01T22:00:00+00:00",
+        "last_utc": "2018-01-05T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8e0aafa26df76f8a645dcedcff7255a9d18dea7e9e9a4e9e6e5e64df5b76045d",
+      "bytes": 148159,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 94,
+        "crossed_close_rows": 94,
+        "first_utc": "2018-01-07T22:02:00+00:00",
+        "last_utc": "2018-01-12T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "efc21e60c95bb0c8a9e06e83bb7b1552e22af2e55412e8afd5b2c27b40604824",
+      "bytes": 154096,
+      "quality": {
+        "rows": 7161,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 109,
+        "crossed_close_rows": 109,
+        "first_utc": "2018-01-14T22:00:00+00:00",
+        "last_utc": "2018-01-19T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a951425c20a210d0724d07f943410e471876ecfd86bb1bd1759e50131eb8d4a6",
+      "bytes": 159388,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 94,
+        "crossed_close_rows": 94,
+        "first_utc": "2018-01-21T22:00:00+00:00",
+        "last_utc": "2018-01-26T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2a93569b976782980bbab713559f3d87295fc8c4d733c1a38ca50d2c7e4eed25",
+      "bytes": 160093,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 92,
+        "crossed_close_rows": 92,
+        "first_utc": "2018-01-28T22:03:00+00:00",
+        "last_utc": "2018-02-02T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c067d9e747fc7db5dabf7fcdffaed7193c0f704d88e331c81cd7db52d476ba1d",
+      "bytes": 162318,
+      "quality": {
+        "rows": 7192,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 139,
+        "crossed_close_rows": 139,
+        "first_utc": "2018-02-04T22:00:00+00:00",
+        "last_utc": "2018-02-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "69ad349f452357fcbb5aa3549bdeff257ed9b16267485c2eb4574819749be9b5",
+      "bytes": 157835,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 102,
+        "crossed_close_rows": 102,
+        "first_utc": "2018-02-11T22:01:00+00:00",
+        "last_utc": "2018-02-16T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c2cf5529a6ebf85888f721c377b0209bd43f0955495322b6a724e2acb2d3783c",
+      "bytes": 154695,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 130,
+        "crossed_close_rows": 130,
+        "first_utc": "2018-02-18T22:01:00+00:00",
+        "last_utc": "2018-02-23T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "53e14e366ddaab65307144b52355a8a280d9ab690d93aebeea9870b73ed47585",
+      "bytes": 155256,
+      "quality": {
+        "rows": 7178,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 99,
+        "crossed_close_rows": 99,
+        "first_utc": "2018-02-25T22:01:00+00:00",
+        "last_utc": "2018-03-02T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5d398d5ed996dd1046a6704bdac889b2caf0b2af32fc7f5a2f9b5ec250d223df",
+      "bytes": 153459,
+      "quality": {
+        "rows": 7194,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 63,
+        "crossed_close_rows": 63,
+        "first_utc": "2018-03-04T22:00:00+00:00",
+        "last_utc": "2018-03-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8a858f255d5d3a6c699abbfbbec4b5b98b99ab60b4a135bb3334d0d7c356d347",
+      "bytes": 149340,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 66,
+        "crossed_close_rows": 66,
+        "first_utc": "2018-03-11T21:04:00+00:00",
+        "last_utc": "2018-03-16T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "da5b8a124c7989c8812d464c395461243c39542aff4e3321c41b6b6f6c084c1a",
+      "bytes": 152829,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 100,
+        "crossed_close_rows": 100,
+        "first_utc": "2018-03-18T21:00:00+00:00",
+        "last_utc": "2018-03-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "984f8a5e0c8f2c43d47752129c3cbeab3ccd61ad5cc2d0392e9441214382a99b",
+      "bytes": 150545,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 99,
+        "crossed_close_rows": 99,
+        "first_utc": "2018-03-25T21:00:00+00:00",
+        "last_utc": "2018-03-30T20:56:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9cd00e8fde7e11180f712371ee2f1c126eb74861fac81482fd2ea56842be7dbe",
+      "bytes": 148820,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 95,
+        "crossed_close_rows": 95,
+        "first_utc": "2018-04-01T21:03:00+00:00",
+        "last_utc": "2018-04-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ac41ae800c22c7c197b2c0151696443970e3276b1d87aaa5c4d49cf1244fb6e4",
+      "bytes": 149210,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 103,
+        "crossed_close_rows": 103,
+        "first_utc": "2018-04-08T21:00:00+00:00",
+        "last_utc": "2018-04-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4073c34e3ab728f1ec7314908965112c620da3e097ceb7f850707b29110ede5e",
+      "bytes": 150504,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 109,
+        "crossed_close_rows": 109,
+        "first_utc": "2018-04-15T21:03:00+00:00",
+        "last_utc": "2018-04-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b5a1fd61610ebfd2e4cdfbc599e0091611d5f97f87935a31879b4ea4cdadb1ef",
+      "bytes": 148812,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 111,
+        "crossed_close_rows": 111,
+        "first_utc": "2018-04-22T21:01:00+00:00",
+        "last_utc": "2018-04-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dc4fadb06314961a7f52734b291bb0e3bb4b1ffdb0f7fb31cee4985319223b0c",
+      "bytes": 151153,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 81,
+        "crossed_close_rows": 81,
+        "first_utc": "2018-04-29T21:00:00+00:00",
+        "last_utc": "2018-05-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "79ae8e3ee08a12e39fc31d4c2e63095ca039cdc494062d3e55b4fd8a03764ac2",
+      "bytes": 151346,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 112,
+        "crossed_close_rows": 112,
+        "first_utc": "2018-05-06T21:01:00+00:00",
+        "last_utc": "2018-05-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "30721ced98018fd1cf9f861a465ea308aa0624f2b37f032165d2b71390361aa2",
+      "bytes": 150851,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 125,
+        "crossed_close_rows": 125,
+        "first_utc": "2018-05-13T21:05:00+00:00",
+        "last_utc": "2018-05-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5b65be0321c4efaa4c67b3fe59096b0658f152b21d66a33c79bdd430e9205b4c",
+      "bytes": 151677,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 110,
+        "crossed_close_rows": 110,
+        "first_utc": "2018-05-20T21:00:00+00:00",
+        "last_utc": "2018-05-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e7d30dfe80b40379815e3e17510aaa63b8c0b609a78ba71b8ec64909f198e16c",
+      "bytes": 151731,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 102,
+        "crossed_close_rows": 102,
+        "first_utc": "2018-05-27T21:00:00+00:00",
+        "last_utc": "2018-06-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6345c210110b965f8af8636fd8a642503389ec4464d8ba74de63295d42b21407",
+      "bytes": 149864,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 125,
+        "crossed_close_rows": 125,
+        "first_utc": "2018-06-03T21:06:00+00:00",
+        "last_utc": "2018-06-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fb5863eedd522f54c4d84ae5b00c795be543e6a6814eac433f571d8a31609291",
+      "bytes": 150726,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 79,
+        "crossed_close_rows": 79,
+        "first_utc": "2018-06-10T21:05:00+00:00",
+        "last_utc": "2018-06-15T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b88318ed8bbbabe00a15acc0263def5c712707a61ea4926ca02b6ce3feab2b02",
+      "bytes": 149539,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 170,
+        "crossed_close_rows": 170,
+        "first_utc": "2018-06-17T21:00:00+00:00",
+        "last_utc": "2018-06-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "29b4f65c99185829a33d431a15802485524e315beace858304ef516f6ac3d52c",
+      "bytes": 151384,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 224,
+        "crossed_close_rows": 224,
+        "first_utc": "2018-06-24T21:02:00+00:00",
+        "last_utc": "2018-06-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "023a5901d0310e8d70b3b6a3fed441cf0fd074678a57771d30be9b48eaa025a9",
+      "bytes": 149440,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 206,
+        "crossed_close_rows": 206,
+        "first_utc": "2018-07-01T21:00:00+00:00",
+        "last_utc": "2018-07-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0fad789fdfe325839f7115664c17620f0d9305fdf2be96f980fdcbaa0cf6e06e",
+      "bytes": 152028,
+      "quality": {
+        "rows": 7185,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 126,
+        "crossed_close_rows": 126,
+        "first_utc": "2018-07-08T21:00:00+00:00",
+        "last_utc": "2018-07-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2e4297d60fc61438446d7565a04133198e04f89ea9cbf0a9f03676cbc1bb4c00",
+      "bytes": 150975,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 87,
+        "crossed_close_rows": 87,
+        "first_utc": "2018-07-15T21:00:00+00:00",
+        "last_utc": "2018-07-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d8ec96842d43be731b31a8c1ae79023410923120190df6684fc35e26941f5591",
+      "bytes": 148609,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 101,
+        "crossed_close_rows": 101,
+        "first_utc": "2018-07-22T21:02:00+00:00",
+        "last_utc": "2018-07-27T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c97f47689e39b92a1d51a886b0bc1790be0f7eda509eb22b9692dd6e61992586",
+      "bytes": 146085,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 61,
+        "crossed_close_rows": 61,
+        "first_utc": "2018-07-29T21:06:00+00:00",
+        "last_utc": "2018-08-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6e1431bb5224152393be92f8c6c68599d09818fe23f46fe61835cc7abd348a3a",
+      "bytes": 148432,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 54,
+        "crossed_close_rows": 54,
+        "first_utc": "2018-08-05T21:06:00+00:00",
+        "last_utc": "2018-08-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0da30f50178c8b5000d23a27135cb6609350165adac18174aa30c4dce60257a1",
+      "bytes": 150162,
+      "quality": {
+        "rows": 7157,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 57,
+        "crossed_close_rows": 57,
+        "first_utc": "2018-08-12T21:00:00+00:00",
+        "last_utc": "2018-08-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "523ccd3cab9733fb122bd0b6970a8bdb92ebfb4a61ae3cc04220412fdcfc3fa3",
+      "bytes": 148371,
+      "quality": {
+        "rows": 7180,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 67,
+        "crossed_close_rows": 67,
+        "first_utc": "2018-08-19T21:00:00+00:00",
+        "last_utc": "2018-08-24T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "796afce6f15c6ae244d67f67f9d94daca697dad286826f5c6f5f1fc011b28b7b",
+      "bytes": 148962,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 55,
+        "crossed_close_rows": 55,
+        "first_utc": "2018-08-26T21:01:00+00:00",
+        "last_utc": "2018-08-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "21201c70b0095c28dedaee97e014b9ca7996087e34dc0dbf09dbef2e653d99bb",
+      "bytes": 149476,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 67,
+        "crossed_close_rows": 67,
+        "first_utc": "2018-09-02T21:01:00+00:00",
+        "last_utc": "2018-09-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9706a4f0e192a890efa70a5924821c18cf7b92f7bbcf596f28cec26091b4062b",
+      "bytes": 149029,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 51,
+        "crossed_close_rows": 51,
+        "first_utc": "2018-09-09T21:02:00+00:00",
+        "last_utc": "2018-09-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0557f70b49511dd2014f8671ca8728d66ce7db466bb21328d99e157907327cdc",
+      "bytes": 149806,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 66,
+        "crossed_close_rows": 66,
+        "first_utc": "2018-09-16T21:03:00+00:00",
+        "last_utc": "2018-09-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "af24771b9d0207a0c9e9b82ce25140e5ffb550f072b6b39ce1ab92775e8c6041",
+      "bytes": 148509,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 74,
+        "crossed_close_rows": 74,
+        "first_utc": "2018-09-23T21:03:00+00:00",
+        "last_utc": "2018-09-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "69d7bf9d00e41995defa49c67aa042c47d72597366fe366e0a7be49f54ff4b0b",
+      "bytes": 148061,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 85,
+        "crossed_close_rows": 85,
+        "first_utc": "2018-09-30T21:00:00+00:00",
+        "last_utc": "2018-10-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "70786f93930078f3bdb1837143fc14e4b744406fb502b02b9f7085002b9108d9",
+      "bytes": 149344,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 92,
+        "crossed_close_rows": 92,
+        "first_utc": "2018-10-07T21:04:00+00:00",
+        "last_utc": "2018-10-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5177fa9335007f527d763de4b64c1e149867e1b6abbb137c40dd625da1dd51bc",
+      "bytes": 149918,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 70,
+        "crossed_close_rows": 70,
+        "first_utc": "2018-10-14T21:00:00+00:00",
+        "last_utc": "2018-10-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "176955b18b2420fe38adc02141f23332ad4912295f8a2454f4fd51bdd2896d2b",
+      "bytes": 149041,
+      "quality": {
+        "rows": 7159,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 60,
+        "crossed_close_rows": 60,
+        "first_utc": "2018-10-21T21:00:00+00:00",
+        "last_utc": "2018-10-26T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1ad637202eb6c7d04e7071c215840b8c96f2b6d9a02a8e4fbba2c49d881d0ea5",
+      "bytes": 150257,
+      "quality": {
+        "rows": 7161,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 63,
+        "crossed_close_rows": 63,
+        "first_utc": "2018-10-28T21:00:00+00:00",
+        "last_utc": "2018-11-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "39634c78920802ec5c1f2563c1faa4fecb86426991b614aafe35746926d3a7f4",
+      "bytes": 153583,
+      "quality": {
+        "rows": 7196,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 90,
+        "crossed_close_rows": 90,
+        "first_utc": "2018-11-04T22:00:00+00:00",
+        "last_utc": "2018-11-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0ca43327628d9ca5396e4a9b40b59f64488cf51608fbe099f03ea7c093f5ee44",
+      "bytes": 159725,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 36,
+        "crossed_close_rows": 36,
+        "first_utc": "2018-11-11T22:00:00+00:00",
+        "last_utc": "2018-11-16T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "57020e336afe79f74c3662fb0f6b1e71ae2ba0a23c9a12e1f7307000b044394e",
+      "bytes": 152155,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 31,
+        "crossed_close_rows": 31,
+        "first_utc": "2018-11-18T22:00:00+00:00",
+        "last_utc": "2018-11-23T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2f3ea983f9ac52faf3a3fc127c0841fed97e621dcc08a80642028e1fb93e37cf",
+      "bytes": 150844,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 49,
+        "crossed_close_rows": 49,
+        "first_utc": "2018-11-25T22:00:00+00:00",
+        "last_utc": "2018-11-30T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7d1c090d22dbf86c8dae6759ec7adb7bf860144dc453bc5826633b6450ba268e",
+      "bytes": 154557,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 39,
+        "crossed_close_rows": 39,
+        "first_utc": "2018-12-02T22:00:00+00:00",
+        "last_utc": "2018-12-07T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dc714ca70bddb7cce10fe07939af391f5db904158869e6d2b09626570c8abc61",
+      "bytes": 156152,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 39,
+        "crossed_close_rows": 39,
+        "first_utc": "2018-12-09T22:00:00+00:00",
+        "last_utc": "2018-12-14T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1b7bb83832c07c2449e055fca0828e3ae9ea8cead0dad6c80368baa3df86d925",
+      "bytes": 153970,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 142,
+        "crossed_close_rows": 142,
+        "first_utc": "2018-12-16T22:00:00+00:00",
+        "last_utc": "2018-12-21T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2f5dea96bf685e6e97db191a4c4d1828c2a483ab60824dc5330be07cde1df13d",
+      "bytes": 107783,
+      "quality": {
+        "rows": 5088,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 106,
+        "crossed_close_rows": 106,
+        "first_utc": "2018-12-23T22:00:00+00:00",
+        "last_utc": "2018-12-28T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2018,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2018/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6c307291df158d5b8b3b8b7817770a1a8ea37e3c09d939336feeddddedaefee8",
+      "bytes": 110835,
+      "quality": {
+        "rows": 5105,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 39,
+        "crossed_close_rows": 39,
+        "first_utc": "2018-12-30T22:03:00+00:00",
+        "last_utc": "2019-01-04T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/1.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "42eb6c65ec7231ff07dd01d1203df9e45e0684b024a1c98149b2588084d77411",
+      "bytes": 152562,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2019-01-06T22:03:00+00:00",
+        "last_utc": "2019-01-11T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "318fa14d115ca012314414b030c45aaafaddfea76ed4e5faffe507a185877d58",
+      "bytes": 156561,
+      "quality": {
+        "rows": 7179,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 37,
+        "crossed_close_rows": 37,
+        "first_utc": "2019-01-13T22:00:00+00:00",
+        "last_utc": "2019-01-18T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dc5511386f0879de4ba08d0ca496cd3b810c778d7b909b93362e7259d548dbaf",
+      "bytes": 152635,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 74,
+        "crossed_close_rows": 74,
+        "first_utc": "2019-01-20T22:00:00+00:00",
+        "last_utc": "2019-01-25T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f7b61c427486c8aa6eae4c73ff4a43d6acf2d95eb813772d6f8ac09acf166e28",
+      "bytes": 152525,
+      "quality": {
+        "rows": 7188,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 73,
+        "crossed_close_rows": 73,
+        "first_utc": "2019-01-27T22:01:00+00:00",
+        "last_utc": "2019-02-01T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "38e4045784d21d0c221d5f9d27741abc9f9fae7018a114d9c211a48826cf6ed2",
+      "bytes": 147744,
+      "quality": {
+        "rows": 7190,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 97,
+        "crossed_close_rows": 97,
+        "first_utc": "2019-02-03T22:00:00+00:00",
+        "last_utc": "2019-02-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c5b62daa98fe27fc58752174ee3abbfe850057e3d651f37908934def392ec8a1",
+      "bytes": 148117,
+      "quality": {
+        "rows": 7170,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 97,
+        "crossed_close_rows": 97,
+        "first_utc": "2019-02-10T22:00:00+00:00",
+        "last_utc": "2019-02-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7440efe3201df1b478e6714573d748bef1680ec924a1a40aa763b1a7f3ce8a9f",
+      "bytes": 148882,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 97,
+        "crossed_close_rows": 97,
+        "first_utc": "2019-02-17T22:03:00+00:00",
+        "last_utc": "2019-02-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a1349e143398ec2936e636d9731ebb2e02135988c2e76367530a6656c76e1cb9",
+      "bytes": 152310,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 70,
+        "crossed_close_rows": 70,
+        "first_utc": "2019-02-24T22:00:00+00:00",
+        "last_utc": "2019-03-01T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1dc210b299bb9fc9bd8c2fcd7320ed7d369bf4f5af1d3c22f98d925a9603f50d",
+      "bytes": 150154,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 67,
+        "crossed_close_rows": 67,
+        "first_utc": "2019-03-03T22:00:00+00:00",
+        "last_utc": "2019-03-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "28ec8ced86fddb4d4168ee54495c06ea42d393ee152b1b8e822bcd4a59d9d2c2",
+      "bytes": 158663,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 44,
+        "crossed_close_rows": 44,
+        "first_utc": "2019-03-10T21:01:00+00:00",
+        "last_utc": "2019-03-15T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0baf8555ecfd002412f38c0be31a44a694b42556c7aee3d85613d999c323b94b",
+      "bytes": 154355,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 37,
+        "crossed_close_rows": 37,
+        "first_utc": "2019-03-17T21:00:00+00:00",
+        "last_utc": "2019-03-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ddffcb9a254810cf9f4f1111c7965d7d3afbdbabda280fc2ced9abb5883ff8fe",
+      "bytes": 155562,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 36,
+        "crossed_close_rows": 36,
+        "first_utc": "2019-03-24T21:00:00+00:00",
+        "last_utc": "2019-03-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "732acddf4be01bfb05c36df6bfa8f67599560de282ae5cd003895ee1ec4d0260",
+      "bytes": 153192,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 47,
+        "crossed_close_rows": 47,
+        "first_utc": "2019-03-31T21:00:00+00:00",
+        "last_utc": "2019-04-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a8cb17b16edd4151c366709c51e283e639a739ed37f05a438f272bdf60b04c30",
+      "bytes": 147685,
+      "quality": {
+        "rows": 7132,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 73,
+        "crossed_close_rows": 73,
+        "first_utc": "2019-04-07T21:03:00+00:00",
+        "last_utc": "2019-04-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a01db567c5e2fea612da15d7560bd5d1e5d3748a12dd0516519a3ec95f49467e",
+      "bytes": 143770,
+      "quality": {
+        "rows": 7137,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2019-04-14T21:04:00+00:00",
+        "last_utc": "2019-04-19T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9fa9c60834b671396ea92c23c9dce419e30a41ab8b1c25d583b7598708b82b45",
+      "bytes": 142504,
+      "quality": {
+        "rows": 7144,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 76,
+        "crossed_close_rows": 76,
+        "first_utc": "2019-04-21T21:03:00+00:00",
+        "last_utc": "2019-04-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e66b2d2b6f182286e2278684ec1c736786294333e2928e3c9a225d73ede1ae70",
+      "bytes": 144337,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 66,
+        "crossed_close_rows": 66,
+        "first_utc": "2019-04-28T21:04:00+00:00",
+        "last_utc": "2019-05-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b4931beb169289fe299feb9e4dbfe86226bdd7a9d6625f5ea9052cf90474ed6f",
+      "bytes": 147561,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 37,
+        "crossed_close_rows": 37,
+        "first_utc": "2019-05-05T21:00:00+00:00",
+        "last_utc": "2019-05-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4ea12a23098d8a537358612c80bd9942a51ea2c95a14368acf778b8579dd0c24",
+      "bytes": 144467,
+      "quality": {
+        "rows": 7179,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 48,
+        "crossed_close_rows": 48,
+        "first_utc": "2019-05-12T21:03:00+00:00",
+        "last_utc": "2019-05-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b1879a1d40e8d0b6a638b87e2acbea9a4739ff84dcf710e15a1d9fc739698f49",
+      "bytes": 144834,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 188,
+        "crossed_close_rows": 188,
+        "first_utc": "2019-05-19T21:01:00+00:00",
+        "last_utc": "2019-05-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4417ef7545df3fb5af32a73b378e1052fd68a943c86c946610225ccd6036a6bd",
+      "bytes": 141310,
+      "quality": {
+        "rows": 7158,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 260,
+        "crossed_close_rows": 260,
+        "first_utc": "2019-05-26T21:00:00+00:00",
+        "last_utc": "2019-05-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3731b047ec3b390089f61267e3f31e5fc71479273eebbd7eeb5ce8b615ed79fe",
+      "bytes": 144604,
+      "quality": {
+        "rows": 7157,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 324,
+        "crossed_close_rows": 324,
+        "first_utc": "2019-06-02T21:00:00+00:00",
+        "last_utc": "2019-06-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5ff688d4155a29539c537f5babbd0eb1cd53f8a0e60b6ea90bfe0cd975db05be",
+      "bytes": 143069,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 271,
+        "crossed_close_rows": 271,
+        "first_utc": "2019-06-09T21:12:00+00:00",
+        "last_utc": "2019-06-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cd4910dc21ab3543752dc7e9aebc398520d44066f33a823c58e52c3d7a91343c",
+      "bytes": 145881,
+      "quality": {
+        "rows": 7140,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 89,
+        "crossed_close_rows": 89,
+        "first_utc": "2019-06-16T21:00:00+00:00",
+        "last_utc": "2019-06-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "487d7959551fcc2d4835ae47e66ccb15559337b0b1c70ba36a3f1a840e10e641",
+      "bytes": 146208,
+      "quality": {
+        "rows": 7141,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 83,
+        "crossed_close_rows": 83,
+        "first_utc": "2019-06-23T21:00:00+00:00",
+        "last_utc": "2019-06-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1675e3c03e4db3a8c0eb5c4368aa13afc36b03739f5beaf8e24d82db63d5f4a9",
+      "bytes": 142561,
+      "quality": {
+        "rows": 7133,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 75,
+        "crossed_close_rows": 75,
+        "first_utc": "2019-06-30T21:03:00+00:00",
+        "last_utc": "2019-07-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "705a3ee98bd513b4782086da136ecfc6d10cbd39d47eca3cde3d39e09465cfde",
+      "bytes": 142615,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 59,
+        "crossed_close_rows": 59,
+        "first_utc": "2019-07-07T21:00:00+00:00",
+        "last_utc": "2019-07-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c06e0132dd957b99d10a4d7c8478cc072e7336b345bd7b1ad7876b4b1a08db8b",
+      "bytes": 144867,
+      "quality": {
+        "rows": 7148,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2019-07-14T21:05:00+00:00",
+        "last_utc": "2019-07-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "900641f48f6700188459d82157140d6b3dd2b81fad3495d6c546eaf8bbfb50ee",
+      "bytes": 143651,
+      "quality": {
+        "rows": 7135,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2019-07-21T21:11:00+00:00",
+        "last_utc": "2019-07-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bdedf1bdcbaf5106230dde45bf0547b9ec27662c513077c9bd7953aacd7932a6",
+      "bytes": 152093,
+      "quality": {
+        "rows": 7171,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 48,
+        "crossed_close_rows": 48,
+        "first_utc": "2019-07-28T21:00:00+00:00",
+        "last_utc": "2019-08-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9acde4b9f9725e0182c28418979c31806508992d6fcf15c5c332ccee66d06268",
+      "bytes": 151938,
+      "quality": {
+        "rows": 7144,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 15,
+        "crossed_close_rows": 15,
+        "first_utc": "2019-08-04T21:06:00+00:00",
+        "last_utc": "2019-08-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3b573cea81d0bd74fb1edb32397ae5626995c4f05fb1806f1906afdc1ad81062",
+      "bytes": 146377,
+      "quality": {
+        "rows": 7149,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 25,
+        "crossed_close_rows": 25,
+        "first_utc": "2019-08-11T21:02:00+00:00",
+        "last_utc": "2019-08-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "498514fecaa3865d3f104c69ea20a54767b0ee89384f98b33c638fc983c2176c",
+      "bytes": 147156,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 18,
+        "crossed_close_rows": 18,
+        "first_utc": "2019-08-18T21:03:00+00:00",
+        "last_utc": "2019-08-23T20:56:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "87de6d343790769a62c3ed5a59ff55be590747c8ef1be768f875ad696c5d8509",
+      "bytes": 147474,
+      "quality": {
+        "rows": 7146,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2019-08-25T21:00:00+00:00",
+        "last_utc": "2019-08-30T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bebc0833dd035e894d6bfe61da01679fd26abb305ffffe2543312e7177955dfa",
+      "bytes": 150396,
+      "quality": {
+        "rows": 7120,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 16,
+        "crossed_close_rows": 16,
+        "first_utc": "2019-09-01T21:05:00+00:00",
+        "last_utc": "2019-09-06T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "651ffb7be39b628ffde7a58e5fc38db54661fd9d0bb7e71780da4dba879d37cb",
+      "bytes": 148782,
+      "quality": {
+        "rows": 7135,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2019-09-08T21:00:00+00:00",
+        "last_utc": "2019-09-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "372ece1fb22fac635b02d50f225bff86afb1b35a0a7f4c54bcc133d1fc9ba0a3",
+      "bytes": 150541,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2019-09-15T21:05:00+00:00",
+        "last_utc": "2019-09-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fd041008f9a6e05e000e4b0b1ebf414ae2591f8054bb75cb7633092a6c4c1ea0",
+      "bytes": 147617,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 26,
+        "crossed_close_rows": 26,
+        "first_utc": "2019-09-22T21:00:00+00:00",
+        "last_utc": "2019-09-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d65666e5072e4324485917408dd26f4ac91d5cede110553476cf15d5969613e3",
+      "bytes": 149557,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2019-09-29T21:03:00+00:00",
+        "last_utc": "2019-10-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6958419f18b30f164d0cde519a83bd96716d293bb46ee2e928cc76b059f6418c",
+      "bytes": 150267,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 33,
+        "crossed_close_rows": 33,
+        "first_utc": "2019-10-06T21:03:00+00:00",
+        "last_utc": "2019-10-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1cf0204c231c274cf68f3e9bc60cee27106ccc3d81b794dc438f14b0d4b50793",
+      "bytes": 160152,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 23,
+        "crossed_close_rows": 23,
+        "first_utc": "2019-10-13T21:01:00+00:00",
+        "last_utc": "2019-10-18T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6c32ca80a0ec331a3544da6b1417fce4660dfa29aaf71a958a1de6fbc2b674f2",
+      "bytes": 154939,
+      "quality": {
+        "rows": 7192,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 26,
+        "crossed_close_rows": 26,
+        "first_utc": "2019-10-20T21:00:00+00:00",
+        "last_utc": "2019-10-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "13272a570167e5118da019da65bb156a17e8b7cd91efb88e5d62c406e1559c34",
+      "bytes": 149368,
+      "quality": {
+        "rows": 7178,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 70,
+        "crossed_close_rows": 70,
+        "first_utc": "2019-10-27T21:00:00+00:00",
+        "last_utc": "2019-11-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7602ff1fc1d552199c7a3734d81df0bbd8ddbe984b4687194e90bfe7376f37f8",
+      "bytes": 144476,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 60,
+        "crossed_close_rows": 60,
+        "first_utc": "2019-11-03T22:00:00+00:00",
+        "last_utc": "2019-11-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b156f1688d6f77db65b164f668e15e1251e8f9472a9acea2b228048098a7a950",
+      "bytes": 144672,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 78,
+        "crossed_close_rows": 78,
+        "first_utc": "2019-11-10T22:00:00+00:00",
+        "last_utc": "2019-11-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4b77d89b545a883df63092ef357b2302c306df89337767f1a9ce9084f208c67c",
+      "bytes": 143762,
+      "quality": {
+        "rows": 7176,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 115,
+        "crossed_close_rows": 115,
+        "first_utc": "2019-11-17T22:00:00+00:00",
+        "last_utc": "2019-11-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "342e36eecc910a7b685b4e2f236d77533dbd918663f9f29c02dabc81595d1c10",
+      "bytes": 145046,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 125,
+        "crossed_close_rows": 125,
+        "first_utc": "2019-11-24T22:00:00+00:00",
+        "last_utc": "2019-11-29T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9df2dd71010b6139e65395fd5cb810ec04eb535fa9db7de93e8d57492cb230f5",
+      "bytes": 143829,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 114,
+        "crossed_close_rows": 114,
+        "first_utc": "2019-12-01T22:00:00+00:00",
+        "last_utc": "2019-12-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "79e8e8eeb3cc8e535232e887a83e9b9339a6174f29eb558333e69845314b0eb4",
+      "bytes": 151732,
+      "quality": {
+        "rows": 7193,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 134,
+        "crossed_close_rows": 134,
+        "first_utc": "2019-12-08T22:00:00+00:00",
+        "last_utc": "2019-12-13T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "873153a1d2a424336e8dc4b8c5fee5b28bd0b1903097c90c2b779b6d3f135fcd",
+      "bytes": 154142,
+      "quality": {
+        "rows": 7191,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 125,
+        "crossed_close_rows": 125,
+        "first_utc": "2019-12-15T22:03:00+00:00",
+        "last_utc": "2019-12-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a768f50c8993130cf90ff91136be770b977deb352fd2fcade469b5320da6b639",
+      "bytes": 103279,
+      "quality": {
+        "rows": 4992,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 48,
+        "crossed_close_rows": 48,
+        "first_utc": "2019-12-22T22:00:00+00:00",
+        "last_utc": "2019-12-27T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2019,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2019/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5e7035945085cc4d64fbcda5e3d5699d40e416db95ed97f2ba29905f0a2784c1",
+      "bytes": 106067,
+      "quality": {
+        "rows": 5002,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 74,
+        "crossed_close_rows": 74,
+        "first_utc": "2019-12-29T22:00:00+00:00",
+        "last_utc": "2020-01-03T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/1.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6e5ae6a0d8e6591ee954ac51295c0f434384fd2b7a748e1cf8d5ffb882b48d4d",
+      "bytes": 147508,
+      "quality": {
+        "rows": 7189,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 162,
+        "crossed_close_rows": 162,
+        "first_utc": "2020-01-05T22:03:00+00:00",
+        "last_utc": "2020-01-10T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "67539d55354e8a014c9e51fb6e72593e6ebd33bf1e0ae7fd7a44c763b5e4eca4",
+      "bytes": 145363,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 126,
+        "crossed_close_rows": 126,
+        "first_utc": "2020-01-12T22:00:00+00:00",
+        "last_utc": "2020-01-17T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b123e0176879904d9c2444308188c5335f748b741fa8d7c15a2fb0495a5242b3",
+      "bytes": 143363,
+      "quality": {
+        "rows": 7178,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 141,
+        "crossed_close_rows": 141,
+        "first_utc": "2020-01-19T22:00:00+00:00",
+        "last_utc": "2020-01-24T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0d96ab17304a8db57a3e4d3a71e5c523baf5702fa14eece6324a0f7bb80058bf",
+      "bytes": 144135,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 67,
+        "crossed_close_rows": 67,
+        "first_utc": "2020-01-26T22:00:00+00:00",
+        "last_utc": "2020-01-31T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fc9c63d2d64c55513c569fcc205544c4c1548b5fda11423e9acb23a483d60f0a",
+      "bytes": 146194,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 90,
+        "crossed_close_rows": 90,
+        "first_utc": "2020-02-02T22:00:00+00:00",
+        "last_utc": "2020-02-07T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c7e03ac0ddf4528610627b523d435566218d977a5126acb73098ac9a77845d8c",
+      "bytes": 143768,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 143,
+        "crossed_close_rows": 143,
+        "first_utc": "2020-02-09T22:01:00+00:00",
+        "last_utc": "2020-02-14T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "75de16db3f808677b8924d5e461e2316531c54acfc2cec1095bc47bef9bc74ea",
+      "bytes": 144805,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 130,
+        "crossed_close_rows": 130,
+        "first_utc": "2020-02-16T22:03:00+00:00",
+        "last_utc": "2020-02-21T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "64498da661af59ad26a5dad96eb7723500ce23321ba5e2c2a2d1a7f98205105a",
+      "bytes": 151851,
+      "quality": {
+        "rows": 7187,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 111,
+        "crossed_close_rows": 111,
+        "first_utc": "2020-02-23T22:00:00+00:00",
+        "last_utc": "2020-02-28T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f5178dee3b0744434798dfcce897cb62ff34e09c3f48a4846143ba596e682976",
+      "bytes": 153742,
+      "quality": {
+        "rows": 7137,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 223,
+        "crossed_close_rows": 223,
+        "first_utc": "2020-03-01T22:00:00+00:00",
+        "last_utc": "2020-03-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4dbcb524a908341fe04c5fbd91a116c1927e7e56a05291a843ea4c76a196f332",
+      "bytes": 164738,
+      "quality": {
+        "rows": 7135,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 95,
+        "crossed_close_rows": 95,
+        "first_utc": "2020-03-08T21:00:00+00:00",
+        "last_utc": "2020-03-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6a6c53af61093dfa82146c65fef721377e8128ffe5d32312a3753b578d9c2d50",
+      "bytes": 172167,
+      "quality": {
+        "rows": 7110,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 80,
+        "crossed_close_rows": 80,
+        "first_utc": "2020-03-15T21:00:00+00:00",
+        "last_utc": "2020-03-20T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d828ef78d3a95d6dc9fd6a89039a974d65eab7f6b863ac0e4ead8eea9472f936",
+      "bytes": 170166,
+      "quality": {
+        "rows": 6985,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 52,
+        "crossed_close_rows": 52,
+        "first_utc": "2020-03-22T21:00:00+00:00",
+        "last_utc": "2020-03-27T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d1b2e36c4a7878a22815782622577f099b6572744d7e0897bcb304bc999c4958",
+      "bytes": 162531,
+      "quality": {
+        "rows": 6998,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 39,
+        "crossed_close_rows": 39,
+        "first_utc": "2020-03-29T22:02:00+00:00",
+        "last_utc": "2020-04-03T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "67f000550dc78028bb1c292f6d59f917e6ab617e6ff8426c9a590fb8787cd3c0",
+      "bytes": 155427,
+      "quality": {
+        "rows": 7032,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 16,
+        "crossed_close_rows": 16,
+        "first_utc": "2020-04-05T21:03:00+00:00",
+        "last_utc": "2020-04-10T20:51:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b046ae7c0ce346f20ed78c70e78b21a25f72de9af4b52dad2e9436608c420fa0",
+      "bytes": 154862,
+      "quality": {
+        "rows": 7066,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 19,
+        "crossed_close_rows": 19,
+        "first_utc": "2020-04-12T21:00:00+00:00",
+        "last_utc": "2020-04-17T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7211512c4f56d8e03093513c7b01e5e23defb3bdae48bf2243ae81d3a8f03e62",
+      "bytes": 155694,
+      "quality": {
+        "rows": 7116,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 53,
+        "crossed_close_rows": 53,
+        "first_utc": "2020-04-19T21:04:00+00:00",
+        "last_utc": "2020-04-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c1b1cbe2db0caa118c528ffd285e98676760f673db8999330af1571811379e0f",
+      "bytes": 155087,
+      "quality": {
+        "rows": 7144,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 62,
+        "crossed_close_rows": 62,
+        "first_utc": "2020-04-26T21:00:00+00:00",
+        "last_utc": "2020-05-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "82b34078602a995a856e7f630c6fbcfd883106a0f6f4ef18e60a0d0645ca485d",
+      "bytes": 152389,
+      "quality": {
+        "rows": 7119,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 76,
+        "crossed_close_rows": 76,
+        "first_utc": "2020-05-03T21:00:00+00:00",
+        "last_utc": "2020-05-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "317cff105e2e1baef8f9b27b122c2b4f5ce8dc086f73616efa785834e421bfe3",
+      "bytes": 155446,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 68,
+        "crossed_close_rows": 68,
+        "first_utc": "2020-05-10T21:08:00+00:00",
+        "last_utc": "2020-05-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "11c90bee34ed37f1f48c08d1331299dc6abf6299ace87aa28d3792dc9a76df16",
+      "bytes": 154349,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 143,
+        "crossed_close_rows": 143,
+        "first_utc": "2020-05-17T21:00:00+00:00",
+        "last_utc": "2020-05-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4b67bd720ac9a647f2e7eaf4466ef61aef8acff8468ea9a240f0c4872005937d",
+      "bytes": 152423,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 177,
+        "crossed_close_rows": 177,
+        "first_utc": "2020-05-24T21:00:00+00:00",
+        "last_utc": "2020-05-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0a4de7b68859ceff471aff3eb1601de30ecd1725bd7e5e32a514406cb99759d2",
+      "bytes": 158128,
+      "quality": {
+        "rows": 7184,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 177,
+        "crossed_close_rows": 177,
+        "first_utc": "2020-05-31T21:00:00+00:00",
+        "last_utc": "2020-06-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f7f4567ad5220ee80312fcc4e6ad8f4c00e437070bc196cc191fd0421b452e76",
+      "bytes": 159263,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 172,
+        "crossed_close_rows": 172,
+        "first_utc": "2020-06-07T21:09:00+00:00",
+        "last_utc": "2020-06-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9e29caf58be301ee1403e3589a3cc43e3395bff0a15891aa668fdd7748c42685",
+      "bytes": 159538,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 169,
+        "crossed_close_rows": 169,
+        "first_utc": "2020-06-14T21:00:00+00:00",
+        "last_utc": "2020-06-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "319b91d8edcfd4e9e187fad51b958c4e0a5ed54f50db9cd0eae4c5e67131858d",
+      "bytes": 155396,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 149,
+        "crossed_close_rows": 149,
+        "first_utc": "2020-06-21T21:03:00+00:00",
+        "last_utc": "2020-06-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "67df77edf185dc8e7c8cc6e3649788d2a08e0e278f71263ee296a0f1a002da7a",
+      "bytes": 152171,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 153,
+        "crossed_close_rows": 153,
+        "first_utc": "2020-06-28T21:01:00+00:00",
+        "last_utc": "2020-07-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8f47d01d0550fc978ad5e1faf8cb3de59ffde620a60230a9f5d198a1d0448644",
+      "bytes": 106764,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 134,
+        "crossed_close_rows": 134,
+        "first_utc": "2020-07-05T21:00:00+00:00",
+        "last_utc": "2020-07-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fa15d68bf815edfceda31e0da47bf0fd8ad2930e86d8d92f49cc60db4676a186",
+      "bytes": 150572,
+      "quality": {
+        "rows": 7112,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 163,
+        "crossed_close_rows": 163,
+        "first_utc": "2020-07-12T21:34:00+00:00",
+        "last_utc": "2020-07-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1e4fd395640703133b013626854b367909ec407a01eadd9fa3f6be079d0a2248",
+      "bytes": 151904,
+      "quality": {
+        "rows": 7126,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 280,
+        "crossed_close_rows": 280,
+        "first_utc": "2020-07-19T21:03:00+00:00",
+        "last_utc": "2020-07-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "70c072d9023f441511459e71b17220c2f647a7d0f61e14a95653aad35639bfa8",
+      "bytes": 155009,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 335,
+        "crossed_close_rows": 335,
+        "first_utc": "2020-07-26T21:00:00+00:00",
+        "last_utc": "2020-07-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "995f890400c3b5847d9d015bc988f1a707f857295d322510870da8d9ec21cdb9",
+      "bytes": 153077,
+      "quality": {
+        "rows": 7109,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 394,
+        "crossed_close_rows": 394,
+        "first_utc": "2020-08-02T21:03:00+00:00",
+        "last_utc": "2020-08-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0cb62f44a380fdf2e9ad76538a971c2efdf6ae85fac7281d431a09167c9c805a",
+      "bytes": 152265,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 211,
+        "crossed_close_rows": 211,
+        "first_utc": "2020-08-09T21:00:00+00:00",
+        "last_utc": "2020-08-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8ca3239678535b4d63fa25c36801576a89f675bfedc127173bcb8d0d9ae4b475",
+      "bytes": 153346,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 222,
+        "crossed_close_rows": 222,
+        "first_utc": "2020-08-16T21:03:00+00:00",
+        "last_utc": "2020-08-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a98f4f70b21622f7df0b514de52ac176705308db3dede538e251e45c8ae17048",
+      "bytes": 153902,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 148,
+        "crossed_close_rows": 148,
+        "first_utc": "2020-08-23T21:00:00+00:00",
+        "last_utc": "2020-08-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4a033220d456a0993839fc7276ee3d54bb14bee6658dab16e682af15ab1cce37",
+      "bytes": 155024,
+      "quality": {
+        "rows": 7147,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 198,
+        "crossed_close_rows": 198,
+        "first_utc": "2020-08-30T21:01:00+00:00",
+        "last_utc": "2020-09-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e50aa7dfa44e94c4d533e906ff9f1f857cbc6aff80d873a43897f4c2e85eace2",
+      "bytes": 156506,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 151,
+        "crossed_close_rows": 151,
+        "first_utc": "2020-09-06T21:00:00+00:00",
+        "last_utc": "2020-09-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d86e7324a4feb5a0273d28b4228b8ed92d7e25b2c0165181d1d4b194fe7e4d80",
+      "bytes": 155675,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 165,
+        "crossed_close_rows": 165,
+        "first_utc": "2020-09-13T21:03:00+00:00",
+        "last_utc": "2020-09-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "90e4236cd8db05b547e60cdff996effb781744b25ffe82a8c0de0c4a19e16a53",
+      "bytes": 156708,
+      "quality": {
+        "rows": 7157,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 93,
+        "crossed_close_rows": 93,
+        "first_utc": "2020-09-20T21:03:00+00:00",
+        "last_utc": "2020-09-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dc540b1956c89734310deb1c036f438284481d7392fe3a9ff8f7e999b1726a13",
+      "bytes": 155166,
+      "quality": {
+        "rows": 7133,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 81,
+        "crossed_close_rows": 81,
+        "first_utc": "2020-09-27T21:03:00+00:00",
+        "last_utc": "2020-10-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "44c579e2f4277d93e8bddf3430f9a8b1bb66ff887ae37ce96429c66e396b46ce",
+      "bytes": 152235,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 113,
+        "crossed_close_rows": 113,
+        "first_utc": "2020-10-04T21:00:00+00:00",
+        "last_utc": "2020-10-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e0939d5b46099e01115fcb1dadf19bbdbeec6f7da690048a289dfa85e5dee5ae",
+      "bytes": 152455,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 140,
+        "crossed_close_rows": 140,
+        "first_utc": "2020-10-11T21:00:00+00:00",
+        "last_utc": "2020-10-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a55ab3352349cef9294adf0848adc7ee7f91b80070816c0f8333d28a1d3ad2d6",
+      "bytes": 153259,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 130,
+        "crossed_close_rows": 130,
+        "first_utc": "2020-10-18T21:00:00+00:00",
+        "last_utc": "2020-10-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "60d890adbcd8f2fe43b20c1c7f1d10b7c97e8eb7ae7e050781c62e52cddf68a4",
+      "bytes": 152243,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 225,
+        "crossed_close_rows": 225,
+        "first_utc": "2020-10-25T21:00:00+00:00",
+        "last_utc": "2020-10-30T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3e69846ed7d288c16d1c215ec0138ffb97db1b7f94c28e9a23195ad46b0917a1",
+      "bytes": 159256,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 288,
+        "crossed_close_rows": 288,
+        "first_utc": "2020-11-01T22:00:00+00:00",
+        "last_utc": "2020-11-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bfb0e9dbac0ec0d06606668e396f19f4a525b86914e88246860d0ccaca979698",
+      "bytes": 155381,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 452,
+        "crossed_close_rows": 452,
+        "first_utc": "2020-11-08T22:00:00+00:00",
+        "last_utc": "2020-11-13T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7a5fe6d0449ed63f8a379f74f6de239869d941c297c3837ca81ef94da61421aa",
+      "bytes": 151603,
+      "quality": {
+        "rows": 7177,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 219,
+        "crossed_close_rows": 219,
+        "first_utc": "2020-11-15T22:09:00+00:00",
+        "last_utc": "2020-11-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d2be25b7fb7664a2c0cfd7cf000417a01b27024830fda994d211b395834db1d2",
+      "bytes": 150277,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 174,
+        "crossed_close_rows": 174,
+        "first_utc": "2020-11-22T22:00:00+00:00",
+        "last_utc": "2020-11-27T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e09fd15b93ea42153a4369b30718090888ddca5f14bd85945d069b9580115cf9",
+      "bytes": 154391,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 185,
+        "crossed_close_rows": 185,
+        "first_utc": "2020-11-29T22:00:00+00:00",
+        "last_utc": "2020-12-04T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "83ed0fd4170f1b99de600f2e6edb2da7bb4d561e135454eaefb699ec7f197495",
+      "bytes": 157895,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 202,
+        "crossed_close_rows": 202,
+        "first_utc": "2020-12-06T22:00:00+00:00",
+        "last_utc": "2020-12-11T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b62e17f4abb57868a6ecf3ed2b12cced84fe4f369a63b9b3d758b7ca7b287505",
+      "bytes": 157701,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 114,
+        "crossed_close_rows": 114,
+        "first_utc": "2020-12-13T22:00:00+00:00",
+        "last_utc": "2020-12-18T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a9c43a09fa82993fae5c034c8418928f6f70df73a5e2a63765831adb77b5132c",
+      "bytes": 126107,
+      "quality": {
+        "rows": 5556,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 31,
+        "crossed_close_rows": 31,
+        "first_utc": "2020-12-20T22:00:00+00:00",
+        "last_utc": "2020-12-24T19:03:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2020,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2020/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2f71bdf0d080c20fdb5289906c209efc68e10dc08c253a56b6ee35e5dedcb749",
+      "bytes": 120001,
+      "quality": {
+        "rows": 5536,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 64,
+        "crossed_close_rows": 64,
+        "first_utc": "2020-12-27T22:00:00+00:00",
+        "last_utc": "2020-12-31T19:01:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5af6417113aa50dc277246eb4e0a73765355ad11be195a2d8c2e0801557d8b09",
+      "bytes": 157817,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 110,
+        "crossed_close_rows": 110,
+        "first_utc": "2021-01-03T22:00:00+00:00",
+        "last_utc": "2021-01-08T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "67af9e09255fe4c6c619d7af95ebe84e43e9c82f9e5d49ab3667f07709d910dd",
+      "bytes": 153567,
+      "quality": {
+        "rows": 7122,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 78,
+        "crossed_close_rows": 78,
+        "first_utc": "2021-01-10T22:18:00+00:00",
+        "last_utc": "2021-01-15T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d1febbc8c0f1959e012fa3e3d5b27e73ef3829f63ea956362613f3384c10a231",
+      "bytes": 150515,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 130,
+        "crossed_close_rows": 130,
+        "first_utc": "2021-01-17T22:04:00+00:00",
+        "last_utc": "2021-01-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f81450da87b6eff4ba97ea5103fae5f20ef0d1ef31456ac8b4e8d475d432544d",
+      "bytes": 154464,
+      "quality": {
+        "rows": 7179,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 88,
+        "crossed_close_rows": 88,
+        "first_utc": "2021-01-24T22:00:00+00:00",
+        "last_utc": "2021-01-29T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "359d7e3f4b99cfb5e63774fd438ac5d4a5ea37ec2ad646bee487db2bf9d2cda8",
+      "bytes": 151834,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 96,
+        "crossed_close_rows": 96,
+        "first_utc": "2021-01-31T22:00:00+00:00",
+        "last_utc": "2021-02-05T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b60a57b34a66908034471dab4b1146ff8211367226a17dd71a65ac30afa650fe",
+      "bytes": 147600,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 81,
+        "crossed_close_rows": 81,
+        "first_utc": "2021-02-07T22:00:00+00:00",
+        "last_utc": "2021-02-12T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c11087ac90655a75cf2db980d3bdb8b0c997808dfbf8129996fe0a3c78a79146",
+      "bytes": 148985,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 117,
+        "crossed_close_rows": 117,
+        "first_utc": "2021-02-14T22:01:00+00:00",
+        "last_utc": "2021-02-19T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f22b17515770d4b85dc2d5eeaebcfe315bd7620775c76a11cf559ac1b4cf9e18",
+      "bytes": 157432,
+      "quality": {
+        "rows": 7179,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 98,
+        "crossed_close_rows": 98,
+        "first_utc": "2021-02-21T22:00:00+00:00",
+        "last_utc": "2021-02-26T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2487b417ada59fe0c4d5c040ac5f1beefd1925ba302a84496182286403631451",
+      "bytes": 157800,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 67,
+        "crossed_close_rows": 67,
+        "first_utc": "2021-02-28T22:00:00+00:00",
+        "last_utc": "2021-03-05T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e3e969dcb91d0430fa091e4a627bc45ae00ae390a478a744e58867b7d1fe5bc9",
+      "bytes": 154381,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 53,
+        "crossed_close_rows": 53,
+        "first_utc": "2021-03-07T22:03:00+00:00",
+        "last_utc": "2021-03-12T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9983bf804f7982a1e8c82df3c2d7a72772b8faae9200c473c0ba9a649aba7fae",
+      "bytes": 153249,
+      "quality": {
+        "rows": 7110,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 40,
+        "crossed_close_rows": 40,
+        "first_utc": "2021-03-14T21:00:00+00:00",
+        "last_utc": "2021-03-19T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "60c267f72b425e31f22cb67aa7c637bc4866ed566dbc1c18e669cb3c66fff059",
+      "bytes": 151892,
+      "quality": {
+        "rows": 7157,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 49,
+        "crossed_close_rows": 49,
+        "first_utc": "2021-03-21T21:00:00+00:00",
+        "last_utc": "2021-03-26T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "19b3e575d4fdf9a6bcbd32c348a3ba5976d440a0f5284e6c984e60022979d866",
+      "bytes": 149066,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 75,
+        "crossed_close_rows": 75,
+        "first_utc": "2021-03-28T21:00:00+00:00",
+        "last_utc": "2021-04-02T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "17dd856c4ed776f228947966c2f0b436e935d49a5dd201fca6753cbec627b56e",
+      "bytes": 148877,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2021-04-04T21:01:00+00:00",
+        "last_utc": "2021-04-09T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "640ed468e97bf58849904ed06732716abb411b679b0d7bb95a3d759c753c21db",
+      "bytes": 148479,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 70,
+        "crossed_close_rows": 70,
+        "first_utc": "2021-04-11T21:00:00+00:00",
+        "last_utc": "2021-04-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d1bc7d63bf8378f2fa9fd7d6d25f2910d40da4cce99a067344b9d0298bdd47bd",
+      "bytes": 149543,
+      "quality": {
+        "rows": 7143,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 60,
+        "crossed_close_rows": 60,
+        "first_utc": "2021-04-18T21:00:00+00:00",
+        "last_utc": "2021-04-23T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8b0f90fb948f389d46b2b048f6cfd9405e5d9023e45d41c85a0af660c528c474",
+      "bytes": 104043,
+      "quality": {
+        "rows": 7137,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 43,
+        "crossed_close_rows": 43,
+        "first_utc": "2021-04-25T21:00:00+00:00",
+        "last_utc": "2021-04-30T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6797c2a6dcb198610d16e90ad4e436d1ab0c563a394ae487eeafa0c3e215386f",
+      "bytes": 102860,
+      "quality": {
+        "rows": 7111,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 104,
+        "crossed_close_rows": 104,
+        "first_utc": "2021-05-02T21:00:00+00:00",
+        "last_utc": "2021-05-07T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6de102cc71a1a76a3a963485c688d000c7355a5a1a1ef73609e220cd04ca36c9",
+      "bytes": 105597,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 119,
+        "crossed_close_rows": 119,
+        "first_utc": "2021-05-09T21:00:00+00:00",
+        "last_utc": "2021-05-14T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "30e532e9ea7534f34f55bd29921da148b7cc080902220319a2f524d60bee0c62",
+      "bytes": 103963,
+      "quality": {
+        "rows": 7135,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 124,
+        "crossed_close_rows": 124,
+        "first_utc": "2021-05-16T21:00:00+00:00",
+        "last_utc": "2021-05-21T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b4dfce84e5609bc9952368379f5587d7f52896d7be1fd9b17e55298a44e4dae6",
+      "bytes": 103266,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 446,
+        "crossed_close_rows": 446,
+        "first_utc": "2021-05-23T21:03:00+00:00",
+        "last_utc": "2021-05-28T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "83b73af24522229f80af3a8e2903bc53c4a35dbf422b86334a3e0f46789538cc",
+      "bytes": 102171,
+      "quality": {
+        "rows": 7133,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 43,
+        "crossed_close_rows": 43,
+        "first_utc": "2021-05-30T21:01:00+00:00",
+        "last_utc": "2021-06-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5caaadf5a9b1aa5532d7a4cc8cdfc4803ceae159622a896d7d1da16050aea132",
+      "bytes": 100897,
+      "quality": {
+        "rows": 7144,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2021-06-06T21:00:00+00:00",
+        "last_utc": "2021-06-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c61c59434d90ee520159408f0fd75cdfaa2c596bacc104a7b6e0a0b9699ebf52",
+      "bytes": 103588,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 41,
+        "crossed_close_rows": 41,
+        "first_utc": "2021-06-13T21:01:00+00:00",
+        "last_utc": "2021-06-18T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e7705e31c9c23b9f0b281f8e492e1583bee17ef880394b4674e718eb478d0bbc",
+      "bytes": 104842,
+      "quality": {
+        "rows": 7129,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2021-06-20T21:15:00+00:00",
+        "last_utc": "2021-06-25T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5ca978cfa0e7e7722e6324f83f4db24732f6cea69496afe121618b8a5d579b58",
+      "bytes": 102594,
+      "quality": {
+        "rows": 7098,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2021-06-27T21:30:00+00:00",
+        "last_utc": "2021-07-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "28b8b47870c9529196f8c6e3f6301ef5b77fad285f8b2d384bd5726533ad90b7",
+      "bytes": 104187,
+      "quality": {
+        "rows": 7123,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 37,
+        "crossed_close_rows": 37,
+        "first_utc": "2021-07-04T21:03:00+00:00",
+        "last_utc": "2021-07-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e8773db04f74c7efea3689cc86a1db93eb21c6d8328483c1950c74d361a30033",
+      "bytes": 103582,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 21,
+        "crossed_close_rows": 21,
+        "first_utc": "2021-07-11T21:01:00+00:00",
+        "last_utc": "2021-07-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d0494076e31a50c38cd904623d04204ac0be60edd3f2d608837f5988f26a569b",
+      "bytes": 105061,
+      "quality": {
+        "rows": 7132,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 54,
+        "crossed_close_rows": 54,
+        "first_utc": "2021-07-18T21:05:00+00:00",
+        "last_utc": "2021-07-23T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b3bbdb2948ac599c7c8a855147c1135a149813213a5dc318ceb20fd237d7708f",
+      "bytes": 101345,
+      "quality": {
+        "rows": 7124,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2021-07-25T21:00:00+00:00",
+        "last_utc": "2021-07-30T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "855d2d06c1d11a66d2a8f11576f01a94244353bfc04b5ef998b50c1a817f7a46",
+      "bytes": 98748,
+      "quality": {
+        "rows": 7117,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 23,
+        "crossed_close_rows": 23,
+        "first_utc": "2021-08-01T21:03:00+00:00",
+        "last_utc": "2021-08-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "603b1cf1ea226d75257e5f582f95df313c49fdd469ab5050f7363ad8c2b7383c",
+      "bytes": 96490,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2021-08-08T21:01:00+00:00",
+        "last_utc": "2021-08-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0449d8458319eaae53101bdca4b19c3455e563f8400146198107ad03b09e2e6f",
+      "bytes": 98823,
+      "quality": {
+        "rows": 7141,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 19,
+        "crossed_close_rows": 19,
+        "first_utc": "2021-08-15T21:03:00+00:00",
+        "last_utc": "2021-08-20T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d3d1811b12e2287a8c7e29d1f0281ed13632eb23ddd845a9d4186488c8a3b9aa",
+      "bytes": 96866,
+      "quality": {
+        "rows": 7086,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2021-08-22T21:02:00+00:00",
+        "last_utc": "2021-08-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5fd55a1515c8e43ff6479e205a2725c5a045379658a60fcfc2a09fc043340266",
+      "bytes": 95962,
+      "quality": {
+        "rows": 7083,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2021-08-29T21:00:00+00:00",
+        "last_utc": "2021-09-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d3a2cd2cb9f9d3edc4e0764ee89cbf6eb1e5d80efe873cd3db228a13a6ab2d75",
+      "bytes": 97937,
+      "quality": {
+        "rows": 7124,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 38,
+        "crossed_close_rows": 38,
+        "first_utc": "2021-09-05T21:03:00+00:00",
+        "last_utc": "2021-09-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "40cc7e20c446e85b8496e8b8f2eb76c14d739537deec24e72aae32136d0ee5a2",
+      "bytes": 99041,
+      "quality": {
+        "rows": 7131,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2021-09-12T21:10:00+00:00",
+        "last_utc": "2021-09-17T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bd895a9586bcabdab02c10cb56fe7c933b39b0e126bc6358e4e937469c55b892",
+      "bytes": 102412,
+      "quality": {
+        "rows": 7117,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 39,
+        "crossed_close_rows": 39,
+        "first_utc": "2021-09-19T21:25:00+00:00",
+        "last_utc": "2021-09-24T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "edcee268f5f66eca215d5cd3b5f9443fde06bebcb565bdfbe7ab72ac72cd6d70",
+      "bytes": 104750,
+      "quality": {
+        "rows": 7128,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 46,
+        "crossed_close_rows": 46,
+        "first_utc": "2021-09-26T21:00:00+00:00",
+        "last_utc": "2021-10-01T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f5b747cf8095d45687ca31c7007902269457f6626be75f2f7589394f2f92b4e4",
+      "bytes": 102673,
+      "quality": {
+        "rows": 7131,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 41,
+        "crossed_close_rows": 41,
+        "first_utc": "2021-10-03T21:03:00+00:00",
+        "last_utc": "2021-10-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "abe15fa9fc811e6c952b29559c299680ab4e93f63f96284d6e94c9d19b4fcd7a",
+      "bytes": 101410,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 22,
+        "crossed_close_rows": 22,
+        "first_utc": "2021-10-10T21:00:00+00:00",
+        "last_utc": "2021-10-15T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c7cf6b1c73f40374e829df8ca9246692605210f1a9bfa654576c9392610d3778",
+      "bytes": 100480,
+      "quality": {
+        "rows": 7137,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2021-10-17T21:03:00+00:00",
+        "last_utc": "2021-10-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a2b0dbadf57cf43e532a234129d6a588b0892ce669fa678541773e17c91b2eeb",
+      "bytes": 102072,
+      "quality": {
+        "rows": 7123,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 23,
+        "crossed_close_rows": 23,
+        "first_utc": "2021-10-24T21:04:00+00:00",
+        "last_utc": "2021-10-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "99c7c75241ef5d86ee8e597723ac14ae0967832f3273747d6ed6346f4508454b",
+      "bytes": 102922,
+      "quality": {
+        "rows": 7122,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2021-10-31T21:03:00+00:00",
+        "last_utc": "2021-11-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "48eaadcccbeb1e93f141adb5f64d5b978d349516c62a024fbd8e6129f403e57e",
+      "bytes": 103587,
+      "quality": {
+        "rows": 7161,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 42,
+        "crossed_close_rows": 42,
+        "first_utc": "2021-11-07T22:00:00+00:00",
+        "last_utc": "2021-11-12T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ddcf622bcc2873621f2ffd141bac51c4da974b747da593b985484757d4917ca9",
+      "bytes": 103130,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2021-11-14T22:01:00+00:00",
+        "last_utc": "2021-11-19T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "17d880a1399bc8181466e948be5f500888afab5c9367916476fb675323876a84",
+      "bytes": 102496,
+      "quality": {
+        "rows": 7111,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2021-11-21T22:03:00+00:00",
+        "last_utc": "2021-11-26T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1588b9d967ae2cf5d2e4606f4ec8170f6d077eeda5a42b5d77c407cd9609447d",
+      "bytes": 105934,
+      "quality": {
+        "rows": 7147,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 25,
+        "crossed_close_rows": 25,
+        "first_utc": "2021-11-28T22:01:00+00:00",
+        "last_utc": "2021-12-03T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3b88e4cc384f917db651abadeb588c3581669c890047d4fa6b15de5c9100b7f9",
+      "bytes": 102709,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2021-12-05T22:01:00+00:00",
+        "last_utc": "2021-12-10T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6946a526cecf05ec65dfc2a84540c2f360d704de83332cc49c17e6674232e57c",
+      "bytes": 102618,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 5,
+        "crossed_close_rows": 5,
+        "first_utc": "2021-12-12T22:00:00+00:00",
+        "last_utc": "2021-12-17T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "321bb89388d7736e3096cd3732226084527da5759b7a16ed17da60c3ec9c62c5",
+      "bytes": 99210,
+      "quality": {
+        "rows": 6965,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 9,
+        "crossed_close_rows": 9,
+        "first_utc": "2021-12-19T22:00:00+00:00",
+        "last_utc": "2021-12-24T19:12:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b2a079bf48aa803c4227efd1c44dc4781882d5c443887d8254070e2344889437",
+      "bytes": 95056,
+      "quality": {
+        "rows": 6961,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 5,
+        "crossed_close_rows": 5,
+        "first_utc": "2021-12-26T22:03:00+00:00",
+        "last_utc": "2021-12-31T20:01:00+00:00"
+      }
+    },
+    {
+      "symbol": "GBPUSD",
+      "year_label": 2021,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/GBPUSD/2021/53.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    }
+  ],
+  "missing_week_urls": [
+    "https://candledata.fxcorporate.com/m1/GBPUSD/2017/53.csv.gz",
+    "https://candledata.fxcorporate.com/m1/GBPUSD/2019/1.csv.gz",
+    "https://candledata.fxcorporate.com/m1/GBPUSD/2020/1.csv.gz",
+    "https://candledata.fxcorporate.com/m1/GBPUSD/2021/53.csv.gz"
+  ],
+  "usable_unique_minutes": 1850090,
+  "identical_overlap_rows_removed": 0,
+  "outputs": {
+    "m5": {
+      "path": "data/intraday/fxcm_official/gbpusd_development_validation_2017_2021_m5.csv",
+      "sha256": "bf0e07d148b0fce4b479661c9befc0c53a1bc1de5dba6543d3a80bc300bc7f38",
+      "quality": {
+        "minutes": 5,
+        "input_minutes": 1850090,
+        "complete_bars": 365496,
+        "incomplete_blocks_omitted": 6630,
+        "crossed_open_bars_kept_but_entry_blocked": 4858,
+        "valid_spread_pips_median": 0.40000000000040004,
+        "valid_spread_pips_p95": 1.3000000000018552,
+        "volume": "NOT PROVIDED; no synthetic volume added"
+      }
+    },
+    "m15": {
+      "path": "data/intraday/fxcm_official/gbpusd_development_validation_2017_2021_m15.csv",
+      "sha256": "66973c780d33017ce5bc3b873370be694a64e66c2fbac4dc639093ec151c3d8d",
+      "quality": {
+        "minutes": 15,
+        "input_minutes": 1850090,
+        "complete_bars": 119700,
+        "incomplete_blocks_omitted": 4418,
+        "crossed_open_bars_kept_but_entry_blocked": 1675,
+        "valid_spread_pips_median": 0.40000000000040004,
+        "valid_spread_pips_p95": 1.3000000000018552,
+        "volume": "NOT PROVIDED; no synthetic volume added"
+      }
+    }
+  },
+  "strategy_outcomes_evaluated": false,
+  "limitations": [
+    "Provider says indicative lowest-spread Active Trader quotes, not verified executable broker fills",
+    "Provider specifies personal use; raw archives and candle CSVs are not published",
+    "Crossed ASK opens block entry; valid BID exit bars are retained",
+    "Missing minutes and archives are not fabricated; incomplete M5/M15 blocks are omitted"
+  ]
+}

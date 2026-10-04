@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .venv/
+.reproductions/
 .pytest_cache/
 state/.lock
 state/
@@ -15,3 +16,6 @@ data/intraday/dukascopy_raw/
 artifacts/intraday/jpy/*.csv
 data/intraday/**/*.qhs5
 data/intraday/fxcm_public_mirror/*.hpp
+data/intraday/fxcm_official/*.csv.gz
+data/intraday/fxcm_official/*.csv
+data/intraday/fxcm_official/*_trades.json

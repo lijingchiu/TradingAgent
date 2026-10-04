@@ -1,0 +1,147 @@
+{
+  "registered_at_utc": "2026-10-04T14:43:54.794454+00:00",
+  "hypothesis": "Temporary inventory/flow imbalance can mean-revert after extreme two-bar RSI; distinguish profitable states from repeated stop-loss states using only entry-time features learned in 2017.",
+  "source": "Official FXCM indicative paired BID/ASK M1, complete UTC M5/M15 aggregation; crossed ASK opens prohibit new entries",
+  "source_docs_commit": "924393dd545fab187527d95ef8b1178284b274b6",
+  "source_docs_blob": "eaab97d15b8596c52c83ba52f25678e7fbec02a8",
+  "source_limitations": [
+    "Lowest-spread Active Trader indicative quotes, not verified executable broker prices",
+    "No raw archive/price redistribution; provider specifies personal use"
+  ],
+  "symbol": "EURUSD",
+  "quote_kind": "bid",
+  "entry_price": "Current observed ASK open plus adverse slippage",
+  "exit_price": "BID stop/target or current observed BID open minus adverse slippage",
+  "development": [
+    "2017-01-01",
+    "2018-01-01"
+  ],
+  "selection_validation": [
+    "2018-01-01",
+    "2022-01-01"
+  ],
+  "reserved_final": [
+    "2022-04-01",
+    "2024-10-01"
+  ],
+  "final_warmup_start": "2022-01-01",
+  "independence_note": "2017-2021 calendar periods were used in earlier disclosed research. 2022-04 through 2024-09 strategy outcomes remain untouched; source-only availability/quality checks are permitted.",
+  "base_signal": {
+    "rsi_period": 2,
+    "rsi_max": 10,
+    "atr_period": 14,
+    "atr_slow_period": 96,
+    "ema_period": 200,
+    "ema_slope_bars": 24,
+    "zscore_period": 20,
+    "minimum_warmup_trading_bars": 600,
+    "minimum_atr_pips": 3,
+    "stop_atr": 4,
+    "target_atr": 2,
+    "exit_rsi_at_least": 80,
+    "max_holding_observed_bars": 16,
+    "max_holding_days": 1,
+    "entry_hours_utc": [
+      7,
+      16
+    ],
+    "maximum_entry_spread_pips": 2
+  },
+  "timeframes_minutes": [
+    5,
+    15
+  ],
+  "initial_capitals_usd": [
+    100000,
+    500000
+  ],
+  "variants_per_base": [
+    "unfiltered",
+    "stop_pattern_tree_depth1",
+    "stop_pattern_tree_depth2"
+  ],
+  "total_configurations": 12,
+  "pattern_learning": {
+    "development_only": true,
+    "target": "After-cost net pips per currency unit from all natural baseline trades; stop reasons retained for separate diagnosis",
+    "features": [
+      "atr_pips",
+      "atr_fast_slow_ratio",
+      "ema_slope_atr",
+      "distance_from_ema_atr",
+      "zscore20",
+      "completed_bar_body_fraction",
+      "current_quote_spread_pips",
+      "current_quote_hour_utc"
+    ],
+    "regressor": "sklearn DecisionTreeRegressor",
+    "max_depths": [
+      1,
+      2
+    ],
+    "minimum_samples_per_leaf": 100,
+    "random_state": 20261004,
+    "keep_leaf": "Training mean net pips > 0 AND training net win rate >= 0.5",
+    "training_filter_lock": "Write each fitted tree and rule hashes before any selection-validation run. Do not revise using validation or final outcomes.",
+    "pattern_reports": "Every development stop trade and winning trade includes entry-available feature values; feature group comparisons are exploratory correlations, not causal proof"
+  },
+  "baseline_costs": {
+    "spread_pips": 0,
+    "slippage_pips": 0.2,
+    "commission_bps": 0.35,
+    "minimum_commission": 0.1,
+    "carry_per_1000_per_day": 0.0,
+    "pip_size": 0.0001
+  },
+  "stress_multipliers": [
+    1.5,
+    2
+  ],
+  "stress_rule": "Multiply actual observed entry spread, per-side slippage, commission bps and minimum commission together; carry remains zero in funded currency model",
+  "risk": {
+    "fully_funded_long_only": true,
+    "notional_fraction_max": 0.008,
+    "entry_loss_fraction_max": 0.01,
+    "observed_entry_equity_and_floating_peak_drawdowns_max": 0.01,
+    "unclipped_observed_gaps": true,
+    "one_open_position": true,
+    "same_bar_reentry": false,
+    "stale_signal_max_seconds": "Timeframe minutes * 60"
+  },
+  "selection_criteria": {
+    "minimum_development_natural_trades": 100,
+    "minimum_validation_natural_trades": 500,
+    "net_win_rate_each_split_at_least": 0.5,
+    "net_profit_each_split_positive": true,
+    "observed_risk_breaches": 0,
+    "rank": "Maximum minimum development/validation net return; tie by validation net return then stable variant name"
+  },
+  "selection": "One exact config selected and frozen before final; do not test alternatives on final",
+  "final_criteria": {
+    "minimum_natural_trades": 500,
+    "net_win_rate_at_least": 0.5,
+    "after_cost_net_profit_positive": true,
+    "observed_risk_breaches": 0,
+    "strong_expectancy_evidence": "One-sided 95% daily-return block-bootstrap lower bound > 0; an interval including zero is labeled uncertain"
+  },
+  "bootstrap": {
+    "circular_calendar_day_block": 7,
+    "replications": 10000,
+    "seed": 20261004,
+    "sensitivity_blocks": [
+      14,
+      28
+    ]
+  },
+  "execution_notes": [
+    "Features derived only from completed trading bars, not synthesized calendar bars",
+    "Orders use subsequent fresh quotes; never a signal close",
+    "Indicators retain prior trading-bar history across gaps; entry signal freshness is independently enforced",
+    "Max observed-bar holding horizon may last longer across missing bars; all actual exit times are retained",
+    "Observed ASK crossing blocks entry only; do not remove valid BID exit bars",
+    "Ambiguous stop/target same OHLC bar takes stop first",
+    "Exclude sample-end liquidations from natural count and win rate but retain their costs and PnL in account totals",
+    "Research PnL never credits the existing paper ledger; no production activation from a diagnostic result"
+  ],
+  "previous_history": "All earlier 608 hourly and 618 intraday operating configurations remain disclosed; this round adds 12 fixed/learned intraday configurations, not a claim of a fresh clean slate."
+}

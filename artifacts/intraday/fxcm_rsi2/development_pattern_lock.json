@@ -1,0 +1,633 @@
+{
+  "locked_at_utc": "2026-10-04T14:50:26.038812+00:00",
+  "models": {
+    "rsi2_m5_usd100000_stop_pattern_tree_depth1": {
+      "depth": 1,
+      "disabled": false,
+      "features": [
+        "atr_pips",
+        "atr_fast_slow_ratio",
+        "ema_slope_atr",
+        "distance_from_ema_atr",
+        "zscore20",
+        "completed_bar_body_fraction",
+        "current_quote_spread_pips",
+        "current_quote_hour_utc"
+      ],
+      "nodes": [
+        {
+          "left": 1,
+          "right": 2,
+          "feature": 3,
+          "threshold": -6.3921051025390625,
+          "training_samples": 1298,
+          "expected_net_pips": -3.0374684034544246
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 201,
+          "expected_net_pips": -1.2102868181536512
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 1097,
+          "expected_net_pips": -3.372257372137612
+        }
+      ],
+      "leaf_training_diagnostics": {
+        "1": {
+          "trades": 201,
+          "win_rate": 0.5920398009950248,
+          "stop_rate": 0.08955223880597014,
+          "mean_net_pips": -1.2102868181536512
+        },
+        "2": {
+          "trades": 1097,
+          "win_rate": 0.45031905195989064,
+          "stop_rate": 0.11850501367365543,
+          "mean_net_pips": -3.372257372137613
+        }
+      },
+      "eligible_leaves": [],
+      "fit_period": "2017 only",
+      "training_natural_trades": 1298,
+      "evidence_role": "Exploratory development patterns; validation not yet evaluated",
+      "training_trade_features_sha256": "26af0fd5dab29b3f9d8bc8c8202b7f2ece85a14187576cd2b6bdca4a56963ec4"
+    },
+    "rsi2_m5_usd100000_stop_pattern_tree_depth2": {
+      "depth": 2,
+      "disabled": false,
+      "features": [
+        "atr_pips",
+        "atr_fast_slow_ratio",
+        "ema_slope_atr",
+        "distance_from_ema_atr",
+        "zscore20",
+        "completed_bar_body_fraction",
+        "current_quote_spread_pips",
+        "current_quote_hour_utc"
+      ],
+      "nodes": [
+        {
+          "left": 1,
+          "right": 4,
+          "feature": 3,
+          "threshold": -6.3921051025390625,
+          "training_samples": 1298,
+          "expected_net_pips": -3.0374684034544246
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "feature": 1,
+          "threshold": 1.300209105014801,
+          "training_samples": 201,
+          "expected_net_pips": -1.2102868181536512
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 101,
+          "expected_net_pips": -2.184232813156205
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 100,
+          "expected_net_pips": -0.22660136320107077
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "feature": 7,
+          "threshold": 10.791666507720947,
+          "training_samples": 1097,
+          "expected_net_pips": -3.372257372137612
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 478,
+          "expected_net_pips": -4.051001134609823
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 619,
+          "expected_net_pips": -2.848122447320628
+        }
+      ],
+      "leaf_training_diagnostics": {
+        "2": {
+          "trades": 101,
+          "win_rate": 0.5643564356435643,
+          "stop_rate": 0.12871287128712872,
+          "mean_net_pips": -2.1842328131562057
+        },
+        "3": {
+          "trades": 100,
+          "win_rate": 0.62,
+          "stop_rate": 0.05,
+          "mean_net_pips": -0.22660136320107122
+        },
+        "5": {
+          "trades": 478,
+          "win_rate": 0.41422594142259417,
+          "stop_rate": 0.14853556485355648,
+          "mean_net_pips": -4.051001134609821
+        },
+        "6": {
+          "trades": 619,
+          "win_rate": 0.4781906300484653,
+          "stop_rate": 0.09531502423263329,
+          "mean_net_pips": -2.848122447320625
+        }
+      },
+      "eligible_leaves": [],
+      "fit_period": "2017 only",
+      "training_natural_trades": 1298,
+      "evidence_role": "Exploratory development patterns; validation not yet evaluated",
+      "training_trade_features_sha256": "26af0fd5dab29b3f9d8bc8c8202b7f2ece85a14187576cd2b6bdca4a56963ec4"
+    },
+    "rsi2_m5_usd500000_stop_pattern_tree_depth1": {
+      "depth": 1,
+      "disabled": false,
+      "features": [
+        "atr_pips",
+        "atr_fast_slow_ratio",
+        "ema_slope_atr",
+        "distance_from_ema_atr",
+        "zscore20",
+        "completed_bar_body_fraction",
+        "current_quote_spread_pips",
+        "current_quote_hour_utc"
+      ],
+      "nodes": [
+        {
+          "left": 1,
+          "right": 2,
+          "feature": 3,
+          "threshold": -6.3921051025390625,
+          "training_samples": 1298,
+          "expected_net_pips": -0.9991236418393149
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 201,
+          "expected_net_pips": 0.8172898279223659
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 1097,
+          "expected_net_pips": -1.3319396012031228
+        }
+      ],
+      "leaf_training_diagnostics": {
+        "1": {
+          "trades": 201,
+          "win_rate": 0.6616915422885572,
+          "stop_rate": 0.08955223880597014,
+          "mean_net_pips": 0.8172898279223664
+        },
+        "2": {
+          "trades": 1097,
+          "win_rate": 0.5897903372835005,
+          "stop_rate": 0.11850501367365543,
+          "mean_net_pips": -1.3319396012031248
+        }
+      },
+      "eligible_leaves": [
+        1
+      ],
+      "fit_period": "2017 only",
+      "training_natural_trades": 1298,
+      "evidence_role": "Exploratory development patterns; validation not yet evaluated",
+      "training_trade_features_sha256": "33fd899424a74158788ce7d9157e59cafaa54f3fe59332d125bd3216858a59f6"
+    },
+    "rsi2_m5_usd500000_stop_pattern_tree_depth2": {
+      "depth": 2,
+      "disabled": false,
+      "features": [
+        "atr_pips",
+        "atr_fast_slow_ratio",
+        "ema_slope_atr",
+        "distance_from_ema_atr",
+        "zscore20",
+        "completed_bar_body_fraction",
+        "current_quote_spread_pips",
+        "current_quote_hour_utc"
+      ],
+      "nodes": [
+        {
+          "left": 1,
+          "right": 4,
+          "feature": 3,
+          "threshold": -6.3921051025390625,
+          "training_samples": 1298,
+          "expected_net_pips": -0.9991236418393149
+        },
+        {
+          "left": 2,
+          "right": 3,
+          "feature": 1,
+          "threshold": 1.300209105014801,
+          "training_samples": 201,
+          "expected_net_pips": 0.8172898279223659
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 101,
+          "expected_net_pips": -0.1602914475420838
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 100,
+          "expected_net_pips": 1.8046469161414609
+        },
+        {
+          "left": 5,
+          "right": 6,
+          "feature": 7,
+          "threshold": 10.791666507720947,
+          "training_samples": 1097,
+          "expected_net_pips": -1.3319396012031228
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 478,
+          "expected_net_pips": -2.010891621869496
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 619,
+          "expected_net_pips": -0.8076438566497726
+        }
+      ],
+      "leaf_training_diagnostics": {
+        "2": {
+          "trades": 101,
+          "win_rate": 0.6435643564356436,
+          "stop_rate": 0.12871287128712872,
+          "mean_net_pips": -0.16029144754208394
+        },
+        "3": {
+          "trades": 100,
+          "win_rate": 0.68,
+          "stop_rate": 0.05,
+          "mean_net_pips": 1.8046469161414604
+        },
+        "5": {
+          "trades": 478,
+          "win_rate": 0.5606694560669456,
+          "stop_rate": 0.14853556485355648,
+          "mean_net_pips": -2.010891621869497
+        },
+        "6": {
+          "trades": 619,
+          "win_rate": 0.6122778675282714,
+          "stop_rate": 0.09531502423263329,
+          "mean_net_pips": -0.8076438566497712
+        }
+      },
+      "eligible_leaves": [
+        3
+      ],
+      "fit_period": "2017 only",
+      "training_natural_trades": 1298,
+      "evidence_role": "Exploratory development patterns; validation not yet evaluated",
+      "training_trade_features_sha256": "33fd899424a74158788ce7d9157e59cafaa54f3fe59332d125bd3216858a59f6"
+    },
+    "rsi2_m15_usd100000_stop_pattern_tree_depth1": {
+      "depth": 1,
+      "disabled": false,
+      "features": [
+        "atr_pips",
+        "atr_fast_slow_ratio",
+        "ema_slope_atr",
+        "distance_from_ema_atr",
+        "zscore20",
+        "completed_bar_body_fraction",
+        "current_quote_spread_pips",
+        "current_quote_hour_utc"
+      ],
+      "nodes": [
+        {
+          "left": 1,
+          "right": 2,
+          "feature": 1,
+          "threshold": 0.9936408996582031,
+          "training_samples": 460,
+          "expected_net_pips": -2.0827738000896594
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 161,
+          "expected_net_pips": -4.981980928980749
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 299,
+          "expected_net_pips": -0.5216622691483022
+        }
+      ],
+      "leaf_training_diagnostics": {
+        "1": {
+          "trades": 161,
+          "win_rate": 0.5279503105590062,
+          "stop_rate": 0.22981366459627328,
+          "mean_net_pips": -4.98198092898075
+        },
+        "2": {
+          "trades": 299,
+          "win_rate": 0.6120401337792643,
+          "stop_rate": 0.0802675585284281,
+          "mean_net_pips": -0.5216622691483025
+        }
+      },
+      "eligible_leaves": [],
+      "fit_period": "2017 only",
+      "training_natural_trades": 460,
+      "evidence_role": "Exploratory development patterns; validation not yet evaluated",
+      "training_trade_features_sha256": "a5dc1fb2f11c09c73781a222a411a4cdcafedb0c53a9841e827f6b9afade2e51"
+    },
+    "rsi2_m15_usd100000_stop_pattern_tree_depth2": {
+      "depth": 2,
+      "disabled": false,
+      "features": [
+        "atr_pips",
+        "atr_fast_slow_ratio",
+        "ema_slope_atr",
+        "distance_from_ema_atr",
+        "zscore20",
+        "completed_bar_body_fraction",
+        "current_quote_spread_pips",
+        "current_quote_hour_utc"
+      ],
+      "nodes": [
+        {
+          "left": 1,
+          "right": 2,
+          "feature": 1,
+          "threshold": 0.9936408996582031,
+          "training_samples": 460,
+          "expected_net_pips": -2.0827738000896594
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 161,
+          "expected_net_pips": -4.981980928980749
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "feature": 2,
+          "threshold": -0.2308867797255516,
+          "training_samples": 299,
+          "expected_net_pips": -0.5216622691483022
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 103,
+          "expected_net_pips": 2.1676564497996993
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 196,
+          "expected_net_pips": -1.9349266979832205
+        }
+      ],
+      "leaf_training_diagnostics": {
+        "1": {
+          "trades": 161,
+          "win_rate": 0.5279503105590062,
+          "stop_rate": 0.22981366459627328,
+          "mean_net_pips": -4.98198092898075
+        },
+        "3": {
+          "trades": 103,
+          "win_rate": 0.6796116504854369,
+          "stop_rate": 0.038834951456310676,
+          "mean_net_pips": 2.167656449799699
+        },
+        "4": {
+          "trades": 196,
+          "win_rate": 0.576530612244898,
+          "stop_rate": 0.10204081632653061,
+          "mean_net_pips": -1.9349266979832216
+        }
+      },
+      "eligible_leaves": [
+        3
+      ],
+      "fit_period": "2017 only",
+      "training_natural_trades": 460,
+      "evidence_role": "Exploratory development patterns; validation not yet evaluated",
+      "training_trade_features_sha256": "a5dc1fb2f11c09c73781a222a411a4cdcafedb0c53a9841e827f6b9afade2e51"
+    },
+    "rsi2_m15_usd500000_stop_pattern_tree_depth1": {
+      "depth": 1,
+      "disabled": false,
+      "features": [
+        "atr_pips",
+        "atr_fast_slow_ratio",
+        "ema_slope_atr",
+        "distance_from_ema_atr",
+        "zscore20",
+        "completed_bar_body_fraction",
+        "current_quote_spread_pips",
+        "current_quote_hour_utc"
+      ],
+      "nodes": [
+        {
+          "left": 1,
+          "right": 2,
+          "feature": 1,
+          "threshold": 0.9936408996582031,
+          "training_samples": 460,
+          "expected_net_pips": -0.04409873202178515
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 161,
+          "expected_net_pips": -2.9479258146066756
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 299,
+          "expected_net_pips": 1.5195004662931568
+        }
+      ],
+      "leaf_training_diagnostics": {
+        "1": {
+          "trades": 161,
+          "win_rate": 0.5527950310559007,
+          "stop_rate": 0.22981366459627328,
+          "mean_net_pips": -2.9479258146066765
+        },
+        "2": {
+          "trades": 299,
+          "win_rate": 0.6822742474916388,
+          "stop_rate": 0.0802675585284281,
+          "mean_net_pips": 1.5195004662931564
+        }
+      },
+      "eligible_leaves": [
+        2
+      ],
+      "fit_period": "2017 only",
+      "training_natural_trades": 460,
+      "evidence_role": "Exploratory development patterns; validation not yet evaluated",
+      "training_trade_features_sha256": "5e4968185a1ff621f52da86667be80a1602e72493110bc59400177a70ae4157b"
+    },
+    "rsi2_m15_usd500000_stop_pattern_tree_depth2": {
+      "depth": 2,
+      "disabled": false,
+      "features": [
+        "atr_pips",
+        "atr_fast_slow_ratio",
+        "ema_slope_atr",
+        "distance_from_ema_atr",
+        "zscore20",
+        "completed_bar_body_fraction",
+        "current_quote_spread_pips",
+        "current_quote_hour_utc"
+      ],
+      "nodes": [
+        {
+          "left": 1,
+          "right": 2,
+          "feature": 1,
+          "threshold": 0.9936408996582031,
+          "training_samples": 460,
+          "expected_net_pips": -0.04409873202178515
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 161,
+          "expected_net_pips": -2.9479258146066756
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "feature": 2,
+          "threshold": -0.2308867797255516,
+          "training_samples": 299,
+          "expected_net_pips": 1.5195004662931568
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 103,
+          "expected_net_pips": 4.198286166698619
+        },
+        {
+          "left": -1,
+          "right": -1,
+          "feature": -2,
+          "threshold": -2.0,
+          "training_samples": 196,
+          "expected_net_pips": 0.11177124618212289
+        }
+      ],
+      "leaf_training_diagnostics": {
+        "1": {
+          "trades": 161,
+          "win_rate": 0.5527950310559007,
+          "stop_rate": 0.22981366459627328,
+          "mean_net_pips": -2.9479258146066765
+        },
+        "3": {
+          "trades": 103,
+          "win_rate": 0.7475728155339806,
+          "stop_rate": 0.038834951456310676,
+          "mean_net_pips": 4.19828616669862
+        },
+        "4": {
+          "trades": 196,
+          "win_rate": 0.6479591836734694,
+          "stop_rate": 0.10204081632653061,
+          "mean_net_pips": 0.11177124618212239
+        }
+      },
+      "eligible_leaves": [
+        3,
+        4
+      ],
+      "fit_period": "2017 only",
+      "training_natural_trades": 460,
+      "evidence_role": "Exploratory development patterns; validation not yet evaluated",
+      "training_trade_features_sha256": "5e4968185a1ff621f52da86667be80a1602e72493110bc59400177a70ae4157b"
+    }
+  },
+  "hashes": {
+    "research/fxcm_rsi2.py": "c34d5caa9339272bc742ebc47ed2f28b080c10d8b5a27f82697eb1bcd2a0acd9",
+    "research/intraday_engine.py": "4d39faa9ad51be2b166e9485786aad72c4e174a53973cfc1cc64cb3a2944b8de",
+    "research/statistics.py": "be7955a5a052134c69f2b6aa9a16d286ab335cd6fa7cdc23640238946b5f3590",
+    "research/fxcm_data.py": "0861035ddd83489a37ba4c31f41c1cd47c7a0e9fffc499397883ee6fd42c8ec6",
+    "preregistration.json": "ad295d64a9968552608b66655e6056569b6775217daa56b0a63baa017de7aa9a",
+    "data/intraday/fxcm_official/eurusd_development_validation_2017_2021_provenance.json": "38a37dd5d7d81721bff9787de1b84fd9a9c68147635feca0d7015adaf157109b",
+    "data/intraday/fxcm_official/eurusd_development_validation_2017_2021_m5.csv": "860de9cf2d6cbb0597cc8568a0f93884db733377107317e690017bb0be77b45e",
+    "data/intraday/fxcm_official/eurusd_development_validation_2017_2021_m15.csv": "f1a9bcee08fde94087d2124aa0c3679302fcb34cc6b517dad29daf5e79e1f966"
+  },
+  "all_filters_fit_on": "2017 development natural trades only",
+  "validation_outcomes_evaluated": false,
+  "final_outcomes_evaluated": false
+}

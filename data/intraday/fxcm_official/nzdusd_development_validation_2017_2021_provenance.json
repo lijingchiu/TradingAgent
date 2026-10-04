@@ -1,0 +1,4785 @@
+{
+  "source": "FXCM official public paired BID/ASK indicative M1 candles",
+  "docs_url": "https://github.com/fxcm/MarketData/blob/924393dd545fab187527d95ef8b1178284b274b6/README.md",
+  "docs_commit": "924393dd545fab187527d95ef8b1178284b274b6",
+  "docs_blob": "eaab97d15b8596c52c83ba52f25678e7fbec02a8",
+  "timestamp_timezone": "UTC",
+  "downloaded_at_utc": "2026-10-04T15:02:58.681852+00:00",
+  "archive_records": [
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "674537d234b3adad890d1737665e4f6ce0ff6b455cf293398b1852df5b8ceed3",
+      "bytes": 117859,
+      "quality": {
+        "rows": 5618,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 6,
+        "crossed_close_rows": 6,
+        "first_utc": "2017-01-03T00:00:00+00:00",
+        "last_utc": "2017-01-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9f09e0f053484185e3eeb2651b70a9fd4d62ba40b9de09ebc237c194d7346ff1",
+      "bytes": 150769,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2017-01-08T22:02:00+00:00",
+        "last_utc": "2017-01-13T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "afa648bbf384ca00f5cb8790ca03435ed378fbb386470c34e4e63b2b6364e708",
+      "bytes": 150695,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 18,
+        "crossed_close_rows": 18,
+        "first_utc": "2017-01-15T22:00:00+00:00",
+        "last_utc": "2017-01-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2f49ba11ade25f0d6613d0782f2d9cc61e07b83a62d857555f3c6dac4a8fa56c",
+      "bytes": 149882,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2017-01-22T22:00:00+00:00",
+        "last_utc": "2017-01-27T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "87c2f2edb32f6f33b586f006c9424b637350c92ba1487e8055a5e15be263e6cb",
+      "bytes": 148219,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 38,
+        "crossed_close_rows": 38,
+        "first_utc": "2017-01-29T22:04:00+00:00",
+        "last_utc": "2017-02-03T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e8d118e1d87e2912ff34be9a7759b60ff8e6ab18e0646b937a90df6d9f185c6c",
+      "bytes": 147629,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2017-02-05T22:00:00+00:00",
+        "last_utc": "2017-02-10T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bf73907510aa6744c953e0f91ee7e5770b7bbe3c8670af5b55be39d403039c9c",
+      "bytes": 145287,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 1,
+        "crossed_close_rows": 1,
+        "first_utc": "2017-02-12T22:01:00+00:00",
+        "last_utc": "2017-02-17T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "70e07579619fcfb5cd22a9f833b78e8b48c3f30bed276a1a8fd784bf94d5817a",
+      "bytes": 141414,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 4,
+        "crossed_close_rows": 4,
+        "first_utc": "2017-02-19T22:01:00+00:00",
+        "last_utc": "2017-02-24T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "295dac5512431ea1066da7e0302b2b43263d8066eac2ce735f2024752235832b",
+      "bytes": 147226,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 30,
+        "crossed_close_rows": 30,
+        "first_utc": "2017-02-26T22:02:00+00:00",
+        "last_utc": "2017-03-03T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": true,
+      "sha256": "442b0846e0cde14c484d059b830cb313c952118d128896f3b52e43e241111dcf",
+      "bytes": 143756,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 21,
+        "crossed_close_rows": 21,
+        "first_utc": "2017-03-05T22:03:00+00:00",
+        "last_utc": "2017-03-10T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d10920eaa37381286a5cce0c1166500555b43abc8dc9e276ebaf430eaf099293",
+      "bytes": 143737,
+      "quality": {
+        "rows": 7170,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 29,
+        "crossed_close_rows": 29,
+        "first_utc": "2017-03-12T21:01:00+00:00",
+        "last_utc": "2017-03-17T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cedfb5fc98e7fb78d3e3ae42825986967a9157c6fd5d33f74a5dd1e7570db6b0",
+      "bytes": 143470,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2017-03-19T21:03:00+00:00",
+        "last_utc": "2017-03-24T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e22a5691b15c32c688c731515783c0486b7b435634c79edf699cd91ff39ac9d8",
+      "bytes": 140449,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 4,
+        "crossed_close_rows": 4,
+        "first_utc": "2017-03-26T21:02:00+00:00",
+        "last_utc": "2017-03-31T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e21040ce642639a5d432ef0e6a615fe3f2cbdf4656ee813890407cd539c79bfe",
+      "bytes": 137345,
+      "quality": {
+        "rows": 7106,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2017-04-02T21:05:00+00:00",
+        "last_utc": "2017-04-07T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d5a15e960fa848a86dff4bcae1daafc76e4a1c07d3026cab2dad9f759d185e45",
+      "bytes": 138645,
+      "quality": {
+        "rows": 7115,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 10,
+        "crossed_close_rows": 10,
+        "first_utc": "2017-04-09T21:03:00+00:00",
+        "last_utc": "2017-04-14T20:56:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e0710092d48d9c83a220076f7dbc3c50675be766e9958212691be3cb37a672a6",
+      "bytes": 138415,
+      "quality": {
+        "rows": 7128,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 3,
+        "crossed_close_rows": 3,
+        "first_utc": "2017-04-16T21:06:00+00:00",
+        "last_utc": "2017-04-21T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8477b2e4dbebbef40be5226d376902a691a5f1cd7932e7f1f67887af22d60611",
+      "bytes": 140755,
+      "quality": {
+        "rows": 7158,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2017-04-23T21:01:00+00:00",
+        "last_utc": "2017-04-28T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "80ede4140d9596182af6fcd3facb998c89d24c6e563cb6710a41a1f6600877a9",
+      "bytes": 141338,
+      "quality": {
+        "rows": 7140,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2017-04-30T21:03:00+00:00",
+        "last_utc": "2017-05-05T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d3ff41e40b91a32c6be1a8132c6ae6123794748cd6b876da76fea0f38361888c",
+      "bytes": 144963,
+      "quality": {
+        "rows": 7178,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 6,
+        "crossed_close_rows": 6,
+        "first_utc": "2017-05-07T21:01:00+00:00",
+        "last_utc": "2017-05-12T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2d5b6d068892d16c998535b7ad8e7c08b5b45866b45e8065e893f621e90391f3",
+      "bytes": 142016,
+      "quality": {
+        "rows": 7148,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 16,
+        "crossed_close_rows": 16,
+        "first_utc": "2017-05-14T21:01:00+00:00",
+        "last_utc": "2017-05-19T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "11e442466374d21ecf3dd6cd25a5df6ca6ce39eb46eb44206c046b12968e3016",
+      "bytes": 142892,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2017-05-21T21:01:00+00:00",
+        "last_utc": "2017-05-26T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bfdd109262937f844684babbc0f052107c77fa5f2e6f4d9c802b3f14cb0f9185",
+      "bytes": 138826,
+      "quality": {
+        "rows": 7140,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2017-05-28T21:13:00+00:00",
+        "last_utc": "2017-06-02T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b291321294de3c3f6d696e0165ee6963b4da3a8667279d34c29bcd243c07cb64",
+      "bytes": 139721,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 33,
+        "crossed_close_rows": 33,
+        "first_utc": "2017-06-04T21:02:00+00:00",
+        "last_utc": "2017-06-09T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a17f096881cf9f469b07d1b3ee8a1b8d54ae4e02837d28cad15e77efa60f0691",
+      "bytes": 140389,
+      "quality": {
+        "rows": 7129,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2017-06-11T21:03:00+00:00",
+        "last_utc": "2017-06-16T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c69ab1f509c0d55f5400886ef014001260d7ba1317d3dd464b6e7ccd088bf6c2",
+      "bytes": 139977,
+      "quality": {
+        "rows": 7131,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 7,
+        "crossed_close_rows": 7,
+        "first_utc": "2017-06-18T21:01:00+00:00",
+        "last_utc": "2017-06-23T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d18d254e56e1c7220df26480a0209b480951cbd490566cadcb10643b7745f422",
+      "bytes": 142707,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2017-06-25T21:02:00+00:00",
+        "last_utc": "2017-06-30T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "edd902aad3679e4566cd290936e24a0de71b31aada6325a599159a9572d1b4c9",
+      "bytes": 141546,
+      "quality": {
+        "rows": 7129,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2017-07-02T21:02:00+00:00",
+        "last_utc": "2017-07-07T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d0641d421519bec2fb719dfb7f292bb96d7bc763fb76c7df686d2bcd8dce171e",
+      "bytes": 140991,
+      "quality": {
+        "rows": 7120,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 39,
+        "crossed_close_rows": 39,
+        "first_utc": "2017-07-09T21:09:00+00:00",
+        "last_utc": "2017-07-14T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ef091d25c9db67622287d7524decb9bb7d93ab1ddfbc371f2567ab7386540daa",
+      "bytes": 143527,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 48,
+        "crossed_close_rows": 48,
+        "first_utc": "2017-07-16T21:03:00+00:00",
+        "last_utc": "2017-07-21T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "101c198a894e631086ab23d871504f9567ecfc800b76c89441ace09e4bb5aca7",
+      "bytes": 145026,
+      "quality": {
+        "rows": 7147,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 43,
+        "crossed_close_rows": 43,
+        "first_utc": "2017-07-23T21:06:00+00:00",
+        "last_utc": "2017-07-28T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c2f544f5023b9c8671174d87c0f792a48aa0c4c38a6a6ef037f4443b303f29ab",
+      "bytes": 142499,
+      "quality": {
+        "rows": 7140,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2017-07-30T21:20:00+00:00",
+        "last_utc": "2017-08-04T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c4061f317a92c971c4fd9993eae84be8365c2228d8782c5c07116f25284ccadb",
+      "bytes": 142299,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 19,
+        "crossed_close_rows": 19,
+        "first_utc": "2017-08-06T21:01:00+00:00",
+        "last_utc": "2017-08-11T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "462d990cb7e5162aa2d05b435ecf0a511b8923d419b21fdbf3e33f798477af36",
+      "bytes": 141020,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 34,
+        "crossed_close_rows": 34,
+        "first_utc": "2017-08-13T21:01:00+00:00",
+        "last_utc": "2017-08-18T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3c430c2eb9b46154ff78baa79e30ae76f24900d577d503b7e1ca3f76340ce872",
+      "bytes": 140024,
+      "quality": {
+        "rows": 7134,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 21,
+        "crossed_close_rows": 21,
+        "first_utc": "2017-08-20T21:02:00+00:00",
+        "last_utc": "2017-08-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4ad603a21f66dce3bc0d42e12a2c051c210fe47c9248b67d62333bba72db080e",
+      "bytes": 143520,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 92,
+        "crossed_close_rows": 92,
+        "first_utc": "2017-08-27T21:00:00+00:00",
+        "last_utc": "2017-09-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5176a243807c1a16cff1bb195494bca36d4865562ee80d04096b1761fd9dc0ef",
+      "bytes": 143929,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2017-09-03T21:00:00+00:00",
+        "last_utc": "2017-09-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2671eaebd00c358a9be151a7a09e47aef305d31191858f38baf8dfd2c9467307",
+      "bytes": 146812,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 82,
+        "crossed_close_rows": 82,
+        "first_utc": "2017-09-10T21:00:00+00:00",
+        "last_utc": "2017-09-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "14120c7cab170446ca637d5d99afc865ed06370894a12a31ff98e9f1edf66ed9",
+      "bytes": 145415,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 32,
+        "crossed_close_rows": 32,
+        "first_utc": "2017-09-17T21:00:00+00:00",
+        "last_utc": "2017-09-22T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4b171677270ff954a702f48910355d0fa76a98e33e4206782d8a8e3e00c5cb52",
+      "bytes": 146693,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 22,
+        "crossed_close_rows": 22,
+        "first_utc": "2017-09-24T21:00:00+00:00",
+        "last_utc": "2017-09-29T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8c07e82a97b055880df46c5760064fc2043be09bfda88a69dbcb365357662501",
+      "bytes": 143430,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 23,
+        "crossed_close_rows": 23,
+        "first_utc": "2017-10-01T21:00:00+00:00",
+        "last_utc": "2017-10-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3b585afade0700e48b3e3db4e6bba02aaad0afa46fcc24e885fbf51a8a728ec5",
+      "bytes": 142444,
+      "quality": {
+        "rows": 7170,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 50,
+        "crossed_close_rows": 50,
+        "first_utc": "2017-10-08T21:00:00+00:00",
+        "last_utc": "2017-10-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a469641e955ccacb077896d1aee24d1e7a4ca6849131c55e99eba54da63461e2",
+      "bytes": 143843,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 32,
+        "crossed_close_rows": 32,
+        "first_utc": "2017-10-15T21:00:00+00:00",
+        "last_utc": "2017-10-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "20caa871b8cac344e5597fbdbfa7078abf2fe5e1dceaac08fdf694b264d12fbf",
+      "bytes": 144737,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 65,
+        "crossed_close_rows": 65,
+        "first_utc": "2017-10-22T21:00:00+00:00",
+        "last_utc": "2017-10-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ba334f38877bb088e027e4bd878bbe46b64bae7c02e93804d3d3c36dec5a23bc",
+      "bytes": 143759,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 25,
+        "crossed_close_rows": 25,
+        "first_utc": "2017-10-29T21:00:00+00:00",
+        "last_utc": "2017-11-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cb0e2995b830aa2dcdd8c0164b56149926f0ee114e99431861839832112ab2d3",
+      "bytes": 142207,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 31,
+        "crossed_close_rows": 31,
+        "first_utc": "2017-11-05T22:00:00+00:00",
+        "last_utc": "2017-11-10T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a0735bf9102549c9aaf6db940fcefab3eab714e5a9f4a97f745fedba51267be4",
+      "bytes": 141119,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 42,
+        "crossed_close_rows": 42,
+        "first_utc": "2017-11-12T22:00:00+00:00",
+        "last_utc": "2017-11-17T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "158c06cbadc83ae6ea955162a0ded9794f982c15362ada0268a4c592f3a7c789",
+      "bytes": 138566,
+      "quality": {
+        "rows": 7113,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 30,
+        "crossed_close_rows": 30,
+        "first_utc": "2017-11-19T22:00:00+00:00",
+        "last_utc": "2017-11-24T21:56:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "638eac69cb3edead102c8d141b354b6639124098e7be80421fce0b8fd1bd24b0",
+      "bytes": 144404,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 32,
+        "crossed_close_rows": 32,
+        "first_utc": "2017-11-26T22:00:00+00:00",
+        "last_utc": "2017-12-01T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "999cef1d9581a0ab3a1c7ce3cd11eb2a09e5e638c2f2ed5d3aa6471d477fe50d",
+      "bytes": 141632,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 42,
+        "crossed_close_rows": 42,
+        "first_utc": "2017-12-03T22:00:00+00:00",
+        "last_utc": "2017-12-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fa4b8c43619adf4a6e0b8104cbfee63f1786ed13fbbdc8c29e9967660b2759e0",
+      "bytes": 142149,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 46,
+        "crossed_close_rows": 46,
+        "first_utc": "2017-12-10T22:00:00+00:00",
+        "last_utc": "2017-12-15T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cff1a09da2a8a0dcc488af432c52d5c5d52669891c95f14ec2b286ea1cb829e6",
+      "bytes": 138292,
+      "quality": {
+        "rows": 7179,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2017-12-17T22:00:00+00:00",
+        "last_utc": "2017-12-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b0e2d6dd968f874ab66e6477326a6499877b0cb566ec755a91f6c2c801ab75f2",
+      "bytes": 99746,
+      "quality": {
+        "rows": 5349,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2017-12-26T04:02:00+00:00",
+        "last_utc": "2017-12-29T21:55:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2017,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2017/53.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c34e8064e8a3df1b5e4f3e323607a88f0d44f927e6dfca75bcb024a51fc1d4b0",
+      "bytes": 107238,
+      "quality": {
+        "rows": 5464,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2018-01-01T22:00:00+00:00",
+        "last_utc": "2018-01-05T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "30e087a69f2b6ff8986c4d90914f5a6178d86497dc4722feb8fa668a8d1e08c1",
+      "bytes": 144078,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 23,
+        "crossed_close_rows": 23,
+        "first_utc": "2018-01-07T22:02:00+00:00",
+        "last_utc": "2018-01-12T21:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "be569bd6bb03eb530419debdddd88eed79a0b87a87a4962b106872a5d11c0261",
+      "bytes": 146166,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 29,
+        "crossed_close_rows": 29,
+        "first_utc": "2018-01-14T22:00:00+00:00",
+        "last_utc": "2018-01-19T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e2e4eabd1c79864c391ceaf81492fd69b7e43fb74e0d11c22da7861c7d73d827",
+      "bytes": 149299,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 9,
+        "crossed_close_rows": 9,
+        "first_utc": "2018-01-21T22:00:00+00:00",
+        "last_utc": "2018-01-26T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f207d964e2fd5b98027d9abf1cfdd0bee243845b000218a22b5ce5b6b889be69",
+      "bytes": 150567,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2018-01-28T22:00:00+00:00",
+        "last_utc": "2018-02-02T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fbf2000b42ec3c1fe54df4c32b671aac1c19b0e4715ceda8dc4954db2ad57060",
+      "bytes": 153412,
+      "quality": {
+        "rows": 7189,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 6,
+        "crossed_close_rows": 6,
+        "first_utc": "2018-02-04T22:00:00+00:00",
+        "last_utc": "2018-02-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "489f7035d984f621de2fb9c41cf06e48bb81df254e4a8dff09dc2b437204afff",
+      "bytes": 147559,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 10,
+        "crossed_close_rows": 10,
+        "first_utc": "2018-02-11T22:00:00+00:00",
+        "last_utc": "2018-02-16T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "077456af00520d7d8eac0aa05fd9db3c42b07a62d6d3a6d291eab51d50b67baf",
+      "bytes": 143727,
+      "quality": {
+        "rows": 7127,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2018-02-18T22:00:00+00:00",
+        "last_utc": "2018-02-23T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c4c5262609261f0b58234600171e77fddc7ef7635484dd346c62117b84899998",
+      "bytes": 145297,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 29,
+        "crossed_close_rows": 29,
+        "first_utc": "2018-02-25T22:01:00+00:00",
+        "last_utc": "2018-03-02T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fb2372d1538771cc8409704dc0b8646f00c815c6cf94311469aee88225dd4d95",
+      "bytes": 143650,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 37,
+        "crossed_close_rows": 37,
+        "first_utc": "2018-03-04T22:03:00+00:00",
+        "last_utc": "2018-03-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "edc15e79464160bafd97b654b5de3c605abf1f88ee95ac9ad02a6128e39307f3",
+      "bytes": 140796,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 33,
+        "crossed_close_rows": 33,
+        "first_utc": "2018-03-11T21:00:00+00:00",
+        "last_utc": "2018-03-16T20:56:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6ce7acaa0618efb1277e642f2be954639d1ac7a949008efbaf9bc6754da00ba5",
+      "bytes": 143747,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2018-03-18T21:00:00+00:00",
+        "last_utc": "2018-03-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6f46aea2485cfda8a025e706a4929840a22adb0d9eb2246fd8b330172c2e5cfe",
+      "bytes": 136323,
+      "quality": {
+        "rows": 7028,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2018-03-25T21:00:00+00:00",
+        "last_utc": "2018-03-30T20:31:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9dd6a60d08580e53d5b1bc85cfad220de117cdf4fb55fc28260c2c4d54c0ca42",
+      "bytes": 139222,
+      "quality": {
+        "rows": 7086,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2018-04-01T22:00:00+00:00",
+        "last_utc": "2018-04-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e26551d483932a267804ef2aa123774c533ffb9d219bff583c3666e25174bd63",
+      "bytes": 138022,
+      "quality": {
+        "rows": 7108,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 4,
+        "crossed_close_rows": 4,
+        "first_utc": "2018-04-08T21:28:00+00:00",
+        "last_utc": "2018-04-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ee545eca4e6503c0185a6a1742427ccf4c5e122292e4e77bdad183fbe866c842",
+      "bytes": 137911,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 3,
+        "crossed_close_rows": 3,
+        "first_utc": "2018-04-15T21:03:00+00:00",
+        "last_utc": "2018-04-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d7b1c239cc6367dcf26fb6dcc99ae473b154bc8be930ab973dda4bb7085e29b3",
+      "bytes": 139203,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 3,
+        "crossed_close_rows": 3,
+        "first_utc": "2018-04-22T21:00:00+00:00",
+        "last_utc": "2018-04-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7a63734a53539c034cad3c736ca48d615b6b0dbe5da9c5ddea1b39818d6dc66a",
+      "bytes": 139547,
+      "quality": {
+        "rows": 7132,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 7,
+        "crossed_close_rows": 7,
+        "first_utc": "2018-04-29T21:01:00+00:00",
+        "last_utc": "2018-05-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "62cb54e5dda77b1feaa13882fd381bef59c82ba819b8b61d5b0c944551f6245b",
+      "bytes": 141560,
+      "quality": {
+        "rows": 7134,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2018-05-06T21:02:00+00:00",
+        "last_utc": "2018-05-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b03887fe29f686c52bc8ef99e72c849ee9b28e38e0a56b07797bf4206093fcd2",
+      "bytes": 141021,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 10,
+        "crossed_close_rows": 10,
+        "first_utc": "2018-05-13T21:06:00+00:00",
+        "last_utc": "2018-05-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "320b852fb560a9e22103e67233ec865357024a51f4866d83371dfaeb984ae8b4",
+      "bytes": 141931,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2018-05-20T21:02:00+00:00",
+        "last_utc": "2018-05-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "52c07afc8366e0d3cfbb0399abaa0d743aa66eb8e0deedfbe7e16b6c9055f642",
+      "bytes": 139688,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2018-05-27T21:00:00+00:00",
+        "last_utc": "2018-06-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9ea967a5398fb9e21f795aeb63e8c8e512a71045a64de35971e7db8977cc48e9",
+      "bytes": 137763,
+      "quality": {
+        "rows": 7118,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2018-06-03T21:06:00+00:00",
+        "last_utc": "2018-06-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f3491a33438b3781681ee512567479c520c01bd4e601ec92f8700ff910196d22",
+      "bytes": 137690,
+      "quality": {
+        "rows": 7047,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 9,
+        "crossed_close_rows": 9,
+        "first_utc": "2018-06-10T21:09:00+00:00",
+        "last_utc": "2018-06-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "88be0550311ef1c0bd2516332dedcafcb0bf98ef86981b9ac2cb55d6ea2f40c1",
+      "bytes": 140054,
+      "quality": {
+        "rows": 7099,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2018-06-17T21:05:00+00:00",
+        "last_utc": "2018-06-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "056843122823e2ac7473d8191cf8b08dc2ad416ce104e1b11811bc3809d9e207",
+      "bytes": 141560,
+      "quality": {
+        "rows": 7124,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 16,
+        "crossed_close_rows": 16,
+        "first_utc": "2018-06-24T21:05:00+00:00",
+        "last_utc": "2018-06-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4ff51266ad2ba0e0899200b8267acbc5d42bbb875abed57612fbac0245299123",
+      "bytes": 137305,
+      "quality": {
+        "rows": 7029,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 50,
+        "crossed_close_rows": 50,
+        "first_utc": "2018-07-01T21:00:00+00:00",
+        "last_utc": "2018-07-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0796e20ea4e60b47971373b6a6a0963f6f20ad2976afd932827a85666ae2b569",
+      "bytes": 138794,
+      "quality": {
+        "rows": 7132,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2018-07-08T21:04:00+00:00",
+        "last_utc": "2018-07-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ccbbbc99db956fb42ebde2a9fc4f380f52e854a4d05ae965115ca689d2cf72e7",
+      "bytes": 141915,
+      "quality": {
+        "rows": 7113,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2018-07-15T21:00:00+00:00",
+        "last_utc": "2018-07-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fe041dc78011198b59bc46595c7bb7903dce26ba55067bed9f4d884b1440b3b3",
+      "bytes": 138715,
+      "quality": {
+        "rows": 7129,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 28,
+        "crossed_close_rows": 28,
+        "first_utc": "2018-07-22T21:03:00+00:00",
+        "last_utc": "2018-07-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9a75c2db4b098a6ed3f2bfae6f4ddaedc07d0f666c182f915d382de7f13b26a7",
+      "bytes": 135477,
+      "quality": {
+        "rows": 7127,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2018-07-29T21:01:00+00:00",
+        "last_utc": "2018-08-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1a620be46f619d60c03c7b770e3beda8ae471662120de7a9092413d8e6adb076",
+      "bytes": 138364,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 33,
+        "crossed_close_rows": 33,
+        "first_utc": "2018-08-05T21:05:00+00:00",
+        "last_utc": "2018-08-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6f6c32be485415fcb7507d4b1545328e787ef5a10c1a5f1ccec9b86900a153d3",
+      "bytes": 139976,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 29,
+        "crossed_close_rows": 29,
+        "first_utc": "2018-08-12T21:03:00+00:00",
+        "last_utc": "2018-08-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6b589975965012d86fde1817594d4b4c62e65dd1ba9c00a9c006e14a6f71b5c9",
+      "bytes": 139244,
+      "quality": {
+        "rows": 7182,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2018-08-19T21:00:00+00:00",
+        "last_utc": "2018-08-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "15a18786c8707a3b4295e2048c61ea120b4f57f644477f18fa33c8435834d948",
+      "bytes": 140439,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2018-08-26T21:00:00+00:00",
+        "last_utc": "2018-08-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "40184e3597eaa6086c5be15b77179050b135da0c5069e8903ececf27134fc8f1",
+      "bytes": 139121,
+      "quality": {
+        "rows": 7122,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 31,
+        "crossed_close_rows": 31,
+        "first_utc": "2018-09-02T21:05:00+00:00",
+        "last_utc": "2018-09-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cb669e13d29edcba18148ab611ba2b890a488a487e95ae642bc183d7773ff993",
+      "bytes": 137214,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 23,
+        "crossed_close_rows": 23,
+        "first_utc": "2018-09-09T21:02:00+00:00",
+        "last_utc": "2018-09-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b9bc2fdff7924f1d6110fe981de765864bdc837bd90f9d0531b78019a36fcf10",
+      "bytes": 139277,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 41,
+        "crossed_close_rows": 41,
+        "first_utc": "2018-09-16T21:03:00+00:00",
+        "last_utc": "2018-09-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "df185f4d8d37807ca72d573b30e38eb4de13051b7dc0e9b52b89cc99fa72cc4f",
+      "bytes": 137283,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2018-09-23T21:00:00+00:00",
+        "last_utc": "2018-09-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "56ca1189945cfaa2c02bd6490bc6867b02189454d2dbd00aab1f16a3707c2429",
+      "bytes": 136433,
+      "quality": {
+        "rows": 7148,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 47,
+        "crossed_close_rows": 47,
+        "first_utc": "2018-09-30T21:10:00+00:00",
+        "last_utc": "2018-10-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "400f473a42349f10230207b0d7435c0a73c7350de7f05365a0755d27e2c7d61a",
+      "bytes": 137747,
+      "quality": {
+        "rows": 7171,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 52,
+        "crossed_close_rows": 52,
+        "first_utc": "2018-10-07T21:00:00+00:00",
+        "last_utc": "2018-10-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3ad1a3b660357efac80223cf59561e128d1e87c907b78b646e6d1cbb0037b48d",
+      "bytes": 94495,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 47,
+        "crossed_close_rows": 47,
+        "first_utc": "2018-10-14T21:00:00+00:00",
+        "last_utc": "2018-10-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "53b6dbd5ad333a604793792fc9e877691982d3140aa59d49380bfeb05ede742c",
+      "bytes": 138974,
+      "quality": {
+        "rows": 7171,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 29,
+        "crossed_close_rows": 29,
+        "first_utc": "2018-10-21T21:00:00+00:00",
+        "last_utc": "2018-10-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "88cf1cb83eb26d4b9c79094ac37f4f540ce6ab987678e8ed7bf9a91cc541d290",
+      "bytes": 140704,
+      "quality": {
+        "rows": 7179,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 64,
+        "crossed_close_rows": 64,
+        "first_utc": "2018-10-28T21:00:00+00:00",
+        "last_utc": "2018-11-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f53a79bb7c6de9afa7d0b6265ad40e8b4b3b1e2ef73b5b010751c844f14b8ef8",
+      "bytes": 141563,
+      "quality": {
+        "rows": 7193,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2018-11-04T22:00:00+00:00",
+        "last_utc": "2018-11-09T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "208944efdbc51512c22bd818b0980ad3a7ea0a40880a298710b46805fd613051",
+      "bytes": 144061,
+      "quality": {
+        "rows": 7192,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 23,
+        "crossed_close_rows": 23,
+        "first_utc": "2018-11-11T22:00:00+00:00",
+        "last_utc": "2018-11-16T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4c12f0bdbdb647d3d882782599d1cf88f17351c6977b044841ee082ae78d2a6e",
+      "bytes": 139956,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 69,
+        "crossed_close_rows": 69,
+        "first_utc": "2018-11-18T22:00:00+00:00",
+        "last_utc": "2018-11-23T21:55:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f91298cadd7d39c1485d696976357ba7c2a0496c3550d8344cd2c80de751e5b2",
+      "bytes": 141242,
+      "quality": {
+        "rows": 7186,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 5,
+        "crossed_close_rows": 5,
+        "first_utc": "2018-11-25T22:00:00+00:00",
+        "last_utc": "2018-11-30T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1daf435e3445222201926cd99759d5ceb24561bbe98e60fd16765b566b33d51f",
+      "bytes": 143110,
+      "quality": {
+        "rows": 7181,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2018-12-02T22:00:00+00:00",
+        "last_utc": "2018-12-07T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1eb52b3e3e8d806cea037f696e7b27d0e601bc048adaf22c7418734e56357ab2",
+      "bytes": 142264,
+      "quality": {
+        "rows": 7166,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 0,
+        "crossed_close_rows": 0,
+        "first_utc": "2018-12-09T22:00:00+00:00",
+        "last_utc": "2018-12-14T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fbcde173e96e85e1950506141342eb261db3a02c371e439bea8a32c78cdeffd3",
+      "bytes": 142881,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 9,
+        "crossed_close_rows": 9,
+        "first_utc": "2018-12-16T22:00:00+00:00",
+        "last_utc": "2018-12-21T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "69f594fce15303466df6198996c4b171dc63de71f4f9153ec2ebb63a1f6c5262",
+      "bytes": 99611,
+      "quality": {
+        "rows": 5085,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 1,
+        "crossed_close_rows": 1,
+        "first_utc": "2018-12-23T22:00:00+00:00",
+        "last_utc": "2018-12-28T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2018,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2018/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e54ccbc605f150fc57fa76d04bbd7112f1c004656effd166adac492f5b07ed6d",
+      "bytes": 102403,
+      "quality": {
+        "rows": 5108,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 0,
+        "crossed_close_rows": 0,
+        "first_utc": "2018-12-30T22:03:00+00:00",
+        "last_utc": "2019-01-04T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/1.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5db0b14cbb92945e473d03f0280a020535ada7f0034cc79f45c352cd7754e062",
+      "bytes": 140840,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 4,
+        "crossed_close_rows": 4,
+        "first_utc": "2019-01-06T22:03:00+00:00",
+        "last_utc": "2019-01-11T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "38931b2a865bf2bb09a1f369b51ea1aa51c795244c425ab08198942c601f8a81",
+      "bytes": 140159,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 4,
+        "crossed_close_rows": 4,
+        "first_utc": "2019-01-13T22:01:00+00:00",
+        "last_utc": "2019-01-18T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ff0bd49356f4f2aa4799f21cae5641cf2365d84b05ce2798fa3cee2c3b0741a9",
+      "bytes": 139607,
+      "quality": {
+        "rows": 7131,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2019-01-20T22:00:00+00:00",
+        "last_utc": "2019-01-25T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9f60f5bc4efb17b224a388104242cb9e3743884510cca792aab7fec8f962d366",
+      "bytes": 140748,
+      "quality": {
+        "rows": 7159,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 5,
+        "crossed_close_rows": 5,
+        "first_utc": "2019-01-27T22:03:00+00:00",
+        "last_utc": "2019-02-01T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f7c43e96eec546d4a76914a06f2730bfd1186ffb658f8752de150a2e5afe740a",
+      "bytes": 137160,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 5,
+        "crossed_close_rows": 5,
+        "first_utc": "2019-02-03T22:02:00+00:00",
+        "last_utc": "2019-02-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a5262a7b92aa2b7f54264498d1f44f83eff0e76933198f09bfc6652be6851cf2",
+      "bytes": 139171,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 7,
+        "crossed_close_rows": 7,
+        "first_utc": "2019-02-10T22:03:00+00:00",
+        "last_utc": "2019-02-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a8c4259b9429a134e2ab85af58b4c9d45a3746e0e4829a33e1920641cec2fd61",
+      "bytes": 139151,
+      "quality": {
+        "rows": 7148,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 5,
+        "crossed_close_rows": 5,
+        "first_utc": "2019-02-17T22:03:00+00:00",
+        "last_utc": "2019-02-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9f0f0ddf371bc0f0915135e04510fce1f3052efdbe1e8a3ac05c69f8424a998d",
+      "bytes": 139626,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2019-02-24T22:00:00+00:00",
+        "last_utc": "2019-03-01T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4b7c01558962af3783e8706f63126f452c7b0730acd4ed7400341363c2a56bb1",
+      "bytes": 137393,
+      "quality": {
+        "rows": 7158,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 33,
+        "crossed_close_rows": 33,
+        "first_utc": "2019-03-03T22:03:00+00:00",
+        "last_utc": "2019-03-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1e44e5aaca04560e71f3423dffbd95ca010f93213e2e7257881e0b6c62e5d095",
+      "bytes": 134486,
+      "quality": {
+        "rows": 7132,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2019-03-10T21:05:00+00:00",
+        "last_utc": "2019-03-15T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4cf1522d3c88a96e6fc11edde1d46f604f38d2f8019d091abbd773b377b67987",
+      "bytes": 137508,
+      "quality": {
+        "rows": 7160,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 21,
+        "crossed_close_rows": 21,
+        "first_utc": "2019-03-17T21:00:00+00:00",
+        "last_utc": "2019-03-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "314ed57aae7d71d3a2365c3f391c9f3ad9d401d949d47d1a62d5751cb711704e",
+      "bytes": 141056,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2019-03-24T21:00:00+00:00",
+        "last_utc": "2019-03-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e17bb6d8763df6e00794872a1d1f68445bf895179c70b2da862608d25ab76505",
+      "bytes": 136786,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 6,
+        "crossed_close_rows": 6,
+        "first_utc": "2019-03-31T21:03:00+00:00",
+        "last_utc": "2019-04-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c88a4f12e91b0ec48836ca22ea80b66be8381dfc636e10d09f9a735eef9b590c",
+      "bytes": 134079,
+      "quality": {
+        "rows": 7135,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 1,
+        "crossed_close_rows": 1,
+        "first_utc": "2019-04-07T21:05:00+00:00",
+        "last_utc": "2019-04-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "13e1d147e3a51643835c3e5dee2d7651cf2523543aa1e19e9d2d49ee28bb87c9",
+      "bytes": 130638,
+      "quality": {
+        "rows": 7078,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 0,
+        "crossed_close_rows": 0,
+        "first_utc": "2019-04-14T21:04:00+00:00",
+        "last_utc": "2019-04-19T20:56:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dfbffe98b2d38f58e2dfb9fba8e771e32fa8f21b41ea4ef5ef9af59e8c9d288b",
+      "bytes": 131149,
+      "quality": {
+        "rows": 7101,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2019-04-21T21:11:00+00:00",
+        "last_utc": "2019-04-26T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3aa1242d5280f72090fb7f3988c36d887f5b85c0a9d7ba5082111ba35198c4da",
+      "bytes": 131321,
+      "quality": {
+        "rows": 7099,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2019-04-28T21:00:00+00:00",
+        "last_utc": "2019-05-03T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "306afcc5618b5fa8b3eb7160e40262f3c5263552dad1b6eaf6d0bf3d31bfe998",
+      "bytes": 136852,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2019-05-05T21:00:00+00:00",
+        "last_utc": "2019-05-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "415ca51dbfe740ebb36db87d24455bf9693d8eb94197ec3ba44be23005fdc548",
+      "bytes": 131580,
+      "quality": {
+        "rows": 7124,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 22,
+        "crossed_close_rows": 22,
+        "first_utc": "2019-05-12T21:18:00+00:00",
+        "last_utc": "2019-05-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "64fe1bc892df16cd323f07914fd6305eeda2359411ccf08d81ba8236bacb8b12",
+      "bytes": 130130,
+      "quality": {
+        "rows": 7156,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2019-05-19T21:00:00+00:00",
+        "last_utc": "2019-05-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4f42ccdae9e56e81123370812191697dc35f20711cf84c02daeb01e05ae479f3",
+      "bytes": 127075,
+      "quality": {
+        "rows": 7105,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 42,
+        "crossed_close_rows": 42,
+        "first_utc": "2019-05-26T21:00:00+00:00",
+        "last_utc": "2019-05-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3a1209ee5038c284bacd8a9d6e176d4dab99111000fd7808f51f1cac99f7285c",
+      "bytes": 135961,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2019-06-02T21:07:00+00:00",
+        "last_utc": "2019-06-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "75e0f1dc77171aa4f024a83762d91eaedc56c66605a6e8388deb0a142b014cd0",
+      "bytes": 132417,
+      "quality": {
+        "rows": 7123,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 16,
+        "crossed_close_rows": 16,
+        "first_utc": "2019-06-09T21:14:00+00:00",
+        "last_utc": "2019-06-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1a49a4256acb8e691ee3fbd4e6d0bc58e99aa2f0ab0860aa2bcd9966da670f01",
+      "bytes": 132641,
+      "quality": {
+        "rows": 7106,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 19,
+        "crossed_close_rows": 19,
+        "first_utc": "2019-06-16T21:03:00+00:00",
+        "last_utc": "2019-06-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e4d7812d02c46daccbb0d77c334a951c787ec8492d71118d1f9c2f14bb48ecad",
+      "bytes": 133194,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2019-06-23T21:03:00+00:00",
+        "last_utc": "2019-06-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3d975b22a9c29927a1b816a8e1e9b76566da70354866d25b2f763927ebee8ad3",
+      "bytes": 129670,
+      "quality": {
+        "rows": 7041,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2019-06-30T21:00:00+00:00",
+        "last_utc": "2019-07-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d53f49121453927303808c286eee72753ae72eb57465d741570d754e9af21112",
+      "bytes": 133350,
+      "quality": {
+        "rows": 7126,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2019-07-07T21:00:00+00:00",
+        "last_utc": "2019-07-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3a7e86c10f72947bb7ee7d458dc67d7abc3e1fab21e863ed05668b8a3304c023",
+      "bytes": 133792,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2019-07-14T21:03:00+00:00",
+        "last_utc": "2019-07-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7bb05e3e8ce6c029f3c5c1ebc3791295599c8ff20906fa170cc0ada0f151bdb8",
+      "bytes": 131350,
+      "quality": {
+        "rows": 7124,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 19,
+        "crossed_close_rows": 19,
+        "first_utc": "2019-07-21T21:04:00+00:00",
+        "last_utc": "2019-07-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "35a83742d11eacb2e0be8b220206692536d5953480d52914e62052ee2bcc38f5",
+      "bytes": 133629,
+      "quality": {
+        "rows": 7118,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 26,
+        "crossed_close_rows": 26,
+        "first_utc": "2019-07-28T21:02:00+00:00",
+        "last_utc": "2019-08-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "69190669cb53a9e867b729f93d5b61a0b12a79394e003d96fa2ffab78ee6052c",
+      "bytes": 143167,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 7,
+        "crossed_close_rows": 7,
+        "first_utc": "2019-08-04T21:00:00+00:00",
+        "last_utc": "2019-08-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "80009f61b5a4f9ad1ea54d6e520647dad7a87c21630b024c1dfcfb69709a25f2",
+      "bytes": 135488,
+      "quality": {
+        "rows": 7113,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 6,
+        "crossed_close_rows": 6,
+        "first_utc": "2019-08-11T21:02:00+00:00",
+        "last_utc": "2019-08-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3ce4b6ae13588a8d250f7a6e27969eb6161e6ec77605596a6774fc18b5538871",
+      "bytes": 133179,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 4,
+        "crossed_close_rows": 4,
+        "first_utc": "2019-08-18T21:08:00+00:00",
+        "last_utc": "2019-08-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "60da53e2b619df7da52dc6997c4b4a4d776e463f1a4424f8b967e2d970d887f3",
+      "bytes": 136946,
+      "quality": {
+        "rows": 7123,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2019-08-25T21:00:00+00:00",
+        "last_utc": "2019-08-30T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8b635e3667d653dca5dc58bdefedb9ad32d2df30b584d839d883f5b0cd95e09d",
+      "bytes": 133710,
+      "quality": {
+        "rows": 7072,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 3,
+        "crossed_close_rows": 3,
+        "first_utc": "2019-09-01T21:06:00+00:00",
+        "last_utc": "2019-09-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c3472f97ba76b8676a407baa1ca6c08446f2682c335422fe36bfec30f534f43a",
+      "bytes": 132981,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 4,
+        "crossed_close_rows": 4,
+        "first_utc": "2019-09-08T21:00:00+00:00",
+        "last_utc": "2019-09-13T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9862a031b7c03c736d845b7157237026ef196e0748e38562edeab5356f64f39f",
+      "bytes": 135907,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 19,
+        "crossed_close_rows": 19,
+        "first_utc": "2019-09-15T21:01:00+00:00",
+        "last_utc": "2019-09-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "33738e7eca7ae8df95f526e8c2d5aa4c8acc50409e116121b8be6c1c7fc16233",
+      "bytes": 136537,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2019-09-22T21:00:00+00:00",
+        "last_utc": "2019-09-27T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9abd0caae46044cbb6924d924d712b856ea85f2cc961497003e063f61abf39da",
+      "bytes": 136875,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 15,
+        "crossed_close_rows": 15,
+        "first_utc": "2019-09-29T21:03:00+00:00",
+        "last_utc": "2019-10-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "38b6b7cc13fbc290e118eecc7014ba80eb4d5d47fb53ab3e711f9f164145f456",
+      "bytes": 136127,
+      "quality": {
+        "rows": 7125,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 22,
+        "crossed_close_rows": 22,
+        "first_utc": "2019-10-06T21:03:00+00:00",
+        "last_utc": "2019-10-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e455440baf56edc1a1260ec04ad0714d2ea42857991eb40d66850aa805cfa245",
+      "bytes": 137998,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2019-10-13T21:03:00+00:00",
+        "last_utc": "2019-10-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "468f20d3ef111cc7e8334bb55722bcf8c3ebb9998751248fba21dc80b28b385a",
+      "bytes": 134423,
+      "quality": {
+        "rows": 7153,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2019-10-20T21:03:00+00:00",
+        "last_utc": "2019-10-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "45088ae48e035dbbe6805ffdc1d6ed5d763263aa09a00ccc7f197a0b30fadfc5",
+      "bytes": 137256,
+      "quality": {
+        "rows": 7149,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2019-10-27T21:03:00+00:00",
+        "last_utc": "2019-11-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1951bbaf77a9aea719a6b3a9753c07e72db9bfff1e59cb0882ce289997aff995",
+      "bytes": 137973,
+      "quality": {
+        "rows": 7155,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 10,
+        "crossed_close_rows": 10,
+        "first_utc": "2019-11-03T22:00:00+00:00",
+        "last_utc": "2019-11-08T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2596b4b81ded2a0170ac2f2a75b671186c17684dc208e64adf143182463cfe19",
+      "bytes": 136452,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 10,
+        "crossed_close_rows": 10,
+        "first_utc": "2019-11-10T22:03:00+00:00",
+        "last_utc": "2019-11-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "027a59c64d3111affde3cb4a47c80edd922b4bab29453ef89001831b53f369a5",
+      "bytes": 132957,
+      "quality": {
+        "rows": 7150,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 31,
+        "crossed_close_rows": 31,
+        "first_utc": "2019-11-17T22:03:00+00:00",
+        "last_utc": "2019-11-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9af096492194b4ea92f0253a6d633f2293aa94e7df8760205de39e83fb188a85",
+      "bytes": 129884,
+      "quality": {
+        "rows": 7125,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 29,
+        "crossed_close_rows": 29,
+        "first_utc": "2019-11-24T22:00:00+00:00",
+        "last_utc": "2019-11-29T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e6d4da3adc5823d13a30d4fc97b28ec247314d3e0584319346ba17a90973cf7d",
+      "bytes": 132233,
+      "quality": {
+        "rows": 7159,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 40,
+        "crossed_close_rows": 40,
+        "first_utc": "2019-12-01T22:00:00+00:00",
+        "last_utc": "2019-12-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e08110891ff574d70b9f3fa245cbd64f273c9eb674230e1d20e9cb3468aa7b0c",
+      "bytes": 136190,
+      "quality": {
+        "rows": 7183,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 50,
+        "crossed_close_rows": 50,
+        "first_utc": "2019-12-08T22:00:00+00:00",
+        "last_utc": "2019-12-13T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "343711f48d30e834027fa198025f51435c7472b2b896ae314459d9b0efdba277",
+      "bytes": 133898,
+      "quality": {
+        "rows": 7168,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2019-12-15T22:03:00+00:00",
+        "last_utc": "2019-12-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d31670b889aefc61f5a37c413f304c2bebf0f3b9220bd63fd4a5f53037ba1988",
+      "bytes": 91857,
+      "quality": {
+        "rows": 4987,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 14,
+        "crossed_close_rows": 14,
+        "first_utc": "2019-12-22T22:00:00+00:00",
+        "last_utc": "2019-12-27T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2019,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2019/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4ebdf233404cb4ca7b50d0e7abc66c3b66d14d33ae9e7c5849dd6720664602f3",
+      "bytes": 95060,
+      "quality": {
+        "rows": 4990,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2019-12-29T22:03:00+00:00",
+        "last_utc": "2020-01-03T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/1.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fe0b2fff6e0e1ee71d764fcf67635ba49e903ac887fcdada566435d83caca208",
+      "bytes": 136425,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 36,
+        "crossed_close_rows": 36,
+        "first_utc": "2020-01-05T22:00:00+00:00",
+        "last_utc": "2020-01-10T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "26c3312b2227de92c98c7b0d4efc6ba817fe0f0489c0bb80abb9cb9b384d2f83",
+      "bytes": 133934,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 23,
+        "crossed_close_rows": 23,
+        "first_utc": "2020-01-12T22:00:00+00:00",
+        "last_utc": "2020-01-17T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "015e0d2e6869f39129936041ded44dd6dcbada2358b7f53f276ee3b5ddd4708c",
+      "bytes": 133420,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 28,
+        "crossed_close_rows": 28,
+        "first_utc": "2020-01-19T22:01:00+00:00",
+        "last_utc": "2020-01-24T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dcc627df18bffa80a728f448ce328b31ad8bb45938e6d0d5a059775b36a903b0",
+      "bytes": 134754,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 39,
+        "crossed_close_rows": 39,
+        "first_utc": "2020-01-26T22:01:00+00:00",
+        "last_utc": "2020-01-31T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3b4a24199a8eeac6683cef36ab49d2405a1059677c194836a39a921a871a00f1",
+      "bytes": 135342,
+      "quality": {
+        "rows": 7167,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2020-02-02T22:00:00+00:00",
+        "last_utc": "2020-02-07T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0e74d41991806ba65c305eabda06274e40bc250c48be18659cf6da4845eb843e",
+      "bytes": 134704,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2020-02-09T22:00:00+00:00",
+        "last_utc": "2020-02-14T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "89155abfa14cab117db59a223f9b6bb8ee2bade47a2335f93690f687eb49f01e",
+      "bytes": 134900,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 19,
+        "crossed_close_rows": 19,
+        "first_utc": "2020-02-16T22:03:00+00:00",
+        "last_utc": "2020-02-21T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "26e38af70a61b8b9634a506a4a2ef7af8b2647676cbc90714fd9d5a3c8f04161",
+      "bytes": 142371,
+      "quality": {
+        "rows": 7173,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 99,
+        "crossed_close_rows": 99,
+        "first_utc": "2020-02-23T22:00:00+00:00",
+        "last_utc": "2020-02-28T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1a517e14b85d7f814dfb3dbd26a4a61b76925fa62011919b3df82cd6bb4c105b",
+      "bytes": 145331,
+      "quality": {
+        "rows": 7172,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 31,
+        "crossed_close_rows": 31,
+        "first_utc": "2020-03-01T22:00:00+00:00",
+        "last_utc": "2020-03-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d77a2b42b5d9ed25d711ed274deaf8ce711fc67014ed7b6012c8481890aef5ea",
+      "bytes": 155275,
+      "quality": {
+        "rows": 7094,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 7,
+        "crossed_close_rows": 7,
+        "first_utc": "2020-03-08T21:00:00+00:00",
+        "last_utc": "2020-03-13T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f39d2c4f1c9cdf94fe97b065739513a993254f6453db964a6c39de30f5d4231e",
+      "bytes": 162868,
+      "quality": {
+        "rows": 7000,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 34,
+        "crossed_close_rows": 34,
+        "first_utc": "2020-03-15T21:00:00+00:00",
+        "last_utc": "2020-03-20T20:55:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "02dd88bec92789cbbcb191f9e54d098c60dae9891e58e3f2b192dea8367796b3",
+      "bytes": 161775,
+      "quality": {
+        "rows": 7045,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 32,
+        "crossed_close_rows": 32,
+        "first_utc": "2020-03-22T21:06:00+00:00",
+        "last_utc": "2020-03-27T20:54:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3e16a9b31d6bccb2d57d65a3ee94f4133c6d3153f4fa3a5e5029f47042e099f2",
+      "bytes": 153377,
+      "quality": {
+        "rows": 6995,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2020-03-29T21:07:00+00:00",
+        "last_utc": "2020-04-03T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "02b2b2ab96d33980a13719efa7ae962469e6b9ff75ddbc919431ddf741c7079b",
+      "bytes": 143006,
+      "quality": {
+        "rows": 6813,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 1,
+        "crossed_close_rows": 1,
+        "first_utc": "2020-04-05T21:03:00+00:00",
+        "last_utc": "2020-04-10T20:32:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d302f91a7d1006c35bbab5c7abf0c84e4f237ad6b5d753fe93a0554b7d90598b",
+      "bytes": 147153,
+      "quality": {
+        "rows": 7027,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 7,
+        "crossed_close_rows": 7,
+        "first_utc": "2020-04-12T21:56:00+00:00",
+        "last_utc": "2020-04-17T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2ec8879de979996c7b5940eb350a9302a29108f919b093c3587797ac000894b8",
+      "bytes": 148652,
+      "quality": {
+        "rows": 7109,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2020-04-19T21:27:00+00:00",
+        "last_utc": "2020-04-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a04eae1eedcb56cbe9797658d53944e518015fb1850a869cfcb7fcf11e37307a",
+      "bytes": 146419,
+      "quality": {
+        "rows": 7163,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 19,
+        "crossed_close_rows": 19,
+        "first_utc": "2020-04-26T21:10:00+00:00",
+        "last_utc": "2020-05-01T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a4a8ff59718fb24efd3ba6008434c1707bd9a0eab2edc68efa27524c33059cf5",
+      "bytes": 145400,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2020-05-03T21:00:00+00:00",
+        "last_utc": "2020-05-08T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "dd408777c8d0868e3af24a90b08795fffcd260c26b74cdefa44444450edcf94c",
+      "bytes": 148793,
+      "quality": {
+        "rows": 7120,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2020-05-10T21:00:00+00:00",
+        "last_utc": "2020-05-15T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5331e5d53eb97b95666f678d999291df62390187a0425f268e77cd3acb8193b2",
+      "bytes": 146196,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 26,
+        "crossed_close_rows": 26,
+        "first_utc": "2020-05-17T21:00:00+00:00",
+        "last_utc": "2020-05-22T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "3425e3110682546c5d8ecdbfd74c42f537c4c1732db0ee58c0a9423863938918",
+      "bytes": 144385,
+      "quality": {
+        "rows": 7111,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2020-05-24T21:04:00+00:00",
+        "last_utc": "2020-05-29T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0a8aac02f7b5da7cb77d9c61ba6dcfa425e7a3414b656f66b033274bc19e5d02",
+      "bytes": 149956,
+      "quality": {
+        "rows": 7161,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 85,
+        "crossed_close_rows": 85,
+        "first_utc": "2020-05-31T21:00:00+00:00",
+        "last_utc": "2020-06-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5bcb50fe1c00d76afa042f3b6bc1be30e5e7d230219c7741dc105e63f4c5a7ea",
+      "bytes": 152267,
+      "quality": {
+        "rows": 7129,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 53,
+        "crossed_close_rows": 53,
+        "first_utc": "2020-06-07T21:05:00+00:00",
+        "last_utc": "2020-06-12T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "afad44735c820e1b0b02608006cdd4dd6f69495afe686dcd5d0b87429ee09758",
+      "bytes": 151073,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 86,
+        "crossed_close_rows": 86,
+        "first_utc": "2020-06-14T21:00:00+00:00",
+        "last_utc": "2020-06-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c40bbb38ab0e917b6061e781f9f5f420474d20969dc060201d33232bd30a34c7",
+      "bytes": 146476,
+      "quality": {
+        "rows": 7131,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 46,
+        "crossed_close_rows": 46,
+        "first_utc": "2020-06-21T21:03:00+00:00",
+        "last_utc": "2020-06-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e2eada4dbb0895f0e50d8cae289261d95e35eeb234151df6f56199843fef4309",
+      "bytes": 140144,
+      "quality": {
+        "rows": 7087,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 51,
+        "crossed_close_rows": 51,
+        "first_utc": "2020-06-28T21:11:00+00:00",
+        "last_utc": "2020-07-03T20:42:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f9a9ecc8e8dd28ef40d47f0789a7c87b244303cb3bcfac9294f3cd135b9b4f04",
+      "bytes": 97240,
+      "quality": {
+        "rows": 7111,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 60,
+        "crossed_close_rows": 60,
+        "first_utc": "2020-07-05T21:04:00+00:00",
+        "last_utc": "2020-07-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8989cbb1bf931226e4598689498642f678b9748a4489a9dbfe7714dcc2d1979c",
+      "bytes": 139731,
+      "quality": {
+        "rows": 7086,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 92,
+        "crossed_close_rows": 92,
+        "first_utc": "2020-07-12T21:40:00+00:00",
+        "last_utc": "2020-07-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e7ba5de1e7982021c8d3dddcc14fb66572ba2c86e8de2be9aa100ae30970a1b1",
+      "bytes": 141249,
+      "quality": {
+        "rows": 7119,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 72,
+        "crossed_close_rows": 72,
+        "first_utc": "2020-07-19T21:12:00+00:00",
+        "last_utc": "2020-07-24T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "309703001845d69fb47b0eb1593dc95fbd59950c3485074c75b617b427022d3a",
+      "bytes": 146133,
+      "quality": {
+        "rows": 7175,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 143,
+        "crossed_close_rows": 143,
+        "first_utc": "2020-07-26T21:07:00+00:00",
+        "last_utc": "2020-07-31T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "064f0091d41e9994a0640940558396a1949d13b9a1ba1d609eff20ce9ee989ce",
+      "bytes": 143606,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 180,
+        "crossed_close_rows": 180,
+        "first_utc": "2020-08-02T21:03:00+00:00",
+        "last_utc": "2020-08-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "efa0b60a954fbec2688818dcbd640c8cb8c28f8525b330b639041c666aa7632b",
+      "bytes": 142057,
+      "quality": {
+        "rows": 7154,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 127,
+        "crossed_close_rows": 127,
+        "first_utc": "2020-08-09T21:03:00+00:00",
+        "last_utc": "2020-08-14T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "0ac0199b36f835270618c5220bd3439b1062ad60f5db23c4e18b2e0f21792833",
+      "bytes": 142934,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 136,
+        "crossed_close_rows": 136,
+        "first_utc": "2020-08-16T21:00:00+00:00",
+        "last_utc": "2020-08-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "59f5c606775b5fd7ad670505743aef9cf162c7ff1d2795e6e4f6e90d88a17040",
+      "bytes": 141763,
+      "quality": {
+        "rows": 7138,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 96,
+        "crossed_close_rows": 96,
+        "first_utc": "2020-08-23T21:00:00+00:00",
+        "last_utc": "2020-08-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f78e9ad1fc175c1a3dc47a253a60ad5561f74bde237c248019fa1085eef6de08",
+      "bytes": 144759,
+      "quality": {
+        "rows": 7134,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 115,
+        "crossed_close_rows": 115,
+        "first_utc": "2020-08-30T21:00:00+00:00",
+        "last_utc": "2020-09-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5e939e7db44697ff9ca8c6380d2320b7b2e8ae5e544c4b22e367e1bc58cb8bd1",
+      "bytes": 140112,
+      "quality": {
+        "rows": 7127,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 76,
+        "crossed_close_rows": 76,
+        "first_utc": "2020-09-06T21:03:00+00:00",
+        "last_utc": "2020-09-11T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1b10af05bbd565a014edb5b5be7c1af79f8d867faa552577e1ab05719c32a9d8",
+      "bytes": 141577,
+      "quality": {
+        "rows": 7132,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 97,
+        "crossed_close_rows": 97,
+        "first_utc": "2020-09-13T21:01:00+00:00",
+        "last_utc": "2020-09-18T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8e2bf4245f9f200f721a68baacf90930bc1158efbf3afd382914e924be6b8324",
+      "bytes": 144948,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 52,
+        "crossed_close_rows": 52,
+        "first_utc": "2020-09-20T21:00:00+00:00",
+        "last_utc": "2020-09-25T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "06bf127a4376aac2f49c756a5d7a43b2a45740d7dccde8e87ddc1e02525b916a",
+      "bytes": 141841,
+      "quality": {
+        "rows": 7133,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 43,
+        "crossed_close_rows": 43,
+        "first_utc": "2020-09-27T21:03:00+00:00",
+        "last_utc": "2020-10-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "7e58e08dd304e1a69cb96d2a2fd775b09c08652d500d3aba797001bf755bfd7d",
+      "bytes": 137703,
+      "quality": {
+        "rows": 7127,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 89,
+        "crossed_close_rows": 89,
+        "first_utc": "2020-10-04T21:15:00+00:00",
+        "last_utc": "2020-10-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9952e69b681634b7c18ae17052e5607f90afd163e812ac3a1bda3148e53effc8",
+      "bytes": 137355,
+      "quality": {
+        "rows": 7139,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 71,
+        "crossed_close_rows": 71,
+        "first_utc": "2020-10-11T21:00:00+00:00",
+        "last_utc": "2020-10-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f8f29210decbbfcb04aadb6450348a3119f0e1f9763c1bc59315c49e4cad49ed",
+      "bytes": 138631,
+      "quality": {
+        "rows": 7164,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2020-10-18T21:00:00+00:00",
+        "last_utc": "2020-10-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a5d0218330b04cd8ab34cd84d4e0d4ef5eef5cea2154c1ba8fe55407f2c135b1",
+      "bytes": 141074,
+      "quality": {
+        "rows": 7125,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 41,
+        "crossed_close_rows": 41,
+        "first_utc": "2020-10-25T21:19:00+00:00",
+        "last_utc": "2020-10-30T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "47939439b944efc65158c54e7d346b4255c27e9e99d772a64a0960c595645ca6",
+      "bytes": 149147,
+      "quality": {
+        "rows": 7171,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 73,
+        "crossed_close_rows": 73,
+        "first_utc": "2020-11-01T22:00:00+00:00",
+        "last_utc": "2020-11-06T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c017bdd9807d79cc37d87113a811e0e2ce43dba0241f604501386c9eceeac240",
+      "bytes": 145092,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 89,
+        "crossed_close_rows": 89,
+        "first_utc": "2020-11-08T22:00:00+00:00",
+        "last_utc": "2020-11-13T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "76ed62cc4250ab37fb60d42d5c2bcd7dd7e2425279f8a03fd983c6ca326b76ec",
+      "bytes": 140810,
+      "quality": {
+        "rows": 7158,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 44,
+        "crossed_close_rows": 44,
+        "first_utc": "2020-11-15T22:02:00+00:00",
+        "last_utc": "2020-11-20T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4ef2046061055ed2e9119e46000c7890ea0a412ed22f85a60b228fdaf8d4dca2",
+      "bytes": 139034,
+      "quality": {
+        "rows": 7130,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 45,
+        "crossed_close_rows": 45,
+        "first_utc": "2020-11-22T22:00:00+00:00",
+        "last_utc": "2020-11-27T21:53:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9501616fbc455c821fc33e402598c517d24443d6991458919237f277dd785784",
+      "bytes": 140742,
+      "quality": {
+        "rows": 7169,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 71,
+        "crossed_close_rows": 71,
+        "first_utc": "2020-11-29T22:01:00+00:00",
+        "last_utc": "2020-12-04T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2509a0be1fae12490be60f74394c02eb1d3a1eb5cd75657aa2e14ec299105cb0",
+      "bytes": 140480,
+      "quality": {
+        "rows": 7151,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 60,
+        "crossed_close_rows": 60,
+        "first_utc": "2020-12-06T22:00:00+00:00",
+        "last_utc": "2020-12-11T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "38f524ae459ffcf51819729f4bc895fa700730d91d07e2a4f4e08600b36f0777",
+      "bytes": 138566,
+      "quality": {
+        "rows": 7124,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 79,
+        "crossed_close_rows": 79,
+        "first_utc": "2020-12-13T22:15:00+00:00",
+        "last_utc": "2020-12-18T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9d52e9cda7e8582ef32fd07304a5ec44eb660b996cc4652751c8d8cb14c8fcb8",
+      "bytes": 111602,
+      "quality": {
+        "rows": 5537,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 118,
+        "crossed_close_rows": 118,
+        "first_utc": "2020-12-20T22:00:00+00:00",
+        "last_utc": "2020-12-24T19:03:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2020,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2020/53.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cb7e586f1686b1d94e0ded1b778c9e52837f51c11333b2567dadab190f1b79d0",
+      "bytes": 108394,
+      "quality": {
+        "rows": 5519,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 88,
+        "crossed_close_rows": 88,
+        "first_utc": "2020-12-27T22:03:00+00:00",
+        "last_utc": "2020-12-31T19:01:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 1,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/1.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "1eaa4bbe27f258c9697b426ffa4f82e1f993bf06bb6761ee80bb6e25d00d905f",
+      "bytes": 147508,
+      "quality": {
+        "rows": 7147,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 187,
+        "crossed_close_rows": 187,
+        "first_utc": "2021-01-03T22:03:00+00:00",
+        "last_utc": "2021-01-08T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 2,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/2.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b4b80bba9c56d874a28f05269eb882206e0ff0beb4c9509dab177188c89371a8",
+      "bytes": 145219,
+      "quality": {
+        "rows": 7148,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 155,
+        "crossed_close_rows": 155,
+        "first_utc": "2021-01-10T22:02:00+00:00",
+        "last_utc": "2021-01-15T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 3,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/3.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "111f2c68f09203c64549301fbcc6155451f405db0fdc3f093889f3c4841a4143",
+      "bytes": 141261,
+      "quality": {
+        "rows": 7131,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 139,
+        "crossed_close_rows": 139,
+        "first_utc": "2021-01-17T22:00:00+00:00",
+        "last_utc": "2021-01-22T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 4,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/4.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "400c7a812662564c80e73c2eab8aa5ee7d60e322b60728f34b84e1823ac041f7",
+      "bytes": 145613,
+      "quality": {
+        "rows": 7140,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 156,
+        "crossed_close_rows": 156,
+        "first_utc": "2021-01-24T22:02:00+00:00",
+        "last_utc": "2021-01-29T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 5,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/5.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "9555c7dac5feb7c67135395dc4ac8398bb6dce820760ec4c693cb5f008296edf",
+      "bytes": 145245,
+      "quality": {
+        "rows": 7165,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 144,
+        "crossed_close_rows": 144,
+        "first_utc": "2021-01-31T22:00:00+00:00",
+        "last_utc": "2021-02-05T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 6,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/6.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2432589c022996554ae9fb13c5b6326183a350c3f35f0f0d1f6c0896306fa453",
+      "bytes": 140734,
+      "quality": {
+        "rows": 7171,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 89,
+        "crossed_close_rows": 89,
+        "first_utc": "2021-02-07T22:00:00+00:00",
+        "last_utc": "2021-02-12T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 7,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/7.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "d20ca44a546d72e846bdfadec7a3e75b80bc80dcb252517a51fa06c88572e3ff",
+      "bytes": 141617,
+      "quality": {
+        "rows": 7144,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 48,
+        "crossed_close_rows": 48,
+        "first_utc": "2021-02-14T22:00:00+00:00",
+        "last_utc": "2021-02-19T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 8,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/8.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6e26897d973779e5822a161b62c1a53d9953036b78797ba629820a4c998ab08e",
+      "bytes": 149822,
+      "quality": {
+        "rows": 7174,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 46,
+        "crossed_close_rows": 46,
+        "first_utc": "2021-02-21T22:01:00+00:00",
+        "last_utc": "2021-02-26T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 9,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/9.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "43227d7c71f28b8570659d302f401f24c71747581f94f79eeb7f95634c40b6d8",
+      "bytes": 151324,
+      "quality": {
+        "rows": 7162,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 56,
+        "crossed_close_rows": 56,
+        "first_utc": "2021-02-28T22:00:00+00:00",
+        "last_utc": "2021-03-05T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 10,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/10.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "13a29fb27a98766e377066d2790984fd0e661e85976d697658784ddfc6d1954f",
+      "bytes": 147603,
+      "quality": {
+        "rows": 7147,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 29,
+        "crossed_close_rows": 29,
+        "first_utc": "2021-03-07T22:00:00+00:00",
+        "last_utc": "2021-03-12T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 11,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/11.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "fe062bd07fafe1e44692fac91d33cd3ae0f62cd2da3c922f442345d03da69c13",
+      "bytes": 144589,
+      "quality": {
+        "rows": 7120,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 57,
+        "crossed_close_rows": 57,
+        "first_utc": "2021-03-14T21:09:00+00:00",
+        "last_utc": "2021-03-19T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 12,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/12.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "652af5d97cb347a1efe6cd595b28186875cff11b861ccc94fe879db157d3a71a",
+      "bytes": 144765,
+      "quality": {
+        "rows": 7136,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 26,
+        "crossed_close_rows": 26,
+        "first_utc": "2021-03-21T21:00:00+00:00",
+        "last_utc": "2021-03-26T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 13,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/13.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "5fdd8d5add2c00f899f6133bba2a14dbcac19e89b551f55467f40e9fd4630e43",
+      "bytes": 135911,
+      "quality": {
+        "rows": 6944,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 68,
+        "crossed_close_rows": 68,
+        "first_utc": "2021-03-28T21:00:00+00:00",
+        "last_utc": "2021-04-02T20:39:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 14,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/14.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "55b7df43736db52fffb5ac5db2903fa343b243e07b9d8b979cc298e8715734fb",
+      "bytes": 138786,
+      "quality": {
+        "rows": 7085,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 38,
+        "crossed_close_rows": 38,
+        "first_utc": "2021-04-04T21:01:00+00:00",
+        "last_utc": "2021-04-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 15,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/15.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cbeafee58a4364125265bdbd01074e4a29df3532352bca2e3c2270b83e39b0ee",
+      "bytes": 142152,
+      "quality": {
+        "rows": 7134,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 47,
+        "crossed_close_rows": 47,
+        "first_utc": "2021-04-11T21:01:00+00:00",
+        "last_utc": "2021-04-16T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 16,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/16.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a272bbc72513fd6ae6d695cb240199e45086c6fc76a379f505738c45b59d5e61",
+      "bytes": 142124,
+      "quality": {
+        "rows": 7117,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 46,
+        "crossed_close_rows": 46,
+        "first_utc": "2021-04-18T21:00:00+00:00",
+        "last_utc": "2021-04-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 17,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/17.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4b06336f31ce482c44d420442d005a9afa82dbbce7f10a11ff337aa1c9409a57",
+      "bytes": 96143,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 38,
+        "crossed_close_rows": 38,
+        "first_utc": "2021-04-25T21:01:00+00:00",
+        "last_utc": "2021-04-30T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 18,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/18.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "58039e9f39fbc25c4689b54a141e04e7c2d17dba5435732042e59ee971ebfe56",
+      "bytes": 97679,
+      "quality": {
+        "rows": 7116,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 85,
+        "crossed_close_rows": 85,
+        "first_utc": "2021-05-02T21:01:00+00:00",
+        "last_utc": "2021-05-07T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 19,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/19.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "cd8df1c96c8754d5168ebf0eb81aa268662422180a1c543f44a3726ce08740af",
+      "bytes": 99353,
+      "quality": {
+        "rows": 7121,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 61,
+        "crossed_close_rows": 61,
+        "first_utc": "2021-05-09T21:01:00+00:00",
+        "last_utc": "2021-05-14T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 20,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/20.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "22b2c55bbf8722653b4f5f0a8768b86c700fbac78215a8833b01afbd3e662bbd",
+      "bytes": 97104,
+      "quality": {
+        "rows": 7081,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 27,
+        "crossed_close_rows": 27,
+        "first_utc": "2021-05-16T21:07:00+00:00",
+        "last_utc": "2021-05-21T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 21,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/21.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "259f2ff318729694098188114f209a1baa71bf167d80fc15b7d286a467525efd",
+      "bytes": 97812,
+      "quality": {
+        "rows": 7116,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 49,
+        "crossed_close_rows": 49,
+        "first_utc": "2021-05-23T21:19:00+00:00",
+        "last_utc": "2021-05-28T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 22,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/22.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f7f1e91cbc0bd8da8a34165729b697f55446a0fe82f0a559889416cb7aa5e654",
+      "bytes": 94151,
+      "quality": {
+        "rows": 7104,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 62,
+        "crossed_close_rows": 62,
+        "first_utc": "2021-05-30T21:01:00+00:00",
+        "last_utc": "2021-06-04T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 23,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/23.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "6c3c451becfc857fa270f062fd2e2ef176181f3972a083584e55893aeb0dc60f",
+      "bytes": 91871,
+      "quality": {
+        "rows": 7049,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 34,
+        "crossed_close_rows": 34,
+        "first_utc": "2021-06-06T21:43:00+00:00",
+        "last_utc": "2021-06-11T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 24,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/24.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e96e54dc25910a61107a8deabe1ada5b4d67d51bc33a3465c62273054e26e2d9",
+      "bytes": 97889,
+      "quality": {
+        "rows": 7145,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2021-06-13T21:01:00+00:00",
+        "last_utc": "2021-06-18T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 25,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/25.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "16ad235516d1cbed104b06940faf4ad1fe0c1d333504ebed7a485fe0979de487",
+      "bytes": 97638,
+      "quality": {
+        "rows": 7129,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 18,
+        "crossed_close_rows": 18,
+        "first_utc": "2021-06-20T21:00:00+00:00",
+        "last_utc": "2021-06-25T20:57:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 26,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/26.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "e40a29b3f554b8d4d3fd6f67b257cbf7428504af3b0b0a61108a741030735936",
+      "bytes": 95874,
+      "quality": {
+        "rows": 7103,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2021-06-27T21:05:00+00:00",
+        "last_utc": "2021-07-02T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 27,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/27.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ae33808f84e6c14bc6af9ce4387f5eb18238c7ed58ba29149b1f9ac4ced03e59",
+      "bytes": 98568,
+      "quality": {
+        "rows": 7083,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 24,
+        "crossed_close_rows": 24,
+        "first_utc": "2021-07-04T21:01:00+00:00",
+        "last_utc": "2021-07-09T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 28,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/28.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a77280524ddf037ff70e4808cea9df8a62600a4aff021786a1e59839c3370fb9",
+      "bytes": 99231,
+      "quality": {
+        "rows": 7082,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 5,
+        "crossed_close_rows": 5,
+        "first_utc": "2021-07-11T21:10:00+00:00",
+        "last_utc": "2021-07-16T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 29,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/29.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "a5dbac5086e1922f61320d79c8eac6420f3aa5d0ede0e05493181b47bef489fa",
+      "bytes": 99071,
+      "quality": {
+        "rows": 7110,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 8,
+        "crossed_close_rows": 8,
+        "first_utc": "2021-07-18T21:01:00+00:00",
+        "last_utc": "2021-07-23T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 30,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/30.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "362207527d564a035d0cd89da4a0abd82f3bfc2928f76b3c7c1e053beb68b7c2",
+      "bytes": 98024,
+      "quality": {
+        "rows": 7104,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 11,
+        "crossed_close_rows": 11,
+        "first_utc": "2021-07-25T21:06:00+00:00",
+        "last_utc": "2021-07-30T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 31,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/31.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8913d22e64f36ae51e0ba265b25ce455d750449e0d5ef4b38c730def5352881f",
+      "bytes": 95197,
+      "quality": {
+        "rows": 7102,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 17,
+        "crossed_close_rows": 17,
+        "first_utc": "2021-08-01T21:37:00+00:00",
+        "last_utc": "2021-08-06T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 32,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/32.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "f2b0dbb6fa01ec07f362b066881acf4293b7a731df728d9367dc9f92d1acc720",
+      "bytes": 91792,
+      "quality": {
+        "rows": 7064,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 13,
+        "crossed_close_rows": 13,
+        "first_utc": "2021-08-08T21:01:00+00:00",
+        "last_utc": "2021-08-13T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 33,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/33.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "468d0749eb6595b2196ab0a509955239effb70c7e9543e46080caabc635301f2",
+      "bytes": 99203,
+      "quality": {
+        "rows": 7082,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 12,
+        "crossed_close_rows": 12,
+        "first_utc": "2021-08-15T21:01:00+00:00",
+        "last_utc": "2021-08-20T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 34,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/34.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "73f5667c2dc5eba7104acdcd2f09cb0220135b4871ae65820eeb9cf548a51b03",
+      "bytes": 96267,
+      "quality": {
+        "rows": 7103,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 16,
+        "crossed_close_rows": 16,
+        "first_utc": "2021-08-22T21:00:00+00:00",
+        "last_utc": "2021-08-27T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 35,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/35.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4fc5f5d32f2898024c6e183d7962203828fd35f1494be6fb16b569c70bc4a0ea",
+      "bytes": 95120,
+      "quality": {
+        "rows": 7063,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 32,
+        "crossed_close_rows": 32,
+        "first_utc": "2021-08-29T21:00:00+00:00",
+        "last_utc": "2021-09-03T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 36,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/36.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "62f12b75c7f749ef334d2aa7ee82f6d8d5edd964e05ad97dfefa9639650186fd",
+      "bytes": 95786,
+      "quality": {
+        "rows": 7072,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 28,
+        "crossed_close_rows": 28,
+        "first_utc": "2021-09-05T21:05:00+00:00",
+        "last_utc": "2021-09-10T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 37,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/37.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "bae368cd077bf84a350fb3cc678bac066182953d46fde63ed4d034739eb907db",
+      "bytes": 96913,
+      "quality": {
+        "rows": 7100,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 22,
+        "crossed_close_rows": 22,
+        "first_utc": "2021-09-12T21:01:00+00:00",
+        "last_utc": "2021-09-17T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 38,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/38.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "8c9bb9771f1e60c066e962d150255b49b8224acc484bcd043e364e6d1c2b0109",
+      "bytes": 100470,
+      "quality": {
+        "rows": 7100,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 59,
+        "crossed_close_rows": 59,
+        "first_utc": "2021-09-19T21:01:00+00:00",
+        "last_utc": "2021-09-24T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 39,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/39.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "32f45a3976686adab272e982561be3b38b4aebff6a3d3351e5998c6cdef63735",
+      "bytes": 99780,
+      "quality": {
+        "rows": 7069,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 52,
+        "crossed_close_rows": 52,
+        "first_utc": "2021-09-26T21:17:00+00:00",
+        "last_utc": "2021-10-01T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 40,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/40.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "25150b4632f20cc72ad47317a671ab6b108b217e860899e93b0b2a42647033f5",
+      "bytes": 98221,
+      "quality": {
+        "rows": 7081,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 33,
+        "crossed_close_rows": 33,
+        "first_utc": "2021-10-03T21:00:00+00:00",
+        "last_utc": "2021-10-08T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 41,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/41.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "be0cbcba0d84c1a9d678d6304b90d84d94c3ba20a4ddc57289c01eae8f1f7ad6",
+      "bytes": 96446,
+      "quality": {
+        "rows": 7108,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 31,
+        "crossed_close_rows": 31,
+        "first_utc": "2021-10-10T21:01:00+00:00",
+        "last_utc": "2021-10-15T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 42,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/42.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "292a78411688848bf0a247301e0e47ffd82c9c320190b0c7ad346ff4ffbb35ab",
+      "bytes": 97212,
+      "quality": {
+        "rows": 7125,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 51,
+        "crossed_close_rows": 51,
+        "first_utc": "2021-10-17T21:01:00+00:00",
+        "last_utc": "2021-10-22T20:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 43,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/43.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "62a179820db301bd1dca81efabab1907fc1236feecb09f767f49a193cadaedd0",
+      "bytes": 97216,
+      "quality": {
+        "rows": 7065,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 35,
+        "crossed_close_rows": 35,
+        "first_utc": "2021-10-24T21:16:00+00:00",
+        "last_utc": "2021-10-29T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 44,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/44.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "2f976219f4e6db03123b9bb0a9fefe6a9e66f959ada1458ec567d5e4dbb31e32",
+      "bytes": 98038,
+      "quality": {
+        "rows": 7114,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 21,
+        "crossed_close_rows": 21,
+        "first_utc": "2021-10-31T21:00:00+00:00",
+        "last_utc": "2021-11-05T20:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 45,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/45.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "94931cf1679fcacac8a99215e202b470fdca5aea804d7f36d71898d65f0f6ddb",
+      "bytes": 97898,
+      "quality": {
+        "rows": 7118,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 9,
+        "crossed_close_rows": 9,
+        "first_utc": "2021-11-07T22:04:00+00:00",
+        "last_utc": "2021-11-12T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 46,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/46.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "165bd359a8a94dd61f5c476c51bc714e643a60daf67e39301b15d07d1ad28a7b",
+      "bytes": 98335,
+      "quality": {
+        "rows": 7142,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 18,
+        "crossed_close_rows": 18,
+        "first_utc": "2021-11-14T22:01:00+00:00",
+        "last_utc": "2021-11-19T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 47,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/47.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "4988cf95da079026528c74d80db28ee14ce4efa3f57f77606b1388052c4fcd8f",
+      "bytes": 98696,
+      "quality": {
+        "rows": 7093,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2021-11-21T22:01:00+00:00",
+        "last_utc": "2021-11-26T21:50:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 48,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/48.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "c3a11e94980807b23476513f256af99bdbf7c4e182a0365063adce79de285cec",
+      "bytes": 101121,
+      "quality": {
+        "rows": 7152,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 18,
+        "crossed_close_rows": 18,
+        "first_utc": "2021-11-28T22:00:00+00:00",
+        "last_utc": "2021-12-03T21:59:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 49,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/49.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "b64146407b1818827f79cf5f941e968dd8f95252d6f4989874fc6059091b5e6d",
+      "bytes": 96413,
+      "quality": {
+        "rows": 7128,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 20,
+        "crossed_close_rows": 20,
+        "first_utc": "2021-12-05T22:00:00+00:00",
+        "last_utc": "2021-12-10T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 50,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/50.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "494351d0fbe9a12242deaa02bced5d570850378c99fd3a8bd4be0c8e0be85db1",
+      "bytes": 96719,
+      "quality": {
+        "rows": 7147,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 18,
+        "crossed_close_rows": 18,
+        "first_utc": "2021-12-12T22:00:00+00:00",
+        "last_utc": "2021-12-17T21:58:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 51,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/51.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "427235e9be9e0102a6982bc2afe95d82e12be2a96cc21b1e331fff6019109905",
+      "bytes": 91886,
+      "quality": {
+        "rows": 6896,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 5,
+        "crossed_close_rows": 5,
+        "first_utc": "2021-12-19T22:01:00+00:00",
+        "last_utc": "2021-12-24T18:44:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 52,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/52.csv.gz",
+      "http_status": 200,
+      "cache_hit": false,
+      "sha256": "ca76e197ff9809962161fe3edec561e6248d7486c0b6a636d26fd648fa0a223d",
+      "bytes": 90420,
+      "quality": {
+        "rows": 6913,
+        "invalid_ohlc_rows": 0,
+        "crossed_open_rows": 0,
+        "crossed_close_rows": 0,
+        "first_utc": "2021-12-26T22:51:00+00:00",
+        "last_utc": "2021-12-31T20:02:00+00:00"
+      }
+    },
+    {
+      "symbol": "NZDUSD",
+      "year_label": 2021,
+      "week_label": 53,
+      "url": "https://candledata.fxcorporate.com/m1/NZDUSD/2021/53.csv.gz",
+      "http_status": 404,
+      "cache_hit": false
+    }
+  ],
+  "missing_week_urls": [
+    "https://candledata.fxcorporate.com/m1/NZDUSD/2017/53.csv.gz",
+    "https://candledata.fxcorporate.com/m1/NZDUSD/2019/1.csv.gz",
+    "https://candledata.fxcorporate.com/m1/NZDUSD/2020/1.csv.gz",
+    "https://candledata.fxcorporate.com/m1/NZDUSD/2021/53.csv.gz"
+  ],
+  "usable_unique_minutes": 1844964,
+  "identical_overlap_rows_removed": 0,
+  "outputs": {
+    "m5": {
+      "path": "data/intraday/fxcm_official/nzdusd_development_validation_2017_2021_m5.csv",
+      "sha256": "bd038b5e1bd9167df768b8f786f6a8af27fe9470016e233cc566b5b8d14d0e5c",
+      "quality": {
+        "minutes": 5,
+        "input_minutes": 1844964,
+        "complete_bars": 362275,
+        "incomplete_blocks_omitted": 9730,
+        "crossed_open_bars_kept_but_entry_blocked": 1741,
+        "valid_spread_pips_median": 0.3999999999992898,
+        "valid_spread_pips_p95": 0.900000000000345,
+        "volume": "NOT PROVIDED; no synthetic volume added"
+      }
+    },
+    "m15": {
+      "path": "data/intraday/fxcm_official/nzdusd_development_validation_2017_2021_m15.csv",
+      "sha256": "b39752dd697e546709b1d23f0a32e78adb24f8c4ebeea5826b59b2da5862fbe1",
+      "quality": {
+        "minutes": 15,
+        "input_minutes": 1844964,
+        "complete_bars": 117619,
+        "incomplete_blocks_omitted": 6475,
+        "crossed_open_bars_kept_but_entry_blocked": 577,
+        "valid_spread_pips_median": 0.3999999999992898,
+        "valid_spread_pips_p95": 0.900000000000345,
+        "volume": "NOT PROVIDED; no synthetic volume added"
+      }
+    }
+  },
+  "strategy_outcomes_evaluated": false,
+  "limitations": [
+    "Provider says indicative lowest-spread Active Trader quotes, not verified executable broker fills",
+    "Provider specifies personal use; raw archives and candle CSVs are not published",
+    "Crossed ASK opens block entry; valid BID exit bars are retained",
+    "Missing minutes and archives are not fabricated; incomplete M5/M15 blocks are omitted"
+  ]
+}

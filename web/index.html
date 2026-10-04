@@ -64,6 +64,14 @@
           <div id="intraday-periods" class="research-periods"></div><p id="intraday-count-note" class="research-count-note" hidden></p>
           <div class="table-scroll"><table class="research-table"><caption class="sr-only">本輪各策略家族、標的、狀態與指定區間診斷，金額以各自帳戶幣別列示</caption><thead><tr><th scope="col">策略家族</th><th scope="col">標的／週期</th><th scope="col">試驗數</th><th scope="col">研究狀態</th><th scope="col">指定區間診斷</th><th scope="col">淨勝率</th><th scope="col">成本後淨損益</th></tr></thead><tbody id="intraday-family-rows"></tbody></table></div>
           <div class="research-source-block"><p class="source-heading">本輪價格與成交資料</p><div id="intraday-source-facts" class="research-source-facts"></div><p id="intraday-ask-status" class="research-source-note"></p><p id="intraday-freeze-note" class="research-source-note"></p></div>
+          <div id="stop-review" class="research-source-block" hidden>
+            <div class="stop-review-heading"><p class="source-heading">止損與獲利模式檢討</p><a id="stop-review-link" class="research-report-link" target="_blank" rel="noopener noreferrer">逐筆止損與檢討 ↗</a></div>
+            <p id="stop-review-scope" class="research-source-note"></p>
+            <div class="research-source-facts"><div><span>止損筆數</span><strong id="stop-review-count">—</strong></div><div><span>止損平均淨點數</span><strong id="stop-review-loss">—</strong></div><div><span>獲利平均淨點數</span><strong id="stop-review-win">—</strong></div><div><span>贏家持有時間中位數</span><strong id="stop-review-duration">—</strong></div></div>
+            <p id="stop-review-summary" class="research-source-note"></p>
+            <div class="table-scroll"><table class="stop-review-table"><caption class="sr-only">固定虧損模式過濾後，在另一段資料的實際成交與成本後期望</caption><thead><tr><th scope="col">固定規則</th><th scope="col">驗證筆數</th><th scope="col">淨勝率</th><th scope="col">淨損益 · USD</th><th scope="col">每筆平均 · USD</th></tr></thead><tbody id="stop-review-rows"></tbody></table></div>
+            <p id="stop-review-feature-note" class="research-source-note"></p>
+          </div>
           <p class="table-note">交易超過 500 筆且勝率高，仍可能因平均虧損大於平均獲利、價差與佣金而虧損。表中的診斷是各家族指定區間的例子，不是所有候選的合併績效；不同帳戶幣別分別列示。研究獲利不計入前向模擬帳戶。</p>
         </section>
 

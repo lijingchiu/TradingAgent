@@ -227,7 +227,10 @@
       return `<tr><td>${escape(family.name || '—')}</td><td>${escape(family.symbol || '—')}<span class="research-cell-note">${escape(interval)}</span></td><td>${escape(fmt(family.trials,0))}</td><td><span class="result-badge ${stateClass}">${escape(researchStatus(family.status))}</span></td><td class="research-diagnostic">${escape(sample)}${explanation}</td><td>${escape(count === 0 ? '—' : percent(diagnostic.win_rate,true,1))}</td><td class="${tone(diagnostic.net_profit)}">${escape(researchMoney(diagnostic.net_profit,diagnostic.currency))}</td></tr>`;
     }).join('') : '<tr><td colspan="7" class="table-empty">尚未提供策略家族評估。</td></tr>';
     const sources = research.sources || {};
-    const sourceFacts = [['資料供應者',display(sources.provider)],['M5 BID 根數',fmt(sources.bid_m5_bars,0)],['M15 BID 根數',fmt(sources.bid_m15_bars,0)],['價格側／時區',`${display(sources.quote_side)} ／ ${display(sources.time_zone)}`]];
+    const sourceFacts = [['資料供應者',display(sources.provider)],['既有 Dukascopy M5 BID',fmt(sources.bid_m5_bars,0)],['既有 Dukascopy M15 BID',fmt(sources.bid_m15_bars,0)],['價格側／時區',`${display(sources.quote_side)} ／ ${display(sources.time_zone)}`]];
+    if (number(sources.fxcm_paired_m5_bars) !== null) sourceFacts.push(['FXCM 雙側 M5 根數',fmt(sources.fxcm_paired_m5_bars,0)]);
+    if (number(sources.fxcm_paired_m15_bars) !== null) sourceFacts.push(['FXCM 雙側 M15 根數',fmt(sources.fxcm_paired_m15_bars,0)]);
+    if (sources.fxcm_periods) sourceFacts.push(['FXCM 資料區間',display(sources.fxcm_periods)]);
     if (sources.futures_status) sourceFacts.push(['期貨來源及限制',display(sources.futures_status)]);
     $('intraday-source-facts').innerHTML = sourceFacts.map(([label,value]) => `<div><span>${escape(label)}</span><strong>${escape(value)}</strong></div>`).join('');
     text('intraday-ask-status', `ASK 資料狀態：${sources.ask_status ? typeof sources.ask_status === 'string' ? sources.ask_status : JSON.stringify(sources.ask_status) : '尚未提供完整性資訊'}。BID OHLC 與假設價差不足以證明完整可成交的買賣報價。`);
@@ -242,6 +245,25 @@
     $('intraday-report-link').hidden = !reportURL;
     if (reportURL) $('intraday-report-link').href = reportURL;
     else $('intraday-report-link').removeAttribute('href');
+    const review = research.stop_review;
+    if ($('stop-review')) {
+      $('stop-review').hidden = !review?.reference_case;
+      if (review?.reference_case) {
+        const reference = review.reference_case;
+        text('stop-review-scope',`${display(reference.symbol)} · ${fmt(reference.minutes,0)} 分鐘 · ${display(reference.period)} · 研究資金 ${money(reference.initial_equity_usd)}；與前向帳戶分開。下表為 2018–2021 選擇驗證。`);
+        text('stop-review-count',fmt(reference.stopped_trades,0));
+        text('stop-review-loss',`${fmt(reference.mean_stopped_net_pips)} 點`);
+        text('stop-review-win',`${fmt(reference.mean_winning_net_pips)} 點`);
+        text('stop-review-duration',`${fmt(Number(reference.winning_median_holding_bars)*Number(reference.minutes),0)} 分鐘`);
+        text('stop-review-summary',review.summary);
+        text('stop-review-feature-note',review.entry_feature_note);
+        $('stop-review-rows').innerHTML = list(review.validation_comparisons).map(row => `<tr><td>${escape(row.label)}</td><td>${escape(fmt(row.natural_trades,0))}</td><td>${escape(percent(row.win_rate,true,2))}</td><td class="${tone(row.net_profit_usd)}">${escape(researchMoney(row.net_profit_usd,'USD'))}</td><td class="${tone(row.mean_net_pnl_usd)}">${escape(fmt(row.mean_net_pnl_usd,4))}</td></tr>`).join('');
+        const reviewURL = safeURL(review.report_url);
+        $('stop-review-link').hidden = !reviewURL;
+        if (reviewURL) $('stop-review-link').href = reviewURL;
+        else $('stop-review-link').removeAttribute('href');
+      }
+    }
   }
 
   function renderValidation(snapshot) {

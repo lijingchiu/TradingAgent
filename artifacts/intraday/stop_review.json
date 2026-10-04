@@ -1,0 +1,491 @@
+{
+  "updated_at_utc": "2026-10-04T15:28:50.281976+00:00",
+  "reference_case": {
+    "symbol": "EURUSD",
+    "minutes": 15,
+    "period": "2017 開發期",
+    "initial_equity_usd": 500000,
+    "natural_trades": 460,
+    "stopped_trades": 61,
+    "winning_trades": 293,
+    "mean_stopped_net_pips": -28.88529180319479,
+    "mean_winning_net_pips": 8.709582821722362,
+    "winning_median_holding_bars": 4.0,
+    "feature_medians": [
+      {
+        "feature": "atr_pips",
+        "label": "入場前波動幅度（ATR14，點）",
+        "stops": 6.443382908066968,
+        "wins": 7.215768706768108
+      },
+      {
+        "feature": "atr_fast_slow_ratio",
+        "label": "短期／長期波動比（ATR14／ATR96）",
+        "stops": 0.9660086451433874,
+        "wins": 1.0711183368284611
+      },
+      {
+        "feature": "ema_slope_atr",
+        "label": "長期趨勢斜率（以波動標準化）",
+        "stops": 0.02323311395091842,
+        "wins": 0.1701643287581022
+      },
+      {
+        "feature": "distance_from_ema_atr",
+        "label": "價格離長期均線距離（以波動標準化）",
+        "stops": -1.8457700446947705,
+        "wins": -1.0013029107065528
+      },
+      {
+        "feature": "completed_bar_body_fraction",
+        "label": "已完成K線實體／全幅",
+        "stops": -0.7247706422018741,
+        "wins": -0.6223776223774888
+      },
+      {
+        "feature": "current_quote_spread_pips",
+        "label": "入場時買賣價差（點）",
+        "stops": 0.1999999999990898,
+        "wins": 0.1999999999990898
+      },
+      {
+        "feature": "current_quote_hour_utc",
+        "label": "入場時刻（UTC小時）",
+        "stops": 9.0,
+        "wins": 11.25
+      }
+    ],
+    "stop_trace_path": "artifacts/intraday/stop_review/eurusd_m15_2017_stops.csv",
+    "stop_trace_sha256": "8d9119adc5b75970ddd48d1a910e5afae4cc4630944761897f808045e02093e7",
+    "source_feature_path": "artifacts/intraday/fxcm_rsi2/rsi2_m15_usd500000_unfiltered_development_trade_features.csv",
+    "source_feature_sha256": "00fd1623592b68d61c1211ef0b80a8ee212c13890c9a472bc3dc69ff6d8afcaa"
+  },
+  "cases": [
+    {
+      "symbol": "EURUSD",
+      "minutes": 5,
+      "period": "2017 開發期",
+      "initial_equity_usd": 500000,
+      "natural_trades": 1298,
+      "stopped_trades": 148,
+      "winning_trades": 780,
+      "mean_stopped_net_pips": -20.109561654997858,
+      "mean_winning_net_pips": 4.696972912604629,
+      "winning_median_holding_bars": 4.0,
+      "feature_medians": [
+        {
+          "feature": "atr_pips",
+          "label": "入場前波動幅度（ATR14，點）",
+          "stops": 4.460627604561296,
+          "wins": 4.606413433906457
+        },
+        {
+          "feature": "atr_fast_slow_ratio",
+          "label": "短期／長期波動比（ATR14／ATR96）",
+          "stops": 1.2072102781938603,
+          "wins": 1.2329897345814804
+        },
+        {
+          "feature": "ema_slope_atr",
+          "label": "長期趨勢斜率（以波動標準化）",
+          "stops": 0.014086791816745409,
+          "wins": -0.08302779261121253
+        },
+        {
+          "feature": "distance_from_ema_atr",
+          "label": "價格離長期均線距離（以波動標準化）",
+          "stops": -1.695231452273045,
+          "wins": -1.806717676102304
+        },
+        {
+          "feature": "completed_bar_body_fraction",
+          "label": "已完成K線實體／全幅",
+          "stops": -0.663998914812824,
+          "wins": -0.6454973118284865
+        },
+        {
+          "feature": "current_quote_spread_pips",
+          "label": "入場時買賣價差（點）",
+          "stops": 0.1999999999990898,
+          "wins": 0.1999999999990898
+        },
+        {
+          "feature": "current_quote_hour_utc",
+          "label": "入場時刻（UTC小時）",
+          "stops": 10.291666666666668,
+          "wins": 11.583333333333334
+        }
+      ],
+      "stop_trace_path": "artifacts/intraday/stop_review/eurusd_m5_2017_stops.csv",
+      "stop_trace_sha256": "4d9c8308dde8300edeaee323fbda0d13032d0acc30e56da84c324cbfe1f826f9",
+      "source_feature_path": "artifacts/intraday/fxcm_rsi2/rsi2_m5_usd500000_unfiltered_development_trade_features.csv",
+      "source_feature_sha256": "84a944d238be0780b09d43b155dafbd99493c1a4d7b4e8a286935654e63d7ae7"
+    },
+    {
+      "symbol": "GBPUSD",
+      "minutes": 5,
+      "period": "2017 開發期",
+      "initial_equity_usd": 500000,
+      "natural_trades": 1351,
+      "stopped_trades": 139,
+      "winning_trades": 829,
+      "mean_stopped_net_pips": -27.607912871728615,
+      "mean_winning_net_pips": 6.61031653096161,
+      "winning_median_holding_bars": 4.0,
+      "feature_medians": [
+        {
+          "feature": "atr_pips",
+          "label": "入場前波動幅度（ATR14，點）",
+          "stops": 6.265075924923903,
+          "wins": 6.515941335913506
+        },
+        {
+          "feature": "atr_fast_slow_ratio",
+          "label": "短期／長期波動比（ATR14／ATR96）",
+          "stops": 1.230493481073606,
+          "wins": 1.2716890154057476
+        },
+        {
+          "feature": "ema_slope_atr",
+          "label": "長期趨勢斜率（以波動標準化）",
+          "stops": -0.18926072984537437,
+          "wins": -0.059938688857425204
+        },
+        {
+          "feature": "distance_from_ema_atr",
+          "label": "價格離長期均線距離（以波動標準化）",
+          "stops": -2.3427188968157306,
+          "wins": -1.9462997277613316
+        },
+        {
+          "feature": "completed_bar_body_fraction",
+          "label": "已完成K線實體／全幅",
+          "stops": -0.6800000000000889,
+          "wins": -0.654761904761738
+        },
+        {
+          "feature": "current_quote_spread_pips",
+          "label": "入場時買賣價差（點）",
+          "stops": 0.40000000000040004,
+          "wins": 0.40000000000040004
+        },
+        {
+          "feature": "current_quote_hour_utc",
+          "label": "入場時刻（UTC小時）",
+          "stops": 10.0,
+          "wins": 11.333333333333334
+        }
+      ],
+      "stop_trace_path": "artifacts/intraday/stop_review/gbpusd_m5_2017_stops.csv",
+      "stop_trace_sha256": "e29d760691634815603d44fe173fc31612d28ff37953ebaa7bc2f45be6a1a38a",
+      "source_feature_path": "artifacts/intraday/fxcm_rsi2_cross_asset/gbpusd_rsi2_m5_usd500000_unfiltered_development_trade_features.csv",
+      "source_feature_sha256": "65f6e30f7504f923b2a5afe01e81f782e0080a7bd539438bfce1490f05c69ea4"
+    },
+    {
+      "symbol": "NZDUSD",
+      "minutes": 5,
+      "period": "2017 開發期",
+      "initial_equity_usd": 500000,
+      "natural_trades": 977,
+      "stopped_trades": 84,
+      "winning_trades": 580,
+      "mean_stopped_net_pips": -16.267291426237538,
+      "mean_winning_net_pips": 3.778681892266922,
+      "winning_median_holding_bars": 4.0,
+      "feature_medians": [
+        {
+          "feature": "atr_pips",
+          "label": "入場前波動幅度（ATR14，點）",
+          "stops": 3.536203853466703,
+          "wins": 3.8090612962679504
+        },
+        {
+          "feature": "atr_fast_slow_ratio",
+          "label": "短期／長期波動比（ATR14／ATR96）",
+          "stops": 1.0768895626197734,
+          "wins": 1.1127862745493102
+        },
+        {
+          "feature": "ema_slope_atr",
+          "label": "長期趨勢斜率（以波動標準化）",
+          "stops": 0.1527344889894373,
+          "wins": -0.03296115068715636
+        },
+        {
+          "feature": "distance_from_ema_atr",
+          "label": "價格離長期均線距離（以波動標準化）",
+          "stops": -0.5163010270973596,
+          "wins": -1.810383708699829
+        },
+        {
+          "feature": "completed_bar_body_fraction",
+          "label": "已完成K線實體／全幅",
+          "stops": -0.7340067340065968,
+          "wins": -0.6976744186046422
+        },
+        {
+          "feature": "current_quote_spread_pips",
+          "label": "入場時買賣價差（點）",
+          "stops": 0.49999999999994493,
+          "wins": 0.40000000000040004
+        },
+        {
+          "feature": "current_quote_hour_utc",
+          "label": "入場時刻（UTC小時）",
+          "stops": 12.166666666666668,
+          "wins": 11.5
+        }
+      ],
+      "stop_trace_path": "artifacts/intraday/stop_review/nzdusd_m5_2017_stops.csv",
+      "stop_trace_sha256": "96c31c1a8a9b0db4599aac6e2f71e13f891eb87be369eeef781fc006e717f1bc",
+      "source_feature_path": "artifacts/intraday/fxcm_rsi2_cross_asset/nzdusd_rsi2_m5_usd500000_unfiltered_development_trade_features.csv",
+      "source_feature_sha256": "803584455c4b7c404fab11a0c38f978f864be989bf9f6392b2c2677029bae3e9"
+    },
+    {
+      "symbol": "EURUSD",
+      "minutes": 15,
+      "period": "2017 開發期",
+      "initial_equity_usd": 500000,
+      "natural_trades": 460,
+      "stopped_trades": 61,
+      "winning_trades": 293,
+      "mean_stopped_net_pips": -28.88529180319479,
+      "mean_winning_net_pips": 8.709582821722362,
+      "winning_median_holding_bars": 4.0,
+      "feature_medians": [
+        {
+          "feature": "atr_pips",
+          "label": "入場前波動幅度（ATR14，點）",
+          "stops": 6.443382908066968,
+          "wins": 7.215768706768108
+        },
+        {
+          "feature": "atr_fast_slow_ratio",
+          "label": "短期／長期波動比（ATR14／ATR96）",
+          "stops": 0.9660086451433874,
+          "wins": 1.0711183368284611
+        },
+        {
+          "feature": "ema_slope_atr",
+          "label": "長期趨勢斜率（以波動標準化）",
+          "stops": 0.02323311395091842,
+          "wins": 0.1701643287581022
+        },
+        {
+          "feature": "distance_from_ema_atr",
+          "label": "價格離長期均線距離（以波動標準化）",
+          "stops": -1.8457700446947705,
+          "wins": -1.0013029107065528
+        },
+        {
+          "feature": "completed_bar_body_fraction",
+          "label": "已完成K線實體／全幅",
+          "stops": -0.7247706422018741,
+          "wins": -0.6223776223774888
+        },
+        {
+          "feature": "current_quote_spread_pips",
+          "label": "入場時買賣價差（點）",
+          "stops": 0.1999999999990898,
+          "wins": 0.1999999999990898
+        },
+        {
+          "feature": "current_quote_hour_utc",
+          "label": "入場時刻（UTC小時）",
+          "stops": 9.0,
+          "wins": 11.25
+        }
+      ],
+      "stop_trace_path": "artifacts/intraday/stop_review/eurusd_m15_2017_stops.csv",
+      "stop_trace_sha256": "8d9119adc5b75970ddd48d1a910e5afae4cc4630944761897f808045e02093e7",
+      "source_feature_path": "artifacts/intraday/fxcm_rsi2/rsi2_m15_usd500000_unfiltered_development_trade_features.csv",
+      "source_feature_sha256": "00fd1623592b68d61c1211ef0b80a8ee212c13890c9a472bc3dc69ff6d8afcaa"
+    },
+    {
+      "symbol": "GBPUSD",
+      "minutes": 15,
+      "period": "2017 開發期",
+      "initial_equity_usd": 500000,
+      "natural_trades": 495,
+      "stopped_trades": 71,
+      "winning_trades": 324,
+      "mean_stopped_net_pips": -36.85423608986855,
+      "mean_winning_net_pips": 11.94765458009382,
+      "winning_median_holding_bars": 4.0,
+      "feature_medians": [
+        {
+          "feature": "atr_pips",
+          "label": "入場前波動幅度（ATR14，點）",
+          "stops": 8.630032692684887,
+          "wins": 10.02643244779192
+        },
+        {
+          "feature": "atr_fast_slow_ratio",
+          "label": "短期／長期波動比（ATR14／ATR96）",
+          "stops": 0.9749692216619985,
+          "wins": 1.1106102813050907
+        },
+        {
+          "feature": "ema_slope_atr",
+          "label": "長期趨勢斜率（以波動標準化）",
+          "stops": -0.02593190217799561,
+          "wins": 0.12776271920072643
+        },
+        {
+          "feature": "distance_from_ema_atr",
+          "label": "價格離長期均線距離（以波動標準化）",
+          "stops": -1.9352101941666555,
+          "wins": -1.4156637180718143
+        },
+        {
+          "feature": "completed_bar_body_fraction",
+          "label": "已完成K線實體／全幅",
+          "stops": -0.6271186440677871,
+          "wins": -0.6406122839772763
+        },
+        {
+          "feature": "current_quote_spread_pips",
+          "label": "入場時買賣價差（點）",
+          "stops": 0.40000000000040004,
+          "wins": 0.40000000000040004
+        },
+        {
+          "feature": "current_quote_hour_utc",
+          "label": "入場時刻（UTC小時）",
+          "stops": 9.25,
+          "wins": 10.75
+        }
+      ],
+      "stop_trace_path": "artifacts/intraday/stop_review/gbpusd_m15_2017_stops.csv",
+      "stop_trace_sha256": "be1b8c3d85b2cf07ba95d1987256d7db476967cfef0f074bb35d7eaaa195a57f",
+      "source_feature_path": "artifacts/intraday/fxcm_rsi2_cross_asset/gbpusd_rsi2_m15_usd500000_unfiltered_development_trade_features.csv",
+      "source_feature_sha256": "cc76c3aff8fd3bd7fe3db9153459f53d130ca12464d196c3bae4161bea45af73"
+    },
+    {
+      "symbol": "NZDUSD",
+      "minutes": 15,
+      "period": "2017 開發期",
+      "initial_equity_usd": 500000,
+      "natural_trades": 442,
+      "stopped_trades": 43,
+      "winning_trades": 276,
+      "mean_stopped_net_pips": -24.29337736268473,
+      "mean_winning_net_pips": 6.107466567106319,
+      "winning_median_holding_bars": 4.0,
+      "feature_medians": [
+        {
+          "feature": "atr_pips",
+          "label": "入場前波動幅度（ATR14，點）",
+          "stops": 5.573400631604055,
+          "wins": 6.023524485008983
+        },
+        {
+          "feature": "atr_fast_slow_ratio",
+          "label": "短期／長期波動比（ATR14／ATR96）",
+          "stops": 0.9687890291490879,
+          "wins": 1.0156409700320328
+        },
+        {
+          "feature": "ema_slope_atr",
+          "label": "長期趨勢斜率（以波動標準化）",
+          "stops": -0.050364604584480804,
+          "wins": -0.08438606369356114
+        },
+        {
+          "feature": "distance_from_ema_atr",
+          "label": "價格離長期均線距離（以波動標準化）",
+          "stops": -1.2095816858586952,
+          "wins": -1.426392719872064
+        },
+        {
+          "feature": "completed_bar_body_fraction",
+          "label": "已完成K線實體／全幅",
+          "stops": -0.5747126436782005,
+          "wins": -0.6563002250081136
+        },
+        {
+          "feature": "current_quote_spread_pips",
+          "label": "入場時買賣價差（點）",
+          "stops": 0.40000000000040004,
+          "wins": 0.40000000000040004
+        },
+        {
+          "feature": "current_quote_hour_utc",
+          "label": "入場時刻（UTC小時）",
+          "stops": 10.75,
+          "wins": 11.0
+        }
+      ],
+      "stop_trace_path": "artifacts/intraday/stop_review/nzdusd_m15_2017_stops.csv",
+      "stop_trace_sha256": "96b80af08921a5151048171597c0563e99b759621415c495a9d04ed8933e5059",
+      "source_feature_path": "artifacts/intraday/fxcm_rsi2_cross_asset/nzdusd_rsi2_m15_usd500000_unfiltered_development_trade_features.csv",
+      "source_feature_sha256": "81d1592946c2b7534e9ffe8b997546d6c348a50313bdde01e086b98b31014ce2"
+    }
+  ],
+  "title": "止損與獲利模式檢討",
+  "learning_period": "2017 開發資料；參數先鎖定再驗證",
+  "summary": "開發期止損損失遠大於平均獲利；波動收縮時止損較多。但避開這些模式及縮小止損後，另一段資料仍未得到正向期望。",
+  "development_pattern": {
+    "feature": "atr_fast_slow_ratio",
+    "threshold": 0.9936408996582031,
+    "below": {
+      "trades": 161,
+      "win_rate": 0.5527950310559007,
+      "stop_rate": 0.22981366459627328,
+      "mean_net_pips": -2.9479258146066765
+    },
+    "above": {
+      "trades": 299,
+      "win_rate": 0.6822742474916388,
+      "stop_rate": 0.0802675585284281,
+      "mean_net_pips": 1.5195004662931564
+    },
+    "population": "Original 460 development trades, not reexecuted filtered trades",
+    "validation_result": "Failed: filtered actual validation trades still have negative net expectancy"
+  },
+  "validation_comparisons": [
+    {
+      "label": "原始RSI2",
+      "config": "rsi2_m15_usd500000_unfiltered",
+      "period": "2018–2021 選擇驗證",
+      "initial_equity_usd": 500000,
+      "natural_trades": 2045,
+      "win_rate": 0.5970660146699267,
+      "net_profit_usd": -1231.5342115647547,
+      "mean_net_pnl_usd": -0.6022172183690734,
+      "average_net_winner_usd": 2.9398269553777028,
+      "average_absolute_net_loser_usd": 5.850804519515691,
+      "passed": false
+    },
+    {
+      "label": "依開發期波動模式過濾",
+      "config": "rsi2_m15_usd500000_stop_pattern_tree_depth1",
+      "period": "2018–2021 選擇驗證",
+      "initial_equity_usd": 500000,
+      "natural_trades": 1533,
+      "win_rate": 0.593607305936073,
+      "net_profit_usd": -928.0561199834335,
+      "mean_net_pnl_usd": -0.6053855968580779,
+      "average_net_winner_usd": 3.0756173899247297,
+      "average_absolute_net_loser_usd": 5.982131532608246,
+      "passed": false
+    },
+    {
+      "label": "5分鐘深度2模式過濾",
+      "config": "rsi2_m5_usd500000_stop_pattern_tree_depth2",
+      "period": "2018–2021 選擇驗證",
+      "initial_equity_usd": 500000,
+      "natural_trades": 759,
+      "win_rate": 0.6021080368906456,
+      "net_profit_usd": -174.2719757566368,
+      "mean_net_pnl_usd": -0.22960734618792733,
+      "average_net_winner_usd": 2.1451224625742222,
+      "average_absolute_net_loser_usd": 3.823155434281644,
+      "passed": false
+    }
+  ],
+  "entry_feature_note": "只使用已完成K線的趨勢、波動及實體；價差與時刻在取得入場報價時可知。點數以pip＝0.0001計算，全部已扣價差、滑價及佣金。",
+  "report_url": "https://github.com/lijingchiu/TradingAgent/blob/main/artifacts/intraday/stop_review.md",
+  "independence_note": "2018–2021用於選擇驗證且有既有研究歷史；2022-04至2024-09最終策略績效仍未檢視。",
+  "outcome": "No qualified positive-expectancy strategy. All paper entries remain disabled."
+}

@@ -1,0 +1,36 @@
+{
+  "registered_at_utc": "2026-10-04T15:00:00.635268+00:00",
+  "symbols": [
+    "GBPUSD",
+    "NZDUSD"
+  ],
+  "families": [
+    "rsi2_development_stop_patterns",
+    "rsi2_smaller_stop_confirmation"
+  ],
+  "configs_per_asset_per_family": 12,
+  "total_configurations": 48,
+  "base_protocol": "artifacts/intraday/fxcm_rsi2/preregistration.json",
+  "base_protocol_sha256": "ad295d64a9968552608b66655e6056569b6775217daa56b0a63baa017de7aa9a",
+  "tail_protocol": "artifacts/intraday/fxcm_rsi2_tailguard/preregistration.json",
+  "tail_protocol_sha256": "466528f23a1aed48e5893597694b5ca866956725b629a53b865b7686def72f8f",
+  "no_parameter_changes": "Use the exact two previously declared RSI2 protocols, costs, caps, timeframes and learning procedures. Fit pattern trees on each asset's own 2017 natural trades only; freeze all models before any new selection-validation results. No pooled trade counts across assets.",
+  "rationale": "Check whether greater pip-scale movement relative to costs supports the fixed rebound hypothesis in other officially listed USD-quoted instruments; GBPUSD and NZDUSD have verified paired official samples. Do not select assets using the final interval.",
+  "development": [
+    "2017-01-01",
+    "2018-01-01"
+  ],
+  "selection_validation": [
+    "2018-01-01",
+    "2022-01-01"
+  ],
+  "reserved_final": [
+    "2022-04-01",
+    "2024-10-01"
+  ],
+  "final_warmup_start": "2022-01-01",
+  "selection": "Evaluate all 48 before freezing one global eligible configuration using the original minimum-return ranking. EURUSD preceding24 all failed; retain them. Do not evaluate more than one alternative on final.",
+  "independence_note": "Earlier research and reused validation calendar periods are disclosed. Only the final interval is reserved for independent performance evidence. Crossed ASK opens are blocked; missing data remain missing.",
+  "risk_note": "Fully purchased positive-price long currencies in a USD cash research account, not margin FX or futures. Each purchase plus worst costs remains within1% of entry equity; floating-peak drawdowns measured separately.",
+  "cost_note": "Same0.35bps per side, USD0.10 minimum,0.2pip adverse per side and actual indicative Active Trader spread; not a verified real-broker fee quote. USD100k and500k profiles were fixed previously, not optimized after outcomes."
+}

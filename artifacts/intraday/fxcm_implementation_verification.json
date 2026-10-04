@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-04T15:41:31.411993+00:00",
+  "base_commit": "f2936d5b7f46766d25f7ec1458e7722fa8c7e945",
+  "production_tests_passed": 34,
+  "research_tests_passed": 138,
+  "test_evidence_role": "Synthetic implementation checks, not strategy profitability",
+  "new_configurations": 72,
+  "unchanged_strategy_source_confirmations": 2,
+  "qualified_strategies": 0,
+  "final_strategy_outcomes_evaluated": false,
+  "research_profit_credited_to_paper": false,
+  "paper_balance_usd": 100000,
+  "paper_trade_count": 0,
+  "browser_verification": {
+    "viewport_widths": [
+      1440,
+      390
+    ],
+    "family_rows": 20,
+    "stop_review_rows": 3,
+    "document_overflow": false,
+    "javascript_errors": 0
+  },
+  "fixed_session_reproduction": {
+    "family": "fixed-session",
+    "candidate_count": 2,
+    "numeric_results_and_quote_trace_hashes_identical": true,
+    "canonical_receipts_preserved": true,
+    "final_outcomes_opened": false
+  },
+  "report_sha256": {
+    "artifacts/intraday/fxcm_rsi2/selection_report.json": "8aa200f8bf14a4855116ec128a3c62d2401922c3eea9213bf390ba090a3f660f",
+    "artifacts/intraday/fxcm_rsi2_tailguard/selection_report.json": "63c34d684637bff0a62ab878ebe8d595158282c73980244a1a14079fa4b6a56d",
+    "artifacts/intraday/fxcm_rsi2_cross_asset/selection_report.json": "8592bf95bb7748692e3e5d208ef09b1afc9cd61c555a8a2c037c0e88fc3d8f1f",
+    "artifacts/intraday/fxcm_fixed_session/selection_report.json": "04e363d8d6bedf2a39605a202f5679809008cfb080eb86d950c37017cab39a27"
+  },
+  "source_quality_and_quote_traces_verified": true,
+  "raw_FXCM_quotes_published": false,
+  "preserved_original_engine_hashes": {
+    "research/intraday_engine.py": "4d39faa9ad51be2b166e9485786aad72c4e174a53973cfc1cc64cb3a2944b8de",
+    "research/statistics.py": "be7955a5a052134c69f2b6aa9a16d286ab335cd6fa7cdc23640238946b5f3590",
+    "research/futures_engine.py": "1e4b5fb5fbfedeb7db0a58ef5ea52e0f0d166d006f1a776bc875083f2e8fc657",
+    "research/futures_statistics.py": "ee87b05791d44c746eb2f43b58c1483cba90c993931c6c3453aacda1183389c8"
+  }
+}
